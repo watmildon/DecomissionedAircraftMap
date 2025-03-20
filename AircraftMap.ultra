@@ -21,13 +21,14 @@ style:
     - type: symbol
       layout:
         icon-padding: 0
+        icon-overlap: always
         icon-image:
           - concat
           - https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/images/
           - [get,wikidata]
           - .jpg
 ---
-[out:json][timeout:25];
+[out:json][timeout:500];
 // gather results
 nwr["historic"="aircraft"][wikidata];
 // print results
