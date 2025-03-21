@@ -5,11 +5,17 @@ This repo hosts the style file and icons for an [Ultra](https://overpass-ultra.u
 
 * [DecomissionedAircraftMap](https://overpass-ultra.us/#map&query=url:https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/AircraftMap.ultra).
 
+![image](https://github.com/user-attachments/assets/612b113d-9a93-4ff3-9bab-6bf0276926c1)
+
+
 # Adding more aircraft to the map
 
 The map shows thumbnails for each object that is tagged as a [historic aircraft](https://wiki.openstreetmap.org/wiki/Tag:historic=aircraft) and has a suitable wikidata tag from which an image can be pulled. You can add appropriate [Wikidata tags](https://wiki.openstreetmap.org/wiki/Key:wikidata) to already tagged aircraft or add images into linked Wikidata items. Both allow the bot to pick up new images when it runs.
 
-You can find aircraft in OpenStreetMap that need Wikidata tags using [this helpful map](https://ultra.trailsta.sh/#map&m=1.09/0.0000/-1.3357&q=NoewrgLgXAVgziAdgXWBAlgWwKbmgJgFZkBuAKAHoKACAcwEMIALbAJ2tezjABsI4yiAO6tgAIibo4EEK3QBjMQF4x9dK3mt6AMwhjUAQiHoA1ugAmjeqUo0ADnMQQOXXvzJ5q87E7YkgA).
+You can find aircraft in OpenStreetMap that need Wikidata tags using [this interactive map](https://ultra.trailsta.sh/#map&m=1.09/0.0000/-1.3357&q=NoewrgLgXAVgziAdgXWBAlgWwKbmgJgFZkBuAKAHoKACAcwEMIALbAJ2tezjABsI4yiAO6tgAIibo4EEK3QBjMQF4x9dK3mt6AMwhjUAQiHoA1ugAmjeqUo0ADnMQQOXXvzJ5q87E7YkgA). There's plenty of work to do!
+
+![image](https://github.com/user-attachments/assets/a1f15a90-47b7-405e-b88b-bff291c3d948)
+
 
 # Correcting issues
 
