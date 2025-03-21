@@ -25,9 +25,19 @@ class Program
             return;
         }
 
+        HashSet<string> checkedItems = new HashSet<string>();
+
         foreach (var osmItem in osmItems.elements)
         {
-            await DownloadImageFromWikidataId(osmItem.tags.wikidata);
+            if (checkedItems.Contains(osmItem.tags.wikidata))
+            {
+                continue;
+            }
+            else
+            {
+                checkedItems.Add(osmItem.tags.wikidata);
+                await DownloadImageFromWikidataId(osmItem.tags.wikidata);
+            }
         }
     }
 
@@ -55,9 +65,9 @@ class Program
     {
         string fileName = $"{wikidataId}.jpg";
 
-        if (File.Exists("..\\images\\" + fileName)) 
+        if (File.Exists("..\\images\\" + fileName))
         {
-            return; 
+            return;
         }
 
         string apiUrl = $"https://www.wikidata.org/wiki/Special:EntityData/{wikidataId}.json";
@@ -77,7 +87,7 @@ class Program
 
             if (imageName == null)
             {
-                Console.WriteLine("No image (P18) found for this Wikidata ID.");
+                Console.WriteLine($"No image (P18) found for Wikidata ID: {wikidataId}");
                 return;
             }
 
@@ -105,6 +115,6 @@ class Program
         catch (Exception ex)
         {
             Console.WriteLine($"Error: {ex.Message}");
-        }        
+        }
     }
 }
