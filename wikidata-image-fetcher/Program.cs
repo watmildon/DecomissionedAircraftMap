@@ -96,8 +96,7 @@ class Program
 
                     using (Bitmap resizedImage = new Bitmap(originalImage, new Size(newWidth, newHeight)))
                     {
-                        
-                        resizedImage.Save(fileName); // Save resized image to disk
+                        resizedImage.Save("..\\images\\" + fileName); // Save resized image to disk
                         Console.WriteLine($"Resized image saved as {fileName}");
                     }
                 }

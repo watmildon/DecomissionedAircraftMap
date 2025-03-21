@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-run:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     permissions:
       contents: write
@@ -24,15 +24,15 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Restore dependencies
-        working-directory: ./wikidata-image-fetcher
+        working-directory: .\wikidata-image-fetcher
         run: dotnet restore
     
       - name: Build the project
-        working-directory: ./wikidata-image-fetcher
+        working-directory: .\wikidata-image-fetcher
         run: dotnet build --no-restore --configuration Release
     
       - name: Run the program
-        working-directory: ./wikidata-image-fetcher
+        working-directory: .\wikidata-image-fetcher
         run: dotnet run --no-build --configuration Release
 
       # Step 5: Commit any new files in Foo to the Git repository
@@ -40,6 +40,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add images/*
+          git add images\*
           git commit -m "Add new files from nightly run" || echo "No changes to commit"
           git push || echo "No changes to push"
