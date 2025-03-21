@@ -13,7 +13,19 @@ class Program
     {
         httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot");
 
-        string overpassQuery = "[out:json][timeout:25]; nwr[\"historic\"=\"aircraft\"][wikidata]; out tags;";
+        string featureTag = "\"historic\"=\"aircraft\"";
+        string dataTag = "wikidata";
+
+        await DownloadThumbnailsForOverpassQuery(featureTag, dataTag);
+
+        dataTag = "model:wikidata";
+
+        await DownloadThumbnailsForOverpassQuery(featureTag, dataTag);
+    }
+
+    private static async Task DownloadThumbnailsForOverpassQuery(string featureTag, string dataTag)
+    {
+        string overpassQuery = $"[out:json][timeout:25]; nwr[{featureTag}][{dataTag}]; out tags;";
 
         string data = SendQuery(overpassQuery);
 

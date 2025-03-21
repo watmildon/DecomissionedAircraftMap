@@ -25,11 +25,17 @@ style:
         icon-image:
           - concat
           - https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/images/
-          - [get,wikidata]
+          - - case
+            - [ "has", "wikidata" ]
+            - [ "get", "wikidata" ]
+            - [ "get", "model:wikidata" ]
           - .jpg
 ---
 [out:json][timeout:500];
 // gather results
-nwr["historic"="aircraft"][wikidata];
+(
+  nwr["historic"="aircraft"][wikidata];
+  nwr["historic"="aircraft"]["model:wikidata"];
+);
 // print results
 out center;
