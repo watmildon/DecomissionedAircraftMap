@@ -18,7 +18,7 @@ class Program
 
         await DownloadThumbnailsForOverpassQuery(featureTag, dataTag);
 
-        dataTag = "model:wikidata";
+        dataTag = "\"model:wikidata\"";
 
         await DownloadThumbnailsForOverpassQuery(featureTag, dataTag);
     }
