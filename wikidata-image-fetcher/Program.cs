@@ -41,7 +41,12 @@ class Program
 
         foreach (var osmItem in osmItems.elements)
         {
-            if (checkedItems.Contains(osmItem.tags.wikidata))
+            var tagTocheck = osmItem.tags.wikidata;
+            if (dataTag == "\"model:wikidata\"")
+            {
+                tagTocheck = osmItem.tags.modelwikidata;
+            }
+            if (checkedItems.Contains(tagTocheck))
             {
                 continue;
             }
@@ -75,6 +80,10 @@ class Program
 
     private static async Task DownloadImageFromWikidataId(string wikidataId)
     {
+        if (wikidataId == null)
+        {
+            return;
+        }
         string fileName = $"{wikidataId}.jpg";
 
         if (File.Exists("..\\images\\" + fileName))
