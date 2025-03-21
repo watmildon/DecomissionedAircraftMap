@@ -55,7 +55,7 @@ class Program
     {
         string fileName = $"{wikidataId}.jpg";
 
-        if (File.Exists(fileName)) 
+        if (File.Exists("..\\images\\" + fileName)) 
         {
             return; 
         }
