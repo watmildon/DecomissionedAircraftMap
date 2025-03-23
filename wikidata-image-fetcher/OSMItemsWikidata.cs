@@ -1,4 +1,6 @@
 ﻿
+using Newtonsoft.Json;
+
 public class OsmItems
 {
     public float version { get; set; }
@@ -18,5 +20,7 @@ public class Tags
     public string wikidata { get; set; }
     public string wikipedia { get; set; }
     public string wikimedia_commons { get; set; }
-    public string aircraftmodelwikidata { get; set; }
+
+    [JsonProperty("model:wikidata")]
+    public string modelwikidata { get; set; }
 }

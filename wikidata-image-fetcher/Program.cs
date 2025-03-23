@@ -16,14 +16,27 @@ class Program
         string featureTag = "\"historic\"=\"aircraft\"";
         string dataTag = "wikidata";
 
-        await DownloadThumbnailsForOverpassQuery(featureTag, dataTag);
+        var checkedList = await DownloadThumbnailsForOverpassQuery(featureTag, dataTag);
 
         dataTag = "\"model:wikidata\"";
 
-        await DownloadThumbnailsForOverpassQuery(featureTag, dataTag);
+        var checkedList2 = await DownloadThumbnailsForOverpassQuery(featureTag, dataTag);
+
+        var neededFiles = MergeCollections(checkedList, checkedList2);
+
+        foreach(var file in Directory.GetFiles("..\\images\\"))
+        {
+            FileInfo fInfo = new FileInfo(file);
+
+            if (!neededFiles.Contains(Path.GetFileNameWithoutExtension(fInfo.Name)))
+            {
+                Console.WriteLine($"Deleting {file}");
+                File.Delete(file);
+            }
+        }
     }
 
-    private static async Task DownloadThumbnailsForOverpassQuery(string featureTag, string dataTag)
+    private static async Task<ICollection<string>> DownloadThumbnailsForOverpassQuery(string featureTag, string dataTag)
     {
         string overpassQuery = $"[out:json][timeout:25]; nwr[{featureTag}][{dataTag}]; out tags;";
 
@@ -34,7 +47,7 @@ class Program
         if (osmItems == null)
         {
             Console.WriteLine("ERROR: bad overpass data return");
-            return;
+            throw new Exception("Overpass failed");
         }
 
         HashSet<string> checkedItems = new HashSet<string>();
@@ -56,6 +69,8 @@ class Program
                 await DownloadImageFromWikidataId(osmItem.tags.wikidata);
             }
         }
+
+        return checkedItems;
     }
 
     public static string SendQuery(string overpassQuery)
@@ -137,5 +152,25 @@ class Program
         {
             Console.WriteLine($"Error: {ex.Message}");
         }
+    }
+
+    static ICollection<T> MergeCollections<T>(ICollection<T> collection1, ICollection<T> collection2)
+    {
+        // Create a new list to hold the merged collections
+        List<T> mergedList = new List<T>();
+
+        // Add items from the first collection
+        if (collection1 != null)
+        {
+            mergedList.AddRange(collection1);
+        }
+
+        // Add items from the second collection
+        if (collection2 != null)
+        {
+            mergedList.AddRange(collection2);
+        }
+
+        return mergedList;
     }
 }
