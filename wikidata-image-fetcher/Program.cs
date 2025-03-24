@@ -65,8 +65,10 @@ class Program
             }
             else
             {
-                checkedItems.Add(osmItem.tags.wikidata);
-                await DownloadImageFromWikidataId(osmItem.tags.wikidata);
+                checkedItems.Add(tagTocheck);
+
+                // TODO, check return and write log file of items needing attention.
+                await DownloadImageFromWikidataId(tagTocheck);
             }
         }
 
@@ -93,17 +95,17 @@ class Program
         return contentTask.Result;
     }
 
-    private static async Task DownloadImageFromWikidataId(string wikidataId)
+    private static async Task<bool> DownloadImageFromWikidataId(string wikidataId)
     {
         if (wikidataId == null)
         {
-            return;
+            return false;
         }
         string fileName = $"{wikidataId}.jpg";
 
         if (File.Exists("..\\images\\" + fileName))
         {
-            return;
+            return true;
         }
 
         string apiUrl = $"https://www.wikidata.org/wiki/Special:EntityData/{wikidataId}.json";
@@ -124,11 +126,19 @@ class Program
             if (imageName == null)
             {
                 Console.WriteLine($"No image (P18) found for Wikidata ID: {wikidataId}");
-                return;
+                return false;
+            }
+
+            if (imageName.EndsWith(".svg"))
+            {
+                Console.WriteLine($"WARNING: {wikidataId} .svg files type is not supported");
+                return false;
             }
 
             // Construct the URL to download the image
             string imageUrl = $"https://commons.wikimedia.org/wiki/Special:FilePath/{Uri.EscapeDataString(imageName)}";
+
+            
 
             // Download and save the image
             byte[] imageBytes = await httpClient.GetByteArrayAsync(imageUrl);
@@ -151,7 +161,10 @@ class Program
         catch (Exception ex)
         {
             Console.WriteLine($"Error: {ex.Message}");
+            return false;
         }
+
+        return true;
     }
 
     static ICollection<T> MergeCollections<T>(ICollection<T> collection1, ICollection<T> collection2)
