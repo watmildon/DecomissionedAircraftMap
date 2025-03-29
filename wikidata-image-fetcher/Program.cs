@@ -3,15 +3,18 @@ using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
-using System.Drawing;
-using System.Windows.Markup;
 using Newtonsoft.Json;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Formats;
+using SixLabors.ImageSharp.Processing;
+
 class Program
 {
-    static HttpClient httpClient = new HttpClient();
+    static HttpClient s_HttpClient = new HttpClient();
+    static string s_ImagesFolder = ".." + Path.DirectorySeparatorChar + "images" + Path.DirectorySeparatorChar;
     static async Task Main(string[] args)
     {
-        httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot");
+        s_HttpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot");
 
         string featureTag = "\"historic\"=\"aircraft\"";
         string dataTag = "wikidata";
@@ -24,7 +27,7 @@ class Program
 
         var neededFiles = MergeCollections(checkedList, checkedList2);
 
-        foreach(var file in Directory.GetFiles("..\\images\\"))
+        foreach (var file in Directory.GetFiles(s_ImagesFolder))
         {
             FileInfo fInfo = new FileInfo(file);
 
@@ -85,7 +88,7 @@ class Program
         request.Content = new StringContent(overpassQuery);
 
         // send the query
-        HttpResponseMessage response = httpClient.Send(request);
+        HttpResponseMessage response = s_HttpClient.Send(request);
 
         response.EnsureSuccessStatusCode();
 
@@ -103,7 +106,7 @@ class Program
         }
         string fileName = $"{wikidataId}.jpg";
 
-        if (File.Exists("..\\images\\" + fileName))
+        if (File.Exists(s_ImagesFolder + fileName))
         {
             return true;
         }
@@ -112,7 +115,7 @@ class Program
 
         try
         {
-            HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
+            HttpResponseMessage response = await s_HttpClient.GetAsync(apiUrl);
             response.EnsureSuccessStatusCode();
 
             string jsonData = await response.Content.ReadAsStringAsync();
@@ -135,28 +138,30 @@ class Program
                 return false;
             }
 
-            // Construct the URL to download the image
             string imageUrl = $"https://commons.wikimedia.org/wiki/Special:FilePath/{Uri.EscapeDataString(imageName)}";
 
-            
+            response = await s_HttpClient.GetAsync(imageUrl);
+            response.EnsureSuccessStatusCode();
 
-            // Download and save the image
-            byte[] imageBytes = await httpClient.GetByteArrayAsync(imageUrl);
-            // Rescale the image to a maximum width of 100 pixels while maintaining aspect ratio
-            using (MemoryStream memoryStream = new MemoryStream(imageBytes))
+            await using (Stream contentStream = await response.Content.ReadAsStreamAsync())
             {
-                using (Image originalImage = Image.FromStream(memoryStream))
+                // Load the image directly from the memory stream
+                using (Image image = Image.Load(contentStream))
                 {
-                    int newWidth = 100; // Maximum width
-                    int newHeight = (int)(originalImage.Height * (newWidth / (double)originalImage.Width)); // Maintain aspect ratio
+                    // Calculate the new height to maintain aspect ratio
+                    int newWidth = 100;
+                    int newHeight = (int)(image.Height * (newWidth / (float)image.Width));
 
-                    using (Bitmap resizedImage = new Bitmap(originalImage, new Size(newWidth, newHeight)))
+                    // Resize the image while maintaining quality
+                    image.Mutate(x => x.Resize(newWidth, newHeight));
+
+                    using (var memoryStream = new MemoryStream())
                     {
-                        resizedImage.Save("..\\images\\" + fileName); // Save resized image to disk
-                        Console.WriteLine($"Resized image saved as {fileName}");
+                        image.Save($"{s_ImagesFolder}{wikidataId}.jpg");
                     }
                 }
             }
+
         }
         catch (Exception ex)
         {
