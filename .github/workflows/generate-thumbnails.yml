@@ -24,15 +24,15 @@ jobs:
           dotnet-version: '9.x'
 
       - name: Restore dependencies
-        working-directory: .\wikidata-image-fetcher
+        working-directory: ./wikidata-image-fetcher
         run: dotnet restore
     
       - name: Build the project
-        working-directory: .\wikidata-image-fetcher
+        working-directory: ./wikidata-image-fetcher
         run: dotnet build --no-restore --configuration Release
     
       - name: Run the program
-        working-directory: .\wikidata-image-fetcher
+        working-directory: ./wikidata-image-fetcher
         run: dotnet run --no-build --configuration Release
 
       # Step 5: Commit any new files in Foo to the Git repository
