@@ -11,94 +11,46 @@ using SixLabors.ImageSharp.Processing;
 class Program
 {
     static HttpClient s_HttpClient = new HttpClient();
-    static string s_ImagesFolder = ".." + Path.DirectorySeparatorChar + "images" + Path.DirectorySeparatorChar;
+    static string s_ImagesFolder = ".." + Path.DirectorySeparatorChar + "images2" + Path.DirectorySeparatorChar;
     static async Task Main(string[] args)
     {
         s_HttpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot");
 
-        string featureTag = "\"historic\"=\"aircraft\"";
-        string dataTag = "wikidata";
+        string overpassQuery = $"[out:json][timeout:25]; (nwr[historic=aircraft][wikidata];nwr[historic=aircraft][\"model:wikidata\"]; ); out tags;";
+        string[] tags = { "wikidata", "model:wikidata" };
 
-        var checkedList = await DownloadThumbnailsForOverpassQuery(featureTag, dataTag);
+        var runner = new AnalysisRunner(overpassQuery, tags, s_ImagesFolder, s_HttpClient);
 
-        dataTag = "\"model:wikidata\"";
+        runner.RunAnalysis();
 
-        var checkedList2 = await DownloadThumbnailsForOverpassQuery(featureTag, dataTag);
+        Console.WriteLine("Files to download...");
 
-        var neededFiles = MergeCollections(checkedList, checkedList2);
-
-        foreach (var file in Directory.GetFiles(s_ImagesFolder))
+        foreach (var file in runner.ItemsNeedingDownload)
         {
-            FileInfo fInfo = new FileInfo(file);
+            await DownloadThumbnailFromWikidataId(file);
+        }
 
-            if (!neededFiles.Contains(Path.GetFileNameWithoutExtension(fInfo.Name)))
+        Console.WriteLine();
+
+        Console.WriteLine("Files to delete...");
+        foreach (var file in runner.FilesToDelete)
+        {
+            Console.WriteLine($"Deleting {file}");
+            File.Delete(file);
+        }
+
+        runner.RunAnalysis();
+
+        using (var sr = new StreamWriter("../wikidataItemsNeedingReview.txt"))
+        {
+            foreach (var id in runner.ItemsNeedingDownload)
             {
-                Console.WriteLine($"Deleting {file}");
-                File.Delete(file);
+                sr.WriteLine(id);
             }
         }
     }
 
-    private static async Task<ICollection<string>> DownloadThumbnailsForOverpassQuery(string featureTag, string dataTag)
-    {
-        string overpassQuery = $"[out:json][timeout:25]; nwr[{featureTag}][{dataTag}]; out tags;";
-
-        string data = SendQuery(overpassQuery);
-
-        var osmItems = JsonConvert.DeserializeObject<OsmItems>(data);
-
-        if (osmItems == null)
-        {
-            Console.WriteLine("ERROR: bad overpass data return");
-            throw new Exception("Overpass failed");
-        }
-
-        HashSet<string> checkedItems = new HashSet<string>();
-
-        foreach (var osmItem in osmItems.elements)
-        {
-            var tagTocheck = osmItem.tags.wikidata;
-            if (dataTag == "\"model:wikidata\"")
-            {
-                tagTocheck = osmItem.tags.modelwikidata;
-            }
-            if (checkedItems.Contains(tagTocheck))
-            {
-                continue;
-            }
-            else
-            {
-                checkedItems.Add(tagTocheck);
-
-                // TODO, check return and write log file of items needing attention.
-                await DownloadImageFromWikidataId(tagTocheck);
-            }
-        }
-
-        return checkedItems;
-    }
-
-    public static string SendQuery(string overpassQuery)
-    {
-        // URL for the Overpass API endpoint
-        string overpassUrl = "https://overpass-api.de/api/interpreter";
-
-        // set up the request
-        HttpRequestMessage request = new(HttpMethod.Post, overpassUrl);
-        request.Content = new StringContent(overpassQuery);
-
-        // send the query
-        HttpResponseMessage response = s_HttpClient.Send(request);
-
-        response.EnsureSuccessStatusCode();
-
-        var contentTask = response.Content.ReadAsStringAsync();
-        contentTask.Wait();
-
-        return contentTask.Result;
-    }
-
-    private static async Task<bool> DownloadImageFromWikidataId(string wikidataId)
+    private static async Task<bool> DownloadThumbnailFromWikidataId(string wikidataId)
     {
         if (wikidataId == null)
         {
@@ -148,17 +100,7 @@ class Program
                 // Load the image directly from the memory stream
                 using (Image image = Image.Load(contentStream))
                 {
-                    // Calculate the new height to maintain aspect ratio
-                    int newWidth = 100;
-                    int newHeight = (int)(image.Height * (newWidth / (float)image.Width));
-
-                    // Resize the image while maintaining quality
-                    image.Mutate(x => x.Resize(newWidth, newHeight));
-
-                    using (var memoryStream = new MemoryStream())
-                    {
-                        image.Save($"{s_ImagesFolder}{wikidataId}.jpg");
-                    }
+                    ScaleAndSaveImage(wikidataId, image, 100);
                 }
             }
 
@@ -172,23 +114,17 @@ class Program
         return true;
     }
 
-    static ICollection<T> MergeCollections<T>(ICollection<T> collection1, ICollection<T> collection2)
+    private static void ScaleAndSaveImage(string imageName, Image image, int newWidth)
     {
-        // Create a new list to hold the merged collections
-        List<T> mergedList = new List<T>();
+        // Calculate the new height to maintain aspect ratio
+        int newHeight = (int)(image.Height * (newWidth / (float)image.Width));
 
-        // Add items from the first collection
-        if (collection1 != null)
+        // Resize the image while maintaining quality
+        image.Mutate(x => x.Resize(newWidth, newHeight));
+
+        using (var memoryStream = new MemoryStream())
         {
-            mergedList.AddRange(collection1);
+            image.Save($"{s_ImagesFolder}{imageName}.jpg");
         }
-
-        // Add items from the second collection
-        if (collection2 != null)
-        {
-            mergedList.AddRange(collection2);
-        }
-
-        return mergedList;
     }
 }
