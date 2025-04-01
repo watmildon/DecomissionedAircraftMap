@@ -11,7 +11,7 @@ using SixLabors.ImageSharp.Processing;
 class Program
 {
     static HttpClient s_HttpClient = new HttpClient();
-    static string s_ImagesFolder = ".." + Path.DirectorySeparatorChar + "images2" + Path.DirectorySeparatorChar;
+    static string s_ImagesFolder = ".." + Path.DirectorySeparatorChar + "images" + Path.DirectorySeparatorChar;
     static async Task Main(string[] args)
     {
         s_HttpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot");
