@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Formats;
 using SixLabors.ImageSharp.Processing;
+using System.Collections.Immutable;
 
 class Program
 {
@@ -25,21 +26,31 @@ class Program
 
         Console.WriteLine("Files to download...");
 
-        foreach (var file in runner.ItemsNeedingDownload)
+        foreach (var file in runner.ItemsNeedingDownload.ToImmutableSortedSet<string>())
         {
             await DownloadThumbnailFromWikidataId(file);
         }
 
         Console.WriteLine();
 
-        Console.WriteLine("Files to delete...");
-        foreach (var file in runner.FilesToDelete)
+        if (runner.FilesToDelete.Count() > 0)
         {
-            Console.WriteLine($"Deleting {file}");
-            File.Delete(file);
+            Console.WriteLine("Deleting unneeded files");
+
+            foreach (var file in runner.FilesToDelete)
+            {
+                Console.WriteLine($"Deleting {file}");
+                File.Delete(file);
+            }
+        }
+        else
+        {
+            Console.WriteLine("No files to delete");
         }
 
         runner.RunAnalysis();
+
+        Console.WriteLine("Writing wikidataItemsNeedingReview file");
 
         using (var sr = new StreamWriter("../wikidataItemsNeedingReview.txt"))
         {
@@ -60,6 +71,7 @@ class Program
 
         if (File.Exists(s_ImagesFolder + fileName))
         {
+            Console.WriteLine($"File exists for: {wikidataId}");
             return true;
         }
 
@@ -80,13 +92,13 @@ class Program
 
             if (imageName == null)
             {
-                Console.WriteLine($"No image (P18) found for Wikidata ID: {wikidataId}");
+                Console.WriteLine($"No image (P18) found: {wikidataId}");
                 return false;
             }
 
             if (imageName.EndsWith(".svg"))
             {
-                Console.WriteLine($"WARNING: {wikidataId} .svg files type is not supported");
+                Console.WriteLine($"File type svg is not supported: {wikidataId}");
                 return false;
             }
 
@@ -101,6 +113,7 @@ class Program
                 using (Image image = Image.Load(contentStream))
                 {
                     ScaleAndSaveImage(wikidataId, image, 100);
+                    Console.WriteLine($"Image saved: {wikidataId}");
                 }
             }
 
