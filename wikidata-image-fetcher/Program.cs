@@ -54,7 +54,7 @@ class Program
 
         using (var sr = new StreamWriter("../wikidataItemsNeedingReview.txt"))
         {
-            foreach (var id in runner.ItemsNeedingDownload)
+            foreach (var id in runner.ItemsNeedingDownload.ToImmutableSortedSet<string>())
             {
                 sr.WriteLine(id);
             }
