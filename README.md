@@ -1,27 +1,34 @@
 
+
 # DecomissionedAircraftMap
-
-This repo hosts the style file and icons for an [Ultra](https://overpass-ultra.us/) based decomissioned aircraft map. You can view the map using the link below.
-
-* [DecomissionedAircraftMap](https://overpass-ultra.us/#map&query=url:https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/AircraftMap.ultra).
 
 ![image](https://github.com/user-attachments/assets/612b113d-9a93-4ff3-9bab-6bf0276926c1)
 
+This repo hosts the style file and icons for a map of decommissioned aircraft. Primarily these will be either museum display craft or monuments. The location data is sources from OpenStreetMap while images are pulled from corresponding Wikidata items. The rendering uses  [Ultra](https://overpass-ultra.us/).
+
+You can view the map using the link below.
+
+* [DecomissionedAircraftMap](https://overpass-ultra.us/#map&query=url:https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/AircraftMap.ultra).
 
 # Adding more aircraft to the map
 
-The map shows thumbnails for each object that is tagged as a [historic aircraft](https://wiki.openstreetmap.org/wiki/Tag:historic=aircraft) and has a suitable wikidata tag from which an image can be pulled. You can add appropriate [Wikidata tags](https://wiki.openstreetmap.org/wiki/Key:wikidata) to already tagged aircraft or add images into linked Wikidata items. Both allow the bot to pick up new images when it runs.
-
-You can find aircraft in OpenStreetMap that need Wikidata tags using [this interactive map](https://ultra.trailsta.sh/#map&m=1.09/0.0000/-1.3357&q=NoewrgLgXAVgziAdgXWBAlgWwKbmgJgFZkBuAKAHoKACAcwEMIALbAJ2tezjABsI4yiAO6tgAIibo4EEK3QBjMQF4x9dK3mt6AMwhjUAQiHoA1ugAmjeqUo0ADnMQQOXXvzJ5q87E7YkgA). There's plenty of work to do!
-
 ![image](https://github.com/user-attachments/assets/a1f15a90-47b7-405e-b88b-bff291c3d948)
 
+There are many [historic aircraft](https://wiki.openstreetmap.org/wiki/Tag:historic=aircraft) on OpenStreetMap that lack enough information for the bot here to pull appropriate thumbnails. You can help link things show up on the map by:
+
+* Adding a [model:wikidata](https://wiki.openstreetmap.org/wiki/Key:model:wikidata) tag for an item on OpenStreetMap either from local knowledge or using hints from other tags already on the object (model=, name=, etc). Ex: [model:wikidata=Q185000](https://www.wikidata.org/wiki/Q185000) for a B-17
+* Adding a [wikidata](https://wiki.openstreetmap.org/wiki/Key:wikidata) tag if there is a Wikidata item for that specific aircraft. Ex: [wikidata=Q939784](https://www.wikidata.org/wiki/Q939784) for the Spirit of St. Louis.
+* Adding images (property P18) to Wikidata items that are linked from OpenStreetMap. The repository generates a list of items needing attention every night in the [missing Wikidata images file](https://github.com/watmildon/DecomissionedAircraftMap/blob/main/wikidataItemsNeedingReview.txt).
+
+You can find aircraft on OpenStreetMap that need Wikidata tags using [this map](https://ultra.trailsta.sh/#map&m=1.09/0.0000/-1.3357&q=NoewrgLgXAVgziAdgXWBAlgWwKbmgJgFZkBuAKAHoKACAcwEMIALbAJ2tezjABsI4yiAO6tgAIibo4EEK3QBjMQF4x9dK3mt6AMwhjUAQiHoA1ugAmjeobGYQ57DyjGzliPX3kq1AA5zEEBxcvPxkeNTy2AFsJEA), featured above. 
 
 # Correcting issues
 
-You may encounter instances where the image in question doesn't match the object being represented. This can happen because either the Wikidata tag on OpenStreetMap or the image property in the linked Wikidata item are incorrect. Correcting these will allow the bot to pick up the correct thumbnail the next time it runs.
+You may encounter instances where the image in question doesn't match the object being represented. This can happen because either the Wikidata tags on OpenStreetMap or the image property in the linked Wikidata item are incorrect. Correcting these will allow the bot to pick up the correct thumbnail the next time it runs.
+
+Some Wikidata items will incorrectly have a diagram or schematic of the aircraft set at the image (P18) when the more appropriate property is schematic (P5555).
 
 
 # Update cadence
 
-This is TBD currently but very likely could be run several times a day using appropriate GitHub actions.
+New data in OpenStreetMap is available on the aircraft map about 1 minute after changes are submitted. New thumbnails are pulled once a day using GitHub actions so any changes to Wikidata entries will be reflected after those runs.
