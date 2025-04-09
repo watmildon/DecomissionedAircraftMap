@@ -4,7 +4,7 @@
 
 ![image](https://github.com/user-attachments/assets/612b113d-9a93-4ff3-9bab-6bf0276926c1)
 
-This repo hosts the style file and image thumbnails for a map of decommissioned aircraft. Primarily these will be either museum display craft or monuments. The location data is sources from OpenStreetMap while images are pulled from corresponding Wikidata items. The rendering uses  [Ultra](https://overpass-ultra.us/).
+This repo hosts the style file and image thumbnails for a map of decommissioned aircraft. Primarily these will be either museum display craft or monuments. The location data is sourced from OpenStreetMap while images are pulled from corresponding Wikidata items. The rendering uses  [Ultra](https://overpass-ultra.us/).
 
 You can view the map using the link below.
 
