@@ -1,5 +1,6 @@
 
 
+
 # DecomissionedAircraftMap
 
 ![image](https://github.com/user-attachments/assets/612b113d-9a93-4ff3-9bab-6bf0276926c1)
@@ -21,6 +22,11 @@ There are many [historic aircraft](https://wiki.openstreetmap.org/wiki/Tag:histo
 * Adding images (property P18) to Wikidata items that are linked from OpenStreetMap. The repository generates a list of items needing attention every night in the [missing Wikidata images file](https://github.com/watmildon/DecomissionedAircraftMap/blob/main/wikidataItemsNeedingReview.txt).
 
 You can find aircraft on OpenStreetMap that need Wikidata tags using [this map](https://ultra.trailsta.sh/#map&m=1.09/0.0000/-1.3357&q=NoewrgLgXAVgziAdgXWBAlgWwKbmgJgFZkBuAKAHoKACAcwEMIALbAJ2tezjABsI4yiAO6tgAIibo4EEK3QBjMQF4x9dK3mt6AMwhjUAQiHoA1ugAmjeobGYQ57DyjGzliPX3kq1AA5zEEBxcvPxkeNTy2AFsJEA), featured above. 
+
+
+<img width="1502" alt="MapComplete-HistoricAircraftLayer" src="https://github.com/user-attachments/assets/2c8f09d0-76dd-4e7d-a215-1c8772ae02c2" />
+
+Another great way to contribute is to use the Historic Aircraft theme on [MapComplete](https://mapcomplete.org/). A custom theme has been created by [pietervdvn](https://en.osm.town/@pietervdvn), it is not accessible on the main page yet but you can use [this link](https://mapcomplete.org/theme.html?z=15&lat=47.519065494623504&lon=-122.29627896140602&userlayout=https://studio.mapcomplete.org/3818858/layers/aircraft/aircraft.json&background=Bing) that includes the custom layer information.
 
 # Correcting issues
 
