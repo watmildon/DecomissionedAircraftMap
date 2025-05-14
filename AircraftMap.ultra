@@ -36,6 +36,8 @@ style:
 (
   nwr["historic"="aircraft"][wikidata];
   nwr["historic"="aircraft"]["model:wikidata"];
+  nwr["historic"="memorial"]["memorial"="aircraft"][wikidata];
+  nwr["historic"="memorial"]["memorial"="aircraft"]["model:wikidata"];  
 );
 // print results
 out center;

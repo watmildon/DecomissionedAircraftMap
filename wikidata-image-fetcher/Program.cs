@@ -17,7 +17,7 @@ class Program
     {
         s_HttpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot");
 
-        string overpassQuery = $"[out:json][timeout:25]; (nwr[historic=aircraft][wikidata];nwr[historic=aircraft][\"model:wikidata\"]; ); out tags;";
+        string overpassQuery = $"[out:json][timeout:25]; (nwr[historic=aircraft][wikidata];nwr[historic=aircraft][\"model:wikidata\"];nwr[\"historic\"=\"memorial\"][\"memorial\"=\"aircraft\"][wikidata];nwr[\"historic\"=\"memorial\"][\"memorial\"=\"aircraft\"][\"model:wikidata\"]; ); out tags;";
         string[] tags = { "wikidata", "model:wikidata" };
 
         var runner = new AnalysisRunner(overpassQuery, tags, s_ImagesFolder, s_HttpClient);
