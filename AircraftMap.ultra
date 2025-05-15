@@ -54,6 +54,10 @@ style:
   nwr["historic"="aircraft"]["model:wikidata"];
   nwr["historic"="memorial"]["memorial"="aircraft"][wikidata];
   nwr["historic"="memorial"]["memorial"="aircraft"]["model:wikidata"];
+  nwr["historic"="wreck"]["wreck:type"="aircraft"][wikidata];
+  nwr["historic"="wreck"]["wreck:type"="aircraft"]["model:wikidata"];
+  nwr[historic=monument][monument=aircraft];[wikidata];
+  nwr[historic=monument][monument=aircraft];["model:wikidata"];
 );
 out center;
 
