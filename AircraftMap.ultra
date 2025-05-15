@@ -12,13 +12,26 @@ controls:
 style:
   extends: https://styles.trailsta.sh/protomaps-light.json
   layers:
-    - type: circle
+    - id: museums
+      type: line
+      filter:
+        - all
+        - [has, museum]
+      paint:
+        line-width: 2
+        line-color: red
+    - id: aircraft
+      type: circle
       paint:
         circle-color: '#6dad6f'
         circle-stroke-color: white
         circle-stroke-width: 2
         circle-radius: 3
-    - type: symbol
+      filter:
+        - all
+        - [has, historic]
+    - id: aircraftSymbol
+      type: symbol
       layout:
         icon-padding: 0
         icon-overlap: always
@@ -30,14 +43,22 @@ style:
             - [ "get", "wikidata" ]
             - [ "get", "model:wikidata" ]
           - .jpg
+      filter:
+        - all
+        - [has, historic]
 ---
+
 [out:json][timeout:500];
-// gather results
 (
   nwr["historic"="aircraft"][wikidata];
   nwr["historic"="aircraft"]["model:wikidata"];
   nwr["historic"="memorial"]["memorial"="aircraft"][wikidata];
-  nwr["historic"="memorial"]["memorial"="aircraft"]["model:wikidata"];  
+  nwr["historic"="memorial"]["memorial"="aircraft"]["model:wikidata"];
 );
-// print results
 out center;
+
+(
+  nwr["museum"="aviation"];
+  nwr["museum"="aerospace"];
+);
+out geom;
