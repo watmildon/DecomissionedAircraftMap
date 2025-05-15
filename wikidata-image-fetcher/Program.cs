@@ -30,6 +30,8 @@ class Program
           nwr[historic=monument][monument=aircraft]["model:wikidata"];
           nwr[historic=aircraft_wreck][wikidata];
           nwr[historic=aircraft_wreck]["model:wikidata"];
+          nwr["artwork_type"=aircraft][wikidata];
+          nwr["artwork_type"=aircraft]["model:wikidata"];
         );
         out tags;
         """;
