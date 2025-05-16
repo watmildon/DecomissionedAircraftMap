@@ -19,23 +19,29 @@ class Program
 
         string overpassQuery = """
         [out:json][timeout:25];
-        ( 
-          nwr[historic=aircraft][wikidata];
-          nwr[historic=aircraft]["model:wikidata"];
-          nwr[historic=memorial][memorial=aircraft][wikidata];
-          nwr[historic=memorial][memorial=aircraft]["model:wikidata"];
-          nwr[historic=wreck]["wreck:type"=aircraft][wikidata];
-          nwr[historic=wreck]["wreck:type"=aircraft]["model:wikidata"];
+        (
+          nwr["historic"="aircraft"][wikidata];
+          nwr["historic"="aircraft"]["model:wikidata"];
+          nwr["historic"="aircraft"]["subject:wikidata"];
+          nwr["historic"="memorial"]["memorial"="aircraft"][wikidata];
+          nwr["historic"="memorial"]["memorial"="aircraft"]["model:wikidata"];
+          nwr["historic"="memorial"]["memorial"="aircraft"]["subject:wikidata"];
+          nwr["historic"="wreck"]["wreck:type"="aircraft"][wikidata];
+          nwr["historic"="wreck"]["wreck:type"="aircraft"]["model:wikidata"];
+          nwr["historic"="wreck"]["wreck:type"="aircraft"]["subject:wikidata"];
           nwr[historic=monument][monument=aircraft][wikidata];
           nwr[historic=monument][monument=aircraft]["model:wikidata"];
+          nwr[historic=monument][monument=aircraft]["subject:wikidata"];
           nwr[historic=aircraft_wreck][wikidata];
           nwr[historic=aircraft_wreck]["model:wikidata"];
+          nwr[historic=aircraft_wreck]["subject:wikidata"];
           nwr["artwork_type"=aircraft][wikidata];
           nwr["artwork_type"=aircraft]["model:wikidata"];
+          nwr["artwork_type"=aircraft]["subject:wikidata"];
         );
         out tags;
         """;
-        string[] tags = { "wikidata", "model:wikidata" };
+        string[] tags = { "wikidata", "model:wikidata", "subject:wikidata" };
 
         var runner = new AnalysisRunner(overpassQuery, tags, s_ImagesFolder, s_HttpClient);
 
