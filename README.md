@@ -26,7 +26,7 @@ You can find aircraft on OpenStreetMap that need Wikidata tags using [this map](
 
 <img width="1502" alt="MapComplete-HistoricAircraftLayer" src="https://github.com/user-attachments/assets/2c8f09d0-76dd-4e7d-a215-1c8772ae02c2" />
 
-Another great way to contribute is to use the Historic Aircraft theme on [MapComplete](https://mapcomplete.org/). A custom theme has been created by [pietervdvn](https://en.osm.town/@pietervdvn), it is not accessible on the main page yet but you can use [this link](https://mapcomplete.org/theme.html?z=15&lat=47.519065494623504&lon=-122.29627896140602&userlayout=https://studio.mapcomplete.org/3818858/layers/aircraft/aircraft.json&background=Bing) that includes the custom layer information.
+Another great way to contribute is to use the Historic [Aircraft theme on MapComplete](https://mapcomplete.org/historic_aircraft). A custom theme has been created by [pietervdvn](https://en.osm.town/@pietervdvn).
 
 # Correcting issues
 
