@@ -34,7 +34,6 @@ style:
       type: symbol
       layout:
         icon-padding: 0
-        icon-overlap: always
         icon-image:
           - concat
           - https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/images/
