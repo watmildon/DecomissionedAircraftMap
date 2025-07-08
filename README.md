@@ -26,7 +26,7 @@ You can find aircraft on OpenStreetMap that need Wikidata tags using [this map](
 
 <img width="1502" alt="MapComplete-HistoricAircraftLayer" src="https://github.com/user-attachments/assets/2c8f09d0-76dd-4e7d-a215-1c8772ae02c2" />
 
-Another great way to contribute is to use the Historic [Aircraft theme on MapComplete](https://mapcomplete.org/historic_aircraft). A custom theme has been created by [pietervdvn](https://en.osm.town/@pietervdvn).
+Another great way to contribute is to use the [Historic Aircraft theme on MapComplete](https://mapcomplete.org/historic_aircraft). A custom theme has been created by [pietervdvn](https://en.osm.town/@pietervdvn).
 
 # Correcting issues
 
@@ -37,4 +37,8 @@ Some Wikidata items will incorrectly have a diagram or schematic of the aircraft
 
 # Update cadence
 
-New data in OpenStreetMap is available on the aircraft map about 1 minute after changes are submitted. New thumbnails are pulled once a day using GitHub actions so any changes to Wikidata entries will be reflected after those runs.
+New data in OpenStreetMap is available on the aircraft map about 1 minute after changes are submitted. New thumbnails are pulled once a day using GitHub actions so any changes to Wikidata entries will be reflected after those run.
+
+# See also
+
+The test server for the [OSM-Wikidata Map Framework](https://wiki.openstreetmap.org/wiki/OSM-Wikidata_Map_Framework) now has an [Aricraft layer](https://test.dsantini.it/#-117.17506,32.71370,17.8,blue,overpass_osm_all_wd+wd_direct,maptiler_osm_carto,aircraft,2025)!
