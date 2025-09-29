@@ -41,4 +41,4 @@ New data in OpenStreetMap is available on the aircraft map about 1 minute after 
 
 # See also
 
-The test server for the [OSM-Wikidata Map Framework](https://wiki.openstreetmap.org/wiki/OSM-Wikidata_Map_Framework) now has an [Aricraft layer](https://test.dsantini.it/#-117.17506,32.71370,17.8,blue,overpass_osm_all_wd+wd_direct,maptiler_osm_carto,aircraft,2025)!
+The test server for the [OSM-Wikidata Map Framework](https://wiki.openstreetmap.org/wiki/OSM-Wikidata_Map_Framework) now has an [Aircraft layer](https://test.dsantini.it/#-117.17506,32.71370,17.8,blue,overpass_osm_all_wd+wd_direct,maptiler_osm_carto,aircraft,2025)!
