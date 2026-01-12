@@ -13,6 +13,7 @@ class Program
 {
     static HttpClient s_HttpClient = new HttpClient();
     static string s_ImagesFolder = ".." + Path.DirectorySeparatorChar + "images" + Path.DirectorySeparatorChar;
+    static List<string> s_OsmItemsNeedingReview = new List<string>();
     const int RequestDelayMs = 500; // Delay between requests to respect rate limits
     const int MaxRetries = 3;
 
@@ -54,6 +55,14 @@ class Program
 
         foreach (var file in runner.ItemsNeedingDownload.ToImmutableSortedSet<string>())
         {
+            // Skip semicolon-delimited entries (invalid OSM tagging)
+            if (file.Contains(';'))
+            {
+                Console.WriteLine($"Skipping semicolon-delimited entry: {file}");
+                s_OsmItemsNeedingReview.Add(file);
+                continue;
+            }
+
             await DownloadThumbnailFromWikidataId(file);
             await Task.Delay(RequestDelayMs);
         }
@@ -84,6 +93,19 @@ class Program
             foreach (var id in runner.ItemsNeedingDownload.ToImmutableSortedSet<string>())
             {
                 sr.WriteLine(id);
+            }
+        }
+
+        if (s_OsmItemsNeedingReview.Count > 0)
+        {
+            Console.WriteLine("Writing osmItemsNeedingReview file");
+
+            using (var sr = new StreamWriter("../osmItemsNeedingReview.txt"))
+            {
+                foreach (var id in s_OsmItemsNeedingReview.Order())
+                {
+                    sr.WriteLine(id);
+                }
             }
         }
     }
