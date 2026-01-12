@@ -5,8 +5,8 @@ using Newtonsoft.Json;
 public class AnalysisRunner
 {
     private readonly HttpClient client;
-    private IEnumerable<string> itemsNeedingDownload;
-    private IEnumerable<string> filesToDelete;
+    private IEnumerable<string> itemsNeedingDownload = [];
+    private IEnumerable<string> filesToDelete = [];
 
     public AnalysisRunner(string overpassQuery, string[] imageTagsPreference, string imageDirectory, HttpClient client)
     {
@@ -72,6 +72,9 @@ public class AnalysisRunner
     {
         var needed = new HashSet<string>();
 
+        if (osmObjects == null)
+            return needed;
+
         foreach(var obj in osmObjects.elements)
         {
             foreach(var tag in ImageTagsPreference)
@@ -102,7 +105,7 @@ public class AnalysisRunner
     private string SendOverpassQuery(string overpassQuery)
     {
         // URL for the Overpass API endpoint
-        string overpassUrl = "https://overpass-api.de/api/interpreter";
+        string overpassUrl = "https://overpass.private.coffee/api/interpreter";
 
         // set up the request
         HttpRequestMessage request = new(HttpMethod.Post, overpassUrl);

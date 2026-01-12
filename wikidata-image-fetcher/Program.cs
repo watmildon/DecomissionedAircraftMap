@@ -13,9 +13,12 @@ class Program
 {
     static HttpClient s_HttpClient = new HttpClient();
     static string s_ImagesFolder = ".." + Path.DirectorySeparatorChar + "images" + Path.DirectorySeparatorChar;
+    const int RequestDelayMs = 500; // Delay between requests to respect rate limits
+    const int MaxRetries = 3;
+
     static async Task Main(string[] args)
     {
-        s_HttpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot");
+        s_HttpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot/1.0 (https://github.com/watmildon/DecomissionedAircraftMap; contact@example.com)");
 
         string overpassQuery = """
         [out:json][timeout:25];
@@ -52,6 +55,7 @@ class Program
         foreach (var file in runner.ItemsNeedingDownload.ToImmutableSortedSet<string>())
         {
             await DownloadThumbnailFromWikidataId(file);
+            await Task.Delay(RequestDelayMs);
         }
 
         Console.WriteLine();
@@ -100,54 +104,84 @@ class Program
 
         string apiUrl = $"https://www.wikidata.org/wiki/Special:EntityData/{wikidataId}.json";
 
-        try
+        // Retry loop with exponential backoff for rate limiting
+        for (int attempt = 1; attempt <= MaxRetries; attempt++)
         {
-            HttpResponseMessage response = await s_HttpClient.GetAsync(apiUrl);
-            response.EnsureSuccessStatusCode();
-
-            string jsonData = await response.Content.ReadAsStringAsync();
-
-            // Parse JSON and find the image property (P18)
-            JObject wikidataJson = JObject.Parse(jsonData);
-            string imageName = wikidataJson
-                .SelectToken($"$.entities.{wikidataId}.claims.P18[0].mainsnak.datavalue.value")
-                ?.ToString();
-
-            if (imageName == null)
+            try
             {
-                Console.WriteLine($"No image (P18) found: {wikidataId}");
-                return false;
-            }
+                HttpResponseMessage response = await s_HttpClient.GetAsync(apiUrl);
 
-            if (imageName.EndsWith(".svg"))
-            {
-                Console.WriteLine($"File type svg is not supported: {wikidataId}");
-                return false;
-            }
-
-            string imageUrl = $"https://commons.wikimedia.org/wiki/Special:FilePath/{Uri.EscapeDataString(imageName)}";
-
-            response = await s_HttpClient.GetAsync(imageUrl);
-            response.EnsureSuccessStatusCode();
-
-            await using (Stream contentStream = await response.Content.ReadAsStreamAsync())
-            {
-                // Load the image directly from the memory stream
-                using (Image image = Image.Load(contentStream))
+                if (response.StatusCode == System.Net.HttpStatusCode.TooManyRequests)
                 {
-                    ScaleAndSaveImage(wikidataId, image, 100);
-                    Console.WriteLine($"Image saved: {wikidataId}");
+                    int backoffMs = attempt * 2000; // 2s, 4s, 6s
+                    Console.WriteLine($"Rate limited for {wikidataId}, waiting {backoffMs}ms (attempt {attempt}/{MaxRetries})");
+                    await Task.Delay(backoffMs);
+                    continue;
                 }
+
+                response.EnsureSuccessStatusCode();
+
+                string jsonData = await response.Content.ReadAsStringAsync();
+
+                // Parse JSON and find the image property (P18)
+                JObject wikidataJson = JObject.Parse(jsonData);
+                string? imageName = wikidataJson
+                    .SelectToken($"$.entities.{wikidataId}.claims.P18[0].mainsnak.datavalue.value")
+                    ?.ToString();
+
+                if (string.IsNullOrEmpty(imageName))
+                {
+                    Console.WriteLine($"No image (P18) found: {wikidataId}");
+                    return false;
+                }
+
+                if (imageName.EndsWith(".svg"))
+                {
+                    Console.WriteLine($"File type svg is not supported: {wikidataId}");
+                    return false;
+                }
+
+                string imageUrl = $"https://commons.wikimedia.org/wiki/Special:FilePath/{Uri.EscapeDataString(imageName)}";
+
+                response = await s_HttpClient.GetAsync(imageUrl);
+
+                if (response.StatusCode == System.Net.HttpStatusCode.TooManyRequests)
+                {
+                    int backoffMs = attempt * 2000;
+                    Console.WriteLine($"Rate limited downloading image for {wikidataId}, waiting {backoffMs}ms (attempt {attempt}/{MaxRetries})");
+                    await Task.Delay(backoffMs);
+                    continue;
+                }
+
+                response.EnsureSuccessStatusCode();
+
+                await using (Stream contentStream = await response.Content.ReadAsStreamAsync())
+                {
+                    // Load the image directly from the memory stream
+                    using (Image image = Image.Load(contentStream))
+                    {
+                        ScaleAndSaveImage(wikidataId, image, 100);
+                        Console.WriteLine($"Image saved: {wikidataId}");
+                    }
+                }
+
+                return true;
             }
-
+            catch (HttpRequestException ex) when (attempt < MaxRetries)
+            {
+                int backoffMs = attempt * 2000;
+                Console.WriteLine($"Error for {wikidataId}: {ex.Message}, retrying in {backoffMs}ms (attempt {attempt}/{MaxRetries})");
+                await Task.Delay(backoffMs);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return false;
+            }
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error: {ex.Message}");
-            return false;
-        }
 
-        return true;
+        Console.WriteLine($"Failed after {MaxRetries} attempts: {wikidataId}");
+        return false;
     }
 
     private static void ScaleAndSaveImage(string imageName, Image image, int newWidth)
