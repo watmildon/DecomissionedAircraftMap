@@ -19,7 +19,8 @@ class Program
 
     static async Task Main(string[] args)
     {
-        s_HttpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot/1.0 (https://github.com/watmildon/DecomissionedAircraftMap; contact@example.com)");
+        s_HttpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot/1.0 (https://github.com/watmildon/DecomissionedAircraftMap)");
+        s_HttpClient.DefaultRequestHeaders.Accept.ParseAdd("application/json");
 
         string overpassQuery = """
         [out:json][timeout:25];
@@ -157,13 +158,41 @@ class Program
                     return false;
                 }
 
-                if (imageName.EndsWith(".svg"))
+                if (imageName.EndsWith(".svg", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine($"File type svg is not supported: {wikidataId}");
                     return false;
                 }
 
-                string imageUrl = $"https://commons.wikimedia.org/wiki/Special:FilePath/{Uri.EscapeDataString(imageName)}";
+                // Use Wikimedia API to get thumbnail URL (avoids 403 errors from direct file access)
+                string commonsFileName = "File:" + imageName.Replace(' ', '_');
+                string commonsApiUrl = $"https://commons.wikimedia.org/w/api.php?action=query&titles={Uri.EscapeDataString(commonsFileName)}&prop=imageinfo&iiprop=url&iiurlwidth=100&format=json";
+
+                response = await s_HttpClient.GetAsync(commonsApiUrl);
+
+                if (response.StatusCode == System.Net.HttpStatusCode.TooManyRequests)
+                {
+                    int backoffMs = attempt * 2000;
+                    Console.WriteLine($"Rate limited fetching image info for {wikidataId}, waiting {backoffMs}ms (attempt {attempt}/{MaxRetries})");
+                    await Task.Delay(backoffMs);
+                    continue;
+                }
+
+                response.EnsureSuccessStatusCode();
+
+                string commonsJson = await response.Content.ReadAsStringAsync();
+                JObject commonsData = JObject.Parse(commonsJson);
+
+                // Navigate to the thumbnail URL in the response
+                string? imageUrl = commonsData
+                    .SelectToken("$.query.pages.*.imageinfo[0].thumburl")
+                    ?.ToString();
+
+                if (string.IsNullOrEmpty(imageUrl))
+                {
+                    Console.WriteLine($"Could not get thumbnail URL for {wikidataId}");
+                    return false;
+                }
 
                 response = await s_HttpClient.GetAsync(imageUrl);
 
