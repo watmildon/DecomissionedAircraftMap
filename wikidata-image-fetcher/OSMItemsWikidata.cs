@@ -22,4 +22,7 @@ public class Tags
 
     [JsonProperty("model:wikidata")]
     public string? modelwikidata { get; set; }
+
+    [JsonProperty("subject:wikidata")]
+    public string? subjectwikidata { get; set; }
 }

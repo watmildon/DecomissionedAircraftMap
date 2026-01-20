@@ -22,33 +22,24 @@ class Program
         s_HttpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot/1.0 (https://github.com/watmildon/DecomissionedAircraftMap)");
         s_HttpClient.DefaultRequestHeaders.Accept.ParseAdd("application/json");
 
-        string overpassQuery = """
-        [out:json][timeout:25];
-        (
-          nwr["historic"="aircraft"][wikidata];
-          nwr["historic"="aircraft"]["model:wikidata"];
-          nwr["historic"="aircraft"]["subject:wikidata"];
-          nwr["historic"="memorial"]["memorial"="aircraft"][wikidata];
-          nwr["historic"="memorial"]["memorial"="aircraft"]["model:wikidata"];
-          nwr["historic"="memorial"]["memorial"="aircraft"]["subject:wikidata"];
-          nwr["historic"="wreck"]["wreck:type"="aircraft"][wikidata];
-          nwr["historic"="wreck"]["wreck:type"="aircraft"]["model:wikidata"];
-          nwr["historic"="wreck"]["wreck:type"="aircraft"]["subject:wikidata"];
-          nwr[historic=monument][monument=aircraft][wikidata];
-          nwr[historic=monument][monument=aircraft]["model:wikidata"];
-          nwr[historic=monument][monument=aircraft]["subject:wikidata"];
-          nwr[historic=aircraft_wreck][wikidata];
-          nwr[historic=aircraft_wreck]["model:wikidata"];
-          nwr[historic=aircraft_wreck]["subject:wikidata"];
-          nwr["artwork_type"=aircraft][wikidata];
-          nwr["artwork_type"=aircraft]["model:wikidata"];
-          nwr["artwork_type"=aircraft]["subject:wikidata"];
-        );
-        out tags;
-        """;
-        string[] tags = { "wikidata", "model:wikidata", "subject:wikidata" };
+        // Parse command-line arguments for backend selection
+        var backend = QueryBackend.Overpass;
+        if (args.Length > 0)
+        {
+            backend = args[0].ToLowerInvariant() switch
+            {
+                "postpass" => QueryBackend.Postpass,
+                "qlever" => QueryBackend.QLever,
+                "overpass" => QueryBackend.Overpass,
+                _ => QueryBackend.Overpass
+            };
+        }
 
-        var runner = new AnalysisRunner(overpassQuery, tags, s_ImagesFolder, s_HttpClient);
+        Console.WriteLine($"Using {backend} backend");
+
+        string[] tags = { "wikidata", "model:wikidata", "subject:wikidata" };
+        var queryProvider = CreateQueryProvider(backend);
+        var runner = new AnalysisRunner(queryProvider, tags, s_ImagesFolder, s_HttpClient);
 
         runner.RunAnalysis();
 
@@ -263,4 +254,86 @@ class Program
             image.Save($"{s_ImagesFolder}{imageName}.jpg");
         }
     }
+
+    private static IQueryProvider CreateQueryProvider(QueryBackend backend)
+    {
+        return backend switch
+        {
+            QueryBackend.Overpass => new OverpassQueryProvider(OverpassQuery, "https://overpass.private.coffee/api/interpreter"),
+            QueryBackend.Postpass => new PostpassQueryProvider(PostpassQuery),
+            QueryBackend.QLever => new QLeverQueryProvider(QLeverQuery),
+            _ => new OverpassQueryProvider(OverpassQuery, "https://overpass.private.coffee/api/interpreter")
+        };
+    }
+
+    private static readonly string OverpassQuery = """
+        [out:json][timeout:25];
+        (
+          nwr["historic"="aircraft"][wikidata];
+          nwr["historic"="aircraft"]["model:wikidata"];
+          nwr["historic"="aircraft"]["subject:wikidata"];
+          nwr["historic"="memorial"]["memorial"="aircraft"][wikidata];
+          nwr["historic"="memorial"]["memorial"="aircraft"]["model:wikidata"];
+          nwr["historic"="memorial"]["memorial"="aircraft"]["subject:wikidata"];
+          nwr["historic"="wreck"]["wreck:type"="aircraft"][wikidata];
+          nwr["historic"="wreck"]["wreck:type"="aircraft"]["model:wikidata"];
+          nwr["historic"="wreck"]["wreck:type"="aircraft"]["subject:wikidata"];
+          nwr[historic=monument][monument=aircraft][wikidata];
+          nwr[historic=monument][monument=aircraft]["model:wikidata"];
+          nwr[historic=monument][monument=aircraft]["subject:wikidata"];
+          nwr[historic=aircraft_wreck][wikidata];
+          nwr[historic=aircraft_wreck]["model:wikidata"];
+          nwr[historic=aircraft_wreck]["subject:wikidata"];
+          nwr["artwork_type"=aircraft][wikidata];
+          nwr["artwork_type"=aircraft]["model:wikidata"];
+          nwr["artwork_type"=aircraft]["subject:wikidata"];
+        );
+        out tags;
+        """;
+
+    private static readonly string PostpassQuery = """
+        SELECT osm_id, tags
+        FROM postpass_pointpolygon
+        WHERE (
+            (tags->>'historic' = 'aircraft')
+            OR (tags->>'historic' = 'memorial' AND tags->>'memorial' = 'aircraft')
+            OR (tags->>'historic' = 'wreck' AND tags->>'wreck:type' = 'aircraft')
+            OR (tags->>'historic' = 'monument' AND tags->>'monument' = 'aircraft')
+            OR (tags->>'historic' = 'aircraft_wreck')
+            OR (tags->>'artwork_type' = 'aircraft')
+        )
+        AND (
+            tags ? 'wikidata'
+            OR tags ? 'model:wikidata'
+            OR tags ? 'subject:wikidata'
+        )
+        """;
+
+    private static readonly string QLeverQuery = """
+        PREFIX osmkey: <https://www.openstreetmap.org/wiki/Key:>
+        PREFIX wd: <http://www.wikidata.org/entity/>
+
+        SELECT ?wikidata ?model_wikidata ?subject_wikidata WHERE {
+          {
+            ?item osmkey:historic "aircraft" .
+          } UNION {
+            ?item osmkey:historic "memorial" .
+            ?item osmkey:memorial "aircraft" .
+          } UNION {
+            ?item osmkey:historic "wreck" .
+            ?item osmkey:wreck:type "aircraft" .
+          } UNION {
+            ?item osmkey:historic "monument" .
+            ?item osmkey:monument "aircraft" .
+          } UNION {
+            ?item osmkey:historic "aircraft_wreck" .
+          } UNION {
+            ?item osmkey:artwork_type "aircraft" .
+          }
+          OPTIONAL { ?item osmkey:wikidata ?wikidata . }
+          OPTIONAL { ?item osmkey:model:wikidata ?model_wikidata . }
+          OPTIONAL { ?item osmkey:subject:wikidata ?subject_wikidata . }
+          FILTER(BOUND(?wikidata) || BOUND(?model_wikidata) || BOUND(?subject_wikidata))
+        }
+        """;
 }

@@ -1,21 +1,28 @@
-using System.Dynamic;
-using System.Security.Cryptography.X509Certificates;
-using Newtonsoft.Json;
 
 public class AnalysisRunner
 {
     private readonly HttpClient client;
+    private readonly IQueryProvider? queryProvider;
     private IEnumerable<string> itemsNeedingDownload = [];
     private IEnumerable<string> filesToDelete = [];
 
+    // Legacy constructor for backwards compatibility
     public AnalysisRunner(string overpassQuery, string[] imageTagsPreference, string imageDirectory, HttpClient client)
+        : this(new OverpassQueryProvider(overpassQuery), imageTagsPreference, imageDirectory, client)
     {
-        ArgumentException.ThrowIfNullOrEmpty(overpassQuery);
-        ArgumentException.ThrowIfNullOrEmpty(imageDirectory);
         OverpassQuery = overpassQuery;
+    }
+
+    // New constructor using IQueryProvider
+    public AnalysisRunner(IQueryProvider queryProvider, string[] imageTagsPreference, string imageDirectory, HttpClient client)
+    {
+        ArgumentNullException.ThrowIfNull(queryProvider);
+        ArgumentException.ThrowIfNullOrEmpty(imageDirectory);
+        this.queryProvider = queryProvider;
         ImageTagsPreference = imageTagsPreference;
         ImageDirectory = imageDirectory;
         this.client = client ?? throw new ArgumentNullException(nameof(client));
+        OverpassQuery = string.Empty; // Not used with new constructor
     }
 
     public IEnumerable<string> ItemsNeedingDownload => itemsNeedingDownload;
@@ -30,7 +37,7 @@ public class AnalysisRunner
     {
         if (osmObjects == null)
         {
-            osmObjects = JsonConvert.DeserializeObject<OsmItems>(SendOverpassQuery(OverpassQuery));
+            osmObjects = queryProvider?.ExecuteQuery(client);
         }
 
         // find download targets based on preference order
@@ -99,49 +106,18 @@ public class AnalysisRunner
                             needed.Add(obj.tags.modelwikidata);
                     }
                 }
+                else if (tag == "subject:wikidata")
+                {
+                    if (obj.tags.subjectwikidata != null)
+                    {
+                        if (!needed.Contains(obj.tags.subjectwikidata))
+                            needed.Add(obj.tags.subjectwikidata);
+                    }
+                }
             }
         }
 
         return needed;
     }
 
-    private string SendOverpassQuery(string overpassQuery)
-    {
-        // URL for the Overpass API endpoint
-        string overpassUrl = "https://overpass.private.coffee/api/interpreter";
-
-        // set up the request
-        HttpRequestMessage request = new(HttpMethod.Post, overpassUrl);
-        request.Content = new StringContent(overpassQuery);
-
-        // send the query
-        HttpResponseMessage response = client.Send(request);
-
-        response.EnsureSuccessStatusCode();
-
-        var contentTask = response.Content.ReadAsStringAsync();
-        contentTask.Wait();
-
-        return contentTask.Result;
-    }
-
-    private ICollection<T> MergeCollections<T>(ICollection<T> collection1, ICollection<T> collection2)
-    {
-        // Create a new list to hold the merged collections
-        List<T> mergedList = new List<T>();
-
-        // Add items from the first collection
-        if (collection1 != null)
-        {
-            mergedList.AddRange(collection1);
-        }
-
-        // Add items from the second collection
-        if (collection2 != null)
-        {
-            mergedList.AddRange(collection2);
-        }
-
-        return mergedList;
-    }
 }
