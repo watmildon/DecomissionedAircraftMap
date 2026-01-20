@@ -70,9 +70,24 @@ class Program
 
         Console.WriteLine();
 
-        if (runner.FilesToDelete.Count() > 0)
+        const int MaxDeletionsAllowed = 10;
+        int filesToDeleteCount = runner.FilesToDelete.Count();
+
+        if (filesToDeleteCount > MaxDeletionsAllowed)
         {
-            Console.WriteLine("Deleting unneeded files");
+            Console.Error.WriteLine($"ERROR: {filesToDeleteCount} files would be deleted, which exceeds the safety limit of {MaxDeletionsAllowed}.");
+            Console.Error.WriteLine("This may indicate a problem with the Overpass query or data source.");
+            Console.Error.WriteLine("Files that would be deleted:");
+            foreach (var file in runner.FilesToDelete)
+            {
+                Console.Error.WriteLine($"  {file}");
+            }
+            Environment.Exit(1);
+        }
+
+        if (filesToDeleteCount > 0)
+        {
+            Console.WriteLine($"Deleting {filesToDeleteCount} unneeded files");
 
             foreach (var file in runner.FilesToDelete)
             {

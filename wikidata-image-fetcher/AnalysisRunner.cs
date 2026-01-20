@@ -36,6 +36,9 @@ public class AnalysisRunner
         // find download targets based on preference order
         var neededFiles = FindNeededFiles(osmObjects);
 
+        // ensure the image directory exists
+        Directory.CreateDirectory(ImageDirectory);
+
         // get info about existing files
         var files = Directory.GetFiles(ImageDirectory);
 
