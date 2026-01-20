@@ -1,0 +1,80 @@
+---
+options:
+  hash: m
+  attributionControl:
+    customAttribution: '<a href=".">Ultra</a> | <a href="https://github.com/watmildon/DecomissionedAircraftMap">Github</a> | QLever'
+controls:
+  - type: GeolocateControl
+    options:
+      positionOptions:
+        enableHighAccuracy: true
+      trackUserLocation: true
+type: qlever
+style:
+  extends: https://styles.trailsta.sh/protomaps-light.json
+  layers:
+    - id: museums
+      type: line
+      filter:
+        - all
+        - [has, museum]
+      paint:
+        line-width: 2
+        line-color: red
+    - id: aircraft
+      type: circle
+      paint:
+        circle-color: '#6dad6f'
+        circle-stroke-color: white
+        circle-stroke-width: 2
+        circle-radius: 3
+      filter:
+        - all
+        - [has, historic]
+    - id: aircraftSymbol
+      type: symbol
+      layout:
+        icon-padding: 0
+        icon-image:
+          - concat
+          - https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/images/
+          - - case
+            - [ "has", "wikidata" ]
+            - [ "get", "wikidata" ]
+            - [ "has", "model_wikidata" ]
+            - [ "get", "model_wikidata" ]
+            - [ "get", "subject_wikidata" ]
+          - .jpg
+      filter:
+        - all
+        - [has, historic]
+---
+
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX osmkey: <https://www.openstreetmap.org/wiki/Key:>
+
+SELECT * WHERE {
+  {
+    ?osm_id osmkey:historic "aircraft" .
+  } UNION {
+    ?osm_id osmkey:historic "memorial" .
+    ?osm_id osmkey:memorial "aircraft" .
+  } UNION {
+    ?osm_id osmkey:historic "wreck" .
+    ?osm_id osmkey:wreck:type "aircraft" .
+  } UNION {
+    ?osm_id osmkey:historic "monument" .
+    ?osm_id osmkey:monument "aircraft" .
+  } UNION {
+    ?osm_id osmkey:historic "aircraft_wreck" .
+  } UNION {
+    ?osm_id osmkey:artwork_type "aircraft" .
+  }
+  ?osm_id geo:hasGeometry/geo:asWKT ?geometry .
+  OPTIONAL { ?osm_id osmkey:wikidata ?wikidata . }
+  OPTIONAL { ?osm_id osmkey:model:wikidata ?model_wikidata . }
+  OPTIONAL { ?osm_id osmkey:subject:wikidata ?subject_wikidata . }
+  OPTIONAL { ?osm_id osmkey:name ?name . }
+  OPTIONAL { ?osm_id osmkey:historic ?historic . }
+  FILTER(BOUND(?wikidata) || BOUND(?model_wikidata) || BOUND(?subject_wikidata))
+}
