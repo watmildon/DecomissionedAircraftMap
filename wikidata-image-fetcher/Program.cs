@@ -259,7 +259,7 @@ class Program
     {
         return backend switch
         {
-            QueryBackend.Overpass => new OverpassQueryProvider(OverpassQuery, "https://overpass.private.coffee/api/interpreter"),
+            QueryBackend.Overpass => new OverpassQueryProvider(OverpassQuery, "https://overpass-api.de/api/interpreter"),
             QueryBackend.Postpass => new PostpassQueryProvider(PostpassQuery),
             QueryBackend.QLever => new QLeverQueryProvider(QLeverQuery),
             _ => new OverpassQueryProvider(OverpassQuery, "https://overpass.private.coffee/api/interpreter")

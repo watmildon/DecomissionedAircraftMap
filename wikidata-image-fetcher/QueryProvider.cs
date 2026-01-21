@@ -39,8 +39,31 @@ public class OverpassQueryProvider : IQueryProvider
 
         var contentTask = response.Content.ReadAsStringAsync();
         contentTask.Wait();
+        var content = contentTask.Result;
 
-        return JsonConvert.DeserializeObject<OsmItems>(contentTask.Result);
+        // Check if we got an error response (HTML instead of JSON)
+        if (content.TrimStart().StartsWith("<"))
+        {
+            Console.Error.WriteLine("ERROR: Overpass API returned an error response (HTML/XML instead of JSON)");
+            Console.Error.WriteLine("The server may be overloaded or the query may have timed out.");
+            Console.Error.WriteLine($"Response preview: {content.Substring(0, Math.Min(500, content.Length))}");
+            throw new InvalidOperationException("Overpass API returned an error response");
+        }
+
+        var result = JsonConvert.DeserializeObject<OsmItems>(content);
+        Console.WriteLine($"Parsed {result?.elements?.Length ?? 0} elements from Overpass response");
+
+        // Debug: show first few elements with their wikidata tags
+        if (result?.elements != null && result.elements.Length > 0)
+        {
+            for (int i = 0; i < Math.Min(3, result.elements.Length); i++)
+            {
+                var el = result.elements[i];
+                Console.WriteLine($"  Element {el.id}: wikidata={el.tags.wikidata ?? "null"}, model:wikidata={el.tags.modelwikidata ?? "null"}, subject:wikidata={el.tags.subjectwikidata ?? "null"}");
+            }
+        }
+
+        return result;
     }
 }
 
