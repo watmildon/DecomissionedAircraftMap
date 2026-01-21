@@ -9,7 +9,8 @@ This repo hosts the style file and image thumbnails for a map of decommissioned 
 
 You can view the map using the link below.
 
-* [DecomissionedAircraftMap](https://overpass-ultra.us/#map&query=url:https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/AircraftMap.ultra).
+* [DecomissionedAircraftMap](https://overpass-ultra.us/#map&query=url:https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/AircraftMap.ultra) using overpass (slower to load but quicker to update)
+* [DecomissionedAircraftMap](https://overpass-ultra.us/#map&query=url:https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/AircraftMap_GeoJSON.ultra) using cached GeoJSON (fast to load but slower to update)
 
 # Adding more aircraft to the map
 
