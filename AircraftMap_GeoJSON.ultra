@@ -3,6 +3,41 @@ options:
   hash: m
   attributionControl:
     customAttribution: '<a href=".">Ultra</a> | <a href="https://github.com/watmildon/DecomissionedAircraftMap">Github</a> | GeoJSON'
+querySources:
+  - aircraft
+popupTemplate: |
+  {% assign wikidata_id = properties.wikidata | default: properties["model:wikidata"] | default: properties["subject:wikidata"] %}
+  {% if wikidata_id %}
+  <div style="text-align: center;">
+    <img src="https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/images/{{ wikidata_id }}.jpg" style="max-width: 200px; margin-bottom: 8px;" onerror="this.style.display='none'">
+  </div>
+  {% endif %}
+  {% if properties.name %}<h3 style="margin: 0 0 8px 0;">{{ properties.name }}</h3>{% endif %}
+  {% for tag in properties %}
+    {% assign key = tag[0] %}
+    {% assign val = tag[1] %}
+    {% unless key == "@id" or key == "name" or key == "wikidata" or key == "model:wikidata" or key == "subject:wikidata" %}
+      {% if key == "wikipedia" %}
+        <p style="margin: 4px 0;"><a href="https://en.wikipedia.org/wiki/{{ val | split: ':' | last }}" target="_blank">Wikipedia</a></p>
+      {% elsif key == "website" %}
+        <p style="margin: 4px 0;"><a href="{{ val }}" target="_blank">Website</a></p>
+      {% else %}
+        <p style="margin: 4px 0;"><strong>{{ key }}:</strong> {{ val }}</p>
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+  <p style="margin: 8px 0 4px 0;"><strong>Wikidata:</strong>
+    {% if properties.wikidata %}
+      <a href="https://www.wikidata.org/wiki/{{ properties.wikidata }}" target="_blank">{{ properties.wikidata }}</a>
+    {% endif %}
+    {% if properties["model:wikidata"] %}
+      <br>Model: <a href="https://www.wikidata.org/wiki/{{ properties["model:wikidata"] }}" target="_blank">{{ properties["model:wikidata"] }}</a>
+    {% endif %}
+    {% if properties["subject:wikidata"] %}
+      <br>Subject: <a href="https://www.wikidata.org/wiki/{{ properties["subject:wikidata"] }}" target="_blank">{{ properties["subject:wikidata"] }}</a>
+    {% endif %}
+  </p>
+  <p style="margin: 8px 0 0 0;"><a href="https://www.openstreetmap.org/{{ properties["@id"] }}" target="_blank">View on OpenStreetMap</a></p>
 controls:
   - type: GeolocateControl
     options:
