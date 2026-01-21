@@ -32,6 +32,8 @@ public class AnalysisRunner
 
     public IEnumerable<string> FilesToDelete => filesToDelete;
 
+    public OsmItems? OsmData => osmObjects;
+
     private OsmItems? osmObjects = null;
     public void RunAnalysis()
     {

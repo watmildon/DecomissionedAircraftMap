@@ -115,6 +115,81 @@ class Program
                 }
             }
         }
+
+        // Write GeoJSON file for the Ultra map
+        WriteGeoJsonFile(runner.OsmData);
+    }
+
+    private static void WriteGeoJsonFile(OsmItems? osmData)
+    {
+        if (osmData == null || osmData.elements == null || osmData.elements.Length == 0)
+        {
+            Console.WriteLine("No OSM data to write to GeoJSON");
+            return;
+        }
+
+        Console.WriteLine("Writing aircraft.geojson file");
+
+        var features = new List<object>();
+
+        foreach (var element in osmData.elements)
+        {
+            // Get coordinates - nodes have lat/lon directly, ways/relations have center
+            double? lat = element.lat ?? element.center?.lat;
+            double? lon = element.lon ?? element.center?.lon;
+
+            if (!lat.HasValue || !lon.HasValue)
+                continue;
+
+            // Build properties from tags
+            var properties = new Dictionary<string, object?>();
+
+            // Add explicitly defined tags
+            if (element.tags.wikidata != null)
+                properties["wikidata"] = element.tags.wikidata;
+            if (element.tags.modelwikidata != null)
+                properties["model:wikidata"] = element.tags.modelwikidata;
+            if (element.tags.subjectwikidata != null)
+                properties["subject:wikidata"] = element.tags.subjectwikidata;
+            if (element.tags.wikipedia != null)
+                properties["wikipedia"] = element.tags.wikipedia;
+
+            // Add all additional tags from the Overpass response
+            if (element.tags.AdditionalTags != null)
+            {
+                foreach (var kvp in element.tags.AdditionalTags)
+                {
+                    // Convert JToken to string value
+                    properties[kvp.Key] = kvp.Value?.ToString();
+                }
+            }
+
+            properties["@id"] = $"{element.type}/{element.id}";
+
+            var feature = new
+            {
+                type = "Feature",
+                geometry = new
+                {
+                    type = "Point",
+                    coordinates = new[] { lon.Value, lat.Value }
+                },
+                properties
+            };
+
+            features.Add(feature);
+        }
+
+        var geojson = new
+        {
+            type = "FeatureCollection",
+            features
+        };
+
+        var json = JsonConvert.SerializeObject(geojson, Formatting.Indented);
+        File.WriteAllText("../aircraft.geojson", json);
+
+        Console.WriteLine($"Wrote {features.Count} features to aircraft.geojson");
     }
 
     private static async Task<bool> DownloadThumbnailFromWikidataId(string wikidataId)
@@ -259,7 +334,7 @@ class Program
     {
         return backend switch
         {
-            QueryBackend.Overpass => new OverpassQueryProvider(OverpassQuery, "https://overpass-api.de/api/interpreter"),
+            QueryBackend.Overpass => new OverpassQueryProvider(OverpassQuery, "https://maps.mail.ru/osm/tools/overpass/api/interpreter"),
             QueryBackend.Postpass => new PostpassQueryProvider(PostpassQuery),
             QueryBackend.QLever => new QLeverQueryProvider(QLeverQuery),
             _ => new OverpassQueryProvider(OverpassQuery, "https://overpass.private.coffee/api/interpreter")
@@ -267,7 +342,7 @@ class Program
     }
 
     private static readonly string OverpassQuery = """
-        [out:json][timeout:25];
+        [out:json][timeout:90];
         (
           nwr["historic"="aircraft"][wikidata];
           nwr["historic"="aircraft"]["model:wikidata"];
@@ -288,7 +363,7 @@ class Program
           nwr["artwork_type"=aircraft]["model:wikidata"];
           nwr["artwork_type"=aircraft]["subject:wikidata"];
         );
-        out tags;
+        out center;
         """;
 
     private static readonly string PostpassQuery = """

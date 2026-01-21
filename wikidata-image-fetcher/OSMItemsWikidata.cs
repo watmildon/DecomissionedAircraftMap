@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 public class OsmItems
 {
@@ -11,7 +12,16 @@ public class Element
 {
     public string type { get; set; } = string.Empty;
     public long id { get; set; }
+    public double? lat { get; set; }
+    public double? lon { get; set; }
+    public Center? center { get; set; }
     public Tags tags { get; set; } = new();
+}
+
+public class Center
+{
+    public double lat { get; set; }
+    public double lon { get; set; }
 }
 
 public class Tags
@@ -25,4 +35,8 @@ public class Tags
 
     [JsonProperty("subject:wikidata")]
     public string? subjectwikidata { get; set; }
+
+    // Capture all other tags not explicitly defined above
+    [JsonExtensionData]
+    public Dictionary<string, JToken>? AdditionalTags { get; set; }
 }
