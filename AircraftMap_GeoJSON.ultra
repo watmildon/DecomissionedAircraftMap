@@ -1,0 +1,42 @@
+---
+options:
+  hash: m
+  attributionControl:
+    customAttribution: '<a href=".">Ultra</a> | <a href="https://github.com/watmildon/DecomissionedAircraftMap">Github</a> | GeoJSON'
+controls:
+  - type: GeolocateControl
+    options:
+      positionOptions:
+        enableHighAccuracy: true
+      trackUserLocation: true
+style:
+  extends: https://styles.trailsta.sh/protomaps-light.json
+  sources:
+    aircraft:
+      type: geojson
+      data: https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/aircraft.geojson
+  layers:
+    - id: aircraft
+      type: circle
+      source: aircraft
+      paint:
+        circle-color: '#6dad6f'
+        circle-stroke-color: white
+        circle-stroke-width: 2
+        circle-radius: 3
+    - id: aircraftSymbol
+      type: symbol
+      source: aircraft
+      layout:
+        icon-padding: 0
+        icon-image:
+          - concat
+          - https://raw.githubusercontent.com/watmildon/DecomissionedAircraftMap/refs/heads/main/images/
+          - - case
+            - [ "has", "wikidata" ]
+            - [ "get", "wikidata" ]
+            - [ "has", "model:wikidata" ]
+            - [ "get", "model:wikidata" ]
+            - [ "get", "subject:wikidata" ]
+          - .jpg
+---
