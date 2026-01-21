@@ -21,6 +21,17 @@ public class OverpassQueryProvider : IQueryProvider
     public string EndpointUrl { get; }
     public string Query { get; }
 
+    private const int MaxRetriesPerServer = 3;
+    private const int BaseBackoffMs = 2000;
+
+    // Fallback Overpass servers to try if primary fails
+    private static readonly string[] FallbackServers = new[]
+    {
+        "https://overpass-api.de/api/interpreter",           // German (main)
+        "https://overpass.kumi.systems/api/interpreter",     // German (Kumi)
+        "https://overpass.openstreetmap.ru/api/interpreter", // Russian
+    };
+
     public OverpassQueryProvider(string query, string endpointUrl = "https://overpass-api.de/api/interpreter")
     {
         Query = query;
@@ -29,9 +40,57 @@ public class OverpassQueryProvider : IQueryProvider
 
     public OsmItems? ExecuteQuery(HttpClient client)
     {
-        Console.WriteLine($"Querying Overpass API at {EndpointUrl}...");
+        // Build list of servers to try: primary first, then fallbacks (excluding primary if it's in the list)
+        var serversToTry = new List<string> { EndpointUrl };
+        foreach (var server in FallbackServers)
+        {
+            if (!serversToTry.Contains(server))
+                serversToTry.Add(server);
+        }
 
-        var request = new HttpRequestMessage(HttpMethod.Post, EndpointUrl);
+        Exception? lastException = null;
+
+        foreach (var serverUrl in serversToTry)
+        {
+            for (int attempt = 1; attempt <= MaxRetriesPerServer; attempt++)
+            {
+                try
+                {
+                    Console.WriteLine($"Querying Overpass API at {serverUrl} (attempt {attempt}/{MaxRetriesPerServer})...");
+
+                    var result = TryExecuteQuery(client, serverUrl);
+                    if (result != null)
+                    {
+                        Console.WriteLine($"Successfully queried {serverUrl}");
+                        return result;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    lastException = ex;
+                    Console.Error.WriteLine($"Attempt {attempt}/{MaxRetriesPerServer} failed for {serverUrl}: {ex.Message}");
+
+                    if (attempt < MaxRetriesPerServer)
+                    {
+                        int backoffMs = BaseBackoffMs * attempt;
+                        Console.WriteLine($"Waiting {backoffMs}ms before retry...");
+                        Thread.Sleep(backoffMs);
+                    }
+                }
+            }
+
+            Console.WriteLine($"All {MaxRetriesPerServer} attempts failed for {serverUrl}, trying next server...");
+        }
+
+        // All servers failed
+        throw new InvalidOperationException(
+            $"All Overpass servers failed after {MaxRetriesPerServer} attempts each. Last error: {lastException?.Message}",
+            lastException);
+    }
+
+    private OsmItems? TryExecuteQuery(HttpClient client, string serverUrl)
+    {
+        var request = new HttpRequestMessage(HttpMethod.Post, serverUrl);
         request.Content = new StringContent(Query);
 
         var response = client.Send(request);

@@ -32,11 +32,14 @@ jobs:
         run: dotnet build --no-restore --configuration Release
     
       - name: Run the program
+        id: run-fetcher
         working-directory: ./wikidata-image-fetcher
         run: dotnet run --no-build --configuration Release
 
+      # Only commit if the previous step succeeded (safety checks passed)
       - name: Commit and push changes
-        run: |        
+        if: success()
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A && git commit -m "Update files" || echo "No changes to commit"

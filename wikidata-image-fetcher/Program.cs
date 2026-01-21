@@ -13,9 +13,11 @@ class Program
 {
     static HttpClient s_HttpClient = new HttpClient();
     static string s_ImagesFolder = ".." + Path.DirectorySeparatorChar + "images" + Path.DirectorySeparatorChar;
+    static string s_GeoJsonPath = ".." + Path.DirectorySeparatorChar + "aircraft.geojson";
     static List<string> s_OsmItemsNeedingReview = new List<string>();
-    const int RequestDelayMs = 500; // Delay between requests to respect rate limits
+    const int RequestDelayMs = 3000; // Delay between requests to respect rate limits
     const int MaxRetries = 3;
+    const int MinExpectedElements = 5000; // Safety threshold - current count is ~2200
 
     static async Task Main(string[] args)
     {
@@ -42,6 +44,17 @@ class Program
         var runner = new AnalysisRunner(queryProvider, tags, s_ImagesFolder, s_HttpClient);
 
         runner.RunAnalysis();
+
+        // Safety check: ensure we got a reasonable number of elements
+        int elementCount = runner.OsmData?.elements?.Length ?? 0;
+        if (elementCount < MinExpectedElements)
+        {
+            Console.Error.WriteLine($"ERROR: Only {elementCount} elements returned, expected at least {MinExpectedElements}.");
+            Console.Error.WriteLine("This may indicate an Overpass timeout, partial response, or server issue.");
+            Console.Error.WriteLine("Aborting to prevent data loss.");
+            Environment.Exit(1);
+        }
+        Console.WriteLine($"Element count check passed: {elementCount} elements (minimum: {MinExpectedElements})");
 
         Console.WriteLine("Files to download...");
 
@@ -128,7 +141,7 @@ class Program
             return;
         }
 
-        Console.WriteLine("Writing aircraft.geojson file");
+        Console.WriteLine("Preparing aircraft.geojson file");
 
         var features = new List<object>();
 
@@ -180,6 +193,21 @@ class Program
             features.Add(feature);
         }
 
+        // Safety check: compare new feature count against existing file
+        int existingFeatureCount = GetExistingGeoJsonFeatureCount();
+        if (existingFeatureCount > 0)
+        {
+            int threshold = (int)(existingFeatureCount * 0.8); // Allow up to 20% reduction
+            if (features.Count < threshold)
+            {
+                Console.Error.WriteLine($"ERROR: New GeoJSON would have {features.Count} features, but existing file has {existingFeatureCount}.");
+                Console.Error.WriteLine($"This is more than a 20% reduction (threshold: {threshold}).");
+                Console.Error.WriteLine("This may indicate a problem with the data source. Aborting to prevent data loss.");
+                Environment.Exit(1);
+            }
+            Console.WriteLine($"GeoJSON feature count check passed: {features.Count} new vs {existingFeatureCount} existing");
+        }
+
         var geojson = new
         {
             type = "FeatureCollection",
@@ -187,9 +215,32 @@ class Program
         };
 
         var json = JsonConvert.SerializeObject(geojson, Formatting.Indented);
-        File.WriteAllText("../aircraft.geojson", json);
+
+        // Write to temp file first, then atomically rename
+        string tempPath = s_GeoJsonPath + ".tmp";
+        File.WriteAllText(tempPath, json);
+        File.Move(tempPath, s_GeoJsonPath, overwrite: true);
 
         Console.WriteLine($"Wrote {features.Count} features to aircraft.geojson");
+    }
+
+    private static int GetExistingGeoJsonFeatureCount()
+    {
+        if (!File.Exists(s_GeoJsonPath))
+            return 0;
+
+        try
+        {
+            string existingJson = File.ReadAllText(s_GeoJsonPath);
+            var existingGeoJson = JObject.Parse(existingJson);
+            var featuresArray = existingGeoJson["features"] as JArray;
+            return featuresArray?.Count ?? 0;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Warning: Could not read existing GeoJSON file: {ex.Message}");
+            return 0;
+        }
     }
 
     private static async Task<bool> DownloadThumbnailFromWikidataId(string wikidataId)
