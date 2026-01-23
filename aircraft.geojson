@@ -20310,6 +20310,194 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -118.0887296,
+          34.6029898
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841218",
+        "model:wikidata": "Q7429741",
+        "historic": "aircraft",
+        "manufacturer": "Scaled Composites",
+        "manufacturer:wikidata": "Q1411762",
+        "manufacturer:wikipedia": "en:Scaled Composites",
+        "model": "Triumph",
+        "model:wikipedia": "en:Scaled Composites Triumph",
+        "@id": "node/10012488672"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0889598,
+          34.602663
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841220",
+        "model:wikidata": "Q749370",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed Martin",
+        "manufacturer:wikidata": "Q7240",
+        "manufacturer:wikipedia": "en:Lockheed Martin",
+        "model": "X-55",
+        "model:wikipedia": "en:Lockheed Martin X-55",
+        "@id": "node/10012488673"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0884963,
+          34.6031457
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841219",
+        "model:wikidata": "Q58725",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "T-33A",
+        "model:wikipedia": "en:Lockheed T-33",
+        "@id": "node/10012488674"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0882403,
+          34.6030263
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841222",
+        "model:wikidata": "Q248224",
+        "historic": "aircraft",
+        "manufacturer": "Ling-Temco-Vought",
+        "manufacturer:short": "LTV",
+        "manufacturer:wikidata": "Q3730937",
+        "manufacturer:wikipedia": "en:Ling-Temco-Vought",
+        "model": "A-7B Corsair II",
+        "model:wikipedia": "en:LTV A-7 Corsair II",
+        "@id": "node/10012488676"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0882213,
+          34.6028556
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841223",
+        "model:wikidata": "Q151432",
+        "historic": "aircraft",
+        "manufacturer": "McDonnell Douglas",
+        "manufacturer:wikidata": "Q201815",
+        "manufacturer:wikipedia": "en:McDonnell Douglas",
+        "model": "F-4D Phantom II",
+        "model:wikipedia": "en:McDonnell Douglas F-4 Phantom II",
+        "@id": "node/10012488677"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0879996,
+          34.6028983
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841224",
+        "model:wikidata": "Q164523",
+        "historic": "aircraft",
+        "manufacturer": "Northrop",
+        "manufacturer:wikidata": "Q912979",
+        "manufacturer:wikipedia": "en:Northrop Corporation",
+        "model": "T-38A Talon",
+        "model:wikipedia": "en:Northrop T-38 Talon",
+        "@id": "node/10012488681"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0879726,
+          34.6029901
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841225",
+        "model:wikidata": "Q334759",
+        "historic": "aircraft",
+        "manufacturer": "Douglas",
+        "manufacturer:wikidata": "Q651778",
+        "model": "A-4C Skyhawk",
+        "@id": "node/10012488682"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0877208,
+          34.6029483
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841227",
+        "model:wikidata": "Q182185",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "JetStar",
+        "model:wikipedia": "en:Lockheed JetStar",
+        "@id": "node/10012488683"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0873564,
+          34.6028931
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841228",
+        "model:wikidata": "Q1469021",
+        "historic": "aircraft",
+        "manufacturer": "Canadair",
+        "manufacturer:wikidata": "Q429877",
+        "manufacturer:wikipedia": "en:Canadair",
+        "model": "CL-13 Sabre Mk.5",
+        "model:wikipedia": "en:Canadair Sabre",
+        "@id": "node/10012488684"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -81.6534203,
           35.072722
         ]
@@ -37080,6 +37268,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.8173765,
+          33.8891871
+        ]
+      },
+      "properties": {
+        "wikidata": "Q1125423",
+        "model:wikidata": "Q133940584",
+        "wikipedia": "en:Marine One",
+        "aircraft:type": "helicopter",
+        "historic": "aircraft",
+        "memorial": "vehicle",
+        "name": "Marine One",
+        "@id": "way/577404182"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -4.4955111,
           48.3848649
         ]
@@ -42429,6 +42637,7 @@
         ]
       },
       "properties": {
+        "wikidata": "Q116082680",
         "model:wikidata": "Q218990",
         "aircraft:type": "jet",
         "historic": "aircraft",
@@ -42452,6 +42661,7 @@
         ]
       },
       "properties": {
+        "wikidata": "Q137841217",
         "model:wikidata": "Q174534",
         "aircraft:type": "military",
         "historic": "aircraft",
@@ -42627,6 +42837,126 @@
         "name": "Falcon 20",
         "tourism": "attraction",
         "@id": "way/1465639446"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0883097,
+          34.6031707
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841215",
+        "model:wikidata": "Q100026",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360664"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0884142,
+          34.6026564
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841213",
+        "model:wikidata": "Q724763",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360665"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0882343,
+          34.6026526
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841212",
+        "model:wikidata": "Q159881",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360666"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0886483,
+          34.6026914
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841214",
+        "model:wikidata": "Q34945",
+        "historic": "aircraft",
+        "model": "F-14 Tomcat",
+        "tourism": "attraction",
+        "@id": "way/1469360667"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.088047,
+          34.6026445
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841211",
+        "model:wikidata": "Q531053",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360668"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0878526,
+          34.6026335
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841210",
+        "model:wikidata": "Q170211",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360669"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0874669,
+          34.6026308
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841209",
+        "model:wikidata": "Q1145708",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360670"
       }
     },
     {
