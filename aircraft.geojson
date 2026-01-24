@@ -18314,24 +18314,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          26.0058775,
-          44.4343325
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "159",
-        "@id": "node/8408757689"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           5.7746274,
           53.2210404
         ]
@@ -20310,194 +20292,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.0887296,
-          34.6029898
-        ]
-      },
-      "properties": {
-        "wikidata": "Q137841218",
-        "model:wikidata": "Q7429741",
-        "historic": "aircraft",
-        "manufacturer": "Scaled Composites",
-        "manufacturer:wikidata": "Q1411762",
-        "manufacturer:wikipedia": "en:Scaled Composites",
-        "model": "Triumph",
-        "model:wikipedia": "en:Scaled Composites Triumph",
-        "@id": "node/10012488672"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -118.0889598,
-          34.602663
-        ]
-      },
-      "properties": {
-        "wikidata": "Q137841220",
-        "model:wikidata": "Q749370",
-        "historic": "aircraft",
-        "manufacturer": "Lockheed Martin",
-        "manufacturer:wikidata": "Q7240",
-        "manufacturer:wikipedia": "en:Lockheed Martin",
-        "model": "X-55",
-        "model:wikipedia": "en:Lockheed Martin X-55",
-        "@id": "node/10012488673"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -118.0884963,
-          34.6031457
-        ]
-      },
-      "properties": {
-        "wikidata": "Q137841219",
-        "model:wikidata": "Q58725",
-        "historic": "aircraft",
-        "manufacturer": "Lockheed",
-        "manufacturer:wikidata": "Q7233",
-        "manufacturer:wikipedia": "en:Lockheed Corporation",
-        "model": "T-33A",
-        "model:wikipedia": "en:Lockheed T-33",
-        "@id": "node/10012488674"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -118.0882403,
-          34.6030263
-        ]
-      },
-      "properties": {
-        "wikidata": "Q137841222",
-        "model:wikidata": "Q248224",
-        "historic": "aircraft",
-        "manufacturer": "Ling-Temco-Vought",
-        "manufacturer:short": "LTV",
-        "manufacturer:wikidata": "Q3730937",
-        "manufacturer:wikipedia": "en:Ling-Temco-Vought",
-        "model": "A-7B Corsair II",
-        "model:wikipedia": "en:LTV A-7 Corsair II",
-        "@id": "node/10012488676"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -118.0882213,
-          34.6028556
-        ]
-      },
-      "properties": {
-        "wikidata": "Q137841223",
-        "model:wikidata": "Q151432",
-        "historic": "aircraft",
-        "manufacturer": "McDonnell Douglas",
-        "manufacturer:wikidata": "Q201815",
-        "manufacturer:wikipedia": "en:McDonnell Douglas",
-        "model": "F-4D Phantom II",
-        "model:wikipedia": "en:McDonnell Douglas F-4 Phantom II",
-        "@id": "node/10012488677"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -118.0879996,
-          34.6028983
-        ]
-      },
-      "properties": {
-        "wikidata": "Q137841224",
-        "model:wikidata": "Q164523",
-        "historic": "aircraft",
-        "manufacturer": "Northrop",
-        "manufacturer:wikidata": "Q912979",
-        "manufacturer:wikipedia": "en:Northrop Corporation",
-        "model": "T-38A Talon",
-        "model:wikipedia": "en:Northrop T-38 Talon",
-        "@id": "node/10012488681"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -118.0879726,
-          34.6029901
-        ]
-      },
-      "properties": {
-        "wikidata": "Q137841225",
-        "model:wikidata": "Q334759",
-        "historic": "aircraft",
-        "manufacturer": "Douglas",
-        "manufacturer:wikidata": "Q651778",
-        "model": "A-4C Skyhawk",
-        "@id": "node/10012488682"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -118.0877208,
-          34.6029483
-        ]
-      },
-      "properties": {
-        "wikidata": "Q137841227",
-        "model:wikidata": "Q182185",
-        "historic": "aircraft",
-        "manufacturer": "Lockheed",
-        "manufacturer:wikidata": "Q7233",
-        "manufacturer:wikipedia": "en:Lockheed Corporation",
-        "model": "JetStar",
-        "model:wikipedia": "en:Lockheed JetStar",
-        "@id": "node/10012488683"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -118.0873564,
-          34.6028931
-        ]
-      },
-      "properties": {
-        "wikidata": "Q137841228",
-        "model:wikidata": "Q1469021",
-        "historic": "aircraft",
-        "manufacturer": "Canadair",
-        "manufacturer:wikidata": "Q429877",
-        "manufacturer:wikipedia": "en:Canadair",
-        "model": "CL-13 Sabre Mk.5",
-        "model:wikipedia": "en:Canadair Sabre",
-        "@id": "node/10012488684"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -81.6534203,
           35.072722
         ]
@@ -21120,10 +20914,11 @@
         ]
       },
       "properties": {
-        "model:wikidata": "Q182113",
+        "model:wikidata": "Q50349976",
         "aircraft:type": "military",
         "historic": "aircraft",
-        "name": "C-141 Starlifter",
+        "model": "KC-135R",
+        "name": "Gibby's Jet",
         "source": "https://www.jbmdl.jb.mil/News/Article/245691/starlifter-memorial-honors-aircraft-the-airmen-it-served/",
         "tourism": "attraction",
         "@id": "node/10573197529"
@@ -29977,6 +29772,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.9035018,
+          33.6662044
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q83403022",
+        "historic": "aircraft",
+        "man_made": "aircraft",
+        "@id": "node/13005449365"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -9.0325856,
           38.8905117
         ]
@@ -30382,51 +30193,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.8847406,
-          44.3128166
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q82627",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Avioane Craiova",
-        "manufacturer:wikidata": "Q2324155",
-        "manufacturer:wikipedia": "en:Avioane Craiova",
-        "model": "IAR-93",
-        "model:wikipedia": "en:IAR-93 Vultur",
-        "name": "IAR-93",
-        "ref": "163 (613 now)",
-        "@id": "node/13251077360"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          21.2001494,
-          45.7188227
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q82627",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Avioane Craiova",
-        "manufacturer:wikidata": "Q2324155",
-        "manufacturer:wikipedia": "en:Avioane Craiova",
-        "model:wikipedia": "en:IAR-93 Vultur",
-        "name": "IAR-93",
-        "ref": "201",
-        "@id": "node/13251240053"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           30.4631401,
           50.4061065
         ]
@@ -30517,6 +30283,46 @@
         "model": "BAC_Lightning_T.5",
         "name": "English Electric Lightning",
         "@id": "node/13286297026"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6393197,
+          33.9812918
+        ]
+      },
+      "properties": {
+        "wikidata": "Q185000",
+        "model:wikidata": "Q18117167",
+        "wikipedia": "en:Boeing B-17 Flying Fortress",
+        "historic": "aircraft",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "name": "Boeing B-17G Flying Fortress",
+        "ref": "44-83684",
+        "@id": "node/13288300991"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6392339,
+          33.9810315
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q714326",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Douglas C-47 Skytrain",
+        "name": "Douglas C-47A Skyrain",
+        "ref": "42-92509",
+        "@id": "node/13288300992"
       }
     },
     {
@@ -30908,60 +30714,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          26.1105606,
-          44.4782019
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "tourism": "attraction",
-        "@id": "node/13340068834"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1104968,
-          44.4782958
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "tourism": "attraction",
-        "@id": "node/13340068835"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1104311,
-          44.4783883
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "tourism": "attraction",
-        "@id": "node/13340068836"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           26.1113442,
           44.4781721
         ]
@@ -31305,43 +31057,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.1646633,
-          45.8341142
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "205",
-        "@id": "node/13340086421"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          21.603354,
-          46.263897
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "access": "private",
-        "aircraft:type": "military;jet",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "@id": "node/13340447356"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           21.6032222,
           46.2638785
         ]
@@ -31433,60 +31148,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          27.5976517,
-          47.15374
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "@id": "node/13342001257"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          27.7179629,
-          46.0894253
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "memorial": "aircraft",
-        "name": "IAR-93",
-        "ref": "216",
-        "@id": "node/13342005153"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.260004,
-          44.6120627
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "223",
-        "@id": "node/13342010501"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           23.333113,
           45.0016333
         ]
@@ -31505,42 +31166,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          24.6781995,
-          44.633737
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "215",
-        "@id": "node/13342184585"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.4893017,
-          44.1435671
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "109",
-        "@id": "node/13342204243"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           26.0745626,
           44.5198423
         ]
@@ -31551,24 +31176,6 @@
         "historic": "aircraft",
         "name": "MiG-21",
         "@id": "node/13342207751"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.0745236,
-          44.5196955
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "114",
-        "@id": "node/13342207752"
       }
     },
     {
@@ -31665,43 +31272,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          25.5897498,
-          45.6624489
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "access": "private",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "600",
-        "@id": "node/13342604257"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          27.9395106,
-          45.3629239
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "229",
-        "@id": "node/13342683773"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           27.9392254,
           45.3629412
         ]
@@ -31712,24 +31282,6 @@
         "historic": "aircraft",
         "name": "MiG-21",
         "@id": "node/13342683774"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          27.4137405,
-          45.8482486
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "241",
-        "@id": "node/13342743905"
       }
     },
     {
@@ -31798,24 +31350,6 @@
         "historic": "aircraft",
         "name": "IAR-316",
         "@id": "node/13342743910"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          24.9639188,
-          44.098909
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "217",
-        "@id": "node/13346542595"
       }
     },
     {
@@ -32185,6 +31719,28 @@
         "model:wikipedia": "en:Airbus CC-150 Polaris",
         "ref": "150001",
         "@id": "node/13368339752"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5067128,
+          40.8785558
+        ]
+      },
+      "properties": {
+        "wikidata": "Q58725",
+        "model:wikidata": "Q58725",
+        "wikipedia": "en:Lockheed T-33",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "T-33",
+        "model:wikipedia": "en:Lockheed T-33",
+        "@id": "node/13372032143"
       }
     },
     {
@@ -42632,8 +42188,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.0893808,
-          34.603265
+          -118.0893714,
+          34.6032602
         ]
       },
       "properties": {
@@ -42657,7 +42213,7 @@
         "type": "Point",
         "coordinates": [
           -118.0894847,
-          34.6027957
+          34.6027951
         ]
       },
       "properties": {
@@ -42844,8 +42400,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.0883097,
-          34.6031707
+          -118.0883099,
+          34.6031716
         ]
       },
       "properties": {
@@ -42861,8 +42417,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.0884142,
-          34.6026564
+          -118.0884213,
+          34.6026639
         ]
       },
       "properties": {
@@ -42878,8 +42434,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.0882343,
-          34.6026526
+          -118.0882363,
+          34.6026499
         ]
       },
       "properties": {
@@ -42895,7 +42451,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.0886483,
+          -118.0886505,
           34.6026914
         ]
       },
@@ -42913,8 +42469,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.088047,
-          34.6026445
+          -118.0880457,
+          34.6026448
         ]
       },
       "properties": {
@@ -42930,8 +42486,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.0878526,
-          34.6026335
+          -118.0878471,
+          34.6026368
         ]
       },
       "properties": {
@@ -42947,8 +42503,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.0874669,
-          34.6026308
+          -118.0874659,
+          34.602632
         ]
       },
       "properties": {
@@ -42957,6 +42513,562 @@
         "historic": "aircraft",
         "tourism": "attraction",
         "@id": "way/1469360670"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.087374,
+          34.602888
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841228",
+        "model:wikidata": "Q1469021",
+        "historic": "aircraft",
+        "manufacturer": "Canadair",
+        "manufacturer:wikidata": "Q429877",
+        "manufacturer:wikipedia": "en:Canadair",
+        "model": "CL-13 Sabre Mk.5",
+        "model:wikipedia": "en:Canadair Sabre",
+        "tourism": "attraction",
+        "@id": "way/1469673997"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0882067,
+          34.6028677
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841223",
+        "model:wikidata": "Q151432",
+        "historic": "aircraft",
+        "manufacturer": "McDonnell Douglas",
+        "manufacturer:wikidata": "Q201815",
+        "manufacturer:wikipedia": "en:McDonnell Douglas",
+        "model": "F-4D Phantom II",
+        "model:wikipedia": "en:McDonnell Douglas F-4 Phantom II",
+        "tourism": "attraction",
+        "@id": "way/1469673998"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.088246,
+          34.6030245
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841222",
+        "model:wikidata": "Q248224",
+        "historic": "aircraft",
+        "manufacturer": "Ling-Temco-Vought",
+        "manufacturer:short": "LTV",
+        "manufacturer:wikidata": "Q3730937",
+        "manufacturer:wikipedia": "en:Ling-Temco-Vought",
+        "model": "A-7B Corsair II",
+        "model:wikipedia": "en:LTV A-7 Corsair II",
+        "tourism": "attraction",
+        "@id": "way/1469673999"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0880054,
+          34.6028969
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841224",
+        "model:wikidata": "Q164523",
+        "historic": "aircraft",
+        "manufacturer": "Northrop",
+        "manufacturer:wikidata": "Q912979",
+        "manufacturer:wikipedia": "en:Northrop Corporation",
+        "model": "T-38A Talon",
+        "model:wikipedia": "en:Northrop T-38 Talon",
+        "tourism": "attraction",
+        "@id": "way/1469674000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0879635,
+          34.6029968
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841225",
+        "model:wikidata": "Q334759",
+        "historic": "aircraft",
+        "manufacturer": "Douglas",
+        "manufacturer:wikidata": "Q651778",
+        "model": "A-4C Skyhawk",
+        "tourism": "attraction",
+        "@id": "way/1469674001"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0877122,
+          34.6029548
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841227",
+        "model:wikidata": "Q182185",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "JetStar",
+        "model:wikipedia": "en:Lockheed JetStar",
+        "tourism": "attraction",
+        "@id": "way/1469674002"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0884942,
+          34.6031486
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841219",
+        "model:wikidata": "Q58725",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "T-33A",
+        "model:wikipedia": "en:Lockheed T-33",
+        "tourism": "attraction",
+        "@id": "way/1469674003"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0887369,
+          34.602997
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841218",
+        "model:wikidata": "Q7429741",
+        "historic": "aircraft",
+        "manufacturer": "Scaled Composites",
+        "manufacturer:wikidata": "Q1411762",
+        "manufacturer:wikipedia": "en:Scaled Composites",
+        "model": "Triumph",
+        "model:wikipedia": "en:Scaled Composites Triumph",
+        "tourism": "attraction",
+        "@id": "way/1469674004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0889506,
+          34.602683
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841220",
+        "model:wikidata": "Q749370",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed Martin",
+        "manufacturer:wikidata": "Q7240",
+        "manufacturer:wikipedia": "en:Lockheed Martin",
+        "model": "X-55",
+        "model:wikipedia": "en:Lockheed Martin X-55",
+        "tourism": "attraction",
+        "@id": "way/1469674005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.2600088,
+          44.6120734
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "223",
+        "@id": "way/1469721734"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2001737,
+          45.7188134
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "model:wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "aircraft:type": "military",
+        "building": "yes",
+        "historic": "aircraft",
+        "manufacturer": "Avioane Craiova",
+        "manufacturer:wikidata": "Q2324155",
+        "manufacturer:wikipedia": "en:Avioane Craiova",
+        "model:wikipedia": "en:IAR-93 Vultur",
+        "name": "IAR-93",
+        "ref": "201",
+        "@id": "way/1469721735"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6033319,
+          46.2639152
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "access": "private",
+        "aircraft:type": "military;jet",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "222",
+        "@id": "way/1469721736"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1646584,
+          45.8341092
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "205",
+        "@id": "way/1469721737"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8847347,
+          44.3128373
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "model:wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "aircraft:type": "military",
+        "building": "yes",
+        "historic": "aircraft",
+        "manufacturer": "Avioane Craiova",
+        "manufacturer:wikidata": "Q2324155",
+        "manufacturer:wikipedia": "en:Avioane Craiova",
+        "model": "IAR-93",
+        "model:wikipedia": "en:IAR-93 Vultur",
+        "name": "IAR-93",
+        "ref": "163 (613 now)",
+        "@id": "way/1469721738"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.9395282,
+          45.3629243
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "229",
+        "@id": "way/1469721739"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.7179812,
+          46.0894442
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "memorial": "aircraft",
+        "name": "IAR-93",
+        "ref": "216",
+        "@id": "way/1469721740"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0745483,
+          44.5196418
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "114",
+        "@id": "way/1469721741"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0059381,
+          44.4343158
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "layer": "1",
+        "name": "IAR-93",
+        "ref": "159",
+        "@id": "way/1469721742"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.110493,
+          44.4783092
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "tourism": "attraction",
+        "@id": "way/1469721743"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1104195,
+          44.4783993
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "tourism": "attraction",
+        "@id": "way/1469721744"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1105522,
+          44.4782172
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "tourism": "attraction",
+        "@id": "way/1469721745"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6782202,
+          44.6337318
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "215",
+        "@id": "way/1469721746"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4893136,
+          44.1435621
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "109",
+        "@id": "way/1469721748"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9639147,
+          44.0989223
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "217",
+        "@id": "way/1469721749"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.4137528,
+          45.848248
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "241",
+        "@id": "way/1469721750"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.5976266,
+          47.1537469
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "@id": "way/1469721751"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.5897335,
+          45.662462
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "access": "private",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "600",
+        "@id": "way/1469721752"
       }
     },
     {
