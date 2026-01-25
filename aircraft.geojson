@@ -4179,23 +4179,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -87.8480447,
-          42.3075067
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "name": "F-14 Tomcat",
-        "@id": "node/3651060381"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           126.9786565,
           37.535419
         ]
@@ -6068,74 +6051,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.6880731,
-          41.5113554
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q151432",
-        "description": "Thunderbirds F-4 Phantom II",
-        "historic": "aircraft",
-        "livery": "Thunderbirds",
-        "tourism": "attraction",
-        "@id": "node/4602386773"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -95.0950273,
-          29.5500769
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q164523",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Northrop",
-        "manufacturer:wikidata": "Q912979",
-        "manufacturer:wikipedia": "en:Northrop Corporation",
-        "model": "T-38A",
-        "model:wikipedia": "en:Northrop T-38 Talon",
-        "name": "NASA 968",
-        "ref": "N968NA",
-        "start_date": "1965",
-        "website": "https://spacecenter.org/meet-our-t-38-jets-in-talon-park/",
-        "@id": "node/4641442687"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -95.0949409,
-          29.550125
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q164523",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Northrop",
-        "manufacturer:wikidata": "Q912979",
-        "manufacturer:wikipedia": "en:Northrop Corporation",
-        "model": "AT-38B",
-        "model:wikipedia": "en:Northrop T-38 Talon",
-        "name": "NASA 900",
-        "ref": "N900NA",
-        "start_date": "1968",
-        "website": "https://spacecenter.org/meet-our-t-38-jets-in-talon-park/",
-        "@id": "node/4641442688"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -110.8648053,
           32.1401034
         ]
@@ -6167,22 +6082,6 @@
         "name:en": "Fighter aircraft MiG-17",
         "name:uk": "МіГ-17",
         "@id": "node/4665851404"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          100.94181,
-          4.7720348
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q334759",
-        "historic": "aircraft",
-        "name": "A4 Skyhawk",
-        "@id": "node/4693680665"
       }
     },
     {
@@ -7477,24 +7376,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -103.0740399,
-          44.1332795
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q174534",
-        "historic": "aircraft",
-        "model": "B-52 Stratofortress",
-        "ref": "S/N 56-0657",
-        "tourism": "attraction",
-        "@id": "node/4939248829"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -103.0729585,
           44.1326084
         ]
@@ -7777,24 +7658,6 @@
         "name": "MiG-21",
         "tourism": "attraction",
         "@id": "node/4983161577"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.68763,
-          41.511316
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q151432",
-        "description": "Blue Angels F-4 Phantom II",
-        "historic": "aircraft",
-        "livery": "Blue Angels",
-        "tourism": "attraction",
-        "@id": "node/4985467840"
       }
     },
     {
@@ -17760,22 +17623,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.1322927,
-          45.1142807
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "historic": "aircraft",
-        "name": "Navy F-14 Tomcat",
-        "@id": "node/8000447845"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           37.5440571,
           55.7830637
         ]
@@ -18541,26 +18388,6 @@
         "tourism": "attraction",
         "wheelchair": "yes",
         "@id": "node/8519572275"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.3181287,
-          40.031
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q334759",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "name": "A-4 Skyhawk",
-        "source": "Bing",
-        "tourism": "attraction",
-        "wheelchair": "yes",
-        "@id": "node/8519572276"
       }
     },
     {
@@ -20512,24 +20339,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -86.7423133,
-          33.562865
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "historic": "aircraft",
-        "military": "F-14 Tomcat",
-        "model:wikipedia": "en:Grumman F-14 Tomcat",
-        "name": "F-14 Tomcat",
-        "@id": "node/10059848783"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           15.5669202,
           45.4630126
         ]
@@ -20781,22 +20590,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.1781412,
-          48.0661013
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q334759",
-        "historic": "aircraft",
-        "tourism": "attraction",
-        "@id": "node/10278568350"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           0.5472007,
           52.6573613
         ]
@@ -20895,10 +20688,9 @@
         ]
       },
       "properties": {
-        "model:wikidata": "Q334759",
+        "model:wikidata": "Q151432",
         "aircraft:type": "military",
         "historic": "aircraft",
-        "name": "A-4 Skyhawk",
         "source": "Bing",
         "tourism": "attraction",
         "@id": "node/10573151464"
@@ -21094,24 +20886,6 @@
         "name": "McDonnell F-4C Phantom II",
         "ref": "64-0783",
         "@id": "node/10647209907"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -86.1292401,
-          40.6688181
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "name": "Grumman F-14B Tomcat",
-        "ref": "162912",
-        "@id": "node/10647209908"
       }
     },
     {
@@ -22659,24 +22433,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.4860222,
-          31.2469553
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q159881",
-        "historic": "aircraft",
-        "model:wikipedia": "en:Lockheed F-104 Starfighter",
-        "name": "Lockheed F-104 Starfighter",
-        "ref": "56-0919",
-        "@id": "node/11585264376"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           101.6879421,
           3.1374935
         ]
@@ -23011,22 +22767,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -119.3312484,
-          36.1533807
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q151432",
-        "historic": "aircraft",
-        "tourism": "attraction",
-        "@id": "node/11897751035"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -117.2656041,
           33.8807005
         ]
@@ -23227,23 +22967,6 @@
         "name": "Fairchild C-119C Flying Boxcar",
         "website": "https://pimaair.org/museum-aircraft/fairchild-c-119c_1/",
         "@id": "node/11899623015"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -110.8673528,
-          32.1377432
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q174534",
-        "historic": "aircraft",
-        "name": "Boeing NB-52A Stratofortress",
-        "website": "https://pimaair.org/museum-aircraft/boeing-b-52a/",
-        "@id": "node/11899623021"
       }
     },
     {
@@ -23955,21 +23678,6 @@
         "historic": "aircraft",
         "name": "Sikorsky UH-19B Chickasaw",
         "@id": "node/11899627969"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -87.303822,
-          30.3486877
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "historic": "aircraft",
-        "@id": "node/11899725027"
       }
     },
     {
@@ -25643,24 +25351,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -9.3330781,
-          38.8367171
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q164523",
-        "historic": "aircraft",
-        "manufacturer": "Northrop",
-        "model": "T-38",
-        "name": "Northrop T-38 Talon",
-        "@id": "node/12251220182"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           8.796452,
           53.0497125
         ]
@@ -25967,23 +25657,6 @@
         "historic": "aircraft",
         "name": "Vought A-7E Corsair II",
         "@id": "node/12454407791"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -76.0205686,
-          36.8079822
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "description": "BuNo 164604",
-        "historic": "aircraft",
-        "name": "Grumman F-14D Tomcat",
-        "@id": "node/12454407792"
       }
     },
     {
@@ -26400,22 +26073,6 @@
         "name": "McDonnell F-101B Voodoo",
         "tourism": "attraction",
         "@id": "node/12455120237"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.2352126,
-          32.1160515
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q151432",
-        "historic": "aircraft",
-        "name": "F-4C Phantom",
-        "@id": "node/12460939601"
       }
     },
     {
@@ -29772,22 +29429,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.9035018,
-          33.6662044
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q83403022",
-        "historic": "aircraft",
-        "man_made": "aircraft",
-        "@id": "node/13005449365"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -9.0325856,
           38.8905117
         ]
@@ -30225,24 +29866,6 @@
         "name:ru": "МиГ-29",
         "name:uk": "МіГ-29",
         "@id": "node/13269491114"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.4800921,
-          42.7345432
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q334759",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Douglas",
-        "model": "A-4 Skyhawk",
-        "@id": "node/13274050086"
       }
     },
     {
@@ -32566,8 +32189,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.899986,
-          41.2767354
+          -95.8999869,
+          41.2767339
         ]
       },
       "properties": {
@@ -43069,6 +42692,401 @@
         "name": "IAR-93",
         "ref": "600",
         "@id": "way/1469721752"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.0742091,
+          44.1333651
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q174534",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "B-52 Stratofortress",
+        "model:wikipedia": "en:Boeing B-52 Stratofortress",
+        "name": "B-52",
+        "ref": "S/N 56-0657",
+        "tourism": "attraction",
+        "@id": "way/1470141699"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.86731,
+          32.1378002
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q174534",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model:wikipedia": "en:Boeing B-52 Stratofortress",
+        "tourism": "attraction",
+        "website": "https://pimaair.org/museum-aircraft/boeing-b-52a/",
+        "@id": "way/1470142154"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.3312403,
+          36.1533779
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q151432",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1470143169"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.235204,
+          32.1160369
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q151432",
+        "historic": "aircraft",
+        "name": "F-4C Phantom",
+        "tourism": "attraction",
+        "@id": "way/1470143481"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6876222,
+          41.5112994
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q151432",
+        "description": "Blue Angels F-4 Phantom II",
+        "historic": "aircraft",
+        "livery": "Blue Angels",
+        "tourism": "attraction",
+        "@id": "way/1470143603"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6880766,
+          41.5113493
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q151432",
+        "description": "Thunderbirds F-4 Phantom II",
+        "historic": "aircraft",
+        "livery": "Thunderbirds",
+        "tourism": "attraction",
+        "@id": "way/1470143604"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.1322781,
+          45.1142998
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q34945",
+        "historic": "aircraft",
+        "name": "Navy F-14 Tomcat",
+        "@id": "way/1470143810"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.8480513,
+          42.3075037
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q34945",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "name": "F-14 Tomcat",
+        "tourism": "attraction",
+        "@id": "way/1470143864"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.129227,
+          40.6688383
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q34945",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "name": "Grumman F-14B Tomcat",
+        "ref": "162912",
+        "tourism": "attraction",
+        "@id": "way/1470143923"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.7423164,
+          33.5628695
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q34945",
+        "historic": "aircraft",
+        "military": "F-14 Tomcat",
+        "model:wikipedia": "en:Grumman F-14 Tomcat",
+        "tourism": "attraction",
+        "@id": "way/1470143943"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.3038526,
+          30.3487013
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841214",
+        "model:wikidata": "Q34945",
+        "historic": "aircraft",
+        "model": "F-14 Tomcat",
+        "tourism": "attraction",
+        "@id": "way/1470143995"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.0205729,
+          36.8080025
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q34945",
+        "description": "BuNo 164604",
+        "historic": "aircraft",
+        "name": "Grumman F-14D Tomcat",
+        "@id": "way/1470145343"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9035106,
+          33.6661999
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q83403022",
+        "historic": "aircraft",
+        "man_made": "aircraft",
+        "@id": "way/1470145624"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.0949519,
+          29.5501358
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q164523",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Northrop",
+        "manufacturer:wikidata": "Q912979",
+        "manufacturer:wikipedia": "en:Northrop Corporation",
+        "model": "AT-38B",
+        "model:wikipedia": "en:Northrop T-38 Talon",
+        "name": "NASA 900",
+        "ref": "N900NA",
+        "start_date": "1968",
+        "tourism": "attraction",
+        "website": "https://spacecenter.org/meet-our-t-38-jets-in-talon-park/",
+        "@id": "way/1470145904"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.0950283,
+          29.5500905
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q164523",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Northrop",
+        "manufacturer:wikidata": "Q912979",
+        "manufacturer:wikipedia": "en:Northrop Corporation",
+        "model": "T-38A",
+        "model:wikipedia": "en:Northrop T-38 Talon",
+        "name": "NASA 968",
+        "ref": "N968NA",
+        "start_date": "1965",
+        "tourism": "attraction",
+        "website": "https://spacecenter.org/meet-our-t-38-jets-in-talon-park/",
+        "@id": "way/1470145905"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.3330507,
+          38.8367108
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q164523",
+        "historic": "aircraft",
+        "manufacturer": "Northrop",
+        "model": "T-38",
+        "tourism": "attraction",
+        "@id": "way/1470146033"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.1781333,
+          48.0661035
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q334759",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1470146075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.318134,
+          40.0309969
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q334759",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "source": "Bing",
+        "tourism": "attraction",
+        "wheelchair": "yes",
+        "@id": "way/1470148901"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4800858,
+          42.7345378
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q334759",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Douglas",
+        "model": "A-4 Skyhawk",
+        "@id": "way/1470148912"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.9418185,
+          4.7720218
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q334759",
+        "historic": "aircraft",
+        "name": "A4 Skyhawk",
+        "tourism": "attraction",
+        "@id": "way/1470148953"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.4859735,
+          31.2469615
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q159881",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Lockheed F-104 Starfighter",
+        "ref": "56-0919",
+        "tourism": "attraction",
+        "@id": "way/1470157110"
       }
     },
     {
