@@ -2185,6 +2185,64 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          14.1409565,
+          40.821676
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q327844",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Aeritalia F-104S Starfighter",
+        "name": "Aeritalia Lockheed F 104S ASA",
+        "ref": "MM 6921",
+        "start_date": "1999",
+        "tourism": "attraction",
+        "@id": "node/2506382672"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1423889,
+          40.8205552
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q17519142",
+        "historic": "aircraft",
+        "name": "Aermacchi MB 339PAN",
+        "ref": "MM 54478",
+        "tourism": "attraction",
+        "@id": "node/2506386787"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1406448,
+          40.8224274
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q295466",
+        "historic": "aircraft",
+        "model:wikipedia": "en:AMX International AMX",
+        "name": "AMX A-11 Ghibli",
+        "ref": "MM 7148",
+        "start_date": "2021-11",
+        "tourism": "attraction",
+        "@id": "node/2506389237"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -122.2943984,
           37.7799291
         ]
@@ -18201,27 +18259,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          26.886,
-          46.556852
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "material": "steel",
-        "memorial": "vehicle",
-        "model": "US",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/8658144448"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           4.788187,
           52.9228031
         ]
@@ -29795,222 +29832,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          26.1105278,
-          44.4777025
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068831"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1104314,
-          44.4777123
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068832"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1102447,
-          44.4780628
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068833"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1113442,
-          44.4781721
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068837"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1113003,
-          44.4782346
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068838"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1112664,
-          44.4782901
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068839"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1112305,
-          44.4783641
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068840"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1111986,
-          44.4784395
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068841"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1108517,
-          44.4785248
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068842"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1114319,
-          44.4781052
-        ]
-      },
-      "properties": {
-        "wikidata": "Q153307",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-19",
-        "historic": "aircraft",
-        "name": "MiG-19",
-        "tourism": "attraction",
-        "@id": "node/13340068843"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1115814,
-          44.4784039
-        ]
-      },
-      "properties": {
-        "wikidata": "Q153307",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-19",
-        "historic": "aircraft",
-        "name": "MiG-19",
-        "tourism": "attraction",
-        "@id": "node/13340068844"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1114957,
-          44.478495
-        ]
-      },
-      "properties": {
-        "wikidata": "Q153307",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-19",
-        "historic": "aircraft",
-        "name": "MiG-19",
-        "tourism": "attraction",
-        "@id": "node/13340068845"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           26.1111607,
           44.4778904
         ]
@@ -30112,25 +29933,6 @@
         "name": "MiG-17",
         "tourism": "attraction",
         "@id": "node/13340068851"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1106723,
-          44.4784039
-        ]
-      },
-      "properties": {
-        "wikidata": "Q130681",
-        "wikipedia": "en:Mikoyan MiG-29",
-        "historic": "aircraft",
-        "model": "SNIPER",
-        "name": "MiG-29 SNIPER",
-        "tourism": "attraction",
-        "@id": "node/13340068852"
       }
     },
     {
@@ -31091,6 +30893,26 @@
         "model:wikipedia": "en:Polar Satellite Launch Vehicle",
         "tourism": "attraction",
         "@id": "node/13462217170"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.140999,
+          40.8226186
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q152200",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Panavia Tornado",
+        "name": "Panavia Tornado IDS",
+        "ref": "MM7023/6-63",
+        "start_date": "2023-11-05",
+        "tourism": "attraction",
+        "@id": "node/13506060945"
       }
     },
     {
@@ -43134,6 +42956,273 @@
         "ref:tailnumber": "59-2584",
         "tourism": "attraction",
         "@id": "way/1470376109"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1102351,
+          44.4780765
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899522"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1112015,
+          44.4784559
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899523"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.11042,
+          44.4777293
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899524"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1105285,
+          44.4777177
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899525"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1108336,
+          44.4785312
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899526"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1112335,
+          44.4783719
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899527"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.11127,
+          44.4783014
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899528"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.111307,
+          44.4782386
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899529"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1113603,
+          44.4781747
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899530"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.8860132,
+          46.5568465
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899531"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1114186,
+          44.4781053
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q153307",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-19",
+        "name": "MiG-19",
+        "tourism": "attraction",
+        "@id": "way/1471899532"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1115898,
+          44.478425
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q153307",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-19",
+        "name": "MiG-19",
+        "tourism": "attraction",
+        "@id": "way/1471899533"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1115062,
+          44.4785188
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q153307",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-19",
+        "name": "MiG-19",
+        "tourism": "attraction",
+        "@id": "way/1471899534"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1106792,
+          44.4784124
+        ]
+      },
+      "properties": {
+        "wikidata": "Q130681",
+        "wikipedia": "en:Mikoyan MiG-29",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "MiG-29 SNIPER",
+        "ref": "SNIPER",
+        "tourism": "attraction",
+        "@id": "way/1471899535"
       }
     },
     {
