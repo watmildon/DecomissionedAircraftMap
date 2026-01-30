@@ -29832,132 +29832,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          26.1111607,
-          44.4778904
-        ]
-      },
-      "properties": {
-        "wikidata": "Q187377",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-15",
-        "historic": "aircraft",
-        "name": "MiG-15",
-        "tourism": "attraction",
-        "@id": "node/13340068846"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1111089,
-          44.4780412
-        ]
-      },
-      "properties": {
-        "wikidata": "Q187377",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-15",
-        "historic": "aircraft",
-        "name": "MiG-15",
-        "tourism": "attraction",
-        "@id": "node/13340068847"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1115814,
-          44.4779288
-        ]
-      },
-      "properties": {
-        "wikidata": "Q187377",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-15",
-        "historic": "aircraft",
-        "name": "MiG-15",
-        "tourism": "attraction",
-        "@id": "node/13340068848"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1114219,
-          44.4777567
-        ]
-      },
-      "properties": {
-        "wikidata": "Q187377",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-15",
-        "historic": "aircraft",
-        "name": "MiG-15",
-        "tourism": "attraction",
-        "@id": "node/13340068849"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1114817,
-          44.478027
-        ]
-      },
-      "properties": {
-        "wikidata": "Q152976",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-17",
-        "historic": "aircraft",
-        "name": "MiG-17",
-        "tourism": "attraction",
-        "@id": "node/13340068850"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1110571,
-          44.4781806
-        ]
-      },
-      "properties": {
-        "wikidata": "Q152976",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-17",
-        "historic": "aircraft",
-        "name": "MiG-17",
-        "tourism": "attraction",
-        "@id": "node/13340068851"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1107143,
-          44.4777961
-        ]
-      },
-      "properties": {
-        "wikidata": "Q187377",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-15",
-        "historic": "aircraft",
-        "name": "MiG-15",
-        "tourism": "attraction",
-        "@id": "node/13340068853"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           26.1106995,
           44.4787094
         ]
@@ -43173,7 +43047,7 @@
         "type": "Point",
         "coordinates": [
           26.1115898,
-          44.478425
+          44.4784241
         ]
       },
       "properties": {
@@ -43184,25 +43058,6 @@
         "name": "MiG-19",
         "tourism": "attraction",
         "@id": "way/1471899533"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1115062,
-          44.4785188
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q153307",
-        "building": "yes",
-        "historic": "aircraft",
-        "model:wikipedia": "en:Mikoyan-Gurevich MiG-19",
-        "name": "MiG-19",
-        "tourism": "attraction",
-        "@id": "way/1471899534"
       }
     },
     {
@@ -43223,6 +43078,158 @@
         "ref": "SNIPER",
         "tourism": "attraction",
         "@id": "way/1471899535"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1111634,
+          44.4778943
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "tourism": "attraction",
+        "@id": "way/1472421011"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.111099,
+          44.4780494
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "tourism": "attraction",
+        "@id": "way/1472421012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1115635,
+          44.4779326
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "tourism": "attraction",
+        "@id": "way/1472421013"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1114768,
+          44.4780229
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q152976",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-17",
+        "name": "MiG-17",
+        "tourism": "attraction",
+        "@id": "way/1472421014"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1114387,
+          44.4777783
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q152976",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-17",
+        "name": "MiG-17",
+        "tourism": "attraction",
+        "@id": "way/1472421015"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1110427,
+          44.4781933
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q152976",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-17",
+        "name": "MiG-17",
+        "tourism": "attraction",
+        "@id": "way/1472421016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1115018,
+          44.4785107
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q153307",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-19",
+        "name": "MiG-19",
+        "tourism": "attraction",
+        "@id": "way/1472421017"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1107128,
+          44.4777892
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "tourism": "attraction",
+        "@id": "way/1472421018"
       }
     },
     {
