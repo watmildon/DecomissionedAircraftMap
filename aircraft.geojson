@@ -20099,6 +20099,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -3.82746,
+          43.4235978
+        ]
+      },
+      "properties": {
+        "subject:wikidata": "Q40021",
+        "historic": "memorial",
+        "material": "metal",
+        "memorial": "aircraft",
+        "name": "T-6 Texan",
+        "name:etymology:wikidata": "Q40021",
+        "not:inscription": "yes",
+        "@id": "node/10127043634"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           18.9093818,
           47.4898339
         ]
@@ -21930,6 +21950,26 @@
         "name": "F-16 Fighting Falcon",
         "tourism": "attraction",
         "@id": "node/11221339987"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8273524,
+          43.4236995
+        ]
+      },
+      "properties": {
+        "subject:wikidata": "Q58725",
+        "historic": "memorial",
+        "material": "metal",
+        "memorial": "aircraft",
+        "name": "Lockheed T-33",
+        "name:etymology:wikidata": "Q58725",
+        "not:inscription": "yes",
+        "@id": "node/11271097066"
       }
     },
     {
