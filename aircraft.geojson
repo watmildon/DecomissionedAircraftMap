@@ -29404,6 +29404,48 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -96.7548189,
+          40.8415695
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q842481",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Northrop Corporation",
+        "manufacturer:wikidata": "Q912979",
+        "manufacturer:wikipedia": "en:Northrop Corporation",
+        "model": "F-89_Scorpion",
+        "model:wikipedia": "en:Northrop F-89 Scorpion",
+        "@id": "node/13208860769"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7554345,
+          40.8416019
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q531053",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "North American Aviation",
+        "manufacturer:wikidata": "Q519560",
+        "manufacturer:wikipedia": "en:North American Aviation",
+        "model": "F-100_Super_Sabre",
+        "model:wikipedia": "en:North American F-100 Super Sabre",
+        "@id": "node/13208860770"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           9.5703256,
           59.1803231
         ]
