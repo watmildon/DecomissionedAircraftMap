@@ -38137,6 +38137,8 @@
         "building": "yes",
         "historic": "aircraft",
         "name": "Lockheed T-33",
+        "operator": "Fuerza Aérea Boliviana",
+        "operator:short": "FAB",
         "ref": "FAB-617",
         "@id": "way/1082047473"
       }
