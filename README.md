@@ -16,7 +16,7 @@ You can view the map using the link below.
 
 ![image](https://github.com/user-attachments/assets/a1f15a90-47b7-405e-b88b-bff291c3d948)
 
-There are many [historic aircraft](https://wiki.openstreetmap.org/wiki/Tag:historic=aircraft) on OpenStreetMap that lack enough information for the bot here to pull appropriate thumbnails. You can help link things show up on the map by:
+There are many [historic aircraft](https://wiki.openstreetmap.org/wiki/Tag:historic=aircraft) on OpenStreetMap that lack enough information for the bot here to pull appropriate thumbnails. You can help link things together by:
 
 * Adding a [model:wikidata](https://wiki.openstreetmap.org/wiki/Key:model:wikidata) tag for an item on OpenStreetMap either from local knowledge or using hints from other tags already on the object (model=, name=, etc). Ex: [model:wikidata=Q185000](https://www.wikidata.org/wiki/Q185000) for a B-17
 * Adding a [wikidata](https://wiki.openstreetmap.org/wiki/Key:wikidata) tag if there is a Wikidata item for that specific aircraft. Ex: [wikidata=Q939784](https://www.wikidata.org/wiki/Q939784) for the Spirit of St. Louis.
