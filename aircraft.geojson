@@ -30898,6 +30898,57 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          26.0931947,
+          44.4939316
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "@id": "node/13551183369"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.093079,
+          44.4939471
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "@id": "node/13551183370"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0929262,
+          44.49396
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "@id": "node/13551183371"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
