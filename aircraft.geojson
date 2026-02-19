@@ -18146,8 +18146,6 @@
       },
       "properties": {
         "model:wikidata": "Q150609",
-        "addr:city": "Szeged",
-        "addr:street": "Szilánk köz",
         "aircraft:type": "military",
         "historic": "aircraft",
         "name": "MiG-21 vadászrepülő",
