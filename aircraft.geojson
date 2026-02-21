@@ -38105,6 +38105,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          11.0683482,
+          60.1892744
+        ]
+      },
+      "properties": {
+        "wikidata": "Q308940",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "artwork_type": "aircraft",
+        "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/JJb7ZvJ7iQdgPbL88",
+        "mapillary": "4141152879270260",
+        "model": "F-5B",
+        "name": "Northrop F-5B Freedom Fighter",
+        "tourism": "attraction",
+        "@id": "way/1035854219"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -15.5116875,
           27.7841458
         ]
@@ -38541,6 +38564,26 @@
         "ref": "CP-2187",
         "tourism": "attraction",
         "@id": "way/1153636968"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0688235,
+          60.1892144
+        ]
+      },
+      "properties": {
+        "wikidata": "Q285638",
+        "aircraft:type": "military;jet",
+        "artwork_type": "aircraft",
+        "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/gZGhjJA3452GcjWc6",
+        "name": "Canadair CF-104 Starfighter",
+        "website": "https://www.flysam.no/informasjon/nyheter/vis/?T=Historien%20om%20CF-104%20med%20halenr.%20886&ID=33861&af=1&",
+        "@id": "way/1164364123"
       }
     },
     {
