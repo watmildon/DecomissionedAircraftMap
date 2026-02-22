@@ -18821,25 +18821,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          9.6419677,
-          59.6560612
-        ]
-      },
-      "properties": {
-        "wikidata": "Q159881",
-        "wikipedia": "no:Lockheed F-104 Starfighter",
-        "artwork_type": "installation",
-        "historic": "aircraft",
-        "name": "Canadair CF-104 Starfighter 104822",
-        "tourism": "artwork",
-        "@id": "node/9119914639"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -2.248131,
           57.0497366
         ]
@@ -27259,8 +27240,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          17.4560607,
-          49.0373064
+          17.4560704,
+          49.0373074
         ]
       },
       "properties": {
@@ -30940,6 +30921,455 @@
         "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
         "name": "MiG-21",
         "@id": "node/13551183371"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4133106,
+          67.2768912
+        ]
+      },
+      "properties": {
+        "wikidata": "Q189064",
+        "wikipedia": "en:Lockheed U-2",
+        "aircraft:type": "jet",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Lockheed U–2",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/lockheed-u2",
+        "@id": "node/13587502920"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134716,
+          67.2768998
+        ]
+      },
+      "properties": {
+        "wikidata": "Q49162645",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Bell UH-1B Iroquois",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/bell-uh-1b-iroquois",
+        "@id": "node/13587502921"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4133714,
+          67.27687
+        ]
+      },
+      "properties": {
+        "wikidata": "Q285638",
+        "wikipedia": "en:Canadair CF-104 Starfighter",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Canadair CF-104 Starfighter",
+        "@id": "node/13587502922"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130605,
+          67.2769652
+        ]
+      },
+      "properties": {
+        "wikidata": "Q108057141",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "F-16 Fighting Falcon",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/f-16-fighting-falcon",
+        "@id": "node/13587502923"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130146,
+          67.2765855
+        ]
+      },
+      "properties": {
+        "wikidata": "Q1393116",
+        "wikipedia": "en:Fairchild PT-19",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Fairchild PT-19 Cornell",
+        "@id": "node/13587502924"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4135477,
+          67.2766557
+        ]
+      },
+      "properties": {
+        "wikidata": "Q1860313",
+        "wikipedia": "en:Fokker C.V",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Fokker CVD",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/fokker-cvd",
+        "@id": "node/13587502925"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4131281,
+          67.2764342
+        ]
+      },
+      "properties": {
+        "wikidata": "Q34775",
+        "wikipedia": "en:Focke-Wulf Fw 190",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "model": "Focke-Wulf_Fw_190_A-3/U3",
+        "name": "Svart 3",
+        "@id": "node/13587502926"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134974,
+          67.2763221
+        ]
+      },
+      "properties": {
+        "wikidata": "Q103923121",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Gloster Gladiator II",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/gloster-gladiator",
+        "@id": "node/13587502927"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4132047,
+          67.2763446
+        ]
+      },
+      "properties": {
+        "wikidata": "Q155661",
+        "wikipedia": "en:Junkers Ju 88",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Junkers Ju 88 A-4",
+        "@id": "node/13587502928"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4138237,
+          67.2763055
+        ]
+      },
+      "properties": {
+        "wikidata": "Q1156504",
+        "wikipedia": "en:Kjeller F.F.9 Kaje",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Kjeller F.F.9 Kaje I",
+        "@id": "node/13587502929"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134071,
+          67.2765573
+        ]
+      },
+      "properties": {
+        "wikidata": "Q155639",
+        "wikipedia": "en:Messerschmitt Bf 109",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "model": "Messerschmitt_Bf_109",
+        "name": "Gul 3",
+        "note": "not sure bout exact location in the museum",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/messerschmitt-bf-109-gul-3",
+        "@id": "node/13587502930"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4128378,
+          67.2768723
+        ]
+      },
+      "properties": {
+        "wikidata": "Q153826",
+        "wikipedia": "en:North American F-86 Sabre",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "North American F-86 Sabre",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/north-american-f-86-sabre",
+        "@id": "node/13587502931"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134509,
+          67.2761842
+        ]
+      },
+      "properties": {
+        "wikidata": "Q308940",
+        "wikipedia": "en:Northrop F-5",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Northrop F-5A(G) Freedom Fighter «102",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/northrops-f-5-freedom-fighter",
+        "@id": "node/13587502932"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4136734,
+          67.2765643
+        ]
+      },
+      "properties": {
+        "wikidata": "Q20023160",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Republic F-84G Thunderjet",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/republic-f-84g-thunderjet-ny",
+        "@id": "node/13587502933"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130424,
+          67.2768709
+        ]
+      },
+      "properties": {
+        "wikidata": "Q672488",
+        "wikipedia": "en:Piper PA-18 Super Cub",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Piper L-18C Super Cub «835»",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/piper-super-club",
+        "@id": "node/13587502934"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130544,
+          67.2765306
+        ]
+      },
+      "properties": {
+        "wikidata": "Q153348",
+        "wikipedia": "en:V-1 flying bomb",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "V-1",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/rakett",
+        "@id": "node/13587502935"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130539,
+          67.2767687
+        ]
+      },
+      "properties": {
+        "wikidata": "Q541116",
+        "wikipedia": "en:Cessna O-1 Bird Dog",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Cessna L-19A/O-1A Bird Dog",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/cessna-l-19a/o-1a-bird-dog",
+        "@id": "node/13587502936"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4133272,
+          67.2767776
+        ]
+      },
+      "properties": {
+        "wikidata": "Q18019707",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Consolidated PBY-5A Catalina",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/consolidated-pby-5a-catalina",
+        "@id": "node/13587502937"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4136314,
+          67.2765279
+        ]
+      },
+      "properties": {
+        "wikidata": "Q221344",
+        "wikipedia": "en:De Havilland Mosquito",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "De Havilland DH 98 Mosquito",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/de-havilland-dh-98-mosquito",
+        "@id": "node/13587502938"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4135801,
+          67.2763995
+        ]
+      },
+      "properties": {
+        "wikidata": "Q654062",
+        "wikipedia": "en:De Havilland Tiger Moth",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "De Havilland DH 82 Tiger Moth",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/de-havilland-dh-82-tiger-moth",
+        "@id": "node/13587502939"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134914,
+          67.2767352
+        ]
+      },
+      "properties": {
+        "wikidata": "Q179835",
+        "wikipedia": "en:De Havilland Vampire",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "De Havilland DH 100 Vampire",
+        "website": "De Havilland DH 100 Vampire",
+        "@id": "node/13587502940"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4129863,
+          67.2767084
+        ]
+      },
+      "properties": {
+        "wikidata": "Q20023160",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Republic F-84G Thunderjet",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/republic-f-84g-thunderjet-ny",
+        "@id": "node/13587502941"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130359,
+          67.2766746
+        ]
+      },
+      "properties": {
+        "wikidata": "Q17018597",
+        "wikipedia": "en:Supermarine Spitfire (late Merlin-powered variants)",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Supermarine Spitfire LF Mk IXe",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/supermarine-spitfire",
+        "@id": "node/13587502942"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134824,
+          67.2768267
+        ]
+      },
+      "properties": {
+        "wikidata": "Q162116",
+        "wikipedia": "en:Westland Lynx",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Westland Lynx",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/westland-lynx-ny",
+        "@id": "node/13587502943"
       }
     },
     {
@@ -40107,6 +40537,38 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          11.8822873,
+          57.7707123
+        ]
+      },
+      "properties": {
+        "wikidata": "Q15411568",
+        "historic": "aircraft",
+        "name": "C-130H Hercule",
+        "@id": "way/1304804644"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8824251,
+          57.7707831
+        ]
+      },
+      "properties": {
+        "wikidata": "Q15411568",
+        "historic": "aircraft",
+        "name": "C-130H Hercule",
+        "@id": "way/1304804645"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.2969736,
           52.0996528
         ]
@@ -43428,6 +43890,103 @@
         "name": "MiG-15",
         "tourism": "attraction",
         "@id": "way/1472421018"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4128196,
+          67.2753697
+        ]
+      },
+      "properties": {
+        "wikidata": "Q6387",
+        "wikipedia": "en:Boeing 737",
+        "artwork_type": "aircraft",
+        "historic": "aircraft",
+        "name": "LN-KKW Boeing 737",
+        "tourism": "artwork",
+        "website": "https://www.luftfartsmuseum.no/museumsparken/ln-kkw-boeing-737",
+        "@id": "way/1481458062"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.410976,
+          67.2768101
+        ]
+      },
+      "properties": {
+        "wikidata": "Q18177049",
+        "artwork_type": "aircraft",
+        "historic": "aircraft",
+        "name": "Cessna T-37B Tweet",
+        "tourism": "artwork",
+        "website": "https://www.luftfartsmuseum.no/museumsparken/cessna-t-37b-tweet-72247",
+        "@id": "way/1481458064"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4124928,
+          67.276493
+        ]
+      },
+      "properties": {
+        "wikidata": "Q49162645",
+        "aircraft:type": "helicopter",
+        "artwork_type": "aircraft",
+        "historic": "helicopter",
+        "name": "Bell UH-1B Iroquois",
+        "tourism": "artwork",
+        "website": "https://www.luftfartsmuseum.no/museumsparken/bell-597",
+        "@id": "way/1481458065"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0392243,
+          59.9728645
+        ]
+      },
+      "properties": {
+        "wikidata": "Q285638",
+        "wikipedia": "en:Canadair CF-104 Starfighter",
+        "description": "Decommissioned Starfighter CF-104 fighter plane on a stand",
+        "historic": "aircraft",
+        "mapillary": "1331937620677408",
+        "name": "Starfighter CF-104",
+        "@id": "way/1481603763"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6419528,
+          59.6560607
+        ]
+      },
+      "properties": {
+        "wikidata": "Q159881",
+        "wikipedia": "no:Lockheed F-104 Starfighter",
+        "artwork_type": "installation",
+        "historic": "aircraft",
+        "image": "https://starfighter.no/cf-104/882/images/e.882.jpg",
+        "name": "Canadair CF-104 Starfighter 104822",
+        "@id": "way/1481605148"
       }
     },
     {
