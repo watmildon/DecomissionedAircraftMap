@@ -27204,6 +27204,54 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -81.4534492,
+          40.9180536
+        ]
+      },
+      "properties": {
+        "wikidata": "Q34945",
+        "wikipedia": "en:Grumman F-14 Tomcat",
+        "historic": "aircraft",
+        "@id": "node/12880917590"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.454363,
+          40.917688
+        ]
+      },
+      "properties": {
+        "wikidata": "Q182027",
+        "wikipedia": "en:Lockheed C-130 Hercules",
+        "historic": "aircraft",
+        "@id": "node/12880917591"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.4539849,
+          40.917537
+        ]
+      },
+      "properties": {
+        "wikidata": "Q714326",
+        "wikipedia": "en:Douglas C-47 Skytrain",
+        "historic": "aircraft",
+        "@id": "node/12880917592"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           7.5637653,
           47.5733908
         ]
