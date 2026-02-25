@@ -6950,6 +6950,7 @@
       "properties": {
         "model:wikidata": "Q155899",
         "historic": "aircraft",
+        "model:wikipedia": "hu:L–39 Albatros",
         "name": "L-39 \"Albatrosz\"",
         "tourism": "attraction",
         "website": "https://www.reptar.hu/repulogepeink/l-39-albatrosz-sugarhajtomuves-oktato-repulogep-capeti-ii.html",
@@ -16449,55 +16450,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.2201062,
-          47.1301469
+          20.1798972,
+          47.1668018
         ]
       },
       "properties": {
         "model:wikidata": "Q662591",
         "historic": "aircraft",
         "model:wikipedia": "hu:Li–2",
-        "name": "Li-2-es repülőgép",
+        "name": "Li-2T \"Teve\"",
         "official_name": "Lisunov Li-2",
         "ref": "HA-LIS, 301-es oldalszám",
         "tourism": "attraction",
+        "website": "https://www.reptar.hu/repulogepeink/li-2t-teve.html",
         "@id": "node/7578335027"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.2200233,
-          47.1308998
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q167277",
-        "historic": "aircraft",
-        "name": "L-29 \"Delfin\"",
-        "tourism": "attraction",
-        "website": "https://www.reptar.hu/repulogepeink/l-29-delfin-sugarhajtomuves-oktato-repulogep.html",
-        "@id": "node/7578335028"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.2200228,
-          47.1308347
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q155899",
-        "historic": "aircraft",
-        "name": "L-39 \"Albatrosz\"",
-        "tourism": "attraction",
-        "website": "https://www.reptar.hu/repulogepeink/l-39-albatrosz-sugarhajtomuves-oktato-repulogep-capeti-ii.html",
-        "@id": "node/7578335029"
       }
     },
     {
@@ -31425,6 +31391,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          21.8646403,
+          51.5591712
+        ]
+      },
+      "properties": {
+        "wikidata": "Q608997",
+        "wikipedia": "en:Mil Mi-2",
+        "historic": "aircraft",
+        "panoramax": "a617d0f5-3a57-4a67-9254-fde020f1bbef",
+        "@id": "node/13596199563"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
@@ -44035,6 +44018,309 @@
         "image": "https://starfighter.no/cf-104/882/images/e.882.jpg",
         "name": "Canadair CF-104 Starfighter 104822",
         "@id": "way/1481605148"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.863649,
+          51.5592602
+        ]
+      },
+      "properties": {
+        "wikidata": "Q118966412",
+        "aircraft:type": "helicopter",
+        "historic": "aircraft",
+        "image": "https://muzeumsp.pl/wp-content/uploads/2019/06/mi-%E2%80%93-6a-02.jpg",
+        "name": "Mi-6A transport helicopter, no. 670",
+        "panoramax": "c7e0d3e4-7d96-49c0-afb1-23c5381c4ad6",
+        "ref": "670",
+        "tourism": "attraction",
+        "website": "https://muzeumsp.pl/eksponaty/smiglowiec-transportowy-mi-6a/",
+        "wheelchair": "no",
+        "@id": "way/1482628087"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8638131,
+          51.5592879
+        ]
+      },
+      "properties": {
+        "wikidata": "Q320900",
+        "wikipedia": "en:Mil Mi-1",
+        "aircraft:type": "helicopter",
+        "historic": "aircraft",
+        "name": "SM-1",
+        "tourism": "attraction",
+        "@id": "way/1482628088"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8640239,
+          51.5599677
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2362706",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SU-20",
+        "@id": "way/1482628089"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8639615,
+          51.5600705
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2362706",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SU-20",
+        "@id": "way/1482628090"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8638615,
+          51.5601724
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2362706",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SU-20",
+        "@id": "way/1482628091"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8637981,
+          51.560267
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2362706",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SU-20",
+        "@id": "way/1482628092"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.863701,
+          51.5603806
+        ]
+      },
+      "properties": {
+        "wikidata": "Q17455643",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "Su-7U",
+        "@id": "way/1482628093"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8636177,
+          51.5604948
+        ]
+      },
+      "properties": {
+        "wikidata": "Q17455643",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "Su-7U",
+        "@id": "way/1482628094"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8635481,
+          51.56059
+        ]
+      },
+      "properties": {
+        "wikidata": "Q17455643",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "Su-7U",
+        "@id": "way/1482628095"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8641119,
+          51.5598588
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2362706",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SU-20",
+        "@id": "way/1482628096"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8637342,
+          51.5599567
+        ]
+      },
+      "properties": {
+        "wikidata": "Q106365012",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SBLim-2M",
+        "@id": "way/1482628097"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8636743,
+          51.5600203
+        ]
+      },
+      "properties": {
+        "wikidata": "Q106365012",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SBLim-2M",
+        "@id": "way/1482628098"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8641306,
+          51.5607915
+        ]
+      },
+      "properties": {
+        "wikidata": "Q312471",
+        "wikipedia": "en:S-125 Neva/Pechora",
+        "aircraft:type": "military;rocket",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "NEWA 125",
+        "panoramax": "63ced515-af92-40ab-b698-34aa728662a0",
+        "@id": "way/1482628107"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8641511,
+          51.5607863
+        ]
+      },
+      "properties": {
+        "wikidata": "Q312471",
+        "wikipedia": "en:S-125 Neva/Pechora",
+        "aircraft:type": "military;rocket",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "NEWA 125",
+        "panoramax": "63ced515-af92-40ab-b698-34aa728662a0",
+        "@id": "way/1482628108"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8649921,
+          51.5594104
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1057117",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "image": "https://muzeumsp.pl/wp-content/uploads/2020/11/cessna-150-muzeum-sil-powietrznych-w-deblinie-1-1300x861.jpg",
+        "model:wikipedia": "en:Cessna 150",
+        "name": "Cessna-150",
+        "website": "https://muzeumsp.pl/eksponaty/cessna-150-numer-boczny-sp-ezh/",
+        "@id": "way/1482628134"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8649352,
+          51.5594966
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15057066",
+        "aircraft:type": "military",
+        "area": "yes",
+        "historic": "aircraft",
+        "image": "https://muzeumsp.pl/wp-content/uploads/2020/11/il-14p-nr-0916-muzeum-sil-powietrznych-w-deblinie-1-1300x861.jpg",
+        "name": "Il-14P",
+        "ref": "0916",
+        "website": "https://muzeumsp.pl/eksponaty/il-14p-nr-boczny-0916-kod-nato-crate/",
+        "@id": "way/1482628135"
       }
     },
     {
