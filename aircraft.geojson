@@ -758,6 +758,7 @@
         "historic": "aircraft",
         "model:wikipedia": "uk:Мі-2",
         "name": "Вертоліт Мі-2",
+        "name:en": "Helicopter Mi-2",
         "name:uk": "Вертоліт Мі-2",
         "source": "http://kpi.ua/923-11",
         "source_ref": "http://kpi.ua/923-11",
@@ -20990,7 +20991,6 @@
         "model:wikipedia": "fr:Fouga CM-170 Magister",
         "name": "Fouga CM-170 Magister",
         "source": "BDOrtho IGN;survey 2024-10",
-        "tourism": "attraction",
         "@id": "node/10753043964"
       }
     },
@@ -44321,6 +44321,30 @@
         "ref": "0916",
         "website": "https://muzeumsp.pl/eksponaty/il-14p-nr-boczny-0916-kod-nato-crate/",
         "@id": "way/1482628135"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8641812,
+          51.5602597
+        ]
+      },
+      "properties": {
+        "wikidata": "Q17372512",
+        "aircraft:type": "helicopter;military",
+        "alt_name": "Hind",
+        "description": "The coolest helicopter at the museum",
+        "historic": "aircraft",
+        "image": "https://muzeumsp.pl/wp-content/uploads/2019/07/mi-%E2%80%93-24-nr-4004-01.jpg",
+        "model": "Mi-24D",
+        "name": "Mi-24D",
+        "panoramax": "2783204e-a64b-42d3-ab5d-6aebd9a8e0f1",
+        "ref": "4004",
+        "website": "https://muzeumsp.pl/eksponaty/smiglowiec-wsparcia-mi-24-nr-4004/",
+        "@id": "way/1483841728"
       }
     },
     {
