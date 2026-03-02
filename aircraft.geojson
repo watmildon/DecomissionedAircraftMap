@@ -22381,22 +22381,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.8659987,
-          32.1410851
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q155651",
-        "historic": "aircraft",
-        "name": "Mil Mi-24",
-        "@id": "node/11897318577"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -117.2656041,
           33.8807005
         ]
@@ -31401,6 +31385,24 @@
         "historic": "aircraft",
         "panoramax": "a617d0f5-3a57-4a67-9254-fde020f1bbef",
         "@id": "node/13596199563"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.7380751,
+          33.5631969
+        ]
+      },
+      "properties": {
+        "wikidata": "Q138514466",
+        "aircraft:type": "helicopter;military",
+        "historic": "aircraft",
+        "name": "Mil Mi-25s 88-0616",
+        "note": "Not sure about location in the museum.",
+        "@id": "node/13610047441"
       }
     },
     {
@@ -44333,7 +44335,7 @@
         ]
       },
       "properties": {
-        "wikidata": "Q17372512",
+        "wikidata": "Q138509249",
         "aircraft:type": "helicopter;military",
         "alt_name": "Hind",
         "description": "The coolest helicopter at the museum",
@@ -44345,6 +44347,41 @@
         "ref": "4004",
         "website": "https://muzeumsp.pl/eksponaty/smiglowiec-wsparcia-mi-24-nr-4004/",
         "@id": "way/1483841728"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1197604,
+          49.1732614
+        ]
+      },
+      "properties": {
+        "wikidata": "Q66499239",
+        "aircraft:type": "military;helicopter",
+        "historic": "aircraft",
+        "name": "Mil Mi-24V Hind 0705",
+        "@id": "way/1484249878"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.8659706,
+          32.141094
+        ]
+      },
+      "properties": {
+        "wikidata": "Q138514590",
+        "model:wikidata": "Q155651",
+        "historic": "aircraft",
+        "name": "Mil Mi-24",
+        "website": "https://pimaair.org/museum-aircraft/mil-mi-24d/",
+        "@id": "way/1484368482"
       }
     },
     {
