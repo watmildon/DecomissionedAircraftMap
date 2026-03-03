@@ -31410,6 +31410,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          10.3325933,
+          47.7972724
+        ]
+      },
+      "properties": {
+        "wikidata": "Q159881",
+        "wikipedia": "de:Lockheed F-104",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7240",
+        "manufacturer:wikipedia": "de:Lockheed Martin",
+        "model": "F-104G",
+        "ref": "23+30",
+        "@id": "node/13613002229"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
@@ -38582,7 +38604,6 @@
         "mapillary": "4141152879270260",
         "model": "F-5B",
         "name": "Northrop F-5B Freedom Fighter",
-        "tourism": "attraction",
         "@id": "way/1035854219"
       }
     },
