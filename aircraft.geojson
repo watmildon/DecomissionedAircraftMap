@@ -36834,8 +36834,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          9.5181707,
-          47.6703026
+          9.5181847,
+          47.6703171
         ]
       },
       "properties": {
@@ -44403,6 +44403,22 @@
         "name": "Mil Mi-24",
         "website": "https://pimaair.org/museum-aircraft/mil-mi-24d/",
         "@id": "way/1484368482"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8641737,
+          51.5604342
+        ]
+      },
+      "properties": {
+        "wikidata": "Q138548531",
+        "historic": "aircraft",
+        "name": "Mil Mi-2 0614",
+        "@id": "way/1485022788"
       }
     },
     {
