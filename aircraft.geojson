@@ -5224,8 +5224,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.3647836,
-          63.4591099
+          -19.3648746,
+          63.45914
         ]
       },
       "properties": {
@@ -22110,6 +22110,7 @@
         "manufacturer": "Sud Aviation",
         "manufacturer:wikidata": "Q1428793",
         "manufacturer:wikipedia": "fi:Sud Aviation",
+        "model": "SE-210",
         "name": "Sud Aviation SE-210 Caravelle III",
         "operator": "Ilmailumuseoyhdistys ry",
         "ref": "OH-LEA",
