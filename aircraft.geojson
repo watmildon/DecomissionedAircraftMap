@@ -5946,6 +5946,7 @@
         "colour": "orange",
         "description": "Aereo del 4º Stormo dell' Aeronautica Militare Italiana",
         "historic": "memorial",
+        "inscription": "Ai caduti dell'Aeronautica in guerra e in pace. Ass arm aereon. Sezione di Cecina 14 giugno 1998",
         "location": "overground",
         "manufacturer": "Aermacchi",
         "manufacturer:wikidata": "Q4577956",
@@ -5953,6 +5954,7 @@
         "model": "Aermacchi MB-326",
         "name": "Aereo del 4º Stormo dell' Aeronautica Militare Italiana",
         "opening_hours": "24/7",
+        "panoramax": "9a6582e9-759a-419c-838e-d05678c65e9a",
         "ref": "4-83;MM54283",
         "reservation": "no",
         "support": "pedestal",
@@ -8465,14 +8467,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.1741223,
-          -16.5037534
+          -68.1741326,
+          -16.5037088
         ]
       },
       "properties": {
         "wikidata": "Q506736",
         "wikipedia": "es:Fokker F27 Friendship",
         "addr:city": "El Alto",
+        "aircraft:type": "military",
         "historic": "aircraft",
         "name": "Fokker F-27-400M Friendship",
         "operator": "Transportes Aéreos Militares",
@@ -20906,8 +20909,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.1741866,
-          -16.5034011
+          -68.1741892,
+          -16.5033516
         ]
       },
       "properties": {
@@ -36195,6 +36198,9 @@
         "wikipedia": "en:Falcon 9 booster B1019",
         "building": "yes",
         "historic": "aircraft",
+        "manufacturer": "SpaceX",
+        "manufacturer:wikidata": "Q193701",
+        "manufacturer:wikipedia": "zh:SpaceX",
         "name": "Falcon 9 Booster B1019",
         "operator": "SpaceX",
         "tourism": "attraction",
@@ -39053,14 +39059,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.1744147,
-          -16.5034197
+          -68.1745076,
+          -16.5034098
         ]
       },
       "properties": {
         "model:wikidata": "Q182027",
         "addr:city": "El Alto",
-        "aircraft:type": "airliner",
+        "aircraft:type": "airliner;military",
         "building": "yes",
         "historic": "aircraft",
         "model:wikipedia": "es:Lockheed C-130 Hercules",
@@ -40619,8 +40625,12 @@
       },
       "properties": {
         "wikidata": "Q15411568",
+        "aircraft:type": "military",
         "historic": "aircraft",
-        "name": "C-130H Hercule",
+        "manufacturer": "Lockheed",
+        "model": "C-130 Hercules",
+        "start_date": "20220706",
+        "tourism": "attraction",
         "@id": "way/1304804644"
       }
     },
@@ -40635,8 +40645,12 @@
       },
       "properties": {
         "wikidata": "Q15411568",
+        "aircraft:type": "military",
         "historic": "aircraft",
-        "name": "C-130H Hercule",
+        "manufacturer": "Lockheed",
+        "model": "C-130 Hercules",
+        "start_date": "20220706",
+        "tourism": "attraction",
         "@id": "way/1304804645"
       }
     },
