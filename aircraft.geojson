@@ -21515,6 +21515,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -4.9639712,
+          56.176404
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q184870",
+        "historic": "aircraft_wreck",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "model": "Boeing B-29 Superfortress",
+        "@id": "node/11091958788"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           44.743317,
           40.5057943
         ]
@@ -31446,8 +31464,8 @@
         "description": "אנדרטה לזכרו של רב\"ט גיל בלאו ז\"ל.\nהאדרטה היא מטוס מדגם עיט (סקייהוק) שיצא משימוש ונתרם על ידי חיל האוויר לזכר הנופל.",
         "historic": "aircraft",
         "image": "https://izkorcdn.azureedge.net/monuments/320/25113%20(1).jpg",
-        "mode:en": "Douglas A-4 Skyhawk",
         "model": "Douglas A-4 Skyhawk",
+        "model:en": "Douglas A-4 Skyhawk",
         "model:he": "עיט",
         "model:wikipedia": "en:Douglas A-4 Skyhawk",
         "@id": "node/13618392019"
