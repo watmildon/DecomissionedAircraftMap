@@ -31462,6 +31462,7 @@
         "model:wikidata": "Q334759",
         "aircraft:type": "military",
         "description": "אנדרטה לזכרו של רב\"ט גיל בלאו ז\"ל.\nהאדרטה היא מטוס מדגם עיט (סקייהוק) שיצא משימוש ונתרם על ידי חיל האוויר לזכר הנופל.",
+        "direction": "45",
         "historic": "aircraft",
         "image": "https://izkorcdn.azureedge.net/monuments/320/25113%20(1).jpg",
         "model": "Douglas A-4 Skyhawk",
@@ -44473,6 +44474,44 @@
         "historic": "aircraft",
         "name": "Mil Mi-2 0614",
         "@id": "way/1485022788"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1655934,
+          45.8341795
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "207",
+        "@id": "way/1487151041"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8637101,
+          44.3273923
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "111",
+        "@id": "way/1487151049"
       }
     },
     {
