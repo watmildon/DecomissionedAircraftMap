@@ -5989,6 +5989,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          23.3692746,
+          42.668735
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q12284565",
+        "subject:wikidata": "Q12298763",
+        "aircraft:type": "military",
+        "historic": "memorial",
+        "inscription": "Лаз-7 Инструктор професор Цветан Лазаров",
+        "material": "metal",
+        "memorial": "aircraft",
+        "@id": "node/4636061233"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -110.8648053,
           32.1401034
         ]
@@ -29332,6 +29352,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          23.2020203,
+          42.7604025
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q152976",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "MiG-17",
+        "@id": "node/13140939905"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -0.7580079,
           51.2919651
         ]
@@ -29363,6 +29400,25 @@
         "model": "PA-25 Pawnee",
         "ref": "G-ATFR",
         "@id": "node/13185298524"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1331792,
+          52.0964653
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q194251",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Hawker",
+        "model": "Hurricane",
+        "name": "Hawker Hurricane",
+        "@id": "node/13192111202"
       }
     },
     {
@@ -38478,8 +38534,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.8541204,
-          52.4527434
+          -1.8542922,
+          52.4528124
         ]
       },
       "properties": {
