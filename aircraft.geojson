@@ -64,8 +64,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -86.65445,
-          34.7121493
+          -86.6576321,
+          34.7111912
         ]
       },
       "properties": {
@@ -74,6 +74,7 @@
         "manufacturer": "Lockheed Aircraft Corporation",
         "model": "A-12 Blackbird",
         "name": "Lockheed A-12 'Oxcart'",
+        "note": "Temporarily moved to west end of parking lot while being refurbished",
         "tourism": "attraction",
         "@id": "node/443692065"
       }
@@ -7521,8 +7522,8 @@
         "description": "Retired RAAF DH-115 \"Vampire\" fighter jet",
         "historic": "aircraft",
         "model:wikipedia": "en:de Havilland Vampire",
-        "name": "Retired Fighter Jet",
         "ref": "A79-321",
+        "tourism": "attraction",
         "@id": "node/4946574409"
       }
     },
@@ -31526,6 +31527,31 @@
         "model:he": "עיט",
         "model:wikipedia": "en:Douglas A-4 Skyhawk",
         "@id": "node/13618392019"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.1839539,
+          38.4244214
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2505817",
+        "wikipedia": "ja:ブルーインパルス",
+        "aircraft:type": "T-4",
+        "alt_name": "46-5731号機",
+        "alt_name:ja": "46-5731号機",
+        "historic": "aircraft",
+        "manufacturer": "川崎重工",
+        "name": "ブルーインパルス",
+        "name:en": "Blue Impulse",
+        "name:ja": "ブルーインパルス",
+        "start_date": "2026-02-27",
+        "tourism": "attraction",
+        "@id": "node/13645693671"
       }
     },
     {
