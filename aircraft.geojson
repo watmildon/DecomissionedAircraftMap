@@ -64,8 +64,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -86.65445,
-          34.7121493
+          -86.6576321,
+          34.7111912
         ]
       },
       "properties": {
@@ -74,6 +74,7 @@
         "manufacturer": "Lockheed Aircraft Corporation",
         "model": "A-12 Blackbird",
         "name": "Lockheed A-12 'Oxcart'",
+        "note": "Temporarily moved to west end of parking lot while being refurbished",
         "tourism": "attraction",
         "@id": "node/443692065"
       }
@@ -758,6 +759,7 @@
         "historic": "aircraft",
         "model:wikipedia": "uk:Мі-2",
         "name": "Вертоліт Мі-2",
+        "name:en": "Helicopter Mi-2",
         "name:uk": "Вертоліт Мі-2",
         "source": "http://kpi.ua/923-11",
         "source_ref": "http://kpi.ua/923-11",
@@ -994,7 +996,6 @@
         "model:wikidata": "Q134028335",
         "historic": "aircraft",
         "model:name": "Fouga CM.170 Magister",
-        "name": "Fouga-Magister",
         "tourism": "attraction",
         "@id": "node/1801436222"
       }
@@ -1306,40 +1307,6 @@
         "historic": "aircraft",
         "name": "Republic F-105D Thunderchief",
         "@id": "node/1959218862"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -117.2657422,
-          33.8833384
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q170211",
-        "description": "s/n 59-0418",
-        "historic": "aircraft",
-        "name": "McDonnell F-101B Voodoo",
-        "@id": "node/1959218957"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -117.2656083,
-          33.8833845
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q531053",
-        "description": "s/n 54-1786",
-        "historic": "aircraft",
-        "name": "North American F-100C Super Sabre",
-        "@id": "node/1959218963"
       }
     },
     {
@@ -2212,6 +2179,64 @@
         "source": "survey",
         "tourism": "artwork",
         "@id": "node/2501764814"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1409565,
+          40.821676
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q327844",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Aeritalia F-104S Starfighter",
+        "name": "Aeritalia Lockheed F 104S ASA",
+        "ref": "MM 6921",
+        "start_date": "1999",
+        "tourism": "attraction",
+        "@id": "node/2506382672"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1423889,
+          40.8205552
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q17519142",
+        "historic": "aircraft",
+        "name": "Aermacchi MB 339PAN",
+        "ref": "MM 54478",
+        "tourism": "attraction",
+        "@id": "node/2506386787"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1406448,
+          40.8224274
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q295466",
+        "historic": "aircraft",
+        "model:wikipedia": "en:AMX International AMX",
+        "name": "AMX A-11 Ghibli",
+        "ref": "MM 7148",
+        "start_date": "2021-11",
+        "tourism": "attraction",
+        "@id": "node/2506389237"
       }
     },
     {
@@ -3446,27 +3471,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.5496284,
-          24.0799859
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q159881",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Lockheed",
-        "model:wikipedia": "zh:F-104星式戰鬥機",
-        "name": "F-104G",
-        "ref": "4417",
-        "tourism": "attraction",
-        "@id": "node/3247351285"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -45.8916593,
           -23.1997701
         ]
@@ -3858,23 +3862,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -76.3530964,
-          37.0754103
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q100026",
-        "description": "s/n 78-0001",
-        "historic": "aircraft",
-        "name": "General Dynamics F-16A Fighting Falcon",
-        "@id": "node/3479549424"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -76.3536307,
           37.0748239
         ]
@@ -3955,23 +3942,6 @@
         "historic": "aircraft",
         "name": "McDonnell F-4C Phantom II",
         "@id": "node/3507853753"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -76.3643727,
-          37.0670934
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q15617348",
-        "desc": "s/n 59-2601",
-        "historic": "aircraft",
-        "name": "Boeing B-52G Stratofortress",
-        "@id": "node/3507853754"
       }
     },
     {
@@ -4172,23 +4142,6 @@
         "name:ru": "Ми-24Д",
         "name:uk": "Мі-24Д",
         "@id": "node/3617267524"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -87.8480447,
-          42.3075067
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "name": "F-14 Tomcat",
-        "@id": "node/3651060381"
       }
     },
     {
@@ -5271,8 +5224,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.3647836,
-          63.4591099
+          -19.3648746,
+          63.45914
         ]
       },
       "properties": {
@@ -5651,40 +5604,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          96.2548778,
-          19.8951621
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q58725",
-        "aircraft:type": "T33",
-        "historic": "aircraft",
-        "tourism": "attraction",
-        "@id": "node/4196386294"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          96.2551353,
-          19.8951659
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q58725",
-        "aircraft:type": "T33",
-        "historic": "aircraft",
-        "tourism": "attraction",
-        "@id": "node/4196386295"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           96.2560459,
           19.8951785
         ]
@@ -6027,6 +5946,7 @@
         "colour": "orange",
         "description": "Aereo del 4º Stormo dell' Aeronautica Militare Italiana",
         "historic": "memorial",
+        "inscription": "Ai caduti dell'Aeronautica in guerra e in pace. Ass arm aereon. Sezione di Cecina 14 giugno 1998",
         "location": "overground",
         "manufacturer": "Aermacchi",
         "manufacturer:wikidata": "Q4577956",
@@ -6034,6 +5954,7 @@
         "model": "Aermacchi MB-326",
         "name": "Aereo del 4º Stormo dell' Aeronautica Militare Italiana",
         "opening_hours": "24/7",
+        "panoramax": "9a6582e9-759a-419c-838e-d05678c65e9a",
         "ref": "4-83;MM54283",
         "reservation": "no",
         "support": "pedestal",
@@ -6068,67 +5989,19 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.6880731,
-          41.5113554
+          23.3692746,
+          42.668735
         ]
       },
       "properties": {
-        "model:wikidata": "Q151432",
-        "description": "Thunderbirds F-4 Phantom II",
-        "historic": "aircraft",
-        "livery": "Thunderbirds",
-        "tourism": "attraction",
-        "@id": "node/4602386773"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -95.0950273,
-          29.5500769
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q164523",
+        "model:wikidata": "Q12284565",
+        "subject:wikidata": "Q12298763",
         "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Northrop",
-        "manufacturer:wikidata": "Q912979",
-        "manufacturer:wikipedia": "en:Northrop Corporation",
-        "model": "T-38A",
-        "model:wikipedia": "en:Northrop T-38 Talon",
-        "name": "NASA 968",
-        "ref": "N968NA",
-        "start_date": "1965",
-        "website": "https://spacecenter.org/meet-our-t-38-jets-in-talon-park/",
-        "@id": "node/4641442687"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -95.0949409,
-          29.550125
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q164523",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Northrop",
-        "manufacturer:wikidata": "Q912979",
-        "manufacturer:wikipedia": "en:Northrop Corporation",
-        "model": "AT-38B",
-        "model:wikipedia": "en:Northrop T-38 Talon",
-        "name": "NASA 900",
-        "ref": "N900NA",
-        "start_date": "1968",
-        "website": "https://spacecenter.org/meet-our-t-38-jets-in-talon-park/",
-        "@id": "node/4641442688"
+        "historic": "memorial",
+        "inscription": "Лаз-7 Инструктор професор Цветан Лазаров",
+        "material": "metal",
+        "memorial": "aircraft",
+        "@id": "node/4636061233"
       }
     },
     {
@@ -6167,22 +6040,6 @@
         "name:en": "Fighter aircraft MiG-17",
         "name:uk": "МіГ-17",
         "@id": "node/4665851404"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          100.94181,
-          4.7720348
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q334759",
-        "historic": "aircraft",
-        "name": "A4 Skyhawk",
-        "@id": "node/4693680665"
       }
     },
     {
@@ -7116,6 +6973,7 @@
       "properties": {
         "model:wikidata": "Q155899",
         "historic": "aircraft",
+        "model:wikipedia": "hu:L–39 Albatros",
         "name": "L-39 \"Albatrosz\"",
         "tourism": "attraction",
         "website": "https://www.reptar.hu/repulogepeink/l-39-albatrosz-sugarhajtomuves-oktato-repulogep-capeti-ii.html",
@@ -7477,24 +7335,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -103.0740399,
-          44.1332795
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q174534",
-        "historic": "aircraft",
-        "model": "B-52 Stratofortress",
-        "ref": "S/N 56-0657",
-        "tourism": "attraction",
-        "@id": "node/4939248829"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -103.0729585,
           44.1326084
         ]
@@ -7620,23 +7460,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -103.0717734,
-          44.1329615
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q248224",
-        "historic": "aircraft",
-        "model": "A-7D-16-CV Corsair II",
-        "tourism": "attraction",
-        "@id": "node/4939248848"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -103.0719584,
           44.1329833
         ]
@@ -7698,8 +7521,8 @@
         "description": "Retired RAAF DH-115 \"Vampire\" fighter jet",
         "historic": "aircraft",
         "model:wikipedia": "en:de Havilland Vampire",
-        "name": "Retired Fighter Jet",
         "ref": "A79-321",
+        "tourism": "attraction",
         "@id": "node/4946574409"
       }
     },
@@ -7777,24 +7600,6 @@
         "name": "MiG-21",
         "tourism": "attraction",
         "@id": "node/4983161577"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.68763,
-          41.511316
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q151432",
-        "description": "Blue Angels F-4 Phantom II",
-        "historic": "aircraft",
-        "livery": "Blue Angels",
-        "tourism": "attraction",
-        "@id": "node/4985467840"
       }
     },
     {
@@ -8682,14 +8487,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.1741223,
-          -16.5037534
+          -68.1741326,
+          -16.5037088
         ]
       },
       "properties": {
         "wikidata": "Q506736",
         "wikipedia": "es:Fokker F27 Friendship",
         "addr:city": "El Alto",
+        "aircraft:type": "military",
         "historic": "aircraft",
         "name": "Fokker F-27-400M Friendship",
         "operator": "Transportes Aéreos Militares",
@@ -9416,28 +9222,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -84.3863654,
-          39.2567237
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q248224",
-        "aircraft:type": "plane",
-        "historic": "aircraft",
-        "manufacturer": "Ling-Temco-Vought",
-        "manufacturer:wikidata": "Q3730937",
-        "memorial": "gate_guardian",
-        "model": "LTV A-7 Corsair II",
-        "operator": "Ohio Air National Guard",
-        "operator:wikidata": "Q7080736",
-        "@id": "node/5828175647"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           21.2769915,
           50.1959024
         ]
@@ -9693,23 +9477,6 @@
         "historic": "aircraft",
         "model": "F-86 Sabre",
         "@id": "node/6037086309"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          4.7833018,
-          50.7540535
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q100026",
-        "historic": "aircraft",
-        "mapillary": "1286523072123094",
-        "name": "Avion de chasse F16",
-        "@id": "node/6043889388"
       }
     },
     {
@@ -10111,23 +9878,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.1451092,
-          44.4767842
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q100026",
-        "historic": "aircraft",
-        "material": "Airplane",
-        "name": "F16 Vermont Air National Guard",
-        "@id": "node/6488341319"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           1.4727726,
           43.5674144
         ]
@@ -10139,24 +9889,6 @@
         "tourism": "attraction",
         "wheelchair": "yes",
         "@id": "node/6493223853"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          10.3936389,
-          43.7251216
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q1469021",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "inscription": "Matricola MM 19782",
-        "name": "Canadair CL.13 \"Sabre\"",
-        "@id": "node/6539179080"
       }
     },
     {
@@ -16742,55 +16474,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.2201062,
-          47.1301469
+          20.1798972,
+          47.1668018
         ]
       },
       "properties": {
         "model:wikidata": "Q662591",
         "historic": "aircraft",
         "model:wikipedia": "hu:Li–2",
-        "name": "Li-2-es repülőgép",
+        "name": "Li-2T \"Teve\"",
         "official_name": "Lisunov Li-2",
         "ref": "HA-LIS, 301-es oldalszám",
         "tourism": "attraction",
+        "website": "https://www.reptar.hu/repulogepeink/li-2t-teve.html",
         "@id": "node/7578335027"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.2200233,
-          47.1308998
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q167277",
-        "historic": "aircraft",
-        "name": "L-29 \"Delfin\"",
-        "tourism": "attraction",
-        "website": "https://www.reptar.hu/repulogepeink/l-29-delfin-sugarhajtomuves-oktato-repulogep.html",
-        "@id": "node/7578335028"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.2200228,
-          47.1308347
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q155899",
-        "historic": "aircraft",
-        "name": "L-39 \"Albatrosz\"",
-        "tourism": "attraction",
-        "website": "https://www.reptar.hu/repulogepeink/l-39-albatrosz-sugarhajtomuves-oktato-repulogep-capeti-ii.html",
-        "@id": "node/7578335029"
       }
     },
     {
@@ -17672,26 +17369,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -86.3626456,
-          43.7052997
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q58725",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Lockheed Corporation",
-        "manufacturer:wikidata": "Q7233",
-        "model": "Lockheed T-33",
-        "tourism": "attraction",
-        "@id": "node/7983410649"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           12.7278569,
           53.3504056
         ]
@@ -17753,22 +17430,6 @@
         "name": "Mi-8T",
         "ref": "10530",
         "@id": "node/7992399589"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -95.1322927,
-          45.1142807
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "historic": "aircraft",
-        "name": "Navy F-14 Tomcat",
-        "@id": "node/8000447845"
       }
     },
     {
@@ -18239,24 +17900,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -84.4603445,
-          42.2550296
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q58725",
-        "aircraft:type": "T-33",
-        "historic": "aircraft",
-        "name": "Lockheed T-33 Shooting Star",
-        "tourism": "attraction",
-        "@id": "node/8326262302"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -77.0097575,
           -12.1542266
         ]
@@ -18307,24 +17950,6 @@
         "name:sr": "Јастреб Ј-21",
         "name:sr-Latn": "Jastreb J-21",
         "@id": "node/8381468568"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.0058775,
-          44.4343325
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "159",
-        "@id": "node/8408757689"
       }
     },
     {
@@ -18471,8 +18096,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          147.4680518,
-          -35.1499433
+          147.4678379,
+          -35.1500551
         ]
       },
       "properties": {
@@ -18511,8 +18136,6 @@
       },
       "properties": {
         "model:wikidata": "Q150609",
-        "addr:city": "Szeged",
-        "addr:street": "Szilánk köz",
         "aircraft:type": "military",
         "historic": "aircraft",
         "name": "MiG-21 vadászrepülő",
@@ -18539,46 +18162,6 @@
         "model:wikipedia": "Dassault Mirage III",
         "name": "Dassault Mirage III",
         "@id": "node/8498109900"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.3182713,
-          40.0311428
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q248224",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "name": "A-7 Corsair II",
-        "source": "Bing",
-        "tourism": "attraction",
-        "wheelchair": "yes",
-        "@id": "node/8519572275"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.3181287,
-          40.031
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q334759",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "name": "A-4 Skyhawk",
-        "source": "Bing",
-        "tourism": "attraction",
-        "wheelchair": "yes",
-        "@id": "node/8519572276"
       }
     },
     {
@@ -18657,27 +18240,6 @@
         "model": "Hughes H-4 Hercules",
         "name": "Spruce Goose",
         "@id": "node/8657911293"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.886,
-          46.556852
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "material": "steel",
-        "memorial": "vehicle",
-        "model": "US",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/8658144448"
       }
     },
     {
@@ -19089,27 +18651,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.7421267,
-          32.6106788
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q58725",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Lockheed",
-        "manufacturer:wikidata": "Q7233",
-        "model": "T-33A",
-        "model:wikipedia": "en:Lockheed T-33",
-        "name": "Lockheed T-33A Shooting Star",
-        "@id": "node/8931901468"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -147.0983312,
           64.6898931
         ]
@@ -19220,7 +18761,7 @@
         "subject:wikidata": "Q794586",
         "aircraft:type": "helicopter",
         "description": "El helicóptero es un Aerospatiale SA330 Puma, del Servicio Aéreo de Rescate.",
-        "historic": "memorial",
+        "historic": "aircraft",
         "memorial": "aircraft",
         "model": "SA330 Puma",
         "name": "Aérospatiale SA 330 Puma",
@@ -19263,25 +18804,6 @@
         "name": "MiG-21",
         "tourism": "attraction",
         "@id": "node/9051352563"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          9.6419677,
-          59.6560612
-        ]
-      },
-      "properties": {
-        "wikidata": "Q159881",
-        "wikipedia": "no:Lockheed F-104 Starfighter",
-        "artwork_type": "installation",
-        "historic": "aircraft",
-        "name": "Canadair CF-104 Starfighter 104822",
-        "tourism": "artwork",
-        "@id": "node/9119914639"
       }
     },
     {
@@ -20530,24 +20052,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -86.7423133,
-          33.562865
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "historic": "aircraft",
-        "military": "F-14 Tomcat",
-        "model:wikipedia": "en:Grumman F-14 Tomcat",
-        "name": "F-14 Tomcat",
-        "@id": "node/10059848783"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           15.5669202,
           45.4630126
         ]
@@ -20557,6 +20061,26 @@
         "historic": "aircraft",
         "note": "MiG 21",
         "@id": "node/10067305478"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.82746,
+          43.4235978
+        ]
+      },
+      "properties": {
+        "subject:wikidata": "Q40021",
+        "historic": "memorial",
+        "material": "metal",
+        "memorial": "aircraft",
+        "name": "T-6 Texan",
+        "name:etymology:wikidata": "Q40021",
+        "not:inscription": "yes",
+        "@id": "node/10127043634"
       }
     },
     {
@@ -20596,25 +20120,6 @@
         "name": "Bell UH-1",
         "tourism": "attraction",
         "@id": "node/10170416744"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -85.7442577,
-          33.3170076
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q531053",
-        "aircraft:type": "helicopter",
-        "historic": "aircraft",
-        "model:wikipedia": "en:North American F-100 Super Sabre",
-        "name": "F-100F",
-        "tourism": "attraction",
-        "@id": "node/10170416745"
       }
     },
     {
@@ -20799,22 +20304,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.1781412,
-          48.0661013
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q334759",
-        "historic": "aircraft",
-        "tourism": "attraction",
-        "@id": "node/10278568350"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           0.5472007,
           52.6573613
         ]
@@ -20913,10 +20402,9 @@
         ]
       },
       "properties": {
-        "model:wikidata": "Q334759",
+        "model:wikidata": "Q151432",
         "aircraft:type": "military",
         "historic": "aircraft",
-        "name": "A-4 Skyhawk",
         "source": "Bing",
         "tourism": "attraction",
         "@id": "node/10573151464"
@@ -20932,10 +20420,11 @@
         ]
       },
       "properties": {
-        "model:wikidata": "Q182113",
+        "model:wikidata": "Q50349976",
         "aircraft:type": "military",
         "historic": "aircraft",
-        "name": "C-141 Starlifter",
+        "model": "KC-135R",
+        "name": "Gibby's Jet",
         "source": "https://www.jbmdl.jb.mil/News/Article/245691/starlifter-memorial-honors-aircraft-the-airmen-it-served/",
         "tourism": "attraction",
         "@id": "node/10573197529"
@@ -21080,26 +20569,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -86.1300872,
-          40.668491
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q170211",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "McDonnell",
-        "model:wikipedia": "en:McDonnell_F-101_Voodoo",
-        "name": "McDonnell F-101B Voodoo",
-        "ref": "58-0321",
-        "@id": "node/10635393306"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -86.1302488,
           40.6686612
         ]
@@ -21111,24 +20580,6 @@
         "name": "McDonnell F-4C Phantom II",
         "ref": "64-0783",
         "@id": "node/10647209907"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -86.1292401,
-          40.6688181
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "name": "Grumman F-14B Tomcat",
-        "ref": "162912",
-        "@id": "node/10647209908"
       }
     },
     {
@@ -21478,8 +20929,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.1741866,
-          -16.5034011
+          -68.1741892,
+          -16.5033516
         ]
       },
       "properties": {
@@ -21491,30 +20942,6 @@
         "name": "Douglas C-47",
         "tourism": "attraction",
         "@id": "node/10728824980"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.1738193,
-          -16.5024604
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q58725",
-        "addr:city": "El Alto",
-        "aircraft:type": "military",
-        "direction": "10",
-        "historic": "aircraft",
-        "model:wikipedia": "es:Lockheed T-33 Shooting Star",
-        "name": "Lockheed T-33A Shooting Star",
-        "operator": "Fuerza Aérea Boliviana",
-        "operator:short": "FAB",
-        "operator:type": "military",
-        "tourism": "attraction",
-        "@id": "node/10728824981"
       }
     },
     {
@@ -21587,7 +21014,6 @@
         "model:wikipedia": "fr:Fouga CM-170 Magister",
         "name": "Fouga CM-170 Magister",
         "source": "BDOrtho IGN;survey 2024-10",
-        "tourism": "attraction",
         "@id": "node/10753043964"
       }
     },
@@ -22092,23 +21518,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -77.0116965,
-          38.8451509
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q724763",
-        "historic": "aircraft",
-        "model": "Republic F-105D Thunderchief",
-        "name": "Republic F-105D Thunderchief",
-        "@id": "node/11013110654"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           11.504541,
           44.2134862
         ]
@@ -22119,6 +21528,24 @@
         "model": "North American T-6 Texan",
         "source": "survey",
         "@id": "node/11044025726"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.9639712,
+          56.176404
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q184870",
+        "historic": "aircraft_wreck",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "model": "Boeing B-29 Superfortress",
+        "@id": "node/11091958788"
       }
     },
     {
@@ -22516,6 +21943,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -3.8273524,
+          43.4236995
+        ]
+      },
+      "properties": {
+        "subject:wikidata": "Q58725",
+        "historic": "memorial",
+        "material": "metal",
+        "memorial": "aircraft",
+        "name": "Lockheed T-33",
+        "name:etymology:wikidata": "Q58725",
+        "not:inscription": "yes",
+        "@id": "node/11271097066"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           20.2856665,
           44.8196725
         ]
@@ -22676,24 +22123,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.4860222,
-          31.2469553
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q159881",
-        "historic": "aircraft",
-        "model:wikipedia": "en:Lockheed F-104 Starfighter",
-        "name": "Lockheed F-104 Starfighter",
-        "ref": "56-0919",
-        "@id": "node/11585264376"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           101.6879421,
           3.1374935
         ]
@@ -22703,25 +22132,6 @@
         "historic": "aircraft",
         "name": "Eagle 150B",
         "@id": "node/11621301197"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.2964175,
-          47.5178191
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q190114",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "model": "Lockheed SR-71 Blackbird",
-        "name": "Lockheed SR-71 Blackbird",
-        "tourism": "attraction",
-        "@id": "node/11695578517"
       }
     },
     {
@@ -22741,6 +22151,7 @@
         "manufacturer": "Sud Aviation",
         "manufacturer:wikidata": "Q1428793",
         "manufacturer:wikipedia": "fi:Sud Aviation",
+        "model": "SE-210",
         "name": "Sud Aviation SE-210 Caravelle III",
         "operator": "Ilmailumuseoyhdistys ry",
         "ref": "OH-LEA",
@@ -23012,38 +22423,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.8659987,
-          32.1410851
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q155651",
-        "historic": "aircraft",
-        "name": "Mil Mi-24",
-        "@id": "node/11897318577"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -119.3312484,
-          36.1533807
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q151432",
-        "historic": "aircraft",
-        "tourism": "attraction",
-        "@id": "node/11897751035"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -117.2656041,
           33.8807005
         ]
@@ -23244,23 +22623,6 @@
         "name": "Fairchild C-119C Flying Boxcar",
         "website": "https://pimaair.org/museum-aircraft/fairchild-c-119c_1/",
         "@id": "node/11899623015"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -110.8673528,
-          32.1377432
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q174534",
-        "historic": "aircraft",
-        "name": "Boeing NB-52A Stratofortress",
-        "website": "https://pimaair.org/museum-aircraft/boeing-b-52a/",
-        "@id": "node/11899623021"
       }
     },
     {
@@ -23787,38 +23149,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.8653712,
-          32.1412477
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q182185",
-        "historic": "aircraft",
-        "name": "Lockheed JetStar",
-        "@id": "node/11899627955"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -110.8657837,
-          32.1412437
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q182185",
-        "historic": "aircraft",
-        "name": "Lockheed JetStar",
-        "@id": "node/11899627957"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -110.8662095,
           32.1412212
         ]
@@ -23972,21 +23302,6 @@
         "historic": "aircraft",
         "name": "Sikorsky UH-19B Chickasaw",
         "@id": "node/11899627969"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -87.303822,
-          30.3486877
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "historic": "aircraft",
-        "@id": "node/11899725027"
       }
     },
     {
@@ -25443,22 +24758,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          133.9044525,
-          34.6769471
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q159881",
-        "historic": "aircraft",
-        "name": "F-104",
-        "@id": "node/12169426211"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           25.618013,
           43.0004788
         ]
@@ -25577,36 +24876,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -76.882915,
-          38.8067677
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q182185",
-        "addr:city": "Joint Base Andrews",
-        "addr:country": "US",
-        "addr:housenumber": "1418",
-        "addr:postcode": "20762",
-        "addr:state": "MD",
-        "addr:street": "Menoher Drive",
-        "aircraft:type": "jet",
-        "historic": "memorial",
-        "manufacturer:wikidata": "Q7233",
-        "memorial": "aircraft",
-        "model:short": "CL329",
-        "name": "Lockheed C-140 Jetstar",
-        "operator:wikidata": "Q2818560",
-        "ref": "89001",
-        "ref:1958-03-04-1965-06-08": "1002",
-        "start_date": "1983-08",
-        "@id": "node/12193665264"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -76.8804359,
           38.8176811
         ]
@@ -25653,24 +24922,6 @@
         "replica": "yes",
         "tourism": "attraction",
         "@id": "node/12197541356"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -9.3330781,
-          38.8367171
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q164523",
-        "historic": "aircraft",
-        "manufacturer": "Northrop",
-        "model": "T-38",
-        "name": "Northrop T-38 Talon",
-        "@id": "node/12251220182"
       }
     },
     {
@@ -25984,23 +25235,6 @@
         "historic": "aircraft",
         "name": "Vought A-7E Corsair II",
         "@id": "node/12454407791"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -76.0205686,
-          36.8079822
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q34945",
-        "description": "BuNo 164604",
-        "historic": "aircraft",
-        "name": "Grumman F-14D Tomcat",
-        "@id": "node/12454407792"
       }
     },
     {
@@ -26417,22 +25651,6 @@
         "name": "McDonnell F-101B Voodoo",
         "tourism": "attraction",
         "@id": "node/12455120237"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.2352126,
-          32.1160515
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q151432",
-        "historic": "aircraft",
-        "name": "F-4C Phantom",
-        "@id": "node/12460939601"
       }
     },
     {
@@ -27755,25 +26973,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.1586138,
-          22.9941094
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q159881",
-        "historic": "aircraft",
-        "model:wikipedia": "zh:F-104星式戰鬥機",
-        "name": "F-104星式戰鬥機",
-        "name:en": "F-104 Starfighter",
-        "name:zh": "F-104星式戰鬥機",
-        "@id": "node/12817950194"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           115.8584999,
           -32.0493387
         ]
@@ -27997,6 +27196,54 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -81.4534492,
+          40.9180536
+        ]
+      },
+      "properties": {
+        "wikidata": "Q34945",
+        "wikipedia": "en:Grumman F-14 Tomcat",
+        "historic": "aircraft",
+        "@id": "node/12880917590"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.454363,
+          40.917688
+        ]
+      },
+      "properties": {
+        "wikidata": "Q182027",
+        "wikipedia": "en:Lockheed C-130 Hercules",
+        "historic": "aircraft",
+        "@id": "node/12880917591"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.4539849,
+          40.917537
+        ]
+      },
+      "properties": {
+        "wikidata": "Q714326",
+        "wikipedia": "en:Douglas C-47 Skytrain",
+        "historic": "aircraft",
+        "@id": "node/12880917592"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           7.5637653,
           47.5733908
         ]
@@ -28033,8 +27280,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          17.4560607,
-          49.0373064
+          17.4560704,
+          49.0373074
         ]
       },
       "properties": {
@@ -29316,6 +28563,7 @@
       "properties": {
         "model:wikidata": "Q159881",
         "historic": "aircraft",
+        "location": "indoor",
         "note": "Starfighter",
         "@id": "node/12992616874"
       }
@@ -30104,6 +29352,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          23.2020203,
+          42.7604025
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q152976",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "MiG-17",
+        "@id": "node/13140939905"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -0.7580079,
           51.2919651
         ]
@@ -30135,6 +29400,25 @@
         "model": "PA-25 Pawnee",
         "ref": "G-ATFR",
         "@id": "node/13185298524"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1331792,
+          52.0964653
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q194251",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Hawker",
+        "model": "Hurricane",
+        "name": "Hawker Hurricane",
+        "@id": "node/13192111202"
       }
     },
     {
@@ -30175,6 +29459,48 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -96.7548189,
+          40.8415695
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q842481",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Northrop Corporation",
+        "manufacturer:wikidata": "Q912979",
+        "manufacturer:wikipedia": "en:Northrop Corporation",
+        "model": "F-89_Scorpion",
+        "model:wikipedia": "en:Northrop F-89 Scorpion",
+        "@id": "node/13208860769"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7554345,
+          40.8416019
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q531053",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "North American Aviation",
+        "manufacturer:wikidata": "Q519560",
+        "manufacturer:wikipedia": "en:North American Aviation",
+        "model": "F-100_Super_Sabre",
+        "model:wikipedia": "en:North American F-100 Super Sabre",
+        "@id": "node/13208860770"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           9.5703256,
           59.1803231
         ]
@@ -30187,51 +29513,6 @@
         "name": "Piper PA-28 Cherokee",
         "tourism": "artwork",
         "@id": "node/13247949203"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.8847406,
-          44.3128166
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q82627",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Avioane Craiova",
-        "manufacturer:wikidata": "Q2324155",
-        "manufacturer:wikipedia": "en:Avioane Craiova",
-        "model": "IAR-93",
-        "model:wikipedia": "en:IAR-93 Vultur",
-        "name": "IAR-93",
-        "ref": "163 (613 now)",
-        "@id": "node/13251077360"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          21.2001494,
-          45.7188227
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q82627",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Avioane Craiova",
-        "manufacturer:wikidata": "Q2324155",
-        "manufacturer:wikipedia": "en:Avioane Craiova",
-        "model:wikipedia": "en:IAR-93 Vultur",
-        "name": "IAR-93",
-        "ref": "201",
-        "@id": "node/13251240053"
       }
     },
     {
@@ -30278,24 +29559,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -71.4800921,
-          42.7345432
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q334759",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "manufacturer": "Douglas",
-        "model": "A-4 Skyhawk",
-        "@id": "node/13274050086"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           22.2313904,
           50.091323
         ]
@@ -30329,6 +29592,46 @@
         "model": "BAC_Lightning_T.5",
         "name": "English Electric Lightning",
         "@id": "node/13286297026"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6393197,
+          33.9812918
+        ]
+      },
+      "properties": {
+        "wikidata": "Q185000",
+        "model:wikidata": "Q18117167",
+        "wikipedia": "en:Boeing B-17 Flying Fortress",
+        "historic": "aircraft",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "name": "Boeing B-17G Flying Fortress",
+        "ref": "44-83684",
+        "@id": "node/13288300991"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6392339,
+          33.9810315
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q714326",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Douglas C-47 Skytrain",
+        "name": "Douglas C-47A Skyrain",
+        "ref": "42-92509",
+        "@id": "node/13288300992"
       }
     },
     {
@@ -30666,421 +29969,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          26.1105278,
-          44.4777025
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068831"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1104314,
-          44.4777123
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068832"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1102447,
-          44.4780628
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068833"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1105606,
-          44.4782019
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "tourism": "attraction",
-        "@id": "node/13340068834"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1104968,
-          44.4782958
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "tourism": "attraction",
-        "@id": "node/13340068835"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1104311,
-          44.4783883
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "tourism": "attraction",
-        "@id": "node/13340068836"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1113442,
-          44.4781721
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068837"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1113003,
-          44.4782346
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068838"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1112664,
-          44.4782901
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068839"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1112305,
-          44.4783641
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068840"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1111986,
-          44.4784395
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068841"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1108517,
-          44.4785248
-        ]
-      },
-      "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
-        "historic": "aircraft",
-        "name": "MiG-21",
-        "tourism": "attraction",
-        "@id": "node/13340068842"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1114319,
-          44.4781052
-        ]
-      },
-      "properties": {
-        "wikidata": "Q153307",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-19",
-        "historic": "aircraft",
-        "name": "MiG-19",
-        "tourism": "attraction",
-        "@id": "node/13340068843"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1115814,
-          44.4784039
-        ]
-      },
-      "properties": {
-        "wikidata": "Q153307",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-19",
-        "historic": "aircraft",
-        "name": "MiG-19",
-        "tourism": "attraction",
-        "@id": "node/13340068844"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1114957,
-          44.478495
-        ]
-      },
-      "properties": {
-        "wikidata": "Q153307",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-19",
-        "historic": "aircraft",
-        "name": "MiG-19",
-        "tourism": "attraction",
-        "@id": "node/13340068845"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1111607,
-          44.4778904
-        ]
-      },
-      "properties": {
-        "wikidata": "Q187377",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-15",
-        "historic": "aircraft",
-        "name": "MiG-15",
-        "tourism": "attraction",
-        "@id": "node/13340068846"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1111089,
-          44.4780412
-        ]
-      },
-      "properties": {
-        "wikidata": "Q187377",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-15",
-        "historic": "aircraft",
-        "name": "MiG-15",
-        "tourism": "attraction",
-        "@id": "node/13340068847"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1115814,
-          44.4779288
-        ]
-      },
-      "properties": {
-        "wikidata": "Q187377",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-15",
-        "historic": "aircraft",
-        "name": "MiG-15",
-        "tourism": "attraction",
-        "@id": "node/13340068848"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1114219,
-          44.4777567
-        ]
-      },
-      "properties": {
-        "wikidata": "Q187377",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-15",
-        "historic": "aircraft",
-        "name": "MiG-15",
-        "tourism": "attraction",
-        "@id": "node/13340068849"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1114817,
-          44.478027
-        ]
-      },
-      "properties": {
-        "wikidata": "Q152976",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-17",
-        "historic": "aircraft",
-        "name": "MiG-17",
-        "tourism": "attraction",
-        "@id": "node/13340068850"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1110571,
-          44.4781806
-        ]
-      },
-      "properties": {
-        "wikidata": "Q152976",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-17",
-        "historic": "aircraft",
-        "name": "MiG-17",
-        "tourism": "attraction",
-        "@id": "node/13340068851"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1106723,
-          44.4784039
-        ]
-      },
-      "properties": {
-        "wikidata": "Q130681",
-        "wikipedia": "en:Mikoyan MiG-29",
-        "historic": "aircraft",
-        "model": "SNIPER",
-        "name": "MiG-29 SNIPER",
-        "tourism": "attraction",
-        "@id": "node/13340068852"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1107143,
-          44.4777961
-        ]
-      },
-      "properties": {
-        "wikidata": "Q187377",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-15",
-        "historic": "aircraft",
-        "name": "MiG-15",
-        "tourism": "attraction",
-        "@id": "node/13340068853"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           26.1106995,
           44.4787094
         ]
@@ -31110,43 +29998,6 @@
         "name": "Yak-23",
         "tourism": "attraction",
         "@id": "node/13340068855"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.1646633,
-          45.8341142
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "205",
-        "@id": "node/13340086421"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          21.603354,
-          46.263897
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "access": "private",
-        "aircraft:type": "military;jet",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "@id": "node/13340447356"
       }
     },
     {
@@ -31245,60 +30096,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          27.5976517,
-          47.15374
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "@id": "node/13342001257"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          27.7179629,
-          46.0894253
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "memorial": "aircraft",
-        "name": "IAR-93",
-        "ref": "216",
-        "@id": "node/13342005153"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.260004,
-          44.6120627
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "223",
-        "@id": "node/13342010501"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           23.333113,
           45.0016333
         ]
@@ -31317,42 +30114,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          24.6781995,
-          44.633737
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "215",
-        "@id": "node/13342184585"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.4893017,
-          44.1435671
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "109",
-        "@id": "node/13342204243"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           26.0745626,
           44.5198423
         ]
@@ -31363,24 +30124,6 @@
         "historic": "aircraft",
         "name": "MiG-21",
         "@id": "node/13342207751"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.0745236,
-          44.5196955
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "114",
-        "@id": "node/13342207752"
       }
     },
     {
@@ -31477,43 +30220,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          25.5897498,
-          45.6624489
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "access": "private",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "600",
-        "@id": "node/13342604257"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          27.9395106,
-          45.3629239
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "229",
-        "@id": "node/13342683773"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           27.9392254,
           45.3629412
         ]
@@ -31524,24 +30230,6 @@
         "historic": "aircraft",
         "name": "MiG-21",
         "@id": "node/13342683774"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          27.4137405,
-          45.8482486
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "241",
-        "@id": "node/13342743905"
       }
     },
     {
@@ -31610,24 +30298,6 @@
         "historic": "aircraft",
         "name": "IAR-316",
         "@id": "node/13342743910"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          24.9639188,
-          44.098909
-        ]
-      },
-      "properties": {
-        "wikidata": "Q82627",
-        "wikipedia": "en:IAR-93 Vultur",
-        "historic": "aircraft",
-        "name": "IAR-93",
-        "ref": "217",
-        "@id": "node/13346542595"
       }
     },
     {
@@ -32004,8 +30674,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -59.1183771,
-          -34.5556788
+          -59.1185193,
+          -34.5559339
         ]
       },
       "properties": {
@@ -32234,6 +30904,653 @@
         "model:wikipedia": "en:Polar Satellite Launch Vehicle",
         "tourism": "attraction",
         "@id": "node/13462217170"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.140999,
+          40.8226186
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q152200",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Panavia Tornado",
+        "name": "Panavia Tornado IDS",
+        "ref": "MM7023/6-63",
+        "start_date": "2023-11-05",
+        "tourism": "attraction",
+        "@id": "node/13506060945"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9132063,
+          -6.317075
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q672525",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "North American Rockwell",
+        "manufacturer:wikidata": "Q1348664",
+        "manufacturer:wikipedia": "en:Rockwell International",
+        "model": "OV-10F",
+        "model:wikipedia": "en:North American Rockwell OV-10 Bronco",
+        "name": "OV-10F Bronco",
+        "@id": "node/13546873947"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0931947,
+          44.4939316
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "@id": "node/13551183369"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.093079,
+          44.4939471
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "@id": "node/13551183370"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0929262,
+          44.49396
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "@id": "node/13551183371"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4133106,
+          67.2768912
+        ]
+      },
+      "properties": {
+        "wikidata": "Q189064",
+        "wikipedia": "en:Lockheed U-2",
+        "aircraft:type": "jet",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Lockheed U–2",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/lockheed-u2",
+        "@id": "node/13587502920"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134716,
+          67.2768998
+        ]
+      },
+      "properties": {
+        "wikidata": "Q49162645",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Bell UH-1B Iroquois",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/bell-uh-1b-iroquois",
+        "@id": "node/13587502921"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4133714,
+          67.27687
+        ]
+      },
+      "properties": {
+        "wikidata": "Q285638",
+        "wikipedia": "en:Canadair CF-104 Starfighter",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Canadair CF-104 Starfighter",
+        "@id": "node/13587502922"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130605,
+          67.2769652
+        ]
+      },
+      "properties": {
+        "wikidata": "Q108057141",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "F-16 Fighting Falcon",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/f-16-fighting-falcon",
+        "@id": "node/13587502923"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130146,
+          67.2765855
+        ]
+      },
+      "properties": {
+        "wikidata": "Q1393116",
+        "wikipedia": "en:Fairchild PT-19",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Fairchild PT-19 Cornell",
+        "@id": "node/13587502924"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4135477,
+          67.2766557
+        ]
+      },
+      "properties": {
+        "wikidata": "Q1860313",
+        "wikipedia": "en:Fokker C.V",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Fokker CVD",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/fokker-cvd",
+        "@id": "node/13587502925"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4131281,
+          67.2764342
+        ]
+      },
+      "properties": {
+        "wikidata": "Q34775",
+        "wikipedia": "en:Focke-Wulf Fw 190",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "model": "Focke-Wulf_Fw_190_A-3/U3",
+        "name": "Svart 3",
+        "@id": "node/13587502926"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134974,
+          67.2763221
+        ]
+      },
+      "properties": {
+        "wikidata": "Q103923121",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Gloster Gladiator II",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/gloster-gladiator",
+        "@id": "node/13587502927"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4132047,
+          67.2763446
+        ]
+      },
+      "properties": {
+        "wikidata": "Q155661",
+        "wikipedia": "en:Junkers Ju 88",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Junkers Ju 88 A-4",
+        "@id": "node/13587502928"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4138237,
+          67.2763055
+        ]
+      },
+      "properties": {
+        "wikidata": "Q1156504",
+        "wikipedia": "en:Kjeller F.F.9 Kaje",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Kjeller F.F.9 Kaje I",
+        "@id": "node/13587502929"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134071,
+          67.2765573
+        ]
+      },
+      "properties": {
+        "wikidata": "Q155639",
+        "wikipedia": "en:Messerschmitt Bf 109",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "model": "Messerschmitt_Bf_109",
+        "name": "Gul 3",
+        "note": "not sure bout exact location in the museum",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/messerschmitt-bf-109-gul-3",
+        "@id": "node/13587502930"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4128378,
+          67.2768723
+        ]
+      },
+      "properties": {
+        "wikidata": "Q153826",
+        "wikipedia": "en:North American F-86 Sabre",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "North American F-86 Sabre",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/north-american-f-86-sabre",
+        "@id": "node/13587502931"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134509,
+          67.2761842
+        ]
+      },
+      "properties": {
+        "wikidata": "Q308940",
+        "wikipedia": "en:Northrop F-5",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Northrop F-5A(G) Freedom Fighter «102",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/northrops-f-5-freedom-fighter",
+        "@id": "node/13587502932"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4136734,
+          67.2765643
+        ]
+      },
+      "properties": {
+        "wikidata": "Q20023160",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Republic F-84G Thunderjet",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/republic-f-84g-thunderjet-ny",
+        "@id": "node/13587502933"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130424,
+          67.2768709
+        ]
+      },
+      "properties": {
+        "wikidata": "Q672488",
+        "wikipedia": "en:Piper PA-18 Super Cub",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Piper L-18C Super Cub «835»",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/piper-super-club",
+        "@id": "node/13587502934"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130544,
+          67.2765306
+        ]
+      },
+      "properties": {
+        "wikidata": "Q153348",
+        "wikipedia": "en:V-1 flying bomb",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "V-1",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/rakett",
+        "@id": "node/13587502935"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130539,
+          67.2767687
+        ]
+      },
+      "properties": {
+        "wikidata": "Q541116",
+        "wikipedia": "en:Cessna O-1 Bird Dog",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Cessna L-19A/O-1A Bird Dog",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/cessna-l-19a/o-1a-bird-dog",
+        "@id": "node/13587502936"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4133272,
+          67.2767776
+        ]
+      },
+      "properties": {
+        "wikidata": "Q18019707",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Consolidated PBY-5A Catalina",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/consolidated-pby-5a-catalina",
+        "@id": "node/13587502937"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4136314,
+          67.2765279
+        ]
+      },
+      "properties": {
+        "wikidata": "Q221344",
+        "wikipedia": "en:De Havilland Mosquito",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "De Havilland DH 98 Mosquito",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/de-havilland-dh-98-mosquito",
+        "@id": "node/13587502938"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4135801,
+          67.2763995
+        ]
+      },
+      "properties": {
+        "wikidata": "Q654062",
+        "wikipedia": "en:De Havilland Tiger Moth",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "De Havilland DH 82 Tiger Moth",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/de-havilland-dh-82-tiger-moth",
+        "@id": "node/13587502939"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134914,
+          67.2767352
+        ]
+      },
+      "properties": {
+        "wikidata": "Q179835",
+        "wikipedia": "en:De Havilland Vampire",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "De Havilland DH 100 Vampire",
+        "website": "De Havilland DH 100 Vampire",
+        "@id": "node/13587502940"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4129863,
+          67.2767084
+        ]
+      },
+      "properties": {
+        "wikidata": "Q20023160",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Republic F-84G Thunderjet",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/republic-f-84g-thunderjet-ny",
+        "@id": "node/13587502941"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4130359,
+          67.2766746
+        ]
+      },
+      "properties": {
+        "wikidata": "Q17018597",
+        "wikipedia": "en:Supermarine Spitfire (late Merlin-powered variants)",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Supermarine Spitfire LF Mk IXe",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/supermarine-spitfire",
+        "@id": "node/13587502942"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4134824,
+          67.2768267
+        ]
+      },
+      "properties": {
+        "wikidata": "Q162116",
+        "wikipedia": "en:Westland Lynx",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Westland Lynx",
+        "website": "https://www.luftfartsmuseum.no/militaere-fly/westland-lynx-ny",
+        "@id": "node/13587502943"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8646403,
+          51.5591712
+        ]
+      },
+      "properties": {
+        "wikidata": "Q608997",
+        "wikipedia": "en:Mil Mi-2",
+        "historic": "aircraft",
+        "panoramax": "a617d0f5-3a57-4a67-9254-fde020f1bbef",
+        "@id": "node/13596199563"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.7380751,
+          33.5631969
+        ]
+      },
+      "properties": {
+        "wikidata": "Q138514466",
+        "aircraft:type": "helicopter;military",
+        "historic": "aircraft",
+        "name": "Mil Mi-25s 88-0616",
+        "note": "Not sure about location in the museum.",
+        "@id": "node/13610047441"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3325933,
+          47.7972724
+        ]
+      },
+      "properties": {
+        "wikidata": "Q159881",
+        "wikipedia": "de:Lockheed F-104",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7240",
+        "manufacturer:wikipedia": "de:Lockheed Martin",
+        "model": "F-104G",
+        "ref": "23+30",
+        "@id": "node/13613002229"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3068263,
+          32.9132195
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q334759",
+        "aircraft:type": "military",
+        "description": "אנדרטה לזכרו של רב\"ט גיל בלאו ז\"ל.\nהאדרטה היא מטוס מדגם עיט (סקייהוק) שיצא משימוש ונתרם על ידי חיל האוויר לזכר הנופל.",
+        "direction": "45",
+        "historic": "aircraft",
+        "image": "https://izkorcdn.azureedge.net/monuments/320/25113%20(1).jpg",
+        "model": "Douglas A-4 Skyhawk",
+        "model:en": "Douglas A-4 Skyhawk",
+        "model:he": "עיט",
+        "model:wikipedia": "en:Douglas A-4 Skyhawk",
+        "@id": "node/13618392019"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.1839539,
+          38.4244214
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2505817",
+        "wikipedia": "ja:ブルーインパルス",
+        "aircraft:type": "T-4",
+        "alt_name": "46-5731号機",
+        "alt_name:ja": "46-5731号機",
+        "historic": "aircraft",
+        "manufacturer": "川崎重工",
+        "name": "ブルーインパルス",
+        "name:en": "Blue Impulse",
+        "name:ja": "ブルーインパルス",
+        "start_date": "2026-02-27",
+        "tourism": "attraction",
+        "@id": "node/13645693671"
       }
     },
     {
@@ -32802,15 +32119,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.9007802,
-          41.2769432
+          -95.9007862,
+          41.2769429
         ]
       },
       "properties": {
         "model:wikidata": "Q248224",
         "historic": "aircraft",
         "model:wikipedia": "en:LTV A-7 Corsair II",
-        "name": "A-7 Corsair II",
         "name:uk": "Ling-Temco-Vought A-7 Corsair II",
         "tourism": "attraction",
         "vehicle:wikipedia": "en:LTV A-7 Corsair II",
@@ -32822,8 +32138,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.899986,
-          41.2767354
+          -95.8999869,
+          41.2767339
         ]
       },
       "properties": {
@@ -34174,8 +33490,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -116.5035195,
-          33.8321544
+          -116.5035212,
+          33.8321552
         ]
       },
       "properties": {
@@ -36982,6 +36298,9 @@
         "wikipedia": "en:Falcon 9 booster B1019",
         "building": "yes",
         "historic": "aircraft",
+        "manufacturer": "SpaceX",
+        "manufacturer:wikidata": "Q193701",
+        "manufacturer:wikipedia": "zh:SpaceX",
         "name": "Falcon 9 Booster B1019",
         "operator": "SpaceX",
         "tourism": "attraction",
@@ -37073,6 +36392,26 @@
         "outdoor": "yes",
         "tourism": "attraction",
         "@id": "way/571494087"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.8173765,
+          33.8891871
+        ]
+      },
+      "properties": {
+        "wikidata": "Q1125423",
+        "model:wikidata": "Q133940584",
+        "wikipedia": "en:Marine One",
+        "aircraft:type": "helicopter",
+        "historic": "aircraft",
+        "memorial": "vehicle",
+        "name": "Marine One",
+        "@id": "way/577404182"
       }
     },
     {
@@ -37624,8 +36963,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          9.5181707,
-          47.6703026
+          9.5181847,
+          47.6703171
         ]
       },
       "properties": {
@@ -39220,8 +38559,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.8541204,
-          52.4527434
+          -1.8542922,
+          52.4528124
         ]
       },
       "properties": {
@@ -39380,6 +38719,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          11.0683482,
+          60.1892744
+        ]
+      },
+      "properties": {
+        "wikidata": "Q308940",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "artwork_type": "aircraft",
+        "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/JJb7ZvJ7iQdgPbL88",
+        "mapillary": "4141152879270260",
+        "model": "F-5B",
+        "name": "Northrop F-5B Freedom Fighter",
+        "@id": "way/1035854219"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -15.5116875,
           27.7841458
         ]
@@ -39483,6 +38844,8 @@
         "building": "yes",
         "historic": "aircraft",
         "name": "Lockheed T-33",
+        "operator": "Fuerza Aérea Boliviana",
+        "operator:short": "FAB",
         "ref": "FAB-617",
         "@id": "way/1082047473"
       }
@@ -39796,14 +39159,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.1744147,
-          -16.5034197
+          -68.1745076,
+          -16.5034098
         ]
       },
       "properties": {
         "model:wikidata": "Q182027",
         "addr:city": "El Alto",
-        "aircraft:type": "airliner",
+        "aircraft:type": "airliner;military",
         "building": "yes",
         "historic": "aircraft",
         "model:wikipedia": "es:Lockheed C-130 Hercules",
@@ -39814,6 +39177,26 @@
         "ref": "CP-2187",
         "tourism": "attraction",
         "@id": "way/1153636968"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0688235,
+          60.1892144
+        ]
+      },
+      "properties": {
+        "wikidata": "Q285638",
+        "aircraft:type": "military;jet",
+        "artwork_type": "aircraft",
+        "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/gZGhjJA3452GcjWc6",
+        "name": "Canadair CF-104 Starfighter",
+        "website": "https://www.flysam.no/informasjon/nyheter/vis/?T=Historien%20om%20CF-104%20med%20halenr.%20886&ID=33861&af=1&",
+        "@id": "way/1164364123"
       }
     },
     {
@@ -41133,7 +40516,6 @@
       },
       "properties": {
         "model:wikidata": "Q725313",
-        "wikipedia": "File:BAe Harrier GR3 'ZD667' (13976060679).jpg",
         "aircraft:type": "military",
         "building": "yes",
         "historic": "aircraft",
@@ -41330,6 +40712,46 @@
         "model": "T-6 Texan",
         "tourism": "attraction",
         "@id": "way/1304520109"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8822873,
+          57.7707123
+        ]
+      },
+      "properties": {
+        "wikidata": "Q15411568",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "model": "C-130 Hercules",
+        "start_date": "20220706",
+        "tourism": "attraction",
+        "@id": "way/1304804644"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8824251,
+          57.7707831
+        ]
+      },
+      "properties": {
+        "wikidata": "Q15411568",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "model": "C-130 Hercules",
+        "start_date": "20220706",
+        "tourism": "attraction",
+        "@id": "way/1304804645"
       }
     },
     {
@@ -41627,8 +41049,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -84.3106112,
-          34.0743411
+          -84.3106109,
+          34.0743424
         ]
       },
       "properties": {
@@ -41639,6 +41061,7 @@
         "manufacturer": "Lockheed Corporation",
         "manufacturer:wikidata": "Q7233",
         "model": "T-33A",
+        "tourism": "attraction",
         "@id": "way/1324877314"
       }
     },
@@ -42424,11 +41847,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -118.0893808,
-          34.603265
+          -118.0893714,
+          34.6032602
         ]
       },
       "properties": {
+        "wikidata": "Q116082680",
         "model:wikidata": "Q218990",
         "aircraft:type": "jet",
         "historic": "aircraft",
@@ -42448,10 +41872,11 @@
         "type": "Point",
         "coordinates": [
           -118.0894847,
-          34.6027957
+          34.6027951
         ]
       },
       "properties": {
+        "wikidata": "Q137841217",
         "model:wikidata": "Q174534",
         "aircraft:type": "military",
         "historic": "aircraft",
@@ -42627,6 +42052,2547 @@
         "name": "Falcon 20",
         "tourism": "attraction",
         "@id": "way/1465639446"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0883099,
+          34.6031716
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841215",
+        "model:wikidata": "Q100026",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360664"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0884213,
+          34.6026639
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841213",
+        "model:wikidata": "Q724763",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360665"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0882363,
+          34.6026499
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841212",
+        "model:wikidata": "Q159881",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360666"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0886505,
+          34.6026914
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841214",
+        "model:wikidata": "Q34945",
+        "historic": "aircraft",
+        "model": "F-14 Tomcat",
+        "tourism": "attraction",
+        "@id": "way/1469360667"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0880457,
+          34.6026448
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841211",
+        "model:wikidata": "Q531053",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360668"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0878471,
+          34.6026368
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841210",
+        "model:wikidata": "Q170211",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360669"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0874659,
+          34.602632
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841209",
+        "model:wikidata": "Q1145708",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1469360670"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.087374,
+          34.602888
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841228",
+        "model:wikidata": "Q1469021",
+        "historic": "aircraft",
+        "manufacturer": "Canadair",
+        "manufacturer:wikidata": "Q429877",
+        "manufacturer:wikipedia": "en:Canadair",
+        "model": "CL-13 Sabre Mk.5",
+        "model:wikipedia": "en:Canadair Sabre",
+        "tourism": "attraction",
+        "@id": "way/1469673997"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0882067,
+          34.6028677
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841223",
+        "model:wikidata": "Q151432",
+        "historic": "aircraft",
+        "manufacturer": "McDonnell Douglas",
+        "manufacturer:wikidata": "Q201815",
+        "manufacturer:wikipedia": "en:McDonnell Douglas",
+        "model": "F-4D Phantom II",
+        "model:wikipedia": "en:McDonnell Douglas F-4 Phantom II",
+        "tourism": "attraction",
+        "@id": "way/1469673998"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.088246,
+          34.6030245
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841222",
+        "model:wikidata": "Q248224",
+        "historic": "aircraft",
+        "manufacturer": "Ling-Temco-Vought",
+        "manufacturer:short": "LTV",
+        "manufacturer:wikidata": "Q3730937",
+        "manufacturer:wikipedia": "en:Ling-Temco-Vought",
+        "model": "A-7B Corsair II",
+        "model:wikipedia": "en:LTV A-7 Corsair II",
+        "tourism": "attraction",
+        "@id": "way/1469673999"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0880054,
+          34.6028969
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841224",
+        "model:wikidata": "Q164523",
+        "historic": "aircraft",
+        "manufacturer": "Northrop",
+        "manufacturer:wikidata": "Q912979",
+        "manufacturer:wikipedia": "en:Northrop Corporation",
+        "model": "T-38A Talon",
+        "model:wikipedia": "en:Northrop T-38 Talon",
+        "tourism": "attraction",
+        "@id": "way/1469674000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0879635,
+          34.6029968
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841225",
+        "model:wikidata": "Q334759",
+        "historic": "aircraft",
+        "manufacturer": "Douglas",
+        "manufacturer:wikidata": "Q651778",
+        "model": "A-4C Skyhawk",
+        "tourism": "attraction",
+        "@id": "way/1469674001"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0877122,
+          34.6029548
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841227",
+        "model:wikidata": "Q182185",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "JetStar",
+        "model:wikipedia": "en:Lockheed JetStar",
+        "tourism": "attraction",
+        "@id": "way/1469674002"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0884942,
+          34.6031486
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841219",
+        "model:wikidata": "Q58725",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "T-33A",
+        "model:wikipedia": "en:Lockheed T-33",
+        "tourism": "attraction",
+        "@id": "way/1469674003"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0887369,
+          34.602997
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841218",
+        "model:wikidata": "Q7429741",
+        "historic": "aircraft",
+        "manufacturer": "Scaled Composites",
+        "manufacturer:wikidata": "Q1411762",
+        "manufacturer:wikipedia": "en:Scaled Composites",
+        "model": "Triumph",
+        "model:wikipedia": "en:Scaled Composites Triumph",
+        "tourism": "attraction",
+        "@id": "way/1469674004"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0889506,
+          34.602683
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841220",
+        "model:wikidata": "Q749370",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed Martin",
+        "manufacturer:wikidata": "Q7240",
+        "manufacturer:wikipedia": "en:Lockheed Martin",
+        "model": "X-55",
+        "model:wikipedia": "en:Lockheed Martin X-55",
+        "tourism": "attraction",
+        "@id": "way/1469674005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.2600088,
+          44.6120734
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "223",
+        "@id": "way/1469721734"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2001737,
+          45.7188134
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "model:wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "aircraft:type": "military",
+        "building": "yes",
+        "historic": "aircraft",
+        "manufacturer": "Avioane Craiova",
+        "manufacturer:wikidata": "Q2324155",
+        "manufacturer:wikipedia": "en:Avioane Craiova",
+        "model:wikipedia": "en:IAR-93 Vultur",
+        "name": "IAR-93",
+        "ref": "201",
+        "@id": "way/1469721735"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6033319,
+          46.2639152
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "access": "private",
+        "aircraft:type": "military;jet",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "222",
+        "@id": "way/1469721736"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1646584,
+          45.8341092
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "205",
+        "@id": "way/1469721737"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8847347,
+          44.3128373
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "model:wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "aircraft:type": "military",
+        "building": "yes",
+        "historic": "aircraft",
+        "manufacturer": "Avioane Craiova",
+        "manufacturer:wikidata": "Q2324155",
+        "manufacturer:wikipedia": "en:Avioane Craiova",
+        "model": "IAR-93",
+        "model:wikipedia": "en:IAR-93 Vultur",
+        "name": "IAR-93",
+        "ref": "163 (613 now)",
+        "@id": "way/1469721738"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.9395282,
+          45.3629243
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "229",
+        "@id": "way/1469721739"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.7179812,
+          46.0894442
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "memorial": "aircraft",
+        "name": "IAR-93",
+        "ref": "216",
+        "@id": "way/1469721740"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0745483,
+          44.5196418
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "114",
+        "@id": "way/1469721741"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0059381,
+          44.4343158
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "layer": "1",
+        "name": "IAR-93",
+        "ref": "159",
+        "@id": "way/1469721742"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.110493,
+          44.4783092
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "tourism": "attraction",
+        "@id": "way/1469721743"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1104195,
+          44.4783993
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "tourism": "attraction",
+        "@id": "way/1469721744"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1105522,
+          44.4782172
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "tourism": "attraction",
+        "@id": "way/1469721745"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6782202,
+          44.6337318
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "215",
+        "@id": "way/1469721746"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4893136,
+          44.1435621
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "109",
+        "@id": "way/1469721748"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9639147,
+          44.0989223
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "217",
+        "@id": "way/1469721749"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.4137528,
+          45.848248
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "241",
+        "@id": "way/1469721750"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.5976266,
+          47.1537469
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "@id": "way/1469721751"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.5897335,
+          45.662462
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "access": "private",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "600",
+        "@id": "way/1469721752"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.0742091,
+          44.1333651
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q174534",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "B-52 Stratofortress",
+        "model:wikipedia": "en:Boeing B-52 Stratofortress",
+        "name": "B-52",
+        "ref": "S/N 56-0657",
+        "tourism": "attraction",
+        "@id": "way/1470141699"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.86731,
+          32.1378002
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q174534",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model:wikipedia": "en:Boeing B-52 Stratofortress",
+        "tourism": "attraction",
+        "website": "https://pimaair.org/museum-aircraft/boeing-b-52a/",
+        "@id": "way/1470142154"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.3312403,
+          36.1533779
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q151432",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1470143169"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.235204,
+          32.1160369
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q151432",
+        "historic": "aircraft",
+        "name": "F-4C Phantom",
+        "tourism": "attraction",
+        "@id": "way/1470143481"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6876222,
+          41.5112994
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q151432",
+        "description": "Blue Angels F-4 Phantom II",
+        "historic": "aircraft",
+        "livery": "Blue Angels",
+        "tourism": "attraction",
+        "@id": "way/1470143603"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.6880766,
+          41.5113493
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q151432",
+        "description": "Thunderbirds F-4 Phantom II",
+        "historic": "aircraft",
+        "livery": "Thunderbirds",
+        "tourism": "attraction",
+        "@id": "way/1470143604"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.1322781,
+          45.1142998
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q34945",
+        "historic": "aircraft",
+        "name": "Navy F-14 Tomcat",
+        "@id": "way/1470143810"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.8480513,
+          42.3075037
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q34945",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "name": "F-14 Tomcat",
+        "tourism": "attraction",
+        "@id": "way/1470143864"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.129227,
+          40.6688383
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q34945",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "name": "Grumman F-14B Tomcat",
+        "ref": "162912",
+        "tourism": "attraction",
+        "@id": "way/1470143923"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.7423164,
+          33.5628695
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q34945",
+        "historic": "aircraft",
+        "military": "F-14 Tomcat",
+        "model:wikipedia": "en:Grumman F-14 Tomcat",
+        "tourism": "attraction",
+        "@id": "way/1470143943"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.3038526,
+          30.3487013
+        ]
+      },
+      "properties": {
+        "wikidata": "Q137841214",
+        "model:wikidata": "Q34945",
+        "historic": "aircraft",
+        "model": "F-14 Tomcat",
+        "tourism": "attraction",
+        "@id": "way/1470143995"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.0205729,
+          36.8080025
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q34945",
+        "description": "BuNo 164604",
+        "historic": "aircraft",
+        "name": "Grumman F-14D Tomcat",
+        "@id": "way/1470145343"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.9035106,
+          33.6661999
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q83403022",
+        "historic": "aircraft",
+        "man_made": "aircraft",
+        "@id": "way/1470145624"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.0949519,
+          29.5501358
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q164523",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Northrop",
+        "manufacturer:wikidata": "Q912979",
+        "manufacturer:wikipedia": "en:Northrop Corporation",
+        "model": "AT-38B",
+        "model:wikipedia": "en:Northrop T-38 Talon",
+        "name": "NASA 900",
+        "ref": "N900NA",
+        "start_date": "1968",
+        "tourism": "attraction",
+        "website": "https://spacecenter.org/meet-our-t-38-jets-in-talon-park/",
+        "@id": "way/1470145904"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.0950283,
+          29.5500905
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q164523",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Northrop",
+        "manufacturer:wikidata": "Q912979",
+        "manufacturer:wikipedia": "en:Northrop Corporation",
+        "model": "T-38A",
+        "model:wikipedia": "en:Northrop T-38 Talon",
+        "name": "NASA 968",
+        "ref": "N968NA",
+        "start_date": "1965",
+        "tourism": "attraction",
+        "website": "https://spacecenter.org/meet-our-t-38-jets-in-talon-park/",
+        "@id": "way/1470145905"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.3330507,
+          38.8367108
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q164523",
+        "historic": "aircraft",
+        "manufacturer": "Northrop",
+        "model": "T-38",
+        "tourism": "attraction",
+        "@id": "way/1470146033"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.1781333,
+          48.0661035
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q334759",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1470146075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.318134,
+          40.0309969
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q334759",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "source": "Bing",
+        "tourism": "attraction",
+        "wheelchair": "yes",
+        "@id": "way/1470148901"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.4800858,
+          42.7345378
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q334759",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Douglas",
+        "model": "A-4 Skyhawk",
+        "@id": "way/1470148912"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.9418185,
+          4.7720218
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q334759",
+        "historic": "aircraft",
+        "name": "A4 Skyhawk",
+        "tourism": "attraction",
+        "@id": "way/1470148953"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.4859735,
+          31.2469615
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q159881",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Lockheed F-104 Starfighter",
+        "ref": "56-0919",
+        "tourism": "attraction",
+        "@id": "way/1470157110"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.1586158,
+          22.9941095
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q159881",
+        "historic": "aircraft",
+        "model:wikipedia": "zh:F-104星式戰鬥機",
+        "name": "F-104星式戰鬥機",
+        "name:en": "F-104 Starfighter",
+        "name:zh": "F-104星式戰鬥機",
+        "@id": "way/1470157247"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5497059,
+          24.0799495
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q159881",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "model:wikipedia": "zh:F-104星式戰鬥機",
+        "name": "F-104G",
+        "ref": "4417",
+        "tourism": "attraction",
+        "@id": "way/1470157271"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.9044916,
+          34.6769561
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q159881",
+        "historic": "aircraft",
+        "name": "F-104",
+        "tourism": "attraction",
+        "@id": "way/1470157290"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.1300548,
+          40.6684854
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q170211",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "McDonnell",
+        "model:wikipedia": "en:McDonnell F-101 Voodoo",
+        "name": "McDonnell F-101B Voodoo",
+        "ref": "58-0321",
+        "tourism": "attraction",
+        "@id": "way/1470157601"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2657181,
+          33.8833428
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q170211",
+        "description": "s/n 59-0418",
+        "historic": "aircraft",
+        "name": "McDonnell F-101B Voodoo",
+        "tourism": "attraction",
+        "@id": "way/1470157892"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.7421389,
+          32.6106804
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q58725",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "model": "T-33A",
+        "model:wikipedia": "en:Lockheed T-33",
+        "name": "Lockheed T-33A Shooting Star",
+        "tourism": "attraction",
+        "@id": "way/1470158244"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5067114,
+          40.878558
+        ]
+      },
+      "properties": {
+        "wikidata": "Q58725",
+        "model:wikidata": "Q58725",
+        "wikipedia": "en:Lockheed T-33",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "T-33",
+        "model:wikipedia": "en:Lockheed T-33",
+        "tourism": "attraction",
+        "@id": "way/1470158391"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4603414,
+          42.2550361
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q58725",
+        "aircraft:type": "T-33",
+        "historic": "aircraft",
+        "name": "Lockheed T-33 Shooting Star",
+        "tourism": "attraction",
+        "@id": "way/1470158397"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.3626713,
+          43.705302
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q58725",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed Corporation",
+        "manufacturer:wikidata": "Q7233",
+        "model": "Lockheed T-33",
+        "tourism": "attraction",
+        "@id": "way/1470158488"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.173884,
+          -16.5024771
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q58725",
+        "addr:city": "El Alto",
+        "aircraft:type": "military",
+        "direction": "10",
+        "historic": "aircraft",
+        "model:wikipedia": "es:Lockheed T-33 Shooting Star",
+        "name": "Lockheed T-33A Shooting Star",
+        "operator": "Fuerza Aérea Boliviana",
+        "operator:short": "FAB",
+        "operator:type": "military",
+        "tourism": "attraction",
+        "@id": "way/1470158499"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.255095,
+          19.8951653
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q58725",
+        "aircraft:type": "T33",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1470158636"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.2548379,
+          19.8951609
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q58725",
+        "aircraft:type": "T33",
+        "historic": "aircraft",
+        "tourism": "attraction",
+        "@id": "way/1470158637"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.3182712,
+          40.0311438
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q248224",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "name": "A-7 Corsair II",
+        "source": "Bing",
+        "tourism": "attraction",
+        "wheelchair": "yes",
+        "@id": "way/1470158750"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3864166,
+          39.2567348
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q248224",
+        "aircraft:type": "plane",
+        "historic": "aircraft",
+        "manufacturer": "Ling-Temco-Vought",
+        "manufacturer:wikidata": "Q3730937",
+        "memorial": "gate_guardian",
+        "model": "LTV A-7 Corsair II",
+        "operator": "Ohio Air National Guard",
+        "operator:wikidata": "Q7080736",
+        "tourism": "attraction",
+        "@id": "way/1470158990"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.0717765,
+          44.1329849
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q248224",
+        "historic": "aircraft",
+        "model": "A-7D-16-CV Corsair II",
+        "tourism": "attraction",
+        "@id": "way/1470159119"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.8653801,
+          32.141235
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q182185",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "JetStar",
+        "model:wikipedia": "en:Lockheed JetStar",
+        "tourism": "attraction",
+        "@id": "way/1470159194"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.8657951,
+          32.14123
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q182185",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "JetStar",
+        "model:wikipedia": "en:Lockheed JetStar",
+        "tourism": "attraction",
+        "@id": "way/1470159195"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.88293,
+          38.8067779
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q182185",
+        "addr:city": "Joint Base Andrews",
+        "addr:country": "US",
+        "addr:housenumber": "1418",
+        "addr:postcode": "20762",
+        "addr:state": "MD",
+        "addr:street": "Menoher Drive",
+        "aircraft:type": "jet",
+        "historic": "memorial",
+        "manufacturer:wikidata": "Q7233",
+        "memorial": "aircraft",
+        "model:short": "CL329",
+        "name": "Lockheed C-140 Jetstar",
+        "operator:wikidata": "Q2818560",
+        "ref": "89001",
+        "ref:1958-03-04-1965-06-08": "1002",
+        "start_date": "1983-08",
+        "@id": "way/1470159456"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3936179,
+          43.7251184
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1469021",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "inscription": "Matricola MM 19782",
+        "name": "Canadair CL.13 \"Sabre\"",
+        "tourism": "attraction",
+        "@id": "way/1470159611"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.2656154,
+          33.8833862
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q531053",
+        "description": "s/n 54-1786",
+        "historic": "aircraft",
+        "name": "North American F-100C Super Sabre",
+        "tourism": "attraction",
+        "@id": "way/1470159727"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7442424,
+          33.3170013
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q531053",
+        "aircraft:type": "helicopter",
+        "historic": "aircraft",
+        "model:wikipedia": "en:North American F-100 Super Sabre",
+        "name": "F-100F",
+        "tourism": "attraction",
+        "@id": "way/1470159771"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0117115,
+          38.845146
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q724763",
+        "historic": "aircraft",
+        "model": "Republic F-105D Thunderchief",
+        "name": "Republic F-105D Thunderchief",
+        "tourism": "attraction",
+        "@id": "way/1470159842"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7832875,
+          50.7540614
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q100026",
+        "historic": "aircraft",
+        "mapillary": "1286523072123094",
+        "name": "Avion de chasse F16",
+        "tourism": "attraction",
+        "@id": "way/1470160096"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1451356,
+          44.4767844
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q100026",
+        "historic": "aircraft",
+        "material": "Airplane",
+        "name": "F16 Vermont Air National Guard",
+        "tourism": "attraction",
+        "@id": "way/1470160135"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3531201,
+          37.0754136
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q100026",
+        "description": "s/n 78-0001",
+        "historic": "aircraft",
+        "name": "General Dynamics F-16A Fighting Falcon",
+        "tourism": "attraction",
+        "@id": "way/1470160417"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2964044,
+          47.5178329
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q190114",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "location": "indoor",
+        "model": "Lockheed SR-71 Blackbird",
+        "name": "Lockheed SR-71 Blackbird",
+        "tourism": "attraction",
+        "@id": "way/1470160602"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3642637,
+          37.0671102
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15617348",
+        "description": "s/n 59-2601",
+        "historic": "aircraft",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "name": "Boeing B-52G Stratofortress",
+        "@id": "way/1470374490"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3017318,
+          47.5202497
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15617348",
+        "historic": "aircraft",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "model": "B-52G Stratofortress",
+        "name": "Midnight Express",
+        "ref:tailnumber": "59-2584",
+        "tourism": "attraction",
+        "@id": "way/1470376109"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1102351,
+          44.4780765
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899522"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1112015,
+          44.4784559
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899523"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.11042,
+          44.4777293
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899524"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1105285,
+          44.4777177
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899525"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1108336,
+          44.4785312
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899526"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1112335,
+          44.4783719
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899527"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.11127,
+          44.4783014
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899528"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.111307,
+          44.4782386
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899529"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1113603,
+          44.4781747
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899530"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.8860132,
+          46.5568465
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "name": "MiG-21",
+        "tourism": "attraction",
+        "@id": "way/1471899531"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1114186,
+          44.4781053
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q153307",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-19",
+        "name": "MiG-19",
+        "tourism": "attraction",
+        "@id": "way/1471899532"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1115898,
+          44.4784241
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q153307",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-19",
+        "name": "MiG-19",
+        "tourism": "attraction",
+        "@id": "way/1471899533"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1106792,
+          44.4784124
+        ]
+      },
+      "properties": {
+        "wikidata": "Q130681",
+        "wikipedia": "en:Mikoyan MiG-29",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "MiG-29 SNIPER",
+        "ref": "SNIPER",
+        "tourism": "attraction",
+        "@id": "way/1471899535"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1111634,
+          44.4778943
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "tourism": "attraction",
+        "@id": "way/1472421011"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.111099,
+          44.4780494
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "tourism": "attraction",
+        "@id": "way/1472421012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1115635,
+          44.4779326
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "tourism": "attraction",
+        "@id": "way/1472421013"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1114768,
+          44.4780229
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q152976",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-17",
+        "name": "MiG-17",
+        "tourism": "attraction",
+        "@id": "way/1472421014"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1114387,
+          44.4777783
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q152976",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-17",
+        "name": "MiG-17",
+        "tourism": "attraction",
+        "@id": "way/1472421015"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1110427,
+          44.4781933
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q152976",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-17",
+        "name": "MiG-17",
+        "tourism": "attraction",
+        "@id": "way/1472421016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1115018,
+          44.4785107
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q153307",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-19",
+        "name": "MiG-19",
+        "tourism": "attraction",
+        "@id": "way/1472421017"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.1107128,
+          44.4777892
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "building": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "name": "MiG-15",
+        "tourism": "attraction",
+        "@id": "way/1472421018"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4128196,
+          67.2753697
+        ]
+      },
+      "properties": {
+        "wikidata": "Q6387",
+        "wikipedia": "en:Boeing 737",
+        "artwork_type": "aircraft",
+        "historic": "aircraft",
+        "name": "LN-KKW Boeing 737",
+        "tourism": "artwork",
+        "website": "https://www.luftfartsmuseum.no/museumsparken/ln-kkw-boeing-737",
+        "@id": "way/1481458062"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.410976,
+          67.2768101
+        ]
+      },
+      "properties": {
+        "wikidata": "Q18177049",
+        "artwork_type": "aircraft",
+        "historic": "aircraft",
+        "name": "Cessna T-37B Tweet",
+        "tourism": "artwork",
+        "website": "https://www.luftfartsmuseum.no/museumsparken/cessna-t-37b-tweet-72247",
+        "@id": "way/1481458064"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4124928,
+          67.276493
+        ]
+      },
+      "properties": {
+        "wikidata": "Q49162645",
+        "aircraft:type": "helicopter",
+        "artwork_type": "aircraft",
+        "historic": "helicopter",
+        "name": "Bell UH-1B Iroquois",
+        "tourism": "artwork",
+        "website": "https://www.luftfartsmuseum.no/museumsparken/bell-597",
+        "@id": "way/1481458065"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0392243,
+          59.9728645
+        ]
+      },
+      "properties": {
+        "wikidata": "Q285638",
+        "wikipedia": "en:Canadair CF-104 Starfighter",
+        "description": "Decommissioned Starfighter CF-104 fighter plane on a stand",
+        "historic": "aircraft",
+        "mapillary": "1331937620677408",
+        "name": "Starfighter CF-104",
+        "@id": "way/1481603763"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6419528,
+          59.6560607
+        ]
+      },
+      "properties": {
+        "wikidata": "Q159881",
+        "wikipedia": "no:Lockheed F-104 Starfighter",
+        "artwork_type": "installation",
+        "historic": "aircraft",
+        "image": "https://starfighter.no/cf-104/882/images/e.882.jpg",
+        "name": "Canadair CF-104 Starfighter 104822",
+        "@id": "way/1481605148"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.863649,
+          51.5592602
+        ]
+      },
+      "properties": {
+        "wikidata": "Q118966412",
+        "aircraft:type": "helicopter",
+        "historic": "aircraft",
+        "image": "https://muzeumsp.pl/wp-content/uploads/2019/06/mi-%E2%80%93-6a-02.jpg",
+        "name": "Mi-6A transport helicopter, no. 670",
+        "panoramax": "c7e0d3e4-7d96-49c0-afb1-23c5381c4ad6",
+        "ref": "670",
+        "tourism": "attraction",
+        "website": "https://muzeumsp.pl/eksponaty/smiglowiec-transportowy-mi-6a/",
+        "wheelchair": "no",
+        "@id": "way/1482628087"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8638131,
+          51.5592879
+        ]
+      },
+      "properties": {
+        "wikidata": "Q320900",
+        "wikipedia": "en:Mil Mi-1",
+        "aircraft:type": "helicopter",
+        "historic": "aircraft",
+        "name": "SM-1",
+        "tourism": "attraction",
+        "@id": "way/1482628088"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8640239,
+          51.5599677
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2362706",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SU-20",
+        "@id": "way/1482628089"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8639615,
+          51.5600705
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2362706",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SU-20",
+        "@id": "way/1482628090"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8638615,
+          51.5601724
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2362706",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SU-20",
+        "@id": "way/1482628091"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8637981,
+          51.560267
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2362706",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SU-20",
+        "@id": "way/1482628092"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.863701,
+          51.5603806
+        ]
+      },
+      "properties": {
+        "wikidata": "Q17455643",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "Su-7U",
+        "@id": "way/1482628093"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8636177,
+          51.5604948
+        ]
+      },
+      "properties": {
+        "wikidata": "Q17455643",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "Su-7U",
+        "@id": "way/1482628094"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8635481,
+          51.56059
+        ]
+      },
+      "properties": {
+        "wikidata": "Q17455643",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "Su-7U",
+        "@id": "way/1482628095"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8641119,
+          51.5598588
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2362706",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SU-20",
+        "@id": "way/1482628096"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8637342,
+          51.5599567
+        ]
+      },
+      "properties": {
+        "wikidata": "Q106365012",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SBLim-2M",
+        "@id": "way/1482628097"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8636743,
+          51.5600203
+        ]
+      },
+      "properties": {
+        "wikidata": "Q106365012",
+        "aircraft:type": "military;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "SBLim-2M",
+        "@id": "way/1482628098"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8641306,
+          51.5607915
+        ]
+      },
+      "properties": {
+        "wikidata": "Q312471",
+        "wikipedia": "en:S-125 Neva/Pechora",
+        "aircraft:type": "military;rocket",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "NEWA 125",
+        "panoramax": "63ced515-af92-40ab-b698-34aa728662a0",
+        "@id": "way/1482628107"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8641511,
+          51.5607863
+        ]
+      },
+      "properties": {
+        "wikidata": "Q312471",
+        "wikipedia": "en:S-125 Neva/Pechora",
+        "aircraft:type": "military;rocket",
+        "area": "yes",
+        "historic": "aircraft",
+        "name": "NEWA 125",
+        "panoramax": "63ced515-af92-40ab-b698-34aa728662a0",
+        "@id": "way/1482628108"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8649921,
+          51.5594104
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1057117",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "image": "https://muzeumsp.pl/wp-content/uploads/2020/11/cessna-150-muzeum-sil-powietrznych-w-deblinie-1-1300x861.jpg",
+        "model:wikipedia": "en:Cessna 150",
+        "name": "Cessna-150",
+        "website": "https://muzeumsp.pl/eksponaty/cessna-150-numer-boczny-sp-ezh/",
+        "@id": "way/1482628134"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8649352,
+          51.5594966
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15057066",
+        "aircraft:type": "military",
+        "area": "yes",
+        "historic": "aircraft",
+        "image": "https://muzeumsp.pl/wp-content/uploads/2020/11/il-14p-nr-0916-muzeum-sil-powietrznych-w-deblinie-1-1300x861.jpg",
+        "name": "Il-14P",
+        "ref": "0916",
+        "website": "https://muzeumsp.pl/eksponaty/il-14p-nr-boczny-0916-kod-nato-crate/",
+        "@id": "way/1482628135"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8641812,
+          51.5602597
+        ]
+      },
+      "properties": {
+        "wikidata": "Q138509249",
+        "aircraft:type": "helicopter;military",
+        "alt_name": "Hind",
+        "description": "The coolest helicopter at the museum",
+        "historic": "aircraft",
+        "image": "https://muzeumsp.pl/wp-content/uploads/2019/07/mi-%E2%80%93-24-nr-4004-01.jpg",
+        "model": "Mi-24D",
+        "name": "Mi-24D",
+        "panoramax": "2783204e-a64b-42d3-ab5d-6aebd9a8e0f1",
+        "ref": "4004",
+        "website": "https://muzeumsp.pl/eksponaty/smiglowiec-wsparcia-mi-24-nr-4004/",
+        "@id": "way/1483841728"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1197604,
+          49.1732614
+        ]
+      },
+      "properties": {
+        "wikidata": "Q66499239",
+        "aircraft:type": "military;helicopter",
+        "historic": "aircraft",
+        "name": "Mil Mi-24V Hind 0705",
+        "@id": "way/1484249878"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.8659706,
+          32.141094
+        ]
+      },
+      "properties": {
+        "wikidata": "Q138514590",
+        "model:wikidata": "Q155651",
+        "historic": "aircraft",
+        "name": "Mil Mi-24",
+        "website": "https://pimaair.org/museum-aircraft/mil-mi-24d/",
+        "@id": "way/1484368482"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8641737,
+          51.5604342
+        ]
+      },
+      "properties": {
+        "wikidata": "Q138548531",
+        "historic": "aircraft",
+        "name": "Mil Mi-2 0614",
+        "@id": "way/1485022788"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.1655934,
+          45.8341795
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "207",
+        "@id": "way/1487151041"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8637101,
+          44.3273923
+        ]
+      },
+      "properties": {
+        "wikidata": "Q82627",
+        "wikipedia": "en:IAR-93 Vultur",
+        "building": "yes",
+        "historic": "aircraft",
+        "name": "IAR-93",
+        "ref": "111",
+        "@id": "way/1487151049"
       }
     },
     {
