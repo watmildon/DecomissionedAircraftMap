@@ -17,7 +17,7 @@ class Program
     static List<string> s_OsmItemsNeedingReview = new List<string>();
     const int RequestDelayMs = 3000; // Delay between requests to respect rate limits
     const int MaxRetries = 3;
-    const int MinExpectedElements = 5000; // Safety threshold - current count is ~2200
+    const int MinExpectedElements = 1500; // Safety threshold - current count is ~2200
 
     static async Task Main(string[] args)
     {
@@ -385,10 +385,10 @@ class Program
     {
         return backend switch
         {
-            QueryBackend.Overpass => new OverpassQueryProvider(OverpassQuery, "https://maps.mail.ru/osm/tools/overpass/api/interpreter"),
+            QueryBackend.Overpass => new OverpassQueryProvider(OverpassQuery),
             QueryBackend.Postpass => new PostpassQueryProvider(PostpassQuery),
             QueryBackend.QLever => new QLeverQueryProvider(QLeverQuery),
-            _ => new OverpassQueryProvider(OverpassQuery, "https://overpass.private.coffee/api/interpreter")
+            _ => new OverpassQueryProvider(OverpassQuery)
         };
     }
 
