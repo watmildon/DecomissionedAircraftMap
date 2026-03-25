@@ -30212,6 +30212,7 @@
         "historic": "aircraft",
         "name": "IAR-93",
         "ref": "206",
+        "tourism": "attraction",
         "@id": "node/13342568291"
       }
     },
@@ -38907,8 +38908,9 @@
       "properties": {
         "model:wikidata": "Q714326",
         "area": "yes",
+        "check_date": "2026-03-24",
         "historic": "aircraft",
-        "name": "Douglas C-47B Dakota",
+        "name": "Douglas C-47B Dakota AVION",
         "tourism": "attraction",
         "@id": "way/1096248368"
       }
