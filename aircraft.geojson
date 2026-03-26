@@ -38910,8 +38910,8 @@
         "area": "yes",
         "check_date": "2026-03-24",
         "historic": "aircraft",
-        "name": "Douglas C-47B Dakota AVION",
-        "tourism": "attraction",
+        "model:wikipedia": "en:Douglas C-47 Skytrain",
+        "name": "Douglas C-47B Dakota",
         "@id": "way/1096248368"
       }
     },
