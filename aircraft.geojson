@@ -3453,6 +3453,129 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -83.204122,
+          30.9753901
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q18175583",
+        "aircraft:type": "military",
+        "description": "Built by Lockheed in Burbank, CA c.1952 as a T-33A, it served with the USAF at Nellis, Laredo, and Maxwell AFB. Withdrawn in 1967, it was later displayed in Thomasville and Valdosta, GA, and is now at the President George W. Bush Airpark.",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed Corporation",
+        "manufacturer:wikidata": "Q7233",
+        "model": "Lockheed_T-33A_Shooting_Star",
+        "name": "Lockheed T-33A \"Shooting Star\"",
+        "operator": "Moody Air Force Base",
+        "operator:wikidata": "Q2625576",
+        "ref": "52-9191",
+        "start_date": "2011-05-20",
+        "@id": "node/3176993417"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2045996,
+          30.9755776
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q113361118",
+        "aircraft:type": "military",
+        "description": "Built in Buffalo, NY by Curtiss in 1942, this Kittyhawk IV first served with the U.S. Air Force, then the Royal Australian Air Force (1943–46). It has been displayed at Wright Field (OH), Pope AFB (NC), and now the President George W. Bush Airpark (GA).",
+        "historic": "aircraft",
+        "manufacturer": "Curtiss-Wright",
+        "manufacturer:wikidata": "Q1138291",
+        "manufacturer:wikipedia": "en:Curtiss-Wright",
+        "model": "Kittyhawk_IV",
+        "name": "Curtiss Kittyhawk IV",
+        "ref": "A29-526",
+        "@id": "node/3177006361"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2044116,
+          30.9751576
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q75221739",
+        "aircraft:type": "military",
+        "description": "Built in Farmingdale, NY this F-105D has served the USAF from c.1961. Flew combat in Vietnam, downing a MiG-17 (1967). Later assigned to ANG units, then displayed in Ohio, California, and Pope AFB before moving to the President George W. Bush Airpark, GA.",
+        "historic": "aircraft",
+        "manufacturer": "Republic Aviation Corporation",
+        "manufacturer:wikidata": "Q950095",
+        "model": "F-105D_Thunderchief",
+        "name": "Republic F-105D Thunderchief",
+        "operator": "Moody Air Force Base",
+        "operator:wikidata": "Q2625576",
+        "ref": "61-0165",
+        "start_date": "2011-05-20",
+        "@id": "node/3177006362"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2041322,
+          30.9748807
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15411469",
+        "aircraft:type": "military",
+        "description": "Built by Lockheed in Burbank, CA c.1952 as a T-33A, it served with the USAF at Nellis, Laredo, and Maxwell AFB. Withdrawn in 1967, later displayed in GA, now at the President George W. Bush Airpark.",
+        "historic": "aircraft",
+        "manufacturer": "Fairchild Republic",
+        "manufacturer:wikidata": "Q134432346",
+        "model": "Fairchild_A-10A_Thunderbolt_II",
+        "name": "Fairchild Republic A-10A Thunderbolt II",
+        "operator": "Moody Air Force Base",
+        "operator:wikidata": "Q2625576",
+        "ref": "75-0308",
+        "start_date": "2011-05-20",
+        "@id": "node/3177006363"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2038016,
+          30.9751312
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q62786024",
+        "aircraft:type": "military",
+        "description": "Built as A-7D in Dallas; USAF service from c.1972 (s/n 72-0230). Served in AZ, LA, and OH ANG (166 TFS). Later loaned to USAF Museum, then moved to Pope AFB, and by 2007 to Moody AFB (Bush Airpark).",
+        "historic": "aircraft",
+        "manufacturer": "Vought",
+        "manufacturer:wikidata": "Q644459",
+        "model": "A-7D_Corsair_II",
+        "name": "Vought A-7D Corsair II",
+        "operator": "Moody Air Force Base",
+        "operator:wikidata": "Q2625576",
+        "ref": "72-0230",
+        "start_date": "2011-05-20",
+        "@id": "node/3177006364"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           30.4608527,
           50.4480293
         ]
@@ -25685,6 +25808,80 @@
         "model": "Boeing B-47 Stratojet",
         "name": "Boeing B-47 Stratojet",
         "@id": "node/12460939603"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2032324,
+          30.9743187
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15414037",
+        "aircraft:type": "military",
+        "description": "Built as HC-130P (s/n 65-0988); USAF service from c.1965 incl. test refueling role. Later with NY ANG and 71st RQS, Moody AFB. Displayed internationally in 1997. Retired and placed at Moody AFB (Bush Airpark) by 2015.",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed Corporation",
+        "manufacturer:wikidata": "Q7233",
+        "model": "HC-130P_Combat_King",
+        "name": "Lockheed HC-130P Combat King",
+        "operator": "Moody Air Force Base",
+        "operator:wikidata": "Q2625576",
+        "start_date": "2013-04-27",
+        "@id": "node/12461768464"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2038862,
+          30.974619
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q50348433",
+        "aircraft:type": "helicopter;military",
+        "description": "Built as UH-60L, later converted to HH-60G Pave Hawk (s/n 91-26356). Served with USAF 41st RQS from 1994–2021, flying global combat SAR missions (Iraq, Afghanistan, Africa). Retired 2021; now displayed at Moody AFB, GA.",
+        "historic": "aircraft",
+        "manufacturer": "Sikorsky Aircraft Corporation",
+        "manufacturer:wikidata": "Q549189",
+        "model": "HH-60G_Pave_Hawk",
+        "name": "Sikorsky HH-60G Pave Hawk",
+        "operator": "Moody Air Force Base",
+        "operator:wikidata": "Q2625576",
+        "ref": "91-26356",
+        "start_date": "2021-09-30",
+        "@id": "node/12461768465"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.2035242,
+          30.9748913
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q20026741",
+        "aircraft:type": "military",
+        "description": "Built as F-86D in California; USAF service from c.1952 (s/n 52-10057). Served in Libya and US training units; converted to F-86L. Withdrawn 1961; later displayed in Valdosta, GA, and since 2012 at Moody AFB (Bush Airpark).",
+        "historic": "aircraft",
+        "manufacturer": "North American Aviation",
+        "manufacturer:wikidata": "Q519560",
+        "model": "F-86L_Sabre",
+        "name": "North American F-86L Sabre",
+        "operator": "Moody Air Force Base",
+        "operator:wikidata": "Q2625576",
+        "ref": "52-10057",
+        "start_date": "2013-04-27",
+        "@id": "node/12461768466"
       }
     },
     {
