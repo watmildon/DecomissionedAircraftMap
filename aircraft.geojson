@@ -31755,6 +31755,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -58.6994115,
+          -34.9985864
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15623412",
+        "aircraft:type": "airliner",
+        "historic": "aircraft",
+        "manufacturer:wikidata": "Q66",
+        "ref": "LV-ZRO",
+        "start_date": "1999-09",
+        "@id": "node/13686948849"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
