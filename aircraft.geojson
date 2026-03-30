@@ -31774,6 +31774,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          6.7096712,
+          0.3775363
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q607720",
+        "description": "The orange remains of an aircraft that crashed 29, July, 2019.",
+        "historic": "aircraft",
+        "@id": "node/13687762807"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
