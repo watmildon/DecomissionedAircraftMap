@@ -40912,11 +40912,33 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          11.8213179,
+          45.3151022
+        ]
+      },
+      "properties": {
+        "wikidata": "Q131422025",
+        "model:wikidata": "Q381153",
+        "aircraft:type": "military",
+        "date": "1962",
+        "historic": "aircraft",
+        "manufacturer": "Aermacchi",
+        "model": "MB-362",
+        "tourism": "attraction",
+        "@id": "way/1304520097"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           11.822185,
           45.3145154
         ]
       },
       "properties": {
+        "wikidata": "Q131851134",
         "model:wikidata": "Q121208980",
         "aircraft:type": "military",
         "date": "1954",
