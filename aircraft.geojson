@@ -1193,6 +1193,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          30.787634,
+          36.9192129
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q159881",
+        "description": "TuAF Fighter Aircraft",
+        "historic": "memorial",
+        "memorial": "aircraft",
+        "name": "F-104",
+        "@id": "node/1946260965"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -149.80187,
           61.2482922
         ]
@@ -22353,9 +22371,12 @@
         ]
       },
       "properties": {
+        "wikidata": "Q155635",
         "model:wikidata": "Q155635",
+        "wikipedia": "en:Mil Mi-8",
         "aircraft:type": "helicopter",
         "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/jEguaasdP2tL4NaS7",
         "name": "MI-8",
         "@id": "node/11828383887"
       }
@@ -22370,8 +22391,11 @@
         ]
       },
       "properties": {
+        "wikidata": "Q488204",
         "model:wikidata": "Q488204",
+        "wikipedia": "en:Cessna A-37 Dragonfly",
         "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/g2f6PTXS5oo6yCPx6",
         "model": "A-37 Dragonfly",
         "name": "BOMBER A-37",
         "@id": "node/11828383888"
@@ -22382,13 +22406,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.660777,
-          10.8049508
+          106.6608331,
+          10.8050406
         ]
       },
       "properties": {
+        "wikidata": "Q154106",
         "model:wikidata": "Q154106",
+        "wikipedia": "en:Bell UH-1 Iroquois",
         "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/wx74gkP94bCYcrQ96",
         "name": "PLANE UH-1",
         "@id": "node/11828383890"
       }
@@ -22398,16 +22425,37 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.661054,
-          10.8051323
+          106.6610497,
+          10.8051197
         ]
       },
       "properties": {
+        "wikidata": "Q155651",
         "model:wikidata": "Q155651",
+        "wikipedia": "en:Mil Mi-24",
         "aircraft:type": "helicopter",
         "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/tJNHLGVRwWKsgMrV8",
         "name": "MI-24",
         "@id": "node/11828383891"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6607846,
+          10.8049498
+        ]
+      },
+      "properties": {
+        "wikidata": "Q1057123",
+        "wikipedia": "en:Cessna 185 Skywagon",
+        "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/DxLMq6MnNo1D9HZx7",
+        "name": "RECONNAISSANCE PLANE U17. NO 764",
+        "@id": "node/11828383892"
       }
     },
     {
@@ -22420,10 +22468,31 @@
         ]
       },
       "properties": {
+        "wikidata": "Q150609",
         "model:wikidata": "Q150609",
+        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
         "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/Mvg9hXRctpyxJUFL7",
         "name": "JET PLANE MIG-21",
         "@id": "node/11828383893"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6609043,
+          10.8049116
+        ]
+      },
+      "properties": {
+        "wikidata": "Q308940",
+        "wikipedia": "en:Northrop F-5",
+        "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/E5WNkSz3TYRL6H7G9",
+        "name": "INTERCEPTING BOMBER F5 NO 7579",
+        "@id": "node/11828383897"
       }
     },
     {
@@ -31934,8 +32003,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.312676,
-          28.4495705
+          -81.3126775,
+          28.4495701
         ]
       },
       "properties": {
@@ -32140,6 +32209,27 @@
         "tourism": "attraction",
         "wheelchair": "no",
         "@id": "way/156487750"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8978686,
+          49.238261
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1032033",
+        "historic": "aircraft",
+        "layer": "1",
+        "name": "Canadair CL-215",
+        "source": "HiRes aerial imagery",
+        "toilets:wheelchair": "no",
+        "tourism": "attraction",
+        "wheelchair": "no",
+        "@id": "way/156487753"
       }
     },
     {
@@ -33469,8 +33559,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          8.4495863,
-          49.3113476
+          8.4495726,
+          49.3113001
         ]
       },
       "properties": {
@@ -33490,6 +33580,28 @@
         "tourism": "attraction",
         "wheelchair": "no",
         "@id": "way/203829902"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8995743,
+          49.2393322
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q155679",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "layer": "1",
+        "model": "MiG-23_ML",
+        "name": "MiG-23 ML",
+        "source": "HiRes aerial imagery",
+        "tourism": "attraction",
+        "wheelchair": "no",
+        "@id": "way/211732527"
       }
     },
     {
@@ -33550,7 +33662,7 @@
         ]
       },
       "properties": {
-        "model:wikidata": "Q1032033",
+        "model:wikidata": "Q75243238",
         "historic": "aircraft",
         "layer": "3",
         "manufacturer": "Canadair",
