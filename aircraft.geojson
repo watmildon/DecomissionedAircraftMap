@@ -9303,26 +9303,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.0657494,
-          52.1822794
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q207700",
-        "aircraft:type": "military",
-        "historic": "aircraft",
-        "model": "An-2",
-        "model:wikipedia": "pl:An-2",
-        "name": "An-2",
-        "tourism": "attraction",
-        "@id": "node/5809306741"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           21.0661864,
           52.1815519
         ]
@@ -16918,7 +16898,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.0652086,
+          21.0652041,
           52.1817026
         ]
       },
@@ -16955,8 +16935,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.0650474,
-          52.1818793
+          21.0649631,
+          52.1818184
         ]
       },
       "properties": {
@@ -16973,8 +16953,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.0651926,
-          52.1818739
+          21.0651899,
+          52.1818772
         ]
       },
       "properties": {
@@ -20826,8 +20806,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.0664848,
-          52.1815054
+          21.0664832,
+          52.181504
         ]
       },
       "properties": {
@@ -21659,15 +21639,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.504541,
-          44.2134862
+          11.5042739,
+          44.2134924
         ]
       },
       "properties": {
         "model:wikidata": "Q40021",
+        "aircraft:type": "military",
+        "check_date": "2026-04-05",
         "historic": "aircraft",
         "model": "North American T-6 Texan",
-        "source": "survey",
         "@id": "node/11044025726"
       }
     },
@@ -31852,6 +31833,42 @@
         "description": "The orange remains of an aircraft that crashed 29, July, 2019.",
         "historic": "aircraft",
         "@id": "node/13687762807"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5045441,
+          44.2134939
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q327844",
+        "aircraft:type": "military",
+        "check_date": "2026-04-05",
+        "historic": "aircraft",
+        "model": "F-104S",
+        "@id": "node/13709403123"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0650092,
+          52.1819168
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15051036",
+        "aircraft:type": "military;jet",
+        "historic": "aircraft",
+        "model": "An-2",
+        "tourism": "attraction",
+        "@id": "node/13709797911"
       }
     },
     {
