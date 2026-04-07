@@ -7915,6 +7915,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          17.1987406,
+          48.1691391
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1035018",
+        "aircraft:type": "military",
+        "airside": "yes",
+        "historic": "aircraft",
+        "level": "2",
+        "model": "Caproni_Ca_33",
+        "name": "Caproni M. R. Štefánika",
+        "room": "lounge",
+        "source": "survey",
+        "@id": "node/5167683768"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           32.3572164,
           50.5848984
         ]
@@ -22300,23 +22322,6 @@
         "ref": "SP-TKD",
         "tourism": "attraction",
         "@id": "node/11772003302"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          17.1987708,
-          48.1691221
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q1035018",
-        "historic": "aircraft",
-        "level": "2",
-        "source": "survey",
-        "@id": "node/11810505256"
       }
     },
     {
