@@ -31881,6 +31881,43 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          8.5580368,
+          50.048932
+        ]
+      },
+      "properties": {
+        "wikidata": "Q25384449",
+        "model:wikidata": "Q26066",
+        "aircraft:type": "airliner",
+        "historic": "aircraft",
+        "old_ref": "D-AQUI",
+        "ref": "D-CDLH",
+        "@id": "node/13714023284"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.557664,
+          50.0488717
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1867580",
+        "aircraft:type": "airliner",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Lockheed L-1649 Starliner",
+        "ref": "D-ALAN",
+        "@id": "node/13714023285"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
