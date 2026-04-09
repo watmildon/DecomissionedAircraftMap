@@ -21679,6 +21679,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -3.7057364,
+          51.8665271
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q179835",
+        "aircraft:type": "military",
+        "historic": "aircraft_wreck",
+        "manufacturer": "de Havilland",
+        "manufacturer:wikidata": "Q283666",
+        "manufacturer:wikipedia": "en:de Havilland",
+        "model": "de Havilland DH100 Vampire",
+        "model:wikipedia": "en:de Havilland Vampire",
+        "ref": "VZ106",
+        "@id": "node/11051532422"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -4.9639712,
           56.176404
         ]
