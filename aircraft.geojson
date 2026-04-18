@@ -6158,6 +6158,7 @@
         "model:wikidata": "Q18552602",
         "historic": "aircraft",
         "name": "Douglas A-4C Skyhawk",
+        "panoramax": "8431966a-e745-4bd0-9597-faeb23434326",
         "@id": "node/4663031401"
       }
     },
@@ -21654,6 +21655,22 @@
         "memorial": "aircraft",
         "name": "MiG-23ML",
         "@id": "node/10981403290"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.633754,
+          48.7291309
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q608997",
+        "historic": "aircraft",
+        "model": "Mi-2",
+        "@id": "node/11033884918"
       }
     },
     {
@@ -37572,6 +37589,7 @@
         "manufacturer:wikidata": "Q2825613",
         "model": "377SG Super Guppy",
         "name": "Aero Spacelines Super Guppy",
+        "panoramax": "b7c84c5d-6b61-4bdf-8945-1d4f066174ba",
         "website": "https://pimaair.org/museum-aircraft/aero-spacelines-377g-super-guppy/",
         "@id": "way/767730192"
       }
