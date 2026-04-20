@@ -6229,6 +6229,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          5.5824356,
+          50.6881206
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q100026",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "name": "General Dynamics F-16 Fighting Falcon",
+        "@id": "node/4707399175"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           12.4980268,
           41.8287025
         ]
@@ -9065,6 +9082,458 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.4344514,
+          48.9466566
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1432386",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "1",
+        "name": "Schulgleiter (SG) 38 caréné",
+        "@id": "node/5644471464"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4344187,
+          48.9466747
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1432386",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "1",
+        "name": "Schulgleiter (SG) 38",
+        "@id": "node/5644471465"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4343652,
+          48.9466974
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q7234872",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "1",
+        "name": "Potez 53",
+        "@id": "node/5644471466"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4347411,
+          48.9468967
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q3205565",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "1",
+        "name": "Caudron C.60",
+        "@id": "node/5644471472"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4346135,
+          48.9469918
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1798515",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "1",
+        "name": "Pointe du Zeppelin LZ121 Méditerranée",
+        "@id": "node/5644471474"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4346101,
+          48.946703
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q67233611",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Breguet 19 T.F Super Bidon, \"Le Point d'Interrogation\"",
+        "@id": "node/5644471509"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4344635,
+          48.9466294
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q26172",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Junkers F-13",
+        "@id": "node/5644471510"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4343738,
+          48.9466634
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1396820",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Farman F60 Goliath",
+        "@id": "node/5644471511"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4342531,
+          48.946579
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q316815",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "S.N.C.A.S.E S.E 313001 Alouette II",
+        "@id": "node/5644472145"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4342298,
+          48.9465518
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q111743564",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "S.U.D Aviation SA319D Alouette III",
+        "@id": "node/5644472146"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4340462,
+          48.9458807
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1221683",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "NORD 1500 O.2 \"Griffon\"02",
+        "@id": "node/5644472155"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4339151,
+          48.9459124
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q234371",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Mirage III A-01",
+        "@id": "node/5644472156"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4337168,
+          48.9459181
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q19799460",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Payen P.A 49 \"Katy\"",
+        "@id": "node/5644472159"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4340944,
+          48.9460189
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q794582",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "S.U.D Aviation S.E 3210.01 Super Frelon",
+        "@id": "node/5644472160"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.43426,
+          48.9458626
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q23807995",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Hirsch H-100",
+        "@id": "node/5644472161"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4338237,
+          48.9457969
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q19799460",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "L'ATAR",
+        "@id": "node/5644472165"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4337668,
+          48.9458173
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q19799460",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "S.N.E.C.M.A C.4000 P2",
+        "@id": "node/5644472166"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4336667,
+          48.9458581
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q19799460",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Leduc 022",
+        "@id": "node/5644472167"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4345532,
+          48.9461684
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q319361",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Dassault Mirage F1 en transparence",
+        "@id": "node/5644472169"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4341962,
+          48.9462341
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q76367452",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Republic F-84F Thunderstreak",
+        "@id": "node/5644472170"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4342617,
+          48.9462013
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q200038",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Dassault Mirage 2000 01",
+        "@id": "node/5644472172"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4343428,
+          48.9463349
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q62725283",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "North American F-100D Supersabre",
+        "@id": "node/5644472175"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4342531,
+          48.946353
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q75143264",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Dassault MD-454 Mystère IVA",
+        "@id": "node/5644472176"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4337754,
+          48.9470292
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q19992142",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Douglas C-47A Skytrain",
+        "@id": "node/5644472187"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.4339668,
           48.9470145
         ]
@@ -9080,6 +9549,98 @@
         "model:wikipedia": "fr:Dewoitine D.520",
         "name": "Dewoitine D.520",
         "@id": "node/5644472188"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4340841,
+          48.9469737
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q113350367",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Supermarine Spitfire LF MK.XII",
+        "@id": "node/5644472189"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4338927,
+          48.9467381
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q34775",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Focke-Wulf Fw 190 A-8",
+        "@id": "node/5644472190"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4337995,
+          48.9467347
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q153348",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "name": "Fieseler Fi-103/F2G76 - Bombe volante V1",
+        "@id": "node/5644472191"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4335874,
+          48.9468412
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q207089",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "Republic P-47D Thunderbolt",
+        "@id": "node/5644472193"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4335081,
+          48.9468344
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q74434738",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "name": "North American P-51D Mustang",
+        "@id": "node/5644472194"
       }
     },
     {
@@ -10033,6 +10594,23 @@
         "tourism": "attraction",
         "wheelchair": "yes",
         "@id": "node/6493223853"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.260937,
+          48.8274187
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q316815",
+        "aircraft:type": "helicopter",
+        "historic": "aircraft",
+        "name": "Alouette II",
+        "@id": "node/6524243936"
       }
     },
     {
@@ -17165,6 +17743,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.2811447,
+          48.8350259
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q19799465",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "name": "Dassault Rafale C01",
+        "@id": "node/7884114355"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           16.6609955,
           45.7467221
         ]
@@ -18094,6 +18689,22 @@
         "name:sr": "Јастреб Ј-21",
         "name:sr-Latn": "Jastreb J-21",
         "@id": "node/8381468568"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3660651,
+          48.0675589
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q234371",
+        "historic": "aircraft",
+        "name": "Mirage III",
+        "@id": "node/8420967182"
       }
     },
     {
@@ -20238,11 +20849,11 @@
       },
       "properties": {
         "model:wikidata": "Q282308",
-        "aircraft:type": "sailplane",
+        "aircraft:type": "glider",
         "historic": "aircraft",
         "model": "Rubik R-26 Góbé",
         "model:wikipedia": "hu:R–26S Góbé",
-        "name": "Rubik R-26 Góbé",
+        "name": "Góbé",
         "tourism": "attraction",
         "@id": "node/10131313111"
       }
@@ -21789,6 +22400,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          5.1821912,
+          50.7414393
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q316815",
+        "aircraft:type": "helicopter",
+        "description": "Sud-aviation Aerospatiale SA318C Alouette II (c/n 2139) A-80",
+        "historic": "aircraft",
+        "name": "Helicopter Alouette II",
+        "@id": "node/11149983131"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           5.2137403,
           51.1791699
         ]
@@ -22626,7 +23255,7 @@
       },
       "properties": {
         "model:wikidata": "Q17372512",
-        "aircraft:type": "mi24",
+        "aircraft:type": "helicopter",
         "historic": "aircraft",
         "inscription": "Bakony harcihelikopter ezred 005",
         "memorial": "aircraft",
@@ -29698,6 +30327,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.9542567,
+          50.6822686
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q123731867",
+        "aircraft:type": "airliner",
+        "historic": "aircraft",
+        "name": "Caravelle Alsace",
+        "note": "partialy outside. soon to be used as tourism hostel",
+        "start_date": "1959",
+        "@id": "node/13186527927"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           0.1331792,
           52.0964653
         ]
@@ -36229,6 +36877,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3720809,
+          48.7157864
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q6505",
+        "aircraft:type": "airliner",
+        "historic": "aircraft",
+        "name": "Concorde 02",
+        "operator": "Athis Aviation",
+        "tourism": "attraction",
+        "@id": "way/424254383"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           13.6763452,
           52.8314467
         ]
@@ -37114,6 +37781,8 @@
         "historic": "aircraft",
         "image": "https://commons.wikimedia.org/wiki/File:The_museum_of_aviation_in_the_city_of_Ulyanovsk,_Russia._-_49843088838.jpg",
         "name": "Mil Mi-2",
+        "panoramax": "a43bae51-a91d-443b-af22-57a2adb1ec5d",
+        "panoramax:0": "f753493e-3967-4b03-8bc9-9356a08cd0bc",
         "tourism": "attraction",
         "vehicle:wikidata": "Q608997",
         "vehicle:wikipedia": "de:Mil Mi-2",
@@ -37138,6 +37807,7 @@
         "model": "AT-6",
         "model:wikipedia": "de:North American T-6",
         "name": "Harvard AT-6 Gard",
+        "panoramax": "2d6fde25-ff17-4253-8687-88c361a7465d",
         "tourism": "attraction",
         "wheelchair": "yes",
         "@id": "way/629047923"
@@ -37159,6 +37829,8 @@
         "model": "An-2",
         "model:wikipedia": "de:Antonow An-2",
         "name": "Antonow An-2",
+        "panoramax": "116352d5-4bf8-4dd6-81cc-02d6075f1ddc",
+        "panoramax:0": "e4bd140f-427f-4f7d-b404-4b55d3817683",
         "tourism": "attraction",
         "wheelchair": "yes",
         "@id": "way/629047927"
@@ -40330,6 +41002,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.4339448,
+          48.9464903
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q19799460",
+        "airplane": "yes",
+        "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/BSEFh8FUrMAXKxYw8",
+        "level": "0",
+        "name": "Super Mirage 4000",
+        "@id": "way/1196914157"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.4337545,
           48.9462591
         ]
@@ -40438,6 +41129,25 @@
         "name": "VFW 614",
         "tourism": "attraction",
         "@id": "way/1210274365"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1297364,
+          48.7680326
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q234371",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "name": "Mirage III R 306",
+        "note": "Sorti d’usine en 1963",
+        "website": "https://www.dassault-aviation.com/fr/passion/actu/initiative-un-mirage-iii-r-restaure/",
+        "@id": "way/1211253241"
       }
     },
     {
