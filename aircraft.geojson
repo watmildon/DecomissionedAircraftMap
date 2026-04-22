@@ -22279,6 +22279,7 @@
       },
       "properties": {
         "model:wikidata": "Q608997",
+        "aircraft:type": "helicopter",
         "historic": "aircraft",
         "model": "Mi-2",
         "@id": "node/11033884918"
