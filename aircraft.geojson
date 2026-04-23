@@ -44875,6 +44875,7 @@
         "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
         "name": "MiG-21",
         "tourism": "attraction",
+        "wheelchair": "yes",
         "@id": "way/1471899522"
       }
     },
