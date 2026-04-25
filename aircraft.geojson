@@ -9906,6 +9906,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -49.3599908,
+          -20.8074045
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q18011062",
+        "aircraft:type": "military;jet",
+        "historic": "aircraft",
+        "manufacturer": "Embraer",
+        "manufacturer:wikidata": "Q105557",
+        "model": "AT-26 Xavante",
+        "name": "Avião da Represa Municipal",
+        "ref": "FAB4632",
+        "tourism": "attraction",
+        "@id": "node/5816034820"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           19.991137,
           50.0777513
         ]
