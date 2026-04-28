@@ -32628,6 +32628,45 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -0.5217363,
+          53.1776104
+        ]
+      },
+      "properties": {
+        "subject:wikidata": "Q687743",
+        "historic": "memorial",
+        "memorial": "aircraft",
+        "name": "BAe Hawk T1W",
+        "operator": "Royal Air Force",
+        "ref": "XX311",
+        "subject:wikipedia": "en:BAE Systems Hawk",
+        "@id": "node/13768000823"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2234932,
+          56.0745965
+        ]
+      },
+      "properties": {
+        "wikidata": "Q698235",
+        "wikipedia": "en:Saab 105",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Saab",
+        "model": "105",
+        "@id": "node/13768429923"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
@@ -43214,6 +43253,24 @@
         "name": "МиГ-29",
         "tourism": "attraction",
         "@id": "way/1453728315"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5970957,
+          12.9807071
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q175940",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "HAL Tejas",
+        "name": "LCA Tejas Model",
+        "@id": "way/1464520210"
       }
     },
     {
