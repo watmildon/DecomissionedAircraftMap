@@ -9970,27 +9970,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.7134172,
-          41.4198424
-        ]
-      },
-      "properties": {
-        "wikidata": "Q207700",
-        "wikipedia": "en:Antonov_An-2",
-        "aircraft:type": "fixed_wing",
-        "brand": "Antonov",
-        "historic": "aircraft",
-        "mechanism:model": "An-2",
-        "name": "Antonov An-2",
-        "tourism": "attraction",
-        "@id": "node/5884005254"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           19.0770139,
           47.62601
         ]
