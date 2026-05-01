@@ -30009,6 +30009,54 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          17.5741848,
+          48.0596652
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "historic": "aircraft",
+        "source": "Ortofotomozaika SR",
+        "@id": "node/13071438265"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.5742827,
+          48.0595604
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q17372514",
+        "historic": "aircraft",
+        "source": "Ortofotomozaika SR",
+        "@id": "node/13071438266"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.5743605,
+          48.0594071
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q608997",
+        "historic": "aircraft",
+        "source": "Ortofotomozaika SR",
+        "@id": "node/13071438267"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -2.9917744,
           53.227228
         ]
@@ -32639,6 +32687,28 @@
         "manufacturer": "Saab",
         "model": "105",
         "@id": "node/13768429923"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0288279,
+          23.3397026
+        ]
+      },
+      "properties": {
+        "wikidata": "Q8186788",
+        "wikipedia": "zh:2012年大鵬航空BN-2空難",
+        "aircraft:type": "airliner",
+        "historic": "aircraft",
+        "model": "BN-2",
+        "name": "大鵬航空BN-2失事機",
+        "operator": "大鵬航空",
+        "ref": "B-68802",
+        "start_date": "2012-08-30",
+        "@id": "node/13784012439"
       }
     },
     {
