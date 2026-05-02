@@ -32694,6 +32694,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          15.0660421,
+          37.4738798
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q324744",
+        "aircraft:type": "military",
+        "check_date": "2026-04-30",
+        "historic": "aircraft",
+        "manufacturer": "Fiat Aviazione",
+        "model": "G.91 T",
+        "model:wikipedia": "it:Fiat G.91",
+        "note": "sponsorizzato da BaxEnergy",
+        "ref": "32-32",
+        "@id": "node/13781986397"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           121.0288279,
           23.3397026
         ]
@@ -32709,6 +32731,22 @@
         "ref": "B-68802",
         "start_date": "2012-08-30",
         "@id": "node/13784012439"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.5481112,
+          80.2625893
+        ]
+      },
+      "properties": {
+        "wikidata": "Q3814225",
+        "wikipedia": "en:Kee Bird",
+        "historic": "aircraft_wreck",
+        "@id": "node/13785760700"
       }
     },
     {
