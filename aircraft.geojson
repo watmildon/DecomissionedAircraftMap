@@ -9794,6 +9794,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          27.7016258,
+          42.6641962
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "historic": "aircraft",
+        "model": "MiG_21",
+        "name": "Паметник на българските летци",
+        "@id": "node/5701938603"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           64.8228138,
           60.1173346
         ]
@@ -37322,7 +37339,7 @@
         "ref:mhs": "PM44000871",
         "start_date": "1943",
         "tourism": "attraction",
-        "website": "http://superconstellation-nantes.fr",
+        "website": "https://superconstellation-nantes.fr/",
         "@id": "way/459803191"
       }
     },
