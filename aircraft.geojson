@@ -5409,7 +5409,7 @@
         "model": "Sea Vixen",
         "name": "Sea Vixen Crash Site",
         "ruins": "yes",
-        "website": "http://www.davebellamy.co.uk/index.php?MF=Views/photo.php?Ref=26127981314225",
+        "website": "https://www.davebellamy.co.uk/index.php?MF=Views/photo.php?Ref=26127981314225",
         "@id": "node/4019846141"
       }
     },
@@ -20669,7 +20669,7 @@
         "aircraft:type": "military",
         "historic": "aircraft",
         "model:wikipedia": "en:Mil_Mi-24",
-        "name": "Helikopters Mi-24",
+        "name": "Helikopters Mi-24A",
         "tourism": "attraction",
         "@id": "node/10033994814"
       }
@@ -44438,7 +44438,7 @@
         "type": "Point",
         "coordinates": [
           -71.4800858,
-          42.7345378
+          42.7345382
         ]
       },
       "properties": {
@@ -44446,7 +44446,8 @@
         "aircraft:type": "military",
         "historic": "aircraft",
         "manufacturer": "Douglas",
-        "model": "A-4 Skyhawk",
+        "model": "A-4_Skyhawk",
+        "name": "A-4 Skyhawk",
         "@id": "way/1470148912"
       }
     },
