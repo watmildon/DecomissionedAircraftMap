@@ -20665,10 +20665,10 @@
         ]
       },
       "properties": {
-        "model:wikidata": "Q155651",
-        "aircraft:type": "military",
+        "model:wikidata": "Q17372509",
+        "aircraft:type": "military;helicopter",
         "historic": "aircraft",
-        "model:wikipedia": "en:Mil_Mi-24",
+        "model": "Mil_Mi-24A",
         "name": "Helikopters Mi-24A",
         "tourism": "attraction",
         "@id": "node/10033994814"
