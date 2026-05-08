@@ -15127,6 +15127,40 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          15.4094564,
+          48.7953998
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q18341039",
+        "aircraft": "fixed_wing",
+        "aircraft:type": "F-104 Starfighter",
+        "historic": "aircraft",
+        "@id": "node/7108945785"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.4097334,
+          48.7960946
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q17862436",
+        "aircraft": "fixed_wing",
+        "aircraft:type": "PA-200 Tornado",
+        "historic": "aircraft",
+        "@id": "node/7108945790"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           34.5017509,
           49.6093913
         ]
@@ -22084,6 +22118,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          14.7202548,
+          49.1492952
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q207700",
+        "wikipedia": "en:Antonov An-2",
+        "historic": "aircraft",
+        "name": "Antonov An-2",
+        "ruins": "no",
+        "@id": "node/10943564942"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           27.5197988,
           42.5650044
         ]
@@ -25211,6 +25263,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          15.0113344,
+          49.1337261
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q540629",
+        "historic": "memorial",
+        "memorial": "aircraft",
+        "name": "Čmelák Z 37",
+        "@id": "node/12132590689"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.6902306,
           50.20505
         ]
@@ -27905,6 +27974,25 @@
         "model:wikidata": "Q106416921",
         "historic": "aircraft",
         "@id": "node/12797911041"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4913417,
+          48.985054
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q155679",
+        "wikipedia": "cz:MiG-23",
+        "historic": "aircraft",
+        "mapillary": "688442787112909",
+        "name": "Mig-23",
+        "panoramax": "58cedfe1-967d-4c1e-8366-3d0d451e57ff",
+        "@id": "node/12830155524"
       }
     },
     {
@@ -39765,7 +39853,7 @@
         "historic": "aircraft",
         "name": "A400M",
         "tourism": "attraction",
-        "website": "http://musee-aeroscopia.fr/fr/d%C3%A9couvrir-le-mus%C3%A9e/la-collection/les-a%C3%A9ronefs/airbus-a400m-atlas",
+        "website": "https://musee-aeroscopia.fr/fr/d%C3%A9couvrir-le-mus%C3%A9e/la-collection/les-a%C3%A9ronefs/airbus-a400m-atlas",
         "wheelchair": "yes",
         "@id": "way/945989133"
       }
@@ -39787,7 +39875,7 @@
         "historic": "aircraft",
         "name": "Caravelle",
         "tourism": "attraction",
-        "website": "http://musee-aeroscopia.fr/fr/d%C3%A9couvrir-le-mus%C3%A9e/la-collection/les-a%C3%A9ronefs/sud-aviation-se-210-caravelle-12",
+        "website": "https://musee-aeroscopia.fr/fr/d%C3%A9couvrir-le-mus%C3%A9e/la-collection/les-a%C3%A9ronefs/sud-aviation-se-210-caravelle-12",
         "wheelchair": "no",
         "@id": "way/945989134"
       }
@@ -39809,7 +39897,7 @@
         "model:wikipedia": "fr:Concorde (avion)",
         "name": "Concorde",
         "tourism": "attraction",
-        "website": "http://musee-aeroscopia.fr/fr/d%C3%A9couvrir-le-mus%C3%A9e/la-collection/les-a%C3%A9ronefs/sud-aviation-british-aircraft-corporation-concorde-209",
+        "website": "https://musee-aeroscopia.fr/fr/d%C3%A9couvrir-le-mus%C3%A9e/la-collection/les-a%C3%A9ronefs/sud-aviation-british-aircraft-corporation-concorde-209",
         "wheelchair": "no",
         "@id": "way/945989135"
       }
@@ -41925,7 +42013,7 @@
         "opening_hours": "May-Sep: Tu-Su 09:00-18:00; Oct-Apr: Tu-Su 09:00-16:00",
         "reservation": "no",
         "tourism": "attraction",
-        "website": "http://www.muzeumsnp.sk/expozicie/lietadlo-li-2/",
+        "website": "https://www.muzeumsnp.sk/expozicie/lietadlo-li-2/",
         "@id": "way/1289603703"
       }
     },
@@ -42602,7 +42690,7 @@
         "location": "indoor",
         "name": "Concorde",
         "tourism": "attraction",
-        "website": "http://musee-aeroscopia.fr/fr/d%C3%A9couvrir-le-mus%C3%A9e/la-collection/les-a%C3%A9ronefs/sud-aviation-british-aircraft-corporation-concorde-209",
+        "website": "https://musee-aeroscopia.fr/fr/d%C3%A9couvrir-le-mus%C3%A9e/la-collection/les-a%C3%A9ronefs/sud-aviation-british-aircraft-corporation-concorde-209",
         "wheelchair": "no",
         "@id": "way/1348787322"
       }
