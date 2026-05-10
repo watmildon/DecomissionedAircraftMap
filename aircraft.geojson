@@ -32006,6 +32006,33 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          45.1886344,
+          42.5715592
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q155635",
+        "historic": "aircraft",
+        "name:en": "Remains of a Mi-8T helicopter of the Chechen Republic of Ichkeria",
+        "panoramax": "73c7e6dc-ceeb-4df4-a50d-8695c3f08cbb",
+        "panoramax:0": "d66ac694-1a10-4a30-9968-6c96831f98bf",
+        "panoramax:1": "c325cdce-8ae5-42a5-96db-c3df3a7ba8be",
+        "panoramax:2": "242bd573-d82e-424a-b1db-20fbd733bc69",
+        "panoramax:3": "b5343215-3385-470e-b7bc-f1ab5ef6f08d",
+        "panoramax:4": "856180a7-5375-423c-8833-522e7a53110d",
+        "panoramax:5": "5a41d641-07ec-4c02-823b-faabf9b8eff4",
+        "panoramax:6": "f58034f6-57be-47b2-81b0-938fb93fb5a7",
+        "panoramax:7": "ef816501-77f7-4121-be1b-1acb5b0db1cc",
+        "panoramax:8": "7b67857e-6f38-4d32-a55f-dded2c178a2a",
+        "panoramax:9": "1db533c9-d46f-4351-9c59-b6c1a0b66b9c",
+        "@id": "node/13465122198"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.140999,
           40.8226186
         ]
@@ -32859,6 +32886,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -67.2481784,
+          46.3049118
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q113380414",
+        "aircraft:type": "fixed_wing",
+        "alt_name": "Marsden Avenger Site",
+        "description": "Remains of fatal crash of WW2 dive-bomber converted for pesticide spraying during spruce budworm outbreak. 38 year old Thomas Edison Marston died here.",
+        "historic": "aircraft",
+        "manufacturer": "Grumman",
+        "manufacturer:wikidata": "Q463261",
+        "manufacturer:wikipedia": "en:Grumman",
+        "model": "TBM-3_Avenger",
+        "name": "Avenger Crash Site",
+        "start_date": "1958-06-12",
+        "@id": "node/13811462233"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
@@ -33434,6 +33485,27 @@
         "name:uk": "Сатурн-1Б",
         "roof:shape": "round",
         "@id": "way/166133974"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3781475,
+          52.4990792
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q568671",
+        "exhibit": "aircraft",
+        "historic": "aircraft",
+        "image": "http://commons.wikimedia.org/wiki/File:Douglas_C-47_%22Skytrain%22_Rosinenbomber_-_Flickr_-_KlausNahr.jpg",
+        "name": "Rosinenbomber",
+        "toilets:wheelchair": "yes",
+        "tourism": "attraction",
+        "wheelchair": "yes",
+        "@id": "way/167983108"
       }
     },
     {
@@ -43500,6 +43572,44 @@
         "name": "Falcon 20",
         "tourism": "attraction",
         "@id": "way/1465639446"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1539524,
+          32.7268281
+        ]
+      },
+      "properties": {
+        "wikidata": "Q138514384",
+        "aircraft:type": "military",
+        "artwork_type": "installation",
+        "historic": "aircraft",
+        "model": "Lockheed_A-12",
+        "name": "Lockheed A-12 Blackbird 06933",
+        "website": "https://sandiegoairandspace.org/collection/item/lockheed-a-12-blackbird",
+        "@id": "way/1468142310"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1537871,
+          32.7267136
+        ]
+      },
+      "properties": {
+        "wikidata": "Q133846752",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Convair_F2Y_Sea_Dart",
+        "name": "Convair YF2Y-1 Sea Dart",
+        "@id": "way/1468142311"
       }
     },
     {
