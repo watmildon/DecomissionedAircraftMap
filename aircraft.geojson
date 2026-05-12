@@ -3684,6 +3684,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -1.8494986,
+          38.9559912
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q58725",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "model": "T-33",
+        "name": "Avión",
+        "panoramax": "f0bea805-0bab-43d1-b9f1-1da074602f45",
+        "@id": "node/3329770045"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           46.7406627,
           24.7542372
         ]
