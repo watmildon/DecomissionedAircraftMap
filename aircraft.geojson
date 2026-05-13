@@ -32929,6 +32929,74 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -80.9333977,
+          35.2249284
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q847409",
+        "aircraft:type": "airliner",
+        "historic": "aircraft",
+        "manufacturer": "Douglas",
+        "manufacturer:wikidata": "Q651778",
+        "model": "DC-7",
+        "@id": "node/13822245253"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.9332416,
+          35.2244246
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q18784360",
+        "subject:wikidata": "Q251039",
+        "aircraft:type": "airliner",
+        "historic": "memorial",
+        "indoor": "yes",
+        "level": "0",
+        "manufacturer": "Airbus",
+        "manufacturer:wikidata": "Q67",
+        "manufacturer:wikipedia": "en:Airbus Commercial Aircraft",
+        "memorial": "aircraft",
+        "model": "A320",
+        "ref": "N106US",
+        "subject": "US Airways Flight 1549",
+        "@id": "node/13822245255"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.9332672,
+          35.2253993
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q190211",
+        "aircraft:type": "fixed_wing",
+        "historic": "aircraft",
+        "indoor": "yes",
+        "level": "0",
+        "manufacturer": "Douglas",
+        "manufacturer:wikidata": "Q651778",
+        "manufacturer:wikipedia": "en:Douglas Aircraft Company",
+        "model": "DC-3",
+        "model:wikipedia": "en:Douglas DC-3",
+        "@id": "node/13822245257"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
