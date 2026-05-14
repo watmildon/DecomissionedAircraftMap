@@ -4309,8 +4309,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          126.9786565,
-          37.535419
+          126.9783434,
+          37.535487
         ]
       },
       "properties": {
@@ -4377,8 +4377,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          126.9783731,
-          37.5355082
+          126.9786401,
+          37.5354344
         ]
       },
       "properties": {
@@ -4401,8 +4401,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          126.9783615,
-          37.535616
+          126.978811,
+          37.5365773
         ]
       },
       "properties": {
@@ -4564,8 +4564,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          126.9788188,
-          37.5365822
+          126.9787148,
+          37.5366332
         ]
       },
       "properties": {
@@ -4629,8 +4629,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          126.9782687,
-          37.537345
+          126.9783297,
+          37.5374881
         ]
       },
       "properties": {
@@ -4882,8 +4882,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          126.9786388,
-          37.5363408
+          126.9784523,
+          37.5375444
         ]
       },
       "properties": {
@@ -25309,6 +25309,7 @@
         "aircraft:type": "MiG-21 PFM",
         "historic": "aircraft",
         "name": "MiG-21",
+        "ref:drobne_pamatky": "34377",
         "start_date": "1966",
         "tourism": "attraction",
         "website": "https://www.drobnepamatky.cz/node/34377",
