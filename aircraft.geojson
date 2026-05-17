@@ -19277,7 +19277,8 @@
         "model:wikidata": "Q62725283",
         "description": "s/n 56-2940",
         "historic": "aircraft",
-        "model": "North American F-100D Super Sabre",
+        "model": "North_American_F-100D_Super_Sabre",
+        "name": "North American F-100D Super Sabre",
         "@id": "node/8830973982"
       }
     },
@@ -19294,7 +19295,8 @@
         "model:wikidata": "Q270990",
         "description": "s/n 63-9771",
         "historic": "aircraft",
-        "model": "General Dynamics F-111A",
+        "model": "General_Dynamics_F-111A",
+        "name": "General Dynamics F-111A",
         "@id": "node/8830973983"
       }
     },
@@ -19311,7 +19313,8 @@
         "model:wikidata": "Q17372463",
         "description": "s/n 79-0307",
         "historic": "aircraft",
-        "model": "General Dynamics F-16A Fighting Falcon",
+        "model": "General_Dynamics_F-16A_Fighting_Falcon",
+        "name": "General Dynamics F-16A Fighting Falcon",
         "@id": "node/8830973984"
       }
     },
@@ -19329,6 +19332,8 @@
         "description": "s/n 66-0016",
         "historic": "aircraft",
         "model": "General Dynamics EF-111A Raven",
+        "name": "General Dynamics EF-111A Raven",
+        "ref": "5206",
         "@id": "node/8830973985"
       }
     },
@@ -19346,6 +19351,7 @@
         "desc": "s/n 64-0523",
         "historic": "aircraft",
         "model": "Lockheed MC-130E Combat Talon",
+        "name": "Lockheed MC-130E Combat Talon",
         "@id": "node/8830974019"
       }
     },
@@ -19363,6 +19369,7 @@
         "description": "s/n 65-0991",
         "historic": "aircraft",
         "model": "Lockheed MC-130P Combat Shadow",
+        "name": "Lockheed MC-130P Combat Shadow",
         "@id": "node/8830974020"
       }
     },
@@ -19379,6 +19386,7 @@
         "model:wikidata": "Q1194904",
         "historic": "aircraft",
         "model": "Sikorsky MH-53J Pave Low III",
+        "name": "Sikorsky MH-53J Pave Low III",
         "@id": "node/8830974021"
       }
     },
@@ -19396,6 +19404,7 @@
         "description": "s/n 69-6572",
         "historic": "aircraft",
         "model": "Lockheed AC-130H Spectre",
+        "name": "Lockheed AC-130H Spectre",
         "@id": "node/8830974022"
       }
     },
@@ -19413,6 +19422,7 @@
         "description": "Likely a composite of multiple airframes based on MQ-1B, 05-3135",
         "historic": "aircraft",
         "model": "General Atomics MQ-1 Predator",
+        "name": "General Atomics MQ-1 Predator",
         "@id": "node/8830974023"
       }
     },
