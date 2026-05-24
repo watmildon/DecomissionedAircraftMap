@@ -19431,6 +19431,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -106.112004,
+          32.8390035
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q75143530",
+        "aircraft:type": "military;jet",
+        "description": "s/n 51-13028",
+        "historic": "aircraft",
+        "model": "F-86E_Sabre",
+        "name": "North American F-86E Sabre",
+        "@id": "node/8840581084"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -2.4520922,
           50.5700175
         ]
@@ -21561,8 +21580,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.7196947,
-          47.730382
+          -2.7196161,
+          47.7303148
         ]
       },
       "properties": {
@@ -21581,8 +21600,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.7199075,
-          47.7298373
+          -2.7197996,
+          47.729798
         ]
       },
       "properties": {
@@ -21907,6 +21926,24 @@
         "name": "Let L-410",
         "tourism": "attraction",
         "@id": "node/10827361762"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.0755753,
+          32.8395624
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q106401562",
+        "description": "s/n 60-0576",
+        "historic": "aircraft",
+        "model": "AT-38B Talon",
+        "name": "Northrop AT-38B Talon",
+        "@id": "node/10882356278"
       }
     },
     {
@@ -26770,17 +26807,57 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -106.4788066,
-          32.3862494
+          -106.4788057,
+          32.3862487
         ]
       },
       "properties": {
         "model:wikidata": "Q292488",
         "historic": "aircraft",
         "inscription": "AGM-28 Hound Dog",
+        "model": "AGM-28 Hound Dog",
         "model:wikipedia": "en:AGM-28 Hound Dog",
         "name": "Hound Dog",
         "@id": "node/12468504555"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.4788006,
+          32.3856677
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q151432",
+        "aircraft:type": "military;jet",
+        "historic": "aircraft",
+        "inscription": "Jet",
+        "model": "F4 Phantom",
+        "model:wikipedia": "en:McDonnell Douglas F-4 Phantom II",
+        "name": "F4 Phantom",
+        "@id": "node/12468504558"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.4785981,
+          32.3856157
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q154106",
+        "historic": "aircraft",
+        "inscription": "6-60616",
+        "model": "Huey UH-1M",
+        "model:wikipedia": "en:Bell UH-1 Iroquois",
+        "name": "Huey UH-1M",
+        "@id": "node/12468504559"
       }
     },
     {
@@ -26795,6 +26872,7 @@
       "properties": {
         "model:wikidata": "Q741489",
         "historic": "aircraft",
+        "model": "RIM-8 Talos",
         "model:wikipedia": "en:RIM-8 Talos",
         "name": "RIM-8 Talos",
         "@id": "node/12468504578"
@@ -27016,6 +27094,25 @@
         "name": "Douglas C-47B Skytrain",
         "tourism": "attraction",
         "@id": "node/12527958636"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.0762235,
+          32.8398987
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q816695",
+        "aircraft:type": "military;unmanned;uas;uav",
+        "historic": "aircraft",
+        "model": "YMQ-9 Reaper",
+        "model:wikipedia": "en:General Atomics MQ-9 Reaper",
+        "name": "General Atomics YMQ-9 Reaper",
+        "@id": "node/12528552108"
       }
     },
     {
