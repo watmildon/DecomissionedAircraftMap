@@ -10318,6 +10318,7 @@
         "model": "Mil Mi-8",
         "model:wikipedia": "Mil Mi-8",
         "name": "Mil Mi-8",
+        "name:en": "Mil Mi-8",
         "name:ru": "Ми-8",
         "tourism": "attraction",
         "@id": "node/6162377501"
@@ -33859,6 +33860,7 @@
         "historic": "aircraft",
         "layer": "1",
         "name": "Douglas DC-3",
+        "name:en": "Douglas DC-3",
         "name:ja": "ダグラスDC-3型機",
         "operator": "McDonald's Taupō",
         "operator:wikidata": "Q38076",
