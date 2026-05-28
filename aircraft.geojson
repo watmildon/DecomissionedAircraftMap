@@ -33126,6 +33126,51 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          13.7810764,
+          50.4113028
+        ]
+      },
+      "properties": {
+        "subject:wikidata": "Q381249",
+        "check_date": "2026-05-26",
+        "description": "Pomník letadla Ae-45 v Rané u Loun",
+        "historic": "memorial",
+        "material": "metal",
+        "memorial": "aircraft",
+        "name": "Pomník letadla Ae-45",
+        "ref:drobne_pamatky": "22337",
+        "source": "survey;drobne_pamatky",
+        "source:description": "drobne_pamatky",
+        "subject:wikipedia": "cs:Aero Ae-45",
+        "website:drobne_pamatky": "https://www.drobnepamatky.cz/node/22337",
+        "@id": "node/13887203774"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1339785,
+          52.0947731
+        ]
+      },
+      "properties": {
+        "wikidata": "Q7405058",
+        "wikipedia": "en:Sally B",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Boeing",
+        "model": "B-17G",
+        "name": "Boeing B-17G Flying Fortress - Sally B",
+        "@id": "node/13889697748"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
