@@ -33616,6 +33616,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          1.3063946,
+          52.6151545
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q223237",
+        "historic": "aircraft",
+        "manufacturer": "SEPECAT",
+        "manufacturer:wikidata": "Q3459481",
+        "model": "Jaguar",
+        "name": "Spirit of Coltishall",
+        "@id": "way/164352348"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -2.7174411,
           55.9951232
         ]
