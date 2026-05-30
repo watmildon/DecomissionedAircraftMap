@@ -30629,8 +30629,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          0.1331792,
-          52.0964653
+          0.1331776,
+          52.0964556
         ]
       },
       "properties": {
@@ -33164,6 +33164,215 @@
         "model": "B-17G",
         "name": "Boeing B-17G Flying Fortress - Sally B",
         "@id": "node/13889697748"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7136973,
+          41.4119178
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1646112",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Shenyang_J-6",
+        "model:wikipedia": "en:Shenyang J-6",
+        "name": "Shenyang J-6",
+        "@id": "node/13891512692"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7137972,
+          41.4119314
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1646112",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Shenyang_J-6",
+        "model:wikipedia": "en:Shenyang J-6",
+        "name": "Shenyang J-6",
+        "@id": "node/13891512693"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7138809,
+          41.4119429
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1646112",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Shenyang_J-6",
+        "model:wikipedia": "en:Shenyang J-6",
+        "name": "Shenyang J-6",
+        "@id": "node/13891512694"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7139933,
+          41.4119582
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1646112",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Shenyang_J-6",
+        "model:wikipedia": "en:Shenyang J-6",
+        "name": "Shenyang J-6",
+        "@id": "node/13891512695"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.714109,
+          41.4119741
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1646112",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Shenyang_J-6",
+        "model:wikipedia": "en:Shenyang J-6",
+        "name": "Shenyang J-6",
+        "@id": "node/13891512696"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7141849,
+          41.4119844
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1646112",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Shenyang_J-6",
+        "model:wikipedia": "en:Shenyang J-6",
+        "name": "Shenyang J-6",
+        "@id": "node/13891512697"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7142847,
+          41.4119981
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1646112",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Shenyang_J-6",
+        "model:wikipedia": "en:Shenyang J-6",
+        "name": "Shenyang J-6",
+        "@id": "node/13891512698"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.714388,
+          41.4120122
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1646112",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Shenyang_J-6",
+        "model:wikipedia": "en:Shenyang J-6",
+        "name": "Shenyang J-6",
+        "@id": "node/13891512699"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7143285,
+          41.4142396
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1646112",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Shenyang_J-6",
+        "model:wikipedia": "en:Shenyang J-6",
+        "name": "Shenyang J-6",
+        "@id": "node/13891522902"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7143625,
+          41.4140663
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1646112",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Shenyang_J-6",
+        "model:wikipedia": "en:Shenyang J-6",
+        "name": "Shenyang J-6",
+        "@id": "node/13891522903"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7146567,
+          41.4130319
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q652911",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Ilyushin_Il-28",
+        "model:wikipedia": "en:Ilyushin Il-28",
+        "name": "Ilyushin Il-28",
+        "@id": "node/13891522904"
       }
     },
     {
