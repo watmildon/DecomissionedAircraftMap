@@ -39773,6 +39773,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -88.2415951,
+          30.6989248
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q104698251",
+        "historic": "aircraft",
+        "name": "U.S. Coast Guard HU-25 Falcon Plane",
+        "@id": "way/831288696"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           13.6771316,
           52.8333943
         ]
