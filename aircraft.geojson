@@ -4391,6 +4391,7 @@
         "model:wikipedia": "en:Cessna T-37 Tweet",
         "name": "T-37C '트위트' 훈련기",
         "name:en": "T-37C 'Tweet' Trainer (U.S.A.)",
+        "name:ja": "T-37Cツィート訓練機",
         "old_operator": "Republic of Korea Air Force",
         "ref": "21-366;42024",
         "@id": "node/3680877694"
@@ -4530,7 +4531,7 @@
         "model:wikipedia": "en:Shenyang J-6",
         "name": "MIG-19 전투기",
         "name:en": "MIG-19 Fighter",
-        "name:ja": "ミグ19",
+        "name:ja": "ミグ19戦闘機",
         "old_operator": "Korean People's Air Force",
         "ref": "207",
         "@id": "node/3680877701"
@@ -4601,6 +4602,7 @@
         "model": "F-51D",
         "name": "F-51D '무스탕' 전투기",
         "name:en": "F-51D 'Mustang' Fighter (U.S.A.)",
+        "name:ja": "F-51Dムスタング戦闘機",
         "old_operator": "Republic of Korea Air Force",
         "ref": "205/K;122-39953",
         "@id": "node/3680877722"
