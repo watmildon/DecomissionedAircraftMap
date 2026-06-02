@@ -33382,6 +33382,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          73.8382959,
+          15.3746821
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q905380",
+        "historic": "aircraft",
+        "manufacturer:wikidata": "Q176035",
+        "manufacturer:wikipedia": "fr:Société anonyme des ateliers d'aviation Louis Breguet",
+        "model:wikipedia": "fr:Breguet Br.1050 Alizé",
+        "@id": "node/13900611138"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
