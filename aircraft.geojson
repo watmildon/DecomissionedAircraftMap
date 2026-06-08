@@ -33551,7 +33551,6 @@
       "properties": {
         "model:wikidata": "Q174534",
         "aircraft:type": "jet",
-        "building": "aircraft",
         "historic": "aircraft",
         "manufacturer": "Boeing",
         "manufacturer:wikidata": "Q66",
@@ -40057,31 +40056,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.2620768,
-          47.424586
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q157925",
-        "description": "Turbolet L-410 UVP-E8A (HA-LAF)",
-        "historic": "aircraft",
-        "image": "https://www.airliners.net/search?keywords=HA-LAF",
-        "name": "L-410 UVP-E8A, HA-LAF",
-        "ref": "HA-LAF",
-        "@id": "way/866058399"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          19.2619892,
-          47.4243778
+          19.261992,
+          47.4243881
         ]
       },
       "properties": {
         "model:wikidata": "Q207700",
+        "aircraft:type": "airliner",
         "description": "Antonov An-2M (HA-MHI)",
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-MHI",
@@ -40095,17 +40076,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.2619657,
-          47.4241883
+          19.2621622,
+          47.4242739
         ]
       },
       "properties": {
+        "wikidata": "Q608997",
         "model:wikidata": "Q608997",
+        "wikipedia": "hu:Mi–2",
+        "aircraft:type": "helicopter",
         "description": "Mil Mi-2 (HA-BCB) helikopter",
         "historic": "aircraft",
-        "image": "https://www.airliners.net/search?keywords=HA-BCB",
+        "image": "https://www.airliners.net/search?keywords=HA-BCB; https://aeropark.hu/wp-content/uploads/2023/05/Mi-2-front.jpg",
         "name": "Mi-2, HA-BCB",
+        "official_name": "name=MIL MI-2",
         "ref": "HA-BCB",
+        "start_date": "1979",
+        "tourism": "attraction",
+        "website": "https://aeropark.hu/ha-bcb/",
         "@id": "way/866058401"
       }
     },
@@ -40114,12 +40102,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.2618998,
-          47.4239871
+          19.2619037,
+          47.4240016
         ]
       },
       "properties": {
         "model:wikidata": "Q505663",
+        "aircraft:type": "jet",
         "description": "Jakovlev Jak-40E (HA-YLR)",
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-YLR",
@@ -40139,6 +40128,7 @@
       },
       "properties": {
         "model:wikidata": "Q106361919",
+        "aircraft:type": "airliner",
         "description": "Iljusin Il-18V (HA-MOA)",
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-MOA",
@@ -40158,6 +40148,7 @@
       },
       "properties": {
         "model:wikidata": "Q20870824",
+        "aircraft:type": "airliner",
         "description": "Iljusin Il-14T (HA-MAL)",
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-MAL",
@@ -40177,6 +40168,7 @@
       },
       "properties": {
         "model:wikidata": "Q207700",
+        "aircraft:type": "airliner",
         "description": "Antonov An-2TD (HA-YHF), egykor Malév Aero Clubnál",
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-YHF",
@@ -40190,12 +40182,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.2629452,
-          47.4239549
+          19.2629387,
+          47.4239627
         ]
       },
       "properties": {
         "model:wikidata": "Q505663",
+        "aircraft:type": "jet",
         "description": "Jakovlev Jak-40 (HA-LRA)",
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-LRA",
@@ -40209,17 +40202,19 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.2631632,
-          47.4242031
+          19.2631618,
+          47.4242062
         ]
       },
       "properties": {
         "model:wikidata": "Q662591",
+        "aircraft:type": "airliner",
         "description": "DC-3 licensz, Liszunov Li-2T (HA-LIQ)",
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-LIQ",
         "name": "Li-2, HA-LIQ",
         "ref": "HA-YLR",
+        "tourism": "attraction",
         "@id": "way/866058409"
       }
     },
@@ -40228,17 +40223,21 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.2632496,
+          19.2632633,
           47.4244887
         ]
       },
       "properties": {
         "model:wikidata": "Q159067",
+        "aircraft:type": "jet",
         "description": "Tupoljev Tu-134 (HA-LBE)",
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-LBE",
         "name": "Tu-134, HA-LBE",
         "ref": "HA-LBE",
+        "start_date": "1973",
+        "url": "https://www.avia-info.hu/talalat.php?KeresettSzo=HA-LBE",
+        "website": "https://aeropark.hu/ha-lbe/",
         "@id": "way/866058410"
       }
     },
@@ -40253,6 +40252,7 @@
       },
       "properties": {
         "model:wikidata": "Q106361919",
+        "aircraft:type": "airliner",
         "description": "Iljusin Il-18V, (HA-MOG) Air Cargo",
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-MOG",
@@ -40266,12 +40266,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.2624027,
-          47.4248776
+          19.2624128,
+          47.4248794
         ]
       },
       "properties": {
         "model:wikidata": "Q172957",
+        "aircraft:type": "jet",
         "description": "Tupoljev Tu-154B-2 (HA-LCG)",
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-LCG",
@@ -46688,6 +46689,109 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          19.262369,
+          47.4246984
+        ]
+      },
+      "properties": {
+        "wikidata": "Q937707",
+        "wikipedia": "en:Cessna Citation I",
+        "aircraft:type": "jet",
+        "description:de": "Zweistrahliges Geschäftsreiseflugzeug von Herstellers Cessna.",
+        "description:en": "Executive little business jet aircraft series by Cessna.",
+        "historic": "aircraft",
+        "name": "Cessna 500",
+        "official_name": "Cessna 500 Citation I",
+        "ref": "HA-JET; HA-JEB;HA-FIT; N1GG",
+        "start_date": "1999",
+        "tourism": "attraction",
+        "website": "https://www.avia-info.hu/talalat.php?KeresettSzo=HA-JET",
+        "@id": "way/1527347864"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2619873,
+          47.424199
+        ]
+      },
+      "properties": {
+        "wikidata": "Q157925",
+        "wikipedia": "hu:L–410 Turbolet",
+        "aircraft:type": "airliner",
+        "description": "Csehszlovák utasszállító repülőgép. Gyártó: LET. Előző jelzések: CCCP-67639; RA-67639; HK-4187X; HK-4187",
+        "description:de": "Zweimotoriges Turboprop-Zubringer- und Transportflugzeug",
+        "description:en": "1969 airliner family",
+        "historic": "aircraft",
+        "name": "L-410 Turbolet",
+        "official_name": "Let L-410UVP-E17",
+        "ref": "HA-YFD",
+        "start_date": "1971,1990",
+        "tourism": "attraction",
+        "website": "https://www.avia-info.hu/talalat.php?KeresettSzo=HA-YFD",
+        "@id": "way/1527347865"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2619106,
+          47.4238594
+        ]
+      },
+      "properties": {
+        "wikidata": "Q157925",
+        "wikipedia": "hu:L–410 Turbolet",
+        "aircraft:type": "airliner",
+        "description": "Csehszlovák utasszállító repülőgép. Gyártó: LET. Előző jelzések: CCCP-67639; RA-67639; HK-4187X; HK-4187",
+        "description:de": "Zweimotoriges Turboprop-Zubringer- und Transportflugzeug",
+        "description:en": "1969 airliner family",
+        "historic": "aircraft",
+        "image": "https://aeropark.hu/wp-content/uploads/2023/04/l410.jpg; https://www.airliners.net/search?keywords=HA-LAF",
+        "name": "L-410 Turbolet",
+        "official_name": "Let L-410 UVP-E8A",
+        "ref": "HA-LAF",
+        "start_date": "1971;1991",
+        "tourism": "attraction",
+        "url": "https://www.avia-info.hu/talalat.php?KeresettSzo=HA-LAF",
+        "website": "https://aeropark.hu/ha-laf/",
+        "@id": "way/1527347866"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2621704,
+          47.4247396
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "wikipedia": "hu:MiG–21",
+        "aircraft:type": "military",
+        "description": "Mikojan-Gurjevics 21 vadászrepülőgép",
+        "historic": "aircraft",
+        "image": "https://aeropark.hu/wp-content/uploads/2023/05/Mig-21-2.jpg",
+        "name": "MiG-21 BiSz",
+        "ref": "41",
+        "start_date": "1979",
+        "tourism": "attraction",
+        "website": "https://aeropark.hu/mig-21-lajstrom/",
+        "@id": "way/1527347867"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           6.9633611,
           49.6859166
         ]
@@ -46803,6 +46907,31 @@
         "name": "North American EF-82E Twin Mustang",
         "type": "multipolygon",
         "@id": "relation/19445241"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2621938,
+          47.4245148
+        ]
+      },
+      "properties": {
+        "wikidata": "Q55243663",
+        "wikipedia": "hu:Ka–26",
+        "aircraft:type": "helicopter",
+        "building": "yes",
+        "historic": "aircraft",
+        "image": "https://aeropark.hu/wp-content/uploads/2023/05/Kamov-26.jpg",
+        "name": "KAMOV KA-26",
+        "ref": "HA-MMG",
+        "start_date": "1970",
+        "tourism": "attraction",
+        "type": "multipolygon",
+        "website": "https://aeropark.hu/ha-mmg/",
+        "@id": "relation/20830202"
       }
     }
   ]
