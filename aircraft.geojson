@@ -3822,7 +3822,6 @@
         "historic": "aircraft",
         "memorial": "aircraft",
         "name": "Пе-2",
-        "tourism": "attraction",
         "@id": "node/3357310694"
       }
     },
@@ -3841,7 +3840,6 @@
         "historic": "aircraft",
         "memorial": "aircraft",
         "name": "Ми-8",
-        "tourism": "attraction",
         "@id": "node/3357314593"
       }
     },
@@ -3860,7 +3858,6 @@
         "historic": "aircraft",
         "memorial": "aircraft",
         "name": "По-2",
-        "tourism": "attraction",
         "@id": "node/3357314693"
       }
     },
@@ -3879,7 +3876,6 @@
         "historic": "aircraft",
         "memorial": "aircraft",
         "name": "Ми-2",
-        "tourism": "attraction",
         "@id": "node/3357314793"
       }
     },
@@ -7341,7 +7337,6 @@
         "historic": "aircraft",
         "memorial": "aircraft",
         "name": "МиГ-17",
-        "tourism": "attraction",
         "@id": "node/4884044401"
       }
     },
@@ -33400,6 +33395,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -1.8524583,
+          38.9764272
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q319361",
+        "historic": "aircraft",
+        "name": "Mirage F1",
+        "panoramax": "0abbdede-29eb-4a4b-a978-912f33eb2d0e",
+        "start_date": "05/06/2026",
+        "@id": "node/13912386149"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
@@ -42636,7 +42649,6 @@
         "memorial": "aircraft",
         "name": "МиГ-27",
         "name:ru": "МиГ-27",
-        "tourism": "attraction",
         "@id": "way/1292320282"
       }
     },
