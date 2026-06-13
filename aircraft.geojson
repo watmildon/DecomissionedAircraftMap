@@ -39577,17 +39577,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -66.1762925,
+          -66.1762877,
           -17.4153963
         ]
       },
       "properties": {
-        "wikidata": "Q6409",
-        "wikipedia": "es:Boeing 727",
+        "model:wikidata": "Q15630601",
         "aircraft:type": "airliner",
         "building": "yes",
         "historic": "aircraft",
+        "layer": "2",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "727-200",
+        "name": "Boeing 727-200",
         "operator": "Lloyd Aéreo Boliviano",
+        "operator:short": "LAB",
+        "operator:type": "private",
+        "ref": "CP-1367",
         "tourism": "attraction",
         "@id": "way/808198222"
       }
@@ -39602,13 +39610,19 @@
         ]
       },
       "properties": {
-        "wikidata": "Q6409",
-        "wikipedia": "es:Boeing 727",
-        "addr:city": "Cochabamba",
+        "model:wikidata": "Q15630601",
         "aircraft:type": "airliner",
         "building": "yes",
         "historic": "aircraft",
+        "layer": "2",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "727-200",
+        "name": "Boeing 727-200",
         "operator": "Lloyd Aéreo Boliviano",
+        "operator:short": "LAB",
+        "operator:type": "private",
         "tourism": "attraction",
         "@id": "way/808198223"
       }
@@ -39624,14 +39638,19 @@
       },
       "properties": {
         "model:wikidata": "Q9384411",
-        "addr:city": "Cochabamba",
         "aircraft:type": "airliner",
         "building": "yes",
         "historic": "aircraft",
         "layer": "1",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "727-200",
         "model:wikipedia": "es:Boeing 727-200",
         "name": "Boeing 727-200",
         "operator": "Lloyd Aéreo Boliviano",
+        "operator:short": "LAB",
+        "operator:type": "private",
         "ref": "CP-2464",
         "tourism": "attraction",
         "@id": "way/808198224"
@@ -46820,6 +46839,60 @@
         "tourism": "attraction",
         "website": "https://aeropark.hu/mig-21-lajstrom/",
         "@id": "way/1527347867"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1764674,
+          -17.4154876
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q891786",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Bombardier",
+        "manufacturer:wikidata": "Q333498",
+        "manufacturer:wikipedia": "en:Bombardier Inc.",
+        "model": "CRJ200",
+        "name": "Bombardier CRJ200",
+        "operator": "Amaszonas",
+        "operator:type": "private",
+        "ref": "N27173",
+        "tourism": "attraction",
+        "@id": "way/1528846756"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1763631,
+          -17.4156344
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q891786",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Bombardier",
+        "manufacturer:wikidata": "Q333498",
+        "manufacturer:wikipedia": "en:Bombardier Inc.",
+        "model": "CRJ200",
+        "name": "Bombardier CRJ200",
+        "operator": "Amaszonas",
+        "operator:type": "private",
+        "ref": "N17217",
+        "tourism": "attraction",
+        "@id": "way/1528846757"
       }
     },
     {
