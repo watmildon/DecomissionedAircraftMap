@@ -927,11 +927,16 @@
         ]
       },
       "properties": {
+        "wikidata": "Q153307",
         "model:wikidata": "Q153307",
+        "wikipedia": "uk:МіГ-19",
+        "aircraft:type": "jet;fixed_wing",
         "description": "Радянський одномісний реактивний винищувач першого покоління, що був розроблений КБ МіГ на початку 50-х років. Став першим серійним надзвуковим винищувачем в СРСР. МіГ-19 використовувався в системі ППО СРСР та експортувався за кордон",
         "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-19",
         "name": "МіГ-19ПМ",
+        "name:en": "MiG-19PM",
+        "name:ru": "МиГ-19ПМ",
         "name:uk": "МіГ-19ПМ",
         "tourism": "attraction",
         "@id": "node/1705415518"
@@ -5428,6 +5433,28 @@
         "ruins": "yes",
         "website": "https://www.davebellamy.co.uk/index.php?MF=Views/photo.php?Ref=26127981314225",
         "@id": "node/4019846141"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8282095,
+          38.9703043
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q192443",
+        "access": "permit",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "A-10 Thunderbolt II",
+        "model:wikipedia": "en:Fairchild Republic A-10 Thunderbolt II",
+        "name": "Fairchild Republic A-10 Thunderbolt II",
+        "nickname": "Warthog",
+        "source": "Mapbox",
+        "@id": "node/4027305394"
       }
     },
     {
@@ -25198,6 +25225,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -104.8287963,
+          38.9694152
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q164523",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "T-38 Talon",
+        "model:wikipedia": "en:Northrop T-38 Talon",
+        "name": "Northrop T-38 Talon",
+        "@id": "node/11989418361"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -87.7417375,
           41.7876927
         ]
@@ -33436,6 +33482,97 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -104.81259,
+          38.9704609
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q244479",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Cessna 172 Skyhawk",
+        "model:wikipedia": "en:Cessna 172",
+        "name": "Cessna 172 Skyhawk",
+        "@id": "node/13935618124"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9345792,
+          -12.0765108
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q488204",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Cessna",
+        "manufacturer:wikidata": "Q308889",
+        "manufacturer:wikipedia": "es:Cessna",
+        "model": "A-37",
+        "model:wikipedia": "es:Cessna A-37 Dragonfly",
+        "name": "Cessna A/T-37B",
+        "@id": "node/13936924182"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0035193,
+          -12.1526737
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q488204",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Cessna",
+        "manufacturer:wikidata": "Q308889",
+        "manufacturer:wikipedia": "es:Cessna",
+        "model": "A-37",
+        "model:wikipedia": "es:Cessna A-37 Dragonfly",
+        "ref": "462",
+        "@id": "node/13936956030"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0397647,
+          -12.0648483
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q2362719",
+        "subject:wikidata": "Q1708890",
+        "aircraft:type": "military",
+        "description": "Monumento en memoria de José Abelardo Quiñones erigido a vísperas del 72° Aniversario de su inmolación. Es también homenaje al Sukhoi Su-22, en servicio desde 1977 hasta el 2006, participando en la Guerra del Falso Paquisha y Guerra del Cenepa.",
+        "historic": "memorial",
+        "inscription": "En homenaje a la inmolación del Héroe Nacional\n\"Capitan FAP JOSÉ ABELARDO QUIÑONES GONZALES\"\nGran General del Aire del Perú\nAvión Cazabombardero Supersónico SU-22 (Sukhoi)\nAeronave que participó en diversas operaciones\nen defensa de nuestra patria...",
+        "manufacturer": "Sukhoi",
+        "manufacturer:wikidata": "Q193007",
+        "manufacturer:wikipedia": "es:Sukhoi",
+        "memorial": "aircraft",
+        "model": "Su-22",
+        "name": "Monumento a José Abelardo Quiñones",
+        "ref": "159",
+        "start_date": "2013-07-23",
+        "subject:wikipedia": "es:José Abelardo Quiñones",
+        "@id": "node/13937531671"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
@@ -34896,6 +35033,99 @@
         "ref:nrhp": "13000071",
         "start_date": "1977",
         "@id": "way/182557020"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7022001,
+          38.8232045
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q75143924",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Lockheed",
+        "model": "F-94C",
+        "name": "F-94C Starfire",
+        "tourism": "attraction",
+        "vehicle:wikipedia": "en:Lockheed F-94 Starfire",
+        "@id": "way/185143370"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7024006,
+          38.8224221
+        ]
+      },
+      "properties": {
+        "wikidata": "Q76376752",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Convair",
+        "model": "F-106A",
+        "name": "F-106A Delta Dart",
+        "tourism": "attraction",
+        "vehicle:wikipedia": "en:Convair F-106 Delta Dart",
+        "@id": "way/185143374"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.702426,
+          38.8225841
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q17370258",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "McDonnell Douglas",
+        "model": "F-4C",
+        "name": "F-4C Phantom",
+        "ref": "64-0799",
+        "start_date": "1965",
+        "tourism": "attraction",
+        "vehicle:wikipedia": "en:McDonnell Douglas F-4 Phantom II",
+        "@id": "way/185143375"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7022152,
+          38.8223897
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q75231925",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "McDonnell Douglas",
+        "manufacturer:wikidata": "Q201815",
+        "manufacturer:wikipedia": "en:McDonnell Douglas",
+        "model": "F-15A",
+        "name": "F-15A Eagle",
+        "ref": "76-0024",
+        "tourism": "attraction",
+        "vehicle:wikipedia": "en:McDonnell Douglas F-15 Eagle",
+        "@id": "way/185143383"
       }
     },
     {
@@ -39582,7 +39812,7 @@
         ]
       },
       "properties": {
-        "model:wikidata": "Q15630601",
+        "model:wikidata": "Q15630606",
         "aircraft:type": "airliner",
         "building": "yes",
         "historic": "aircraft",
@@ -39590,41 +39820,14 @@
         "manufacturer": "Boeing",
         "manufacturer:wikidata": "Q66",
         "manufacturer:wikipedia": "en:Boeing",
-        "model": "727-200",
+        "model": "727-200_Advanced",
         "name": "Boeing 727-200",
         "operator": "Lloyd Aéreo Boliviano",
         "operator:short": "LAB",
-        "operator:type": "private",
+        "operator:type": "public",
         "ref": "CP-1367",
         "tourism": "attraction",
         "@id": "way/808198222"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -66.1764393,
-          -17.4152354
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q15630601",
-        "aircraft:type": "airliner",
-        "building": "yes",
-        "historic": "aircraft",
-        "layer": "2",
-        "manufacturer": "Boeing",
-        "manufacturer:wikidata": "Q66",
-        "manufacturer:wikipedia": "en:Boeing",
-        "model": "727-200",
-        "name": "Boeing 727-200",
-        "operator": "Lloyd Aéreo Boliviano",
-        "operator:short": "LAB",
-        "operator:type": "private",
-        "tourism": "attraction",
-        "@id": "way/808198223"
       }
     },
     {
@@ -39637,7 +39840,7 @@
         ]
       },
       "properties": {
-        "model:wikidata": "Q9384411",
+        "model:wikidata": "Q15630606",
         "aircraft:type": "airliner",
         "building": "yes",
         "historic": "aircraft",
@@ -39645,13 +39848,12 @@
         "manufacturer": "Boeing",
         "manufacturer:wikidata": "Q66",
         "manufacturer:wikipedia": "en:Boeing",
-        "model": "727-200",
-        "model:wikipedia": "es:Boeing 727-200",
+        "model": "727-200_Advanced",
         "name": "Boeing 727-200",
         "operator": "Lloyd Aéreo Boliviano",
         "operator:short": "LAB",
-        "operator:type": "private",
-        "ref": "CP-2464",
+        "operator:type": "public",
+        "ref": "CP-2324",
         "tourism": "attraction",
         "@id": "way/808198224"
       }
@@ -40717,6 +40919,117 @@
         "tourism": "attraction",
         "wreck:type": "aircraft",
         "@id": "way/1022608490"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7016412,
+          38.8223985
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q17486170",
+        "aircraft:type": "military",
+        "area": "yes",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Boeing",
+        "model": "F/A-18E/F Super Hornet",
+        "name": "F/A-18E/F Super Hornet",
+        "note": "CF-188A",
+        "ref": "188723",
+        "tourism": "attraction",
+        "@id": "way/1023819639"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7035893,
+          38.8236591
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q206409",
+        "aircraft:type": "military",
+        "area": "yes",
+        "historic": "aircraft",
+        "layer": "1",
+        "model": "P-40 Warhawk",
+        "model:wikipedia": "en:Curtiss P-40 Warhawk",
+        "name": "Curtiss P-40 Warhawk",
+        "tourism": "attraction",
+        "@id": "way/1024730544"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6983499,
+          38.8242261
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q657597",
+        "aircraft:type": "military;fixed_wing;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "layer": "1",
+        "model": "Convair F-102 Delta Dagger",
+        "model:wikipedia": "en:Convair F-102 Delta Dagger",
+        "name": "Convair F-102 Delta Dagger",
+        "tourism": "attraction",
+        "@id": "way/1024730545"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.706689,
+          38.8214306
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q170211",
+        "aircraft:type": "military",
+        "area": "yes",
+        "historic": "aircraft",
+        "layer": "1",
+        "model": "F-101 Voodoo",
+        "model:wikipedia": "en:McDonnell F-101 Voodoo",
+        "name": "McDonnell F-101 Voodoo",
+        "tourism": "attraction",
+        "@id": "way/1024730546"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7010556,
+          38.8256671
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q17504960",
+        "aircraft:type": "military;fixed_wing;jet",
+        "area": "yes",
+        "historic": "aircraft",
+        "layer": "2",
+        "model": "F-5 Tiger II",
+        "name": "F-5 Tiger II",
+        "tourism": "attraction",
+        "@id": "way/1024730547"
       }
     },
     {
@@ -46893,6 +47206,63 @@
         "ref": "N17217",
         "tourism": "attraction",
         "@id": "way/1528846757"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1761926,
+          -17.4155816
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q714326",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "description": "Este avión sirvió de transporte de pasajeros para YPFB y carne del Frigorífico Santa Rita.",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Douglas",
+        "manufacturer:wikidata": "Q651778",
+        "manufacturer:wikipedia": "en:Douglas Aircraft Company",
+        "model": "C-47A_Skytrain",
+        "model:wikipedia": "en:Douglas C-47 Skytrain",
+        "name": "Douglas C-47A Skytrain",
+        "operator": "Frigorífico Santa Rita",
+        "operator:type": "private",
+        "ref": "CP-607",
+        "tourism": "attraction",
+        "@id": "way/1528846758"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1762575,
+          -17.4140551
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15630606",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "727-200_Advanced",
+        "name": "Boeing 727-200",
+        "operator": "Lloyd Aéreo Boliviano",
+        "operator:short": "LAB",
+        "operator:type": "public",
+        "ref": "CP-1366",
+        "tourism": "attraction",
+        "@id": "way/1529287949"
       }
     },
     {
