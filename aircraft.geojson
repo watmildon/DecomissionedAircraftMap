@@ -39017,6 +39017,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -104.7636343,
+          39.7050338
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q219629",
+        "aircraft:type": "military;helicopter",
+        "historic": "aircraft",
+        "model": "AH-1 Cobra",
+        "model:wikipedia": "en:Bell AH-1 Cobra",
+        "name": "AH-1 Cobra attack helicopter",
+        "@id": "way/672567302"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           15.3190239,
           51.9446401
         ]
@@ -39854,6 +39873,7 @@
         "operator:short": "LAB",
         "operator:type": "public",
         "ref": "CP-2324",
+        "start_date": "1980-02-27",
         "tourism": "attraction",
         "@id": "way/808198224"
       }
@@ -41154,7 +41174,6 @@
         "addr:city": "Cochabamba",
         "aircraft:type": "airliner",
         "building": "yes",
-        "description": "1944 Curtiss C-46 Commando, 1945 Operation Varsity - dropped paratroops of 17th Airborne Div. east of the Rhine, In storage at Davis Monthan 1946, 1972-2000 various operators in Bolivia for cargo, 2001 to Lineas Aéreas Canedo, restored by 2009.",
         "historic": "aircraft",
         "manufacturer": "Curtiss-Wright Corporation",
         "name": "Curtiss C-46 Commando",
@@ -41162,6 +41181,37 @@
         "ref": "CP-973",
         "tourism": "attraction",
         "@id": "way/1074124762"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1718338,
+          -17.4163167
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15630606",
+        "addr:city": "Cochabamba",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "727-2P6_Advanced",
+        "name": "Boeing 727 Bufeo",
+        "nat_name": "Bufeo",
+        "operator": "Compañía Boliviana de Transporte Aéreo Privado AeroSur",
+        "operator:short": "AeroSur",
+        "operator:type": "private",
+        "ref": "CP-2561",
+        "start_date": "1978-10-20",
+        "tourism": "attraction",
+        "@id": "way/1074124765"
       }
     },
     {
@@ -41431,6 +41481,212 @@
         "name": "McDonnell F-4B Phantom II",
         "vehicle:wikipedia": "en:McDonnell Douglas F-4 Phantom II",
         "@id": "way/1121182703"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1643971,
+          -17.4288559
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15623412",
+        "addr:city": "Cochabamba",
+        "addr:neighbourhood": "Lindo",
+        "addr:street": "Avenida de la Fuerza Aérea",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "end_date": "2009",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "737-281",
+        "name": "Boeing 737-281 Aerosurito",
+        "nat_name": "Aerosurito",
+        "operator": "Compañía Boliviana de Transporte Aéreo Privado AeroSur",
+        "operator:short": "AeroSur",
+        "operator:type": "private",
+        "ref": "CP-2484",
+        "source": "local knowledge;Mapillary",
+        "start_date": "1979-06-28",
+        "tourism": "attraction",
+        "@id": "way/1122228972"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1639885,
+          -17.4290519
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15630606",
+        "addr:city": "Cochabamba",
+        "addr:neighbourhood": "Lindo",
+        "addr:street": "Avenida de la Fuerza Aérea",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "end_date": "~2012",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "727-264_Advanced",
+        "name": "Boeing 727-264 El Siringuero",
+        "nat_name": "El Siringuero",
+        "operator": "Compañía Boliviana de Transporte Aéreo Privado AeroSur",
+        "operator:short": "AeroSur",
+        "operator:type": "private",
+        "ref": "CP-2422",
+        "source": "local knowledge;Mapillary",
+        "start_date": "1978-11-16",
+        "tourism": "attraction",
+        "@id": "way/1122228974"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1637323,
+          -17.429257
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15630606",
+        "addr:city": "Cochabamba",
+        "addr:neighbourhood": "Lindo",
+        "addr:street": "Avenida de la Fuerza Aérea",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "end_date": "~2012",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "727-264_Advanced",
+        "name": "Boeing 727-264 Regional",
+        "nat_name": "Regional",
+        "operator": "Compañía Boliviana de Transporte Aéreo Privado AeroSur",
+        "operator:short": "AeroSur",
+        "operator:type": "private",
+        "ref": "CP-2447",
+        "source": "local knowledge;Mapillary",
+        "start_date": "1980-10-10",
+        "tourism": "attraction",
+        "@id": "way/1122228975"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1635577,
+          -17.4295015
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15630606",
+        "addr:city": "Cochabamba",
+        "addr:neighbourhood": "Lindo",
+        "addr:street": "Avenida de la Fuerza Aérea",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "end_date": "~2010",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "727-223_Advanced",
+        "name": "Boeing 727-223",
+        "operator": "Compañía Boliviana de Transporte Aéreo Privado AeroSur",
+        "operator:short": "AeroSur",
+        "operator:type": "private",
+        "ref": "CP-2498",
+        "source": "local knowledge;Mapillary",
+        "tourism": "attraction",
+        "@id": "way/1122228976"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1634196,
+          -17.4296827
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15623414",
+        "addr:city": "Cochabamba",
+        "addr:neighbourhood": "Lindo",
+        "addr:street": "Avenida de la Fuerza Aérea",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "end_date": "~2010",
+        "historic": "aircraft",
+        "layer": "2",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "737-281",
+        "name": "Boeing 737-281",
+        "operator": "Compañía Boliviana de Transporte Aéreo Privado AeroSur",
+        "operator:short": "AeroSur",
+        "operator:type": "private",
+        "ref": "CP-2486",
+        "source": "local knowledge;Mapillary",
+        "start_date": "1979-06",
+        "tourism": "attraction",
+        "@id": "way/1122228977"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1631359,
+          -17.4298873
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15630606",
+        "addr:city": "Cochabamba",
+        "addr:neighbourhood": "Lindo",
+        "addr:street": "Avenida de la Fuerza Aérea",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "end_date": "~2012",
+        "historic": "aircraft",
+        "layer": "2",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "727-222_Advanced",
+        "name": "Boeing 727-222",
+        "operator": "Compañía Boliviana de Transporte Aéreo Privado AeroSur",
+        "operator:short": "AeroSur",
+        "operator:type": "private",
+        "ref": "CP-2515",
+        "source": "local knowledge;Mapillary",
+        "start_date": "1979-09-18",
+        "tourism": "attraction",
+        "@id": "way/1122228978"
       }
     },
     {
