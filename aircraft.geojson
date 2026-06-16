@@ -20025,6 +20025,118 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -104.7720859,
+          39.7141901
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q100026",
+        "aircraft:type": "military;jet",
+        "historic": "aircraft",
+        "model": "F-16 Fighting Falcon",
+        "model:wikipedia": "en:General Dynamics F-16 Fighting Falcon",
+        "name": "General Dynamics F-16 Fighting Falcon",
+        "@id": "node/9671239536"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7718856,
+          39.7140136
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q62725066",
+        "aircraft:type": "military;jet",
+        "historic": "aircraft",
+        "model": "F-100C Super Sabre",
+        "name": "North American F-100C Super Sabre",
+        "@id": "node/9671239537"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7727308,
+          39.7136033
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q502126",
+        "aircraft:type": "military;jet",
+        "historic": "aircraft",
+        "model": "F-8 Crusader",
+        "model:wikipedia": "en:Vought F-8 Crusader",
+        "name": "Vought F-8 Crusader",
+        "@id": "node/9671239539"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7718678,
+          39.7136273
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q62786024",
+        "aircraft:type": "military;jet",
+        "historic": "aircraft",
+        "model": "A-7D Corsair II",
+        "name": "Vought A-7D Corsair II",
+        "@id": "node/9671239624"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7720727,
+          39.7134557
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q151432",
+        "aircraft:type": "military;jet",
+        "historic": "aircraft",
+        "model": "F-4 Phantom II",
+        "model:wikipedia": "en:McDonnell Douglas F-4 Phantom II",
+        "name": "McDonnell Douglas F-4 Phantom II",
+        "@id": "node/9671239625"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.7718106,
+          39.7134212
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q40021",
+        "aircraft:type": "military;fixed_wing",
+        "historic": "aircraft",
+        "model": "AT-6D Texan",
+        "model:wikipedia": "en:North American T-6 Texan",
+        "name": "AT-6D Texan",
+        "@id": "node/9671239626"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           134.8649148,
           34.8946254
         ]
@@ -21605,8 +21717,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.7196161,
-          47.7303148
+          -2.7197117,
+          47.7304005
         ]
       },
       "properties": {
@@ -33573,6 +33685,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          10.3951102,
+          43.694039
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q381143",
+        "subject:wikidata": "Q140244152",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Alenia",
+        "manufacturer:wikidata": "Q1359377",
+        "name": "Alenia G.222 Lyra34",
+        "@id": "node/13944434908"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
@@ -39876,6 +40008,38 @@
         "start_date": "1980-02-27",
         "tourism": "attraction",
         "@id": "way/808198224"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1771302,
+          -17.4172402
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15623287",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "description": "Avión de Simulacro.",
+        "end_date": "2012",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "737-33A",
+        "name": "Boeing 737-33A Yacaré",
+        "nat_name": "Yacaré",
+        "operator": "Compañía Boliviana de Transporte Aéreo Privado AeroSur",
+        "operator:short": "AeroSur",
+        "operator:type": "private",
+        "ref": "CP-2595",
+        "start_date": "1990-11-08",
+        "tourism": "attraction",
+        "@id": "way/808198232"
       }
     },
     {
@@ -47415,6 +47579,36 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -66.1770294,
+          -17.4150051
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15623287",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "end_date": "2017",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "727-300",
+        "name": "Boeing 737-300",
+        "operator": "Boliviana de Aviación",
+        "operator:short": "BoA",
+        "operator:type": "public",
+        "ref": "CP-2718",
+        "start_date": "1991-05-03",
+        "tourism": "attraction",
+        "@id": "way/1528846753"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -66.1764674,
           -17.4154876
         ]
@@ -47491,6 +47685,33 @@
         "ref": "CP-607",
         "tourism": "attraction",
         "@id": "way/1528846758"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1766741,
+          -17.4143227
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15623287",
+        "aircraft:type": "airliner",
+        "building": "yes",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Boeing",
+        "manufacturer:wikidata": "Q66",
+        "manufacturer:wikipedia": "en:Boeing",
+        "model": "737-300",
+        "name": "Boeing 737-300",
+        "operator": "Boliviana de Aviación",
+        "operator:short": "BoA",
+        "operator:type": "public",
+        "tourism": "attraction",
+        "@id": "way/1529287948"
       }
     },
     {
