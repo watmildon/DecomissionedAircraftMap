@@ -18045,8 +18045,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          18.3884489,
-          54.7537386
+          18.388492,
+          54.753703
         ]
       },
       "properties": {
@@ -19524,6 +19524,26 @@
         "subject:wikipedia": "zh:轰-6",
         "tourism": "artwork",
         "@id": "node/8920805647"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.978246,
+          52.176871
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q150609",
+        "aircraft:model": "MiG-21 UM Mongol B",
+        "historic": "aircraft",
+        "manufacturer": "Mikoyan Gurevich",
+        "name": "MiG-21",
+        "ref": "9308",
+        "tourism": "attraction",
+        "@id": "node/8931029854"
       }
     },
     {
