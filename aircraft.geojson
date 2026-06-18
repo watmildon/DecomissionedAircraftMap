@@ -30552,14 +30552,18 @@
       },
       "properties": {
         "wikidata": "Q3360768",
+        "model:wikidata": "Q18549307",
+        "subject:wikidata": "Q18549307",
         "wikipedia": "en:Golden Centennaires",
         "aircraft:type": "military;jet",
         "alt_name": "Snowbird",
         "description": "The jet was mounted to honour Clarence “C.B.” Lang, squadron leader of the Golden Centennaires.",
         "historic": "aircraft",
         "manufacturer": "Canadair",
+        "memorial": "aircraft",
         "model": "CT-114_Tutor",
         "name": "CT-114 Tutor Jet Static Display",
+        "panoramax": "b56f597f-df00-4a63-8a9b-cde733402458",
         "start_date": "2023-06-01",
         "@id": "node/13115295237"
       }
