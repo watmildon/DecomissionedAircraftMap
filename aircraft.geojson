@@ -28269,6 +28269,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          121.4247333,
+          24.3703075
+        ]
+      },
+      "properties": {
+        "model:wikidata": "en:AgustaWestland AW109",
+        "aircraft:type": "helicopter",
+        "historic": "aircraft",
+        "manufacturer": "AgustaWestland",
+        "memorial:wikipedia": "en:AgustaWestland",
+        "model": "A109A MKII",
+        "name": "龍翔航空直升機殘骸",
+        "ref": "B-6602",
+        "start_date": "1989-06-09",
+        "tourism": "attraction",
+        "@id": "node/12783759897"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -3.4067113,
           50.7294954
         ]
