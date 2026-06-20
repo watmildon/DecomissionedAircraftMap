@@ -25434,6 +25434,71 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.6677302,
+          35.6300511
+        ]
+      },
+      "properties": {
+        "wikidata": "Q46397",
+        "wikipedia": "en:McDonnell_Douglas_F/A-18_Hornet",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "McDonnell Douglas",
+        "model": "McDonnell_Douglas_F/A-18_Hornet_1",
+        "name": "Hornet 1",
+        "website": "https://chinalakemuseum.org/hornet1",
+        "@id": "node/12052361581"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6676785,
+          35.6296286
+        ]
+      },
+      "properties": {
+        "wikidata": "Q47375869",
+        "aircraft:type": "military",
+        "end_date": "2018-04-01",
+        "historic": "aircraft",
+        "manufacturer": "North American Aviation",
+        "model": "T-39_Sabreliner",
+        "name": "T-39 Sabreliner",
+        "website": "https://chinalakemuseum.org/t39",
+        "@id": "node/12052361582"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.6681295,
+          35.6296356
+        ]
+      },
+      "properties": {
+        "wikidata": "Q400620",
+        "wikipedia": "en:Grumman_F11F-1F_Super_Tiger",
+        "aircraft:type": "military",
+        "description": "The only remaining Super Tiger in existence, and one of two prototypes made.",
+        "historic": "aircraft",
+        "manufacturer": "Grumman",
+        "model": "F-11F_Super_Tiger",
+        "name": "F11-1F Super Tiger",
+        "note": "Wikidata has no specific entry for the Super Tiger variant. Variant has its own Wikipedia page.",
+        "website": "https://chinalakemuseum.org/f11",
+        "@id": "node/12052361583"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           64.3607056,
           81.145746
         ]
