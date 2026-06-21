@@ -33694,7 +33694,11 @@
       },
       "properties": {
         "model:wikidata": "Q319361",
+        "aircraft:type": "military",
         "historic": "aircraft",
+        "manufacturer:wikidata": "Q460487",
+        "manufacturer:wikipedia": "es:Dassault Aviation",
+        "model": "F1B",
         "name": "Mirage F1",
         "panoramax": "0abbdede-29eb-4a4b-a978-912f33eb2d0e",
         "start_date": "05/06/2026",
