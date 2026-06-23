@@ -6083,13 +6083,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.7481379,
-          46.9044188
+          19.7481634,
+          46.9043996
         ]
       },
       "properties": {
         "model:wikidata": "Q150609",
-        "historic": "aircraft",
+        "historic": "memorial",
+        "memorial": "aircraft",
         "name": "MiG-21",
         "name:de": "MiG-21 Flugzeug",
         "name:en": "MiG-21 Airplane",
