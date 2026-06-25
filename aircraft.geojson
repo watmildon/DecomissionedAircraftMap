@@ -22348,8 +22348,8 @@
       },
       "properties": {
         "model:wikidata": "Q207700",
-        "wikipedia": "en:Antonov An-2",
         "historic": "aircraft",
+        "model:wikipedia": "en:Antonov An-2",
         "name": "Antonov An-2",
         "ruins": "no",
         "@id": "node/10943564942"
