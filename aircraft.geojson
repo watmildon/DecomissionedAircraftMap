@@ -39078,30 +39078,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.1149767,
-          50.8824003
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q6437",
-        "wikipedia": "de:Airbus A300#A300B2 ZERO-G",
-        "aircraft:type": "fixed_wing",
-        "description": "Parabelflugzeug",
-        "historic": "aircraft",
-        "manufacture_date": "1973",
-        "manufacturer": "Airbus",
-        "manufacturer:wikidata": "Q67",
-        "model": "A300",
-        "name": "A300 ZERO-G",
-        "tourism": "attraction",
-        "@id": "way/622736722"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           15.3183368,
           51.9456436
         ]
