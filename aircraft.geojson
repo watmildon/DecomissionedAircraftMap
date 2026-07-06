@@ -22149,8 +22149,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.2341002,
-          48.6692035
+          21.2342834,
+          48.6691832
         ]
       },
       "properties": {
@@ -22167,8 +22167,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.2340653,
-          48.6691202
+          21.2341559,
+          48.6692019
         ]
       },
       "properties": {
@@ -22185,8 +22185,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.2340385,
-          48.6690387
+          21.2340326,
+          48.6692199
         ]
       },
       "properties": {
@@ -22203,8 +22203,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.2340143,
-          48.6689679
+          21.2339253,
+          48.6692356
         ]
       },
       "properties": {
@@ -22221,8 +22221,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.2340009,
-          48.6688899
+          21.2338098,
+          48.6692525
         ]
       },
       "properties": {
@@ -33431,7 +33431,6 @@
         "name": "Pomník letadla Ae-45",
         "ref:drobne_pamatky": "22337",
         "source": "survey;drobne_pamatky",
-        "source:description": "drobne_pamatky",
         "subject:wikipedia": "cs:Aero Ae-45",
         "website:drobne_pamatky": "https://www.drobnepamatky.cz/node/22337",
         "@id": "node/13887203774"
