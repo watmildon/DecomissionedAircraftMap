@@ -287,6 +287,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          21.7001402,
+          49.4004061
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q211443",
+        "historic": "aircraft",
+        "name": "Lietadlo Lisjunov Li-2",
+        "source": "bing;survey",
+        "tourism": "attraction",
+        "@id": "node/750417134"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -1.8649685,
           53.4505772
         ]
@@ -2137,6 +2155,25 @@
         "manufacturer:wikipedia": "en:Aermacchi",
         "model": "MB-326",
         "@id": "node/2419117159"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.1400757,
+          49.6388328
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q187377",
+        "historic": "aircraft",
+        "name": "MiG 15",
+        "start_date": "2011-5-6",
+        "tourism": "attraction",
+        "wheelchair": "yes",
+        "@id": "node/2431342303"
       }
     },
     {
@@ -5888,6 +5925,25 @@
         "name": "МіГ-15УТИ",
         "name:uk": "МіГ-15УТИ",
         "@id": "node/4329269102"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6075096,
+          50.1896892
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q207700",
+        "description": "można wejść do środka i zasiąść w kokpicie",
+        "historic": "aircraft",
+        "loc_name": "Antek",
+        "name": "An-2",
+        "tourism": "attraction",
+        "@id": "node/4330022040"
       }
     },
     {
@@ -22624,6 +22680,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          20.5185208,
+          50.5191741
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q897846",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "TS-8_Bies",
+        "name": "TS-8 Bies",
+        "tourism": "attraction",
+        "@id": "node/11063891905"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -4.9639712,
           56.176404
         ]
@@ -25928,6 +26003,24 @@
         "name": "Westwind Jet Aviation Monument",
         "operator": "Gaylord Regional Airport",
         "@id": "node/12165982420"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.0542962,
+          50.5586059
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q106417105",
+        "historic": "aircraft",
+        "name": "TS-11 Iskra bis B",
+        "ref": "721",
+        "tourism": "attraction",
+        "@id": "node/12166181388"
       }
     },
     {
@@ -33422,6 +33515,7 @@
         ]
       },
       "properties": {
+        "wikidata": "Q78804854",
         "subject:wikidata": "Q381249",
         "check_date": "2026-05-26",
         "description": "Pomník letadla Ae-45 v Rané u Loun",
