@@ -45969,7 +45969,9 @@
       },
       "properties": {
         "model:wikidata": "Q34945",
+        "aircraft:type": "military;fixed_wing;jet",
         "historic": "aircraft",
+        "manufacturer": "Grumman Aircraft Corporation",
         "military": "F-14 Tomcat",
         "model:wikipedia": "en:Grumman F-14 Tomcat",
         "tourism": "attraction",
