@@ -2690,6 +2690,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          10.0434971,
+          48.3728434
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q324744",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "name": "Fiat G.91",
+        "operator": "Königlich privilegierte Schützengesellschaft 1870 Neu-Ulm",
+        "start_date": "1976",
+        "tourism": "attraction",
+        "vehicle:wikidata": "Q324744",
+        "vehicle:wikipedia": "de:Fiat G.91",
+        "website": "https://sg1870neu-ulm.de/website/html_dateien/vflgzeug.htm",
+        "@id": "node/2880400648"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.527893,
           50.079922
         ]
