@@ -34401,32 +34401,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.7174411,
-          55.9951232
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q6504",
-        "aircraft:type": "airliner",
-        "historic": "aircraft",
-        "manufacturer": "British Aircraft Corporation",
-        "manufacturer:wikidata": "Q655224",
-        "model": "BAC One-Eleven",
-        "name": "BAC 1-11",
-        "tourism": "attraction",
-        "@id": "way/165637529"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -2.7231894,
           55.9954804
         ]
       },
       "properties": {
+        "wikidata": "Q140529976",
         "model:wikidata": "Q26159",
         "aircraft:type": "airliner",
         "historic": "aircraft",
@@ -34472,6 +34452,7 @@
         ]
       },
       "properties": {
+        "wikidata": "Q140530063",
         "model:wikidata": "Q218931",
         "aircraft:type": "military",
         "historic": "aircraft",
