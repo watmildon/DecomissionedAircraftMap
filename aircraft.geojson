@@ -6266,6 +6266,8 @@
         "inscription": "Лаз-7 Инструктор професор Цветан Лазаров",
         "material": "metal",
         "memorial": "aircraft",
+        "name:de": "Las-7",
+        "name:en": "Las-7",
         "@id": "node/4636061233"
       }
     },
@@ -22765,6 +22767,7 @@
       "properties": {
         "model:wikidata": "Q381153",
         "historic": "aircraft",
+        "mapillary": "2577846492682391",
         "model:wikipedia": "it:Aermacchi MB-326",
         "name": "Aermacchi MB-326",
         "ruins": "no",
@@ -22783,6 +22786,7 @@
       "properties": {
         "model:wikidata": "Q17519171",
         "historic": "aircraft",
+        "mapillary": "1639844807113685",
         "name": "Breda Nardi NH-500MC",
         "ruins": "no",
         "@id": "node/11128944996"
@@ -35574,11 +35578,11 @@
       "properties": {
         "subject:wikidata": "Q182575",
         "aircraft:type": "airliner",
-        "alt_name": "Lady Agnes",
         "contact:website": "https://www.otto-lilienthal.de/",
         "historic": "aircraft",
         "layer": "1",
-        "name": "Iljuschin IL-62",
+        "model": "Iljuschin_IL-62",
+        "name": "IL-62 \"Lady Agnes\"",
         "ref": "DM-SEG",
         "subject:wikipedia": "de:Iljuschin Il-62",
         "tourism": "attraction",
