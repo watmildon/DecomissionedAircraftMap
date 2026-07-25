@@ -15464,8 +15464,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.4507865,
-          49.3690925
+          35.4508485,
+          49.3690277
         ]
       },
       "properties": {
@@ -33948,10 +33948,15 @@
         ]
       },
       "properties": {
+        "wikidata": "Q140685032",
         "model:wikidata": "Q2819282",
         "historic": "aircraft",
         "model:wikipedia": "it:AMX International AMX",
-        "panoramax": "6d2a8043-7588-4bb2-868a-27ad8b24a277",
+        "name": "AMX International",
+        "panoramax": "0dfca706-372c-4150-bf26-98169f5a3194",
+        "panoramax:0": "26ef0575-1fc9-4067-8581-aff2ac49ad71",
+        "panoramax:1": "fc9b342c-9ec1-4d5e-a7ea-58ae6f3db504",
+        "panoramax:2": "a8085a70-e73a-47ba-85b6-8d1bb7a2be8d",
         "start_date": "2026",
         "@id": "node/14039582608"
       }
@@ -43344,8 +43349,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.5532972,
-          49.0106834
+          2.5533068,
+          49.0106771
         ]
       },
       "properties": {
