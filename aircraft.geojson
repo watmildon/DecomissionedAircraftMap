@@ -18875,6 +18875,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          17.7019741,
+          68.5542218
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q26066",
+        "historic": "aircraft",
+        "historic:civilization": "ww2",
+        "name": "Junker 52",
+        "ruins": "military",
+        "@id": "node/8393781893"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.3660651,
           48.0675589
         ]
@@ -32672,6 +32690,7 @@
       },
       "properties": {
         "wikidata": "Q189064",
+        "model:wikidata": "Q189064",
         "wikipedia": "en:Lockheed U-2",
         "aircraft:type": "jet",
         "historic": "aircraft",
@@ -32692,6 +32711,7 @@
       },
       "properties": {
         "wikidata": "Q49162645",
+        "model:wikidata": "Q49162645",
         "historic": "aircraft",
         "indoor": "yes",
         "name": "Bell UH-1B Iroquois",
@@ -32710,6 +32730,7 @@
       },
       "properties": {
         "wikidata": "Q285638",
+        "model:wikidata": "Q285638",
         "wikipedia": "en:Canadair CF-104 Starfighter",
         "historic": "aircraft",
         "indoor": "yes",
@@ -32728,6 +32749,7 @@
       },
       "properties": {
         "wikidata": "Q108057141",
+        "model:wikidata": "Q100026",
         "historic": "aircraft",
         "indoor": "yes",
         "name": "F-16 Fighting Falcon",
@@ -32746,6 +32768,7 @@
       },
       "properties": {
         "wikidata": "Q1393116",
+        "model:wikidata": "Q1393116",
         "wikipedia": "en:Fairchild PT-19",
         "historic": "aircraft",
         "indoor": "yes",
@@ -32802,6 +32825,7 @@
       },
       "properties": {
         "wikidata": "Q103923121",
+        "model:wikidata": "Q47286183",
         "historic": "aircraft",
         "indoor": "yes",
         "name": "Gloster Gladiator II",
@@ -32820,6 +32844,7 @@
       },
       "properties": {
         "wikidata": "Q155661",
+        "model:wikidata": "Q155661",
         "wikipedia": "en:Junkers Ju 88",
         "historic": "aircraft",
         "indoor": "yes",
@@ -32838,6 +32863,7 @@
       },
       "properties": {
         "wikidata": "Q1156504",
+        "model:wikidata": "Q1156504",
         "wikipedia": "en:Kjeller F.F.9 Kaje",
         "historic": "aircraft",
         "indoor": "yes",
@@ -32877,6 +32903,7 @@
       },
       "properties": {
         "wikidata": "Q153826",
+        "model:wikidata": "Q153826",
         "wikipedia": "en:North American F-86 Sabre",
         "historic": "aircraft",
         "indoor": "yes",
@@ -32896,6 +32923,7 @@
       },
       "properties": {
         "wikidata": "Q308940",
+        "model:wikidata": "Q308940",
         "wikipedia": "en:Northrop F-5",
         "historic": "aircraft",
         "indoor": "yes",
@@ -32915,6 +32943,7 @@
       },
       "properties": {
         "wikidata": "Q20023160",
+        "model:wikidata": "Q20023160",
         "historic": "aircraft",
         "indoor": "yes",
         "name": "Republic F-84G Thunderjet",
@@ -32933,6 +32962,7 @@
       },
       "properties": {
         "wikidata": "Q672488",
+        "model:wikidata": "Q106401610",
         "wikipedia": "en:Piper PA-18 Super Cub",
         "historic": "aircraft",
         "indoor": "yes",
@@ -32952,6 +32982,7 @@
       },
       "properties": {
         "wikidata": "Q153348",
+        "model:wikidata": "Q153348",
         "wikipedia": "en:V-1 flying bomb",
         "historic": "aircraft",
         "indoor": "yes",
@@ -32971,6 +33002,7 @@
       },
       "properties": {
         "wikidata": "Q541116",
+        "model:wikidata": "Q18130203",
         "wikipedia": "en:Cessna O-1 Bird Dog",
         "historic": "aircraft",
         "indoor": "yes",
@@ -32990,6 +33022,7 @@
       },
       "properties": {
         "wikidata": "Q18019707",
+        "model:wikidata": "Q18019707",
         "historic": "aircraft",
         "indoor": "yes",
         "name": "Consolidated PBY-5A Catalina",
@@ -33008,6 +33041,7 @@
       },
       "properties": {
         "wikidata": "Q221344",
+        "model:wikidata": "Q221344",
         "wikipedia": "en:De Havilland Mosquito",
         "historic": "aircraft",
         "indoor": "yes",
@@ -33027,6 +33061,7 @@
       },
       "properties": {
         "wikidata": "Q654062",
+        "model:wikidata": "Q654062",
         "wikipedia": "en:De Havilland Tiger Moth",
         "historic": "aircraft",
         "indoor": "yes",
@@ -33046,6 +33081,7 @@
       },
       "properties": {
         "wikidata": "Q179835",
+        "model:wikidata": "Q179835",
         "wikipedia": "en:De Havilland Vampire",
         "historic": "aircraft",
         "indoor": "yes",
@@ -33064,6 +33100,7 @@
       },
       "properties": {
         "wikidata": "Q20023160",
+        "model:wikidata": "Q20023160",
         "historic": "aircraft",
         "indoor": "yes",
         "name": "Republic F-84G Thunderjet",
@@ -33082,6 +33119,7 @@
       },
       "properties": {
         "wikidata": "Q17018597",
+        "model:wikidata": "Q29190",
         "wikipedia": "en:Supermarine Spitfire (late Merlin-powered variants)",
         "historic": "aircraft",
         "indoor": "yes",
@@ -33101,6 +33139,7 @@
       },
       "properties": {
         "wikidata": "Q162116",
+        "model:wikidata": "Q162116",
         "wikipedia": "en:Westland Lynx",
         "historic": "aircraft",
         "indoor": "yes",
@@ -33959,6 +33998,28 @@
         "panoramax:2": "a8085a70-e73a-47ba-85b6-8d1bb7a2be8d",
         "start_date": "2026",
         "@id": "node/14039582608"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1997978,
+          48.2225975
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q461475",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "manufacturer": "Saab",
+        "manufacturer:wikidata": "Q219501",
+        "manufacturer:wikipedia": "en:Saab AB",
+        "model": "Saab_J_35Oe_Draken",
+        "model:wikipedia": "en:Saab 35 Draken",
+        "name": "Saab 35 Draken",
+        "@id": "node/14049652252"
       }
     },
     {
@@ -41303,23 +41364,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          48.3793765,
-          41.9409442
+          48.3785336,
+          41.9402092
         ]
       },
       "properties": {
         "wikidata": "Q1506936",
         "wikipedia": "ru:Лунь (экраноплан)",
-        "aircraft:type": "ground_effect_vehicle",
-        "alt_name:ru": "экраноплан Лунь",
+        "aircraft:type": "military;ground_effect_vehicle",
         "building": "yes",
-        "description": "\"Лунь\" - ракетный корабль-экраноплан проекта 903",
         "historic": "aircraft",
         "int_name": "Lun-class ekranoplan",
-        "name": "Экраноплан \"Лунь\"",
-        "name:en": "Ekranoplan \"Lun\"",
+        "layer": "1",
+        "location": "overhead",
+        "name": "Лунь",
+        "name:en": "Lun",
+        "official_name": "Ракетный корабль-экраноплан проекта 903 «Лунь»",
         "tourism": "attraction",
-        "wreck:type": "aircraft",
         "@id": "way/1022608490"
       }
     },
@@ -41465,6 +41526,7 @@
       },
       "properties": {
         "wikidata": "Q308940",
+        "model:wikidata": "Q17505532",
         "aircraft:type": "military;jet",
         "area": "yes",
         "artwork_type": "aircraft",
@@ -41594,6 +41656,68 @@
         "start_date": "1978-10-20",
         "tourism": "attraction",
         "@id": "way/1074124765"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3409436,
+          59.6340275
+        ]
+      },
+      "properties": {
+        "wikidata": "Q482925",
+        "wikipedia": "en:Nike Hercules",
+        "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/uU7s6vG5AJ1FZ9Yb9",
+        "landuse": "military",
+        "material": "steel",
+        "memorial": "missile",
+        "name": "NIKE HERKULES MIM-14.",
+        "@id": "way/1074311388"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3410735,
+          59.6340439
+        ]
+      },
+      "properties": {
+        "wikidata": "Q1990116",
+        "wikipedia": "en:MIM-3 Nike Ajax",
+        "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/m7FzjN8TVWJdyLYU7",
+        "landuse": "military",
+        "material": "steel",
+        "memorial": "missile",
+        "name": "NIKE AJAX MIM-3",
+        "@id": "way/1074311389"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.341048,
+          59.6340618
+        ]
+      },
+      "properties": {
+        "wikidata": "Q56404367",
+        "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/qt9GidJt2stGdtTR6",
+        "landuse": "military",
+        "material": "steel",
+        "memorial": "missile",
+        "name": "NORWEGIAN ADAPTED HAWK (NOAH)",
+        "@id": "way/1074311390"
       }
     },
     {
@@ -42167,6 +42291,7 @@
       },
       "properties": {
         "wikidata": "Q285638",
+        "model:wikidata": "Q285638",
         "aircraft:type": "military;jet",
         "artwork_type": "aircraft",
         "historic": "aircraft",
@@ -47209,6 +47334,7 @@
       },
       "properties": {
         "wikidata": "Q18177049",
+        "model:wikidata": "Q18177049",
         "artwork_type": "aircraft",
         "historic": "aircraft",
         "name": "Cessna T-37B Tweet",
@@ -47248,6 +47374,7 @@
       },
       "properties": {
         "wikidata": "Q285638",
+        "model:wikidata": "Q285638",
         "wikipedia": "en:Canadair CF-104 Starfighter",
         "description": "Decommissioned Starfighter CF-104 fighter plane on a stand",
         "historic": "aircraft",
