@@ -32343,6 +32343,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -84.7120846,
+          44.658905
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q18175583",
+        "aircraft:type": "jet",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed Corporation",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "TR-33A",
+        "@id": "node/13409547877"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           15.669356,
           50.1749909
         ]
