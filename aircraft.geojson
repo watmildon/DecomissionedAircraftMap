@@ -3716,6 +3716,24 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          46.030494,
+          51.5583002
+        ]
+      },
+      "properties": {
+        "wikidata": "Q337467",
+        "wikipedia": "ru:Ан-24Б",
+        "aircraft:type": "airliner",
+        "historic": "aircraft",
+        "model": "Ан-24Б",
+        "@id": "node/3250536586"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -121.3900623,
           39.1137017
         ]
@@ -19865,6 +19883,24 @@
         "name": "SEPECAT Jaguar A n°91",
         "tourism": "attraction",
         "@id": "node/9233504661"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.0308804,
+          51.5579675
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q505649",
+        "aircraft:type": "airliner",
+        "historic": "aircraft",
+        "model": "Як-42Д",
+        "model:wikipedia": "ru:Як-42Д",
+        "@id": "node/9392075164"
       }
     },
     {
