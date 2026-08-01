@@ -2181,6 +2181,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          18.2189672,
+          49.7745879
+        ]
+      },
+      "properties": {
+        "wikidata": "Q106962506",
+        "description": "Pomník Františka Doležala ve Staré Bělé",
+        "historic": "memorial",
+        "inscription": "Dne 12. 11. 1974 na tomto místě zahynul při plnění výcvikové letové akce zástupce velitele 3. letky, pilot 1. třídy mjr. František Doležal. Krátce před 19 hodinou ohlásil splnění úkolu a během přistávacího manévru došlo nad městem Ostravou k technické záv",
+        "material": "stone",
+        "memorial": "aircraft",
+        "name": "Pomník letecké nehody",
+        "ref:drobne_pamatky": "57656",
+        "@id": "node/2453427290"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           37.5897,
           48.7292224
         ]
