@@ -2612,7 +2612,7 @@
         ]
       },
       "properties": {
-        "wikidata": "Q4167600",
+        "wikidata": "Q271446",
         "wikipedia": "ru:Дракино (Московская область)",
         "aircraft": "fixed_wing",
         "aircraft:role": "fighter",
@@ -37304,6 +37304,7 @@
         "wikipedia": "ru:Бе-30",
         "historic": "aircraft",
         "name": "Бе-32",
+        "name:ru": "Бе-32",
         "tourism": "attraction",
         "@id": "way/354580814"
       }
@@ -37414,6 +37415,7 @@
         "wikipedia": "ru:МиГ-25",
         "historic": "aircraft",
         "name": "МиГ-25РБ",
+        "name:ru": "МиГ-25РБ",
         "start_date": "1964",
         "tourism": "attraction",
         "@id": "way/354860827"
@@ -37450,6 +37452,7 @@
         "wikipedia": "ru:МиГ-21",
         "historic": "aircraft",
         "name": "МиГ-21бис",
+        "name:ru": "МиГ-21бис",
         "tourism": "attraction",
         "@id": "way/354866848"
       }
@@ -37524,6 +37527,7 @@
         "wikipedia": "ru:МиГ-15",
         "historic": "aircraft",
         "name": "МиГ-15УТИ",
+        "name:ru": "МиГ-15УТИ",
         "tourism": "attraction",
         "@id": "way/354866852"
       }
@@ -37579,6 +37583,7 @@
         "wikipedia": "ru:Як-38",
         "historic": "aircraft",
         "name": "Як-38М",
+        "name:ru": "Як-38М",
         "start_date": "1970",
         "tourism": "attraction",
         "@id": "way/354922151"
@@ -38453,8 +38458,9 @@
       "properties": {
         "wikidata": "Q192137",
         "wikipedia": "ru:Су-25",
+        "alt_name": "Т-8",
         "historic": "aircraft",
-        "name": "Су-25 (Т-8)",
+        "name": "Су-25",
         "start_date": "1975",
         "tourism": "attraction",
         "@id": "way/385012272"
@@ -47420,7 +47426,6 @@
       "properties": {
         "wikidata": "Q6387",
         "wikipedia": "en:Boeing 737",
-        "artwork_type": "aircraft",
         "historic": "aircraft",
         "name": "LN-KKW Boeing 737",
         "tourism": "artwork",
@@ -47460,10 +47465,8 @@
       "properties": {
         "wikidata": "Q49162645",
         "aircraft:type": "helicopter",
-        "artwork_type": "aircraft",
-        "historic": "helicopter",
+        "historic": "aircraft",
         "name": "Bell UH-1B Iroquois",
-        "tourism": "artwork",
         "website": "https://www.luftfartsmuseum.no/museumsparken/bell-597",
         "@id": "way/1481458065"
       }
