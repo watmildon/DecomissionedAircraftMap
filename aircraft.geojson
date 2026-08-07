@@ -37472,6 +37472,7 @@
         "wikipedia": "ru:МиГ-21",
         "historic": "aircraft",
         "name": "МиГ-21ПФС",
+        "name:ru": "МиГ-21ПФС",
         "start_date": "1957",
         "tourism": "attraction",
         "@id": "way/354866849"
@@ -37623,6 +37624,7 @@
         "wikipedia": "ru:Як-28",
         "historic": "aircraft",
         "name": "Як-28Л",
+        "name:ru": "Як-28Л",
         "start_date": "1958",
         "tourism": "attraction",
         "@id": "way/354922153"
@@ -37832,6 +37834,7 @@
         "wikipedia": "ru:Су-24МР",
         "historic": "aircraft",
         "name": "Су-24М",
+        "name:ru": "Су-24М",
         "start_date": "1962",
         "tourism": "attraction",
         "@id": "way/356338343"
@@ -37869,6 +37872,7 @@
         "wikipedia": "ru:Су-27",
         "historic": "aircraft",
         "name": "Су-27С",
+        "name:ru": "Су-27С",
         "tourism": "attraction",
         "@id": "way/356338346"
       }
@@ -38368,6 +38372,7 @@
         "wikipedia": "ru:Су-17",
         "historic": "aircraft",
         "name": "Су-17М3",
+        "name:ru": "Су-17М3",
         "start_date": "1966",
         "tourism": "attraction",
         "@id": "way/385012267"
@@ -38443,6 +38448,7 @@
         "wikipedia": "ru:Су-7",
         "historic": "aircraft",
         "name": "Су-7Б",
+        "name:ru": "Су-7Б",
         "tourism": "attraction",
         "@id": "way/385012271"
       }
@@ -43357,10 +43363,11 @@
       "properties": {
         "wikidata": "Q461651",
         "wikipedia": "ru:Су-15",
+        "alt_name": "Су-15 «43»",
         "building": "roof",
         "historic": "aircraft",
         "image": "https://photos.wikimapia.org/p/00/05/78/11/63_full.jpg",
-        "name": "Су-15 \"43\"",
+        "name": "Су-15",
         "tourism": "attraction",
         "@id": "way/1215594538"
       }
@@ -48196,6 +48203,27 @@
         "ref": "CP-1366",
         "tourism": "attraction",
         "@id": "way/1529287949"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3671727,
+          44.5396614
+        ]
+      },
+      "properties": {
+        "wikidata": "Q2590647",
+        "wikipedia": "fr:Tracker S-2FT",
+        "historic": "aircraft",
+        "manufacturer": "Tracker",
+        "model": "S-2FT",
+        "name": "Tracker 07",
+        "start_date": "2024-03-21",
+        "tourism": "attraction",
+        "@id": "way/1547791977"
       }
     },
     {
