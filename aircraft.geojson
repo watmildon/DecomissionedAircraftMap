@@ -34134,6 +34134,60 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -77.444251,
+          38.9099771
+        ]
+      },
+      "properties": {
+        "wikidata": "Q6505",
+        "wikipedia": "en:Concorde",
+        "historic": "aircraft",
+        "level": "0",
+        "name": "Concorde",
+        "@id": "node/14080120740"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4442181,
+          38.9107462
+        ]
+      },
+      "properties": {
+        "wikidata": "Q204424",
+        "wikipedia": "en:Enola Gay",
+        "historic": "aircraft",
+        "level": "0",
+        "name": "Enola Gay",
+        "@id": "node/14080120741"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0983659,
+          41.088729
+        ]
+      },
+      "properties": {
+        "wikidata": "Q159881",
+        "wikipedia": "it:Lockheed F-104 Starfighter",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "F-104_Starfighter",
+        "@id": "node/14080998263"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
