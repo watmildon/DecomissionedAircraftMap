@@ -34188,6 +34188,22 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -87.9060201,
+          41.9771132
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q74175759",
+        "historic": "aircraft",
+        "name": "Grumman F4F-3 Wildcat",
+        "@id": "node/14084652410"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
@@ -43294,8 +43310,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.1297364,
-          48.7680326
+          2.1297544,
+          48.7680377
         ]
       },
       "properties": {
@@ -43304,6 +43320,7 @@
         "historic": "aircraft",
         "name": "Mirage III R 306",
         "note": "Sorti d’usine en 1963",
+        "panoramax": "f78eff9b-cf9b-45b2-bcd9-bd3b588e84ab;8b5d4465-73e5-4959-b1fd-b89de89d789c",
         "website": "https://www.dassault-aviation.com/fr/passion/actu/initiative-un-mirage-iii-r-restaure/",
         "@id": "way/1211253241"
       }
