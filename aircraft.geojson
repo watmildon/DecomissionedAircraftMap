@@ -34194,9 +34194,28 @@
       },
       "properties": {
         "model:wikidata": "Q74175759",
+        "aircraft:type": "military",
         "historic": "aircraft",
         "name": "Grumman F4F-3 Wildcat",
         "@id": "node/14084652410"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7417751,
+          41.7875856
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q118070",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model:wikipedia": "en:Douglas SBD Dauntless",
+        "name": "SBD Dauntless Aircraft",
+        "@id": "node/14084695013"
       }
     },
     {
@@ -48295,6 +48314,26 @@
         "start_date": "2024-03-21",
         "tourism": "attraction",
         "@id": "way/1547791977"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.7379265,
+          41.4397345
+        ]
+      },
+      "properties": {
+        "wikidata": "Q58725",
+        "wikipedia": "en:Lockheed T-33",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "model": "T33-A",
+        "name": "Shooting Star",
+        "start_date": "1948-03-22",
+        "@id": "way/1548674166"
       }
     },
     {
