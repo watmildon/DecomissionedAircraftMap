@@ -34223,6 +34223,188 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          135.1371316,
+          48.4690231
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q204944",
+        "aircraft:type": "military;bomber",
+        "historic": "aircraft",
+        "manufacturer": "КБ Туполева",
+        "manufacturer:wikidata": "Q194009",
+        "manufacturer:wikipedia": "en:Tupolev",
+        "model": "Ту-22М",
+        "model:wikipedia": "en:Tupolev Tu-22M",
+        "@id": "node/14091438215"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.13745,
+          48.4692618
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q607444",
+        "aircraft:type": "military;cargo",
+        "historic": "aircraft",
+        "manufacturer": "АКБ Антонова",
+        "manufacturer:wikidata": "Q212268",
+        "manufacturer:wikipedia": "en:Antonov",
+        "model": "Ан-22",
+        "model:wikipedia": "en:Antonov An-22",
+        "@id": "node/14091438216"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1377668,
+          48.4695164
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q62156",
+        "aircraft:type": "military;cargo",
+        "historic": "aircraft",
+        "manufacturer": "АНТК «Антонов»",
+        "manufacturer:wikidata": "Q212268",
+        "manufacturer:wikipedia": "en:Antonov",
+        "model": "Ан-26",
+        "model:wikipedia": "en:Antonov An-26",
+        "@id": "node/14091438217"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.138036,
+          48.46978
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q4292644",
+        "aircraft:type": "helicopter;military",
+        "historic": "aircraft",
+        "manufacturer": "ОКБ М. Л. Миля",
+        "model": "Ми-35",
+        "@id": "node/14091438218"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1383442,
+          48.4700311
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q155635",
+        "aircraft:type": "helicopter;military;cargo",
+        "historic": "aircraft",
+        "manufacturer": "ОКБ-329 1-го Управления ГКАТ СССР",
+        "model": "Ми-8",
+        "model:wikipedia": "en:Mil Mi-8",
+        "@id": "node/14091438219"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1375024,
+          48.469852
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q183146",
+        "aircraft:type": "military;fighter",
+        "historic": "aircraft",
+        "manufacturer": "ОКБ Сухого",
+        "manufacturer:wikidata": "Q387017",
+        "manufacturer:wikipedia": "en:Sukhoi Design Bureau",
+        "model": "Су-17",
+        "model:wikipedia": "en:Sukhoi Su-17",
+        "@id": "node/14091438220"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1371955,
+          48.4696018
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q173680",
+        "aircraft:type": "military;fighter",
+        "historic": "aircraft",
+        "manufacturer": "ОКБ Сухого",
+        "manufacturer:wikidata": "Q387017",
+        "manufacturer:wikipedia": "en:Sukhoi Design Bureau",
+        "model": "Су-27",
+        "model:wikipedia": "en:Sukhoi Su-27",
+        "@id": "node/14091438221"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1369038,
+          48.4693367
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q234069",
+        "aircraft:type": "military;fighter",
+        "historic": "aircraft",
+        "manufacturer": "ОКБ МиГ",
+        "manufacturer:wikidata": "Q188508",
+        "manufacturer:wikipedia": "en:Mikoyan",
+        "model": "МиГ-27",
+        "model:wikipedia": "en:Mikoyan MiG-27",
+        "@id": "node/14091438222"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1364976,
+          48.4690535
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q662591",
+        "aircraft:type": "military;cargo",
+        "historic": "aircraft",
+        "manufacturer": "КБ Завода №84",
+        "model": "Ли-2",
+        "model:wikipedia": "en:Lisunov Li-2",
+        "@id": "node/14091438223"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
