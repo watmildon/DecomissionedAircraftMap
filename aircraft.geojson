@@ -36469,6 +36469,7 @@
         "manufacturer": "Tupolev OKB",
         "name": "Ту-104",
         "name:en": "Tupolev Tu-104",
+        "name:ru": "Ту-104",
         "tourism": "attraction",
         "@id": "way/227741770"
       }
@@ -38608,6 +38609,7 @@
         "wikipedia": "ru:Су-9",
         "historic": "aircraft",
         "name": "Су-9Б",
+        "name:ru": "Су-9Б",
         "tourism": "attraction",
         "@id": "way/385012265"
       }
@@ -38664,6 +38666,7 @@
         "wikipedia": "ru:Су-7",
         "historic": "aircraft",
         "name": "Су-7БКЛ",
+        "name:ru": "Су-7БКЛ",
         "tourism": "attraction",
         "@id": "way/385012268"
       }
