@@ -4055,6 +4055,7 @@
         "wikipedia": "ru:Aero L-39 Albatros",
         "historic": "aircraft",
         "name": "Самолет Л-39 Альбатрос",
+        "name:ru": "Самолет Л-39 Альбатрос",
         "@id": "node/3392094176"
       }
     },
@@ -34399,6 +34400,23 @@
         "model": "Ли-2",
         "model:wikipedia": "en:Lisunov Li-2",
         "@id": "node/14091438223"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1437397,
+          45.203024
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q324744",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "model": "Fiat G.91",
+        "@id": "node/14109601380"
       }
     },
     {
