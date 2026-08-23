@@ -34424,6 +34424,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -176.6180128,
+          0.8116801
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1538864",
+        "historic": "aircraft",
+        "manufacturer:wikidata": "Q1426388",
+        "manufacturer:wikipedia": "en:Glenn L. Martin Company",
+        "model": "Martin PBM Mariner",
+        "model:wikipedia": "en:Martin PBM Mariner",
+        "@id": "node/14111631603"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
