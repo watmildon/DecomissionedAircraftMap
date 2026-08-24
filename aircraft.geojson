@@ -21198,7 +21198,6 @@
         "historic": "aircraft",
         "model": "Mirage III RS",
         "name": "Jagdflugzeug Mirage III RS \"R-2116\"",
-        "tourism": "attraction",
         "@id": "node/10049884410"
       }
     },
@@ -21216,7 +21215,6 @@
         "historic": "aircraft",
         "model": "Mirage III RS",
         "name": "Jagdflugzeug Mirage III RS \"R-2110\"",
-        "tourism": "attraction",
         "@id": "node/10049884411"
       }
     },
