@@ -239,7 +239,7 @@
         ]
       },
       "properties": {
-        "wikidata": "Q106401684",
+        "model:wikidata": "Q106401684",
         "description": "BuNo 51584",
         "historic": "aircraft",
         "name": "North American SNJ-5",
@@ -18486,26 +18486,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.7698885,
-          45.6989112
-        ]
-      },
-      "properties": {
-        "subject:wikidata": "Q6503",
-        "aircraft:type": "Caravelle I-DABT",
-        "historic": "aircraft",
-        "name": "Caravelle I-DABT",
-        "start_date": "1962",
-        "subject:wikipedia": "it:Sud Aviation Caravelle",
-        "tourism": "attraction",
-        "@id": "node/8100070349"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           66.6061445,
           66.5436602
         ]
@@ -18515,6 +18495,7 @@
         "wikipedia": "ru:МиГ-27",
         "historic": "aircraft",
         "name": "МиГ-27Д",
+        "name:ru": "МиГ-27Д",
         "tourism": "attraction",
         "wheelchair": "limited",
         "@id": "node/8104000173"
@@ -18570,6 +18551,7 @@
         "wikipedia": "ru:Ан-26",
         "historic": "aircraft",
         "name": "Ан-26",
+        "name:ru": "Ан-26",
         "tourism": "attraction",
         "@id": "node/8104016033"
       }
@@ -34730,15 +34712,33 @@
         ]
       },
       "properties": {
-        "wikidata": "Q698235",
-        "wikipedia": "sv:Saab 105",
+        "model:wikidata": "Q698235",
         "area": "yes",
         "artwork_type": "sculpture",
         "historic": "aircraft",
+        "model:wikipedia": "sv:Saab 105",
         "name": "Saab 105 (Sk 60)",
         "source": "Bing",
         "tourism": "artwork",
         "@id": "way/148643144"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7698586,
+          45.6989289
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q6503",
+        "historic": "aircraft",
+        "ref": "I-DABT",
+        "start_date": "1962",
+        "tourism": "attraction",
+        "@id": "way/153764652"
       }
     },
     {
@@ -38360,11 +38360,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q277491",
-        "wikipedia": "sv:Saab 340",
+        "model:wikidata": "Q277491",
         "area": "yes",
         "artwork_type": "sculpture",
         "historic": "aircraft",
+        "model:wikipedia": "sv:Saab 340",
         "name": "Saab 340",
         "tourism": "artwork",
         "@id": "way/376299615"
@@ -45151,11 +45151,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q263786",
-        "wikipedia": "sv:Saab 37 Viggen",
+        "model:wikidata": "Q263786",
         "area": "yes",
         "artwork_type": "sculpture",
         "historic": "aircraft",
+        "model:wikipedia": "sv:Saab 37 Viggen",
         "name": "Saab 37 Viggen",
         "tourism": "artwork",
         "@id": "way/1413415898"
