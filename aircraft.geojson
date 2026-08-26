@@ -2253,6 +2253,7 @@
       "properties": {
         "wikidata": "Q660969",
         "wikipedia": "sv:Bell 206",
+        "artwork_type": "installation",
         "check_date": "2020-02-03",
         "historic": "aircraft",
         "name": "Polishelikopter",
@@ -10936,8 +10937,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          13.1050925,
-          45.6743996
+          13.1050969,
+          45.67442
         ]
       },
       "properties": {
@@ -34423,6 +34424,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          72.8188902,
+          18.9906549
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1031955",
+        "historic": "aircraft",
+        "model": "HAL HF-24 Marut",
+        "model:wikipedia": "en:HAL HF-24 Marut",
+        "@id": "node/14121809102"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.942208,
           50.4654901
         ]
@@ -41677,6 +41695,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          8.6386741,
+          53.7742438
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q152200",
+        "aircraft:type": "fixed_wing",
+        "historic": "aircraft",
+        "model": "Panavia_Tornado",
+        "model:wikipedia": "de:Panavia Tornado",
+        "tourism": "attraction",
+        "@id": "way/974404097"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -1.8542922,
           52.4528124
         ]
@@ -44761,7 +44798,6 @@
         "wikidata": "Q121793099",
         "model:wikidata": "Q106401653",
         "aircraft:type": "civil",
-        "building": "yes",
         "historic": "aircraft",
         "model": "PZL-104 Wilga 35A",
         "ref": "SP-AFC",
