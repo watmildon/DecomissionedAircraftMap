@@ -2478,10 +2478,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q688148",
-        "wikipedia": "es:Pilatus PC-7",
+        "model:wikidata": "Q688148",
         "historic": "aircraft",
         "layer": "1",
+        "model:wikipedia": "es:Pilatus PC-7",
         "name": "Pilatus PC-7 Turbo Trainer",
         "ref": "FAB-479",
         "support": "pole",
@@ -2613,11 +2613,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q271446",
-        "wikipedia": "ru:Дракино (Московская область)",
+        "model:wikidata": "Q271446",
         "aircraft": "fixed_wing",
         "aircraft:role": "fighter",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Дракино (Московская область)",
         "name": "МиГ-3",
         "wheelchair": "limited",
         "@id": "node/2808206149"
@@ -3903,10 +3903,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q2670835",
-        "wikipedia": "en:Panavia Tornado ADV",
+        "model:wikidata": "Q2670835",
         "historic": "aircraft",
         "manufacturer": "Panavia",
+        "model:wikipedia": "en:Panavia Tornado ADV",
         "name": "Panavia Tornado ADV F3",
         "ref": "2915",
         "@id": "node/3351073635"
@@ -6478,10 +6478,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q466146",
-        "wikipedia": "pl:PZL-106 Kruk",
+        "model:wikidata": "Q466146",
         "aircraft:type": "plane",
         "historic": "aircraft",
+        "model:wikipedia": "pl:PZL-106 Kruk",
         "name": "PZL-106 BR Kruk",
         "source": "survey",
         "start_date": "1985",
@@ -8476,10 +8476,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q4536595",
-        "wikipedia": "ru:Як-18Т",
+        "model:wikidata": "Q4536595",
         "aircraft:type": "military",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Як-18Т",
         "name": "Як-18Т",
         "name:en": "Yakovlev Yak-18T",
         "tourism": "attraction",
@@ -14742,9 +14742,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q1051402",
-        "wikipedia": "uk:Ту-143",
+        "model:wikidata": "Q1051402",
         "historic": "aircraft",
+        "model:wikipedia": "uk:Ту-143",
         "name": "Ту-143 «Рейс»",
         "name:en": "Tupolev Tu-143 Reys",
         "name:uk": "Ту-143 «Рейс»",
@@ -21982,14 +21982,14 @@
         ]
       },
       "properties": {
-        "wikidata": "Q794571",
-        "wikipedia": "es:Aérospatiale SA315B Lama",
+        "model:wikidata": "Q794571",
         "addr:city": "Cochabamba",
         "addr:neighbourhood": "Fuerza Aérea",
         "addr:street": "Avenida Del Cabildo",
         "aircraft:type": "helicopter",
         "direction": "310",
         "historic": "aircraft",
+        "model:wikipedia": "es:Aérospatiale SA315B Lama",
         "name": "Aérospatiale SA315B Lama",
         "operator": "Grupo Aéreo de Búsqueda y Salvamento 51 Capitán Rafael Estívariz Cardozo",
         "operator:type": "military",
@@ -22403,7 +22403,7 @@
         ]
       },
       "properties": {
-        "wikidata": "Q2362719",
+        "model:wikidata": "Q2362719",
         "aircraft:type": "military",
         "historic": "aircraft",
         "name": "Su-22",
@@ -39176,6 +39176,7 @@
         "aircraft:type": "helicopter",
         "historic": "aircraft",
         "model": "CH-47D Chinook",
+        "name": "CH-47D Chinook",
         "tourism": "attraction",
         "@id": "way/475099123"
       }
@@ -48279,6 +48280,40 @@
         "name": "IAR-93",
         "ref": "111",
         "@id": "way/1487151049"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4613483,
+          56.7258382
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q18015687",
+        "historic": "aircraft",
+        "manufacturer:wikidata": "Q1532217",
+        "name": "Gloster Meteor T.7",
+        "@id": "way/1492211732"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.4617702,
+          56.7258906
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q18536809",
+        "historic": "aircraft",
+        "manufacturer:wikidata": "Q2061821",
+        "name": "Spitfire Mk.Vb",
+        "@id": "way/1492211733"
       }
     },
     {
