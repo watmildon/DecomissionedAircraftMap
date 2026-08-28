@@ -3958,10 +3958,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q943360",
-        "wikipedia": "ru:У-2",
+        "model:wikidata": "Q943360",
         "historic": "aircraft",
         "memorial": "aircraft",
+        "model:wikipedia": "ru:У-2",
         "name": "По-2",
         "@id": "node/3357314693"
       }
@@ -3976,10 +3976,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q608997",
-        "wikipedia": "ru:Ми-2",
+        "model:wikidata": "Q608997",
         "historic": "aircraft",
         "memorial": "aircraft",
+        "model:wikipedia": "ru:Ми-2",
         "name": "Ми-2",
         "@id": "node/3357314793"
       }
@@ -4052,9 +4052,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q155899",
-        "wikipedia": "ru:Aero L-39 Albatros",
+        "model:wikidata": "Q155899",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Aero L-39 Albatros",
         "name": "Самолет Л-39 Альбатрос",
         "name:ru": "Самолет Л-39 Альбатрос",
         "@id": "node/3392094176"
@@ -4416,11 +4416,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q153826",
-        "wikipedia": "en:F-86 Sabre",
+        "model:wikidata": "Q153826",
         "aircraft:military": "fighter",
         "aircraft:type": "military",
         "historic": "aircraft",
+        "model:wikipedia": "en:F-86 Sabre",
         "name": "F-86D '세이버' 전투기",
         "name:en": "F-86D 'SabreDog' Fighter (U.S.A.)",
         "old_operator": "Republic of Korea Air Force",
@@ -4738,11 +4738,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q154106",
-        "wikipedia": "en:Bell UH-1 Iroquois",
+        "model:wikidata": "Q154106",
         "aircraft:military": "utility",
         "aircraft:type": "helicopter",
         "historic": "aircraft",
+        "model:wikipedia": "en:Bell UH-1 Iroquois",
         "name": "Bell UH-1B Iroquois",
         "ref": "62-12542;693",
         "@id": "node/3680941261"
@@ -4951,9 +4951,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q150609",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-21",
+        "model:wikidata": "Q150609",
         "historic": "aircraft",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-21",
         "name": "MiG-21",
         "operator": "Mali Air Force",
         "source": "Survey",
@@ -8516,10 +8516,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q505663",
-        "wikipedia": "ru:Як-40",
+        "model:wikidata": "Q505663",
         "aircraft:type": "airliner",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Як-40",
         "name": "Як-40",
         "name:en": "Yakovlev Yak-40",
         "tourism": "attraction",
@@ -8737,10 +8737,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q130681",
-        "wikipedia": "ru:МиГ-29",
+        "model:wikidata": "Q130681",
         "aircraft:type": "military",
         "historic": "aircraft",
+        "model:wikipedia": "ru:МиГ-29",
         "name": "МиГ-29",
         "name:en": "Mikoyan MiG-29",
         "tourism": "attraction",
@@ -8921,14 +8921,14 @@
         ]
       },
       "properties": {
-        "wikidata": "Q18694214",
-        "wikipedia": "fi:Hanssin-Jukka",
+        "model:wikidata": "Q18694214",
         "addr:city": "Hämeenlinna",
         "addr:housenumber": "1",
         "addr:postcode": "14810",
         "addr:street": "Tuulosentie",
         "attraction": "aircraft",
         "historic": "aircraft",
+        "model:wikipedia": "fi:Hanssin-Jukka",
         "name": "Hanssin-Jukka",
         "tourism": "attraction",
         "website": "http://www.hanssinjukka.fi/",
@@ -8964,12 +8964,12 @@
         ]
       },
       "properties": {
-        "wikidata": "Q152200",
-        "wikipedia": "de:Panavia Tornado",
+        "model:wikidata": "Q152200",
         "access": "private",
         "aircraft": "fixed_wing",
         "aircraft:role": "fighter",
         "historic": "aircraft",
+        "model:wikipedia": "de:Panavia Tornado",
         "name": "Tornado",
         "tourism": "attraction",
         "@id": "node/5484074974"
@@ -16180,9 +16180,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q155679",
-        "wikipedia": "uk:МіГ-23",
+        "model:wikidata": "Q155679",
         "historic": "aircraft",
+        "model:wikipedia": "uk:МіГ-23",
         "name": "МіГ-23М",
         "name:uk": "МіГ-23М",
         "@id": "node/7119722842"
@@ -16252,9 +16252,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q157925",
-        "wikipedia": "uk:Л-410",
+        "model:wikidata": "Q157925",
         "historic": "aircraft",
+        "model:wikipedia": "uk:Л-410",
         "name": "Let L-410UVP Turbolet",
         "name:uk": "Let L-410UVP Turbolet",
         "@id": "node/7119722848"
@@ -18643,9 +18643,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q744635",
-        "wikipedia": "ru:Ми-6",
+        "model:wikidata": "Q744635",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Ми-6",
         "name": "Ми-6",
         "tourism": "attraction",
         "@id": "node/8104016038"
@@ -20411,9 +20411,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q219629",
-        "wikipedia": "en:Bell AH-1 Cobra",
+        "model:wikidata": "Q219629",
         "historic": "aircraft",
+        "model:wikipedia": "en:Bell AH-1 Cobra",
         "name": "Bell AH-1 Cobra",
         "tourism": "attraction",
         "@id": "node/9922988901"
@@ -20627,7 +20627,7 @@
         ]
       },
       "properties": {
-        "wikidata": "Q106340479",
+        "model:wikidata": "Q106340479",
         "description": "BuNo 150541",
         "historic": "aircraft",
         "name": "Grumman E-2B Hawkeye",
@@ -20644,7 +20644,7 @@
         ]
       },
       "properties": {
-        "wikidata": "Q75231559",
+        "model:wikidata": "Q75231559",
         "description": "BuNo 159445",
         "historic": "aircraft",
         "name": "Grumman F-14A Tomcat",
@@ -21964,10 +21964,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q190114",
-        "wikipedia": "en:Lockheed SR-71 Blackbird",
+        "model:wikidata": "Q190114",
         "historic": "aircraft",
         "level": "0",
+        "model:wikipedia": "en:Lockheed SR-71 Blackbird",
         "name": "Lockheed SR-71 Blackbird",
         "@id": "node/10717629498"
       }
@@ -23482,12 +23482,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q155635",
         "model:wikidata": "Q155635",
-        "wikipedia": "en:Mil Mi-8",
         "aircraft:type": "helicopter",
         "historic": "aircraft",
         "image": "https://photos.app.goo.gl/jEguaasdP2tL4NaS7",
+        "model:wikipedia": "en:Mil Mi-8",
         "name": "MI-8",
         "@id": "node/11828383887"
       }
@@ -23541,12 +23540,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q155651",
         "model:wikidata": "Q155651",
-        "wikipedia": "en:Mil Mi-24",
         "aircraft:type": "helicopter",
         "historic": "aircraft",
         "image": "https://photos.app.goo.gl/tJNHLGVRwWKsgMrV8",
+        "model:wikipedia": "en:Mil Mi-24",
         "name": "MI-24",
         "@id": "node/11828383891"
       }
@@ -23598,10 +23596,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q308940",
-        "wikipedia": "en:Northrop F-5",
+        "model:wikidata": "Q308940",
         "historic": "aircraft",
         "image": "https://photos.app.goo.gl/E5WNkSz3TYRL6H7G9",
+        "model:wikipedia": "en:Northrop F-5",
         "name": "INTERCEPTING BOMBER F5 NO 7579",
         "@id": "node/11828383897"
       }
@@ -28183,9 +28181,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q461475",
-        "wikipedia": "sv:Saab 35 Draken",
+        "model:wikidata": "Q461475",
         "historic": "aircraft",
+        "model:wikipedia": "sv:Saab 35 Draken",
         "@id": "node/12726132012"
       }
     },
@@ -29428,11 +29426,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q153307",
-        "wikipedia": "en:Mikoyan-Gurevich_MiG-19",
+        "model:wikidata": "Q153307",
         "aircraft:type": "MiG-19",
         "historic": "aircraft",
-        "wikipedia:sq": "Mikojan-Gureviç_MiG-19",
+        "model:wikipedia": "en:Mikoyan-Gurevich_MiG-19",
+        "model:wikipedia:sq": "Mikojan-Gureviç_MiG-19",
         "@id": "node/12972922123"
       }
     },
@@ -29500,11 +29498,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q187377",
-        "wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "model:wikidata": "Q187377",
         "aircraft:type": "MiG 15",
         "historic": "aircraft",
-        "wikipedia:sq": "Mikojan-Gureviç_MiG-15",
+        "model:wikipedia": "en:Mikoyan-Gurevich MiG-15",
+        "model:wikipedia:sq": "Mikojan-Gureviç_MiG-15",
         "@id": "node/12972922127"
       }
     },
@@ -35934,7 +35932,7 @@
         ]
       },
       "properties": {
-        "wikidata": "Q76376752",
+        "model:wikidata": "Q76376752",
         "aircraft:type": "military",
         "historic": "aircraft",
         "layer": "1",
@@ -36163,9 +36161,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q1455727",
-        "wikipedia": "ru:Т-4 (самолёт)",
+        "model:wikidata": "Q1455727",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Т-4 (самолёт)",
         "name": "Су-100 (Т-4 «Сотка»)",
         "start_date": "1972",
         "tourism": "attraction",
@@ -36484,6 +36482,25 @@
         "subject:wikipedia": "de:McDonnell F-4",
         "tourism": "attraction",
         "@id": "way/224334315"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.9484183,
+          41.0418216
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q190211",
+        "area": "yes",
+        "historic": "aircraft",
+        "model:wikipedia": "tr:Douglas DC-3",
+        "name": "Douglas DC-3 'Dakota'",
+        "website": "https://www.rmk-museum.org.tr/rmk_havacilik.htm",
+        "@id": "way/227308662"
       }
     },
     {
@@ -37092,9 +37109,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q142549",
-        "wikipedia": "ru:Ил-76",
+        "model:wikidata": "Q142549",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Ил-76",
         "name": "Ил-76М",
         "tourism": "attraction",
         "@id": "way/320254205"
@@ -37332,9 +37349,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q1940218",
-        "wikipedia": "ru:М-17 (самолёт)",
+        "model:wikidata": "Q1940218",
         "historic": "aircraft",
+        "model:wikipedia": "ru:М-17 (самолёт)",
         "name": "М-17",
         "tourism": "attraction",
         "@id": "way/323293382"
@@ -37572,9 +37589,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q62167",
-        "wikipedia": "ru:Ил-86",
+        "model:wikidata": "Q62167",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Ил-86",
         "name": "Ил 86",
         "tourism": "attraction",
         "@id": "way/350470685"
@@ -37590,9 +37607,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q166826",
-        "wikipedia": "ru:Як-24",
+        "model:wikidata": "Q166826",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Як-24",
         "name": "Як-24",
         "start_date": "1952",
         "tourism": "attraction",
@@ -37966,9 +37983,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q729758",
-        "wikipedia": "ru:Як-27",
+        "model:wikidata": "Q729758",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Як-27",
         "name": "Як-27Р",
         "start_date": "1956",
         "tourism": "attraction",
@@ -38042,9 +38059,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q4514",
-        "wikipedia": "ru:Як-130",
+        "model:wikidata": "Q4514",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Як-130",
         "name": "Як-130",
         "start_date": "1996",
         "tourism": "attraction",
@@ -38176,9 +38193,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q245275",
-        "wikipedia": "ru:Су-35",
+        "model:wikidata": "Q245275",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Су-35",
         "name": "Су-35",
         "tourism": "attraction",
         "@id": "way/356338344"
@@ -38194,9 +38211,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q173680",
-        "wikipedia": "ru:Су-27",
+        "model:wikidata": "Q173680",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Су-27",
         "name": "Су-27С",
         "name:ru": "Су-27С",
         "tourism": "attraction",
@@ -38398,9 +38415,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q336150",
-        "wikipedia": "ru:Ми-26",
+        "model:wikidata": "Q336150",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Ми-26",
         "name": "Ми-26",
         "start_date": "1977",
         "tourism": "attraction",
@@ -38417,9 +38434,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q183146",
-        "wikipedia": "ru:Су-17",
+        "model:wikidata": "Q183146",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Су-17",
         "name": "Су-17М4",
         "tourism": "attraction",
         "@id": "way/384967034"
@@ -38435,9 +38452,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q192779",
-        "wikipedia": "ru:Ту-16",
+        "model:wikidata": "Q192779",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Ту-16",
         "name": "Ту-16Р-1",
         "start_date": "1952",
         "tourism": "attraction",
@@ -38473,9 +38490,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q204944",
-        "wikipedia": "en:Tupolev Tu-22M",
+        "model:wikidata": "Q204944",
         "historic": "aircraft",
+        "model:wikipedia": "en:Tupolev Tu-22M",
         "name": "Ту-22М0",
         "start_date": "1969",
         "tourism": "attraction",
@@ -38640,9 +38657,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q1162588",
-        "wikipedia": "ru:Су-11",
+        "model:wikidata": "Q1162588",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Су-11",
         "name": "Су-11",
         "tourism": "attraction",
         "@id": "way/385012264"
@@ -38791,10 +38808,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q192137",
-        "wikipedia": "ru:Су-25",
+        "model:wikidata": "Q192137",
         "alt_name": "Т-8",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Су-25",
         "name": "Су-25",
         "start_date": "1975",
         "tourism": "attraction",
@@ -38848,10 +38865,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q190211",
-        "wikipedia": "sv:Douglas DC-3",
+        "model:wikidata": "Q190211",
         "historic": "aircraft",
         "layer": "1",
+        "model:wikipedia": "sv:Douglas DC-3",
         "name": "TP 79 - Douglas DC-3",
         "tourism": "attraction",
         "@id": "way/396509066"
@@ -38886,12 +38903,12 @@
         ]
       },
       "properties": {
-        "wikidata": "Q2362719",
-        "wikipedia": "de:Suchoi Su-22",
+        "model:wikidata": "Q2362719",
         "aircraft:manufacturer": "Suchoi",
         "aircraft:role": "bomber",
         "aircraft:type": "military",
         "historic": "aircraft",
+        "model:wikipedia": "de:Suchoi Su-22",
         "name": "SU-22",
         "@id": "way/425311817"
       }
@@ -40128,10 +40145,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q188513",
-        "wikipedia": "ru:Ту-144",
+        "model:wikidata": "Q188513",
         "aircraft:type": "Ту-144 СССР-77114",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Ту-144",
         "name": "Ty-144",
         "name:ca": "Túpolev Tu-144",
         "tourism": "attraction",
@@ -41552,11 +41569,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q6475",
-        "model:wikidata": "Q18784360",
-        "wikipedia": "fr:Airbus A320",
+        "model:wikidata": "Q6475",
+        "subject:wikidata": "Q18784360",
         "aircraft:type": "airliner",
         "historic": "aircraft",
+        "model:wikipedia": "fr:Airbus A320",
         "name": "Airbus A320",
         "tourism": "attraction",
         "wheelchair": "no",
@@ -41614,11 +41631,10 @@
         ]
       },
       "properties": {
-        "wikidata": "Q6496",
         "model:wikidata": "Q6496",
-        "wikipedia": "fr:Airbus A400M Atlas",
         "aircraft:type": "military",
         "historic": "aircraft",
+        "model:wikipedia": "fr:Airbus A400M Atlas",
         "name": "A400M",
         "tourism": "attraction",
         "website": "https://musee-aeroscopia.fr/fr/d%C3%A9couvrir-le-mus%C3%A9e/la-collection/les-a%C3%A9ronefs/airbus-a400m-atlas",
@@ -42285,9 +42301,9 @@
         ]
       },
       "properties": {
-        "wikidata": "Q62156",
-        "wikipedia": "ru:Ан-26",
+        "model:wikidata": "Q62156",
         "historic": "aircraft",
+        "model:wikipedia": "ru:Ан-26",
         "name": "Ан-26КПЛ",
         "tourism": "attraction",
         "@id": "way/1102666811"
@@ -45283,7 +45299,7 @@
         ]
       },
       "properties": {
-        "wikidata": "Q62724154",
+        "model:wikidata": "Q62724154",
         "description": "s/n 52-5759",
         "historic": "aircraft",
         "name": "North American F-100A Super Sabre",
@@ -45300,7 +45316,7 @@
         ]
       },
       "properties": {
-        "wikidata": "Q75221739",
+        "model:wikidata": "Q75221739",
         "description": "s/n 62-4387",
         "historic": "aircraft",
         "name": "Republic F-105D Thunderchief",
@@ -45352,7 +45368,7 @@
         ]
       },
       "properties": {
-        "wikidata": "Q76265891",
+        "model:wikidata": "Q76265891",
         "description": "s/n 44-64376",
         "historic": "aircraft",
         "name": "North American P-51H Mustang",
