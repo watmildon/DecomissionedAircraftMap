@@ -20733,11 +20733,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q282934",
-        "wikipedia": "en:Boeing Vertol CH-46 Sea Knight",
+        "model:wikidata": "Q282934",
         "aircraft:type": "helicopter",
         "description": "BuNo 151953",
         "historic": "aircraft",
+        "model:wikipedia": "en:Boeing Vertol CH-46 Sea Knight",
         "name": "Boeing-Vertol HH-46D",
         "@id": "node/9991891945"
       }
@@ -22088,11 +22088,11 @@
         ]
       },
       "properties": {
-        "wikidata": "Q714326",
-        "wikipedia": "es:Douglas C-47 Skytrain",
+        "model:wikidata": "Q714326",
         "addr:city": "El Alto",
         "aircraft:type": "military",
         "historic": "aircraft",
+        "model:wikipedia": "es:Douglas C-47 Skytrain",
         "name": "Douglas C-47",
         "tourism": "attraction",
         "@id": "node/10728824980"
@@ -42723,12 +42723,12 @@
         ]
       },
       "properties": {
-        "wikidata": "Q208075",
-        "wikipedia": "es:McDonnell Douglas DC-10",
+        "model:wikidata": "Q208075",
         "aircraft:type": "airliner",
         "building": "yes",
         "historic": "aircraft",
         "layer": "1",
+        "model:wikipedia": "es:McDonnell Douglas DC-10",
         "name": "McDonnell Douglas DC-10-10",
         "operator": "Transportes Aéreos Bolivianos Cargo",
         "operator:type": "public",
