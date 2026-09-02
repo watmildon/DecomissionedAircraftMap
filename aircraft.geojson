@@ -4928,8 +4928,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          96.1443736,
-          16.7946406
+          96.1442312,
+          16.7945262
         ]
       },
       "properties": {
@@ -18611,6 +18611,7 @@
         "historic": "aircraft",
         "name": "Ан-2",
         "name:ca": "Antónov An-2",
+        "name:ru": "Ан-2",
         "tourism": "attraction",
         "@id": "node/8104016036"
       }
@@ -22701,6 +22702,22 @@
         "memorial": "aircraft",
         "name": "MiG-23ML",
         "@id": "node/10981403290"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.0940231,
+          28.5544852
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q199570",
+        "historic": "aircraft",
+        "model": "MIG-25",
+        "@id": "node/11010620367"
       }
     },
     {
@@ -37592,7 +37609,8 @@
         "model:wikidata": "Q62167",
         "historic": "aircraft",
         "model:wikipedia": "ru:Ил-86",
-        "name": "Ил 86",
+        "name": "Ил-62",
+        "name:ru": "Ил-62",
         "tourism": "attraction",
         "@id": "way/350470685"
       }
