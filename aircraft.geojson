@@ -999,8 +999,7 @@
       "properties": {
         "wikidata": "Q150609",
         "wikipedia": "uk:МіГ-21",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "МіГ-21",
         "name:uk": "МіГ-21",
         "@id": "node/1768295615"
@@ -1910,12 +1909,11 @@
       "properties": {
         "wikidata": "Q204944",
         "wikipedia": "uk:Ту-22М",
-        "historic": "memorial",
-        "inscription": "Памя'тник Героям-авіаторам 13 Гвардійської важкої бомбардувальної авіаційної дивізії",
-        "memorial": "aircraft",
+        "historic": "aircraft",
+        "inscription": "Пам'ятник Героям-авіаторам 13 Гвардійської важкої бомбардувальної авіаційної дивізії",
         "name": "Ту-22М",
-        "name:ru": "Ту-22М",
         "name:uk": "Ту-22М",
+        "war_memorial": "yes",
         "@id": "node/2293035251"
       }
     },
@@ -5455,8 +5453,7 @@
       "properties": {
         "wikidata": "Q150609",
         "wikipedia": "uk:МіГ-21",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "МіГ-21ПФ",
         "name:ru": "МиГ-21",
         "name:uk": "МіГ-21ПФ",
@@ -5984,10 +5981,10 @@
         "wikidata": "Q187377",
         "wikipedia": "uk:МіГ-15",
         "description": "Винищувач, розроблений ОКБ Мікояна і Гуревича в кінці 1940-х років. Наймасовіший реактивний бойовий літак в історії авіації, що перебував на озброєнні багатьох країн світу. МіГ-15УТИ - двомісний навчально-тренувальний літак",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "МіГ-15УТИ",
         "name:uk": "МіГ-15УТИ",
+        "war_memorial": "yes",
         "@id": "node/4329269102"
       }
     },
@@ -6229,8 +6226,7 @@
       },
       "properties": {
         "model:wikidata": "Q152976",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-17",
         "name": "МіГ-17",
         "name:uk": "МіГ-17",
@@ -11051,13 +11047,13 @@
         "model:wikidata": "Q562475",
         "description": "Літак-винищувач Як-9 (макет)",
         "description:en": "Fighter aircraft Yak-9 (replica)",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Як-9",
         "name": "Як-9",
         "name:en": "Yak-9",
         "name:uk": "Як-9",
         "tourism": "attraction",
+        "war_memorial": "yes",
         "@id": "node/6779045199"
       }
     },
@@ -11072,13 +11068,13 @@
       },
       "properties": {
         "model:wikidata": "Q155679",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-23",
         "name": "МіГ-23",
         "name:en": "MiG-23",
         "name:uk": "МіГ-23",
         "tourism": "attraction",
+        "war_memorial": "yes",
         "@id": "node/6779045200"
       }
     },
@@ -11093,13 +11089,13 @@
       },
       "properties": {
         "model:wikidata": "Q150609",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-21",
         "name": "МіГ-21",
         "name:en": "MiG-21",
         "name:uk": "МіГ-21",
         "tourism": "attraction",
+        "war_memorial": "yes",
         "@id": "node/6779045201"
       }
     },
@@ -11114,13 +11110,13 @@
       },
       "properties": {
         "model:wikidata": "Q152976",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-17",
         "name": "МіГ-17",
         "name:en": "MiG-17",
         "name:uk": "МіГ-17",
         "tourism": "attraction",
+        "war_memorial": "yes",
         "@id": "node/6779045202"
       }
     },
@@ -11452,8 +11448,7 @@
       "properties": {
         "model:wikidata": "Q461651",
         "description": "Радянський винищувач-перехоплювач, розроблений на початку 1960-х рр. Довгий час був основою військ Протиповітряної оборони СРСР",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Су-15",
         "name": "Су-15",
         "name:uk": "Су-15",
@@ -11492,8 +11487,7 @@
       "properties": {
         "model:wikidata": "Q210413",
         "description": "Радянський і російський тактичний фронтовий бомбардувальник з крилом змінної стріловидності , призначений для нанесення ракетно-бомбових ударів в простих і складних метеоумовах, вдень і вночі, в тому числі на малих висотах",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Су-24",
         "name": "Су-24",
         "name:uk": "Су-24",
@@ -11512,8 +11506,7 @@
       "properties": {
         "model:wikidata": "Q210413",
         "description": "Радянський і російський тактичний фронтовий бомбардувальник з крилом змінної стріловидності , призначений для нанесення ракетно-бомбових ударів в простих і складних метеоумовах, вдень і вночі, в тому числі на малих висотах",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Су-24",
         "name": "Су-24М",
         "name:uk": "Су-24М",
@@ -11532,8 +11525,7 @@
       "properties": {
         "model:wikidata": "Q130681",
         "description": "Багатоцільовий радянський винищувач четвертого покоління. Був основним багатоцільовим винищувачем країн Варшавського договору та СРСР впродовж 80-х років XX ст. Нині перебуває на озброєнні багатьох країн світу, в тому числі й України.",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-29",
         "name": "МіГ-29",
         "name:uk": "МіГ-29",
@@ -11552,8 +11544,7 @@
       "properties": {
         "model:wikidata": "Q192137",
         "description": "Радянський і російський штурмовик, броньований дозвуковой військовий літак. Призначений для безпосередньої підтримки сухопутних військ над полем бою вдень і вночі при прямій видимості цілі, а також знищення об'єктів за заданими координатами цілодобово",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Су-25",
         "name": "Су-25",
         "name:uk": "Су-25",
@@ -13022,8 +13013,7 @@
       "properties": {
         "model:wikidata": "Q155679",
         "description": "Радянський багатоцільовий винищувач зі змінною геометрією крила. Призначений для боротьби з літаками супротивника в широкому діапазоні висот і швидкостей польоту і виконання завдань на користь військ оперативно-стратегічного об'єднання.",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-23",
         "name": "МіГ-23УБ",
         "name:uk": "МіГ-23УБ",
@@ -13042,8 +13032,7 @@
       "properties": {
         "model:wikidata": "Q155679",
         "description": "Радянський багатоцільовий винищувач зі змінною геометрією крила. Призначений для боротьби з літаками супротивника в широкому діапазоні висот і швидкостей польоту і виконання завдань на користь військ оперативно-стратегічного об'єднання.",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-23",
         "name": "МіГ-23М",
         "name:uk": "МіГ-23М",
@@ -13062,8 +13051,7 @@
       "properties": {
         "model:wikidata": "Q155899",
         "description": "Чехословацький навчально-бойовий літак",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Л-39 «Альбатрос»",
         "name": "Аеро Л-39 «Альбатрос»",
         "name:uk": "Аеро Л-39 «Альбатрос»",
@@ -13082,8 +13070,7 @@
       "properties": {
         "model:wikidata": "Q167277",
         "description": "Чехословацький навчально-тренувальний літак. Є першим чехословацьким серійним реактивним літаком",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Aero L-29 Delfin",
         "name": "Аеро Л-29 «Дельфін»",
         "name:uk": "Аеро Л-29 «Дельфін»",
@@ -13102,8 +13089,7 @@
       "properties": {
         "model:wikidata": "Q150609",
         "description": "Радянський реактивний фронтовий винищувач 1960-х — 1970-х років. Випускався серійно в СРСР (1959 — 1986 роки), в Індії та Китаї (під позначенням F-7). Китайці випустили ряд власних модифікацій. Літак багаторазово модифікувався. Стояв на озброєнні 68 країн",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-21",
         "name": "МіГ-21У",
         "name:uk": "МіГ-21У",
@@ -13122,8 +13108,7 @@
       "properties": {
         "model:wikidata": "Q150609",
         "description": "Радянський реактивний фронтовий винищувач 1960-х — 1970-х років. Випускався серійно в СРСР (1959 — 1986 роки), в Індії та Китаї (під позначенням F-7). Китайці випустили ряд власних модифікацій. Літак багаторазово модифікувався. Стояв на озброєнні 68 країн",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-21",
         "name": "МіГ-21ПФ",
         "name:uk": "МіГ-21ПФ",
@@ -13141,8 +13126,7 @@
       },
       "properties": {
         "model:wikidata": "Q187377",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-15",
         "name": "МіГ-15УТИ",
         "name:uk": "МіГ-15УТИ",
@@ -13161,8 +13145,7 @@
       "properties": {
         "model:wikidata": "Q152976",
         "description": "Радянський реактивний винищувач періоду Холодної війни. Стояв на озброєнні країн Варшавського договору, Китаю та інших держав",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-17",
         "name": "МіГ-17",
         "name:uk": "МіГ-17",
@@ -13180,8 +13163,7 @@
       },
       "properties": {
         "model:wikidata": "Q508308",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "ru:Як-50",
         "name": "Як-50",
         "name:uk": "Як-50",
@@ -13246,8 +13228,7 @@
         "wikidata": "Q746313",
         "wikipedia": "uk:Су-9",
         "description": "Штурмовик, броньований дозвуковой військовий літак. Призначений для безпосередньої підтримки сухопутних військ над полем бою вдень і вночі при прямій видимості цілі, а також знищення об'єктів за заданими координатами цілодобово в будь-яких метеоумовах",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Су-9",
         "name:uk": "Су-9",
         "@id": "node/7074446416"
@@ -13303,8 +13284,7 @@
       },
       "properties": {
         "model:wikidata": "Q191111",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Ту-160",
         "name": "Ту-160",
         "name:uk": "Ту-160",
@@ -13322,8 +13302,7 @@
       },
       "properties": {
         "model:wikidata": "Q181815",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Ту-95",
         "name": "Ту-95",
         "name:uk": "Ту-95",
@@ -13341,8 +13320,7 @@
       },
       "properties": {
         "model:wikidata": "Q4464765",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Ту-134УБЛ",
         "name": "Ту-134УБЛ",
         "name:uk": "Ту-134УБЛ",
@@ -13360,8 +13338,7 @@
       },
       "properties": {
         "model:wikidata": "Q192779",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Ту-16",
         "name": "Ту-16К",
         "name:uk": "Ту-16К",
@@ -13379,8 +13356,7 @@
       },
       "properties": {
         "model:wikidata": "Q204944",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Ту-22М",
         "name": "Ту-22М3",
         "name:uk": "Ту-22М3",
@@ -13398,8 +13374,7 @@
       },
       "properties": {
         "model:wikidata": "Q213342",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Ту-22",
         "name": "Ту-22КД",
         "name:uk": "Ту-22КД",
@@ -13417,8 +13392,7 @@
       },
       "properties": {
         "model:wikidata": "Q461651",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Су-15",
         "name": "Су-15УМ",
         "name:uk": "Су-15УМ",
@@ -13436,8 +13410,7 @@
       },
       "properties": {
         "model:wikidata": "Q207700",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Ан-2",
         "name": "Ан-2",
         "name:uk": "Ан-2",
@@ -15047,13 +15020,13 @@
       },
       "properties": {
         "model:wikidata": "Q155651",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Мі-24",
         "name": "Мі-24В",
         "name:en": "Mil Mi-24V",
         "name:uk": "Мі-24В",
         "tourism": "attraction",
+        "war_memorial": "yes",
         "@id": "node/7104541114"
       }
     },
@@ -15070,13 +15043,13 @@
         "model:wikidata": "Q662591",
         "description": "Військово-транспортний літак Лі-2",
         "description:en": "Military transport airplane Li-2 (Licensed Soviet Douglas DC-2 version)",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Лі-2",
         "name": "Лі-2",
         "name:en": "Li-2",
         "name:uk": "Лі-2",
         "tourism": "attraction",
+        "war_memorial": "yes",
         "@id": "node/7104541122"
       }
     },
@@ -15337,32 +15310,11 @@
       "properties": {
         "model:wikidata": "Q608997",
         "aircraft:type": "helicopter",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Мі-2",
         "name": "Мі-2",
-        "name:ru": "Ми-2",
         "name:uk": "Мі-2",
         "@id": "node/7109128328"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.5026797,
-          49.618326
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q624038",
-        "historic": "memorial",
-        "memorial": "aircraft",
-        "model:wikipedia": "uk:Восток (космічний апарат)",
-        "name": "Восток",
-        "name:uk": "Восток",
-        "@id": "node/7109202540"
       }
     },
     {
@@ -15377,8 +15329,7 @@
       "properties": {
         "model:wikidata": "Q167277",
         "fixme": "Уточнити положення",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Aero L-29 Delfin",
         "name": "Аеро Л-29 «Дельфін»",
         "name:uk": "Аеро Л-29 «Дельфін»",
@@ -15397,8 +15348,7 @@
       },
       "properties": {
         "model:wikidata": "Q155899",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Л-39 «Альбатрос»",
         "name": "Аеро Л-39 «Альбатрос»",
         "name:uk": "Аеро Л-39 «Альбатрос»",
@@ -15417,8 +15367,7 @@
       "properties": {
         "model:wikidata": "Q744635",
         "aircraft:type": "helicopter",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Мі-6",
         "name": "Мі-6",
         "name:uk": "Мі-6",
@@ -15437,8 +15386,7 @@
       "properties": {
         "wikidata": "Q157925",
         "wikipedia": "uk:Л-410",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Let L-410 Turbolet",
         "name:uk": "Let L-410 Turbolet",
         "@id": "node/7109313889"
@@ -15705,8 +15653,7 @@
       "properties": {
         "wikidata": "Q155899",
         "wikipedia": "uk:Л-39 «Альбатрос»",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Аеро Л-39 «Альбатрос»",
         "name:uk": "Аеро Л-39 «Альбатрос»",
         "@id": "node/7117126275"
@@ -15724,8 +15671,7 @@
       "properties": {
         "wikidata": "Q608997",
         "wikipedia": "uk:Мі-2",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Мі-2",
         "name:uk": "Мі-2",
         "@id": "node/7117126276"
@@ -15743,8 +15689,7 @@
       "properties": {
         "wikidata": "Q608997",
         "wikipedia": "uk:Мі-2",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Мі-2",
         "name:uk": "Мі-2",
         "@id": "node/7117126277"
@@ -15762,8 +15707,7 @@
       "properties": {
         "wikidata": "Q963522",
         "wikipedia": "uk:Ту-141",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Ту-141 «Стриж»",
         "name:uk": "Ту-141 «Стриж»",
         "@id": "node/7117126278"
@@ -15781,8 +15725,7 @@
       "properties": {
         "wikidata": "Q210413",
         "wikipedia": "uk:Су-24",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Су-24М",
         "name:uk": "Су-24М",
         "@id": "node/7117126279"
@@ -15800,8 +15743,7 @@
       "properties": {
         "wikidata": "Q62156",
         "wikipedia": "uk:Ан-26",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Ан-26",
         "name:uk": "Ан-26",
         "@id": "node/7117126280"
@@ -15819,8 +15761,7 @@
       "properties": {
         "wikidata": "Q155651",
         "wikipedia": "uk:Мі-24",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Мі-24",
         "name:uk": "Мі-24",
         "@id": "node/7117126281"
@@ -15838,8 +15779,7 @@
       "properties": {
         "wikidata": "Q1051402",
         "wikipedia": "uk:Ту-143",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Ту-143 «Рейс»",
         "name:uk": "Ту-143 «Рейс»",
         "@id": "node/7117139486"
@@ -15857,8 +15797,7 @@
       "properties": {
         "wikidata": "Q150609",
         "wikipedia": "uk:МіГ-21",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "МіГ-21ПФ",
         "name:ru": "МиГ-21",
         "name:uk": "МіГ-21ПФ",
@@ -15877,8 +15816,7 @@
       "properties": {
         "wikidata": "Q608997",
         "wikipedia": "uk:Мі-2",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Мі-2",
         "name:ru": "Ми-2",
         "name:uk": "Мі-2",
@@ -15897,8 +15835,7 @@
       "properties": {
         "wikidata": "Q155635",
         "wikipedia": "uk:Мі-8",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Мі-8",
         "name:ru": "Ми-8",
         "name:uk": "Мі-8",
@@ -15917,8 +15854,7 @@
       "properties": {
         "wikidata": "Q744635",
         "wikipedia": "uk:Мі-6",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Мі-6",
         "name:ru": "Ми-6",
         "name:uk": "Мі-6",
@@ -15937,8 +15873,7 @@
       "properties": {
         "wikidata": "Q192137",
         "wikipedia": "uk:Су-25",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Су-25",
         "name:uk": "Су-25",
         "@id": "node/7117139491"
@@ -15956,8 +15891,7 @@
       "properties": {
         "wikidata": "Q173680",
         "wikipedia": "uk:Су-27",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Су-27",
         "name:uk": "Су-27",
         "@id": "node/7117139492"
@@ -15975,8 +15909,7 @@
       "properties": {
         "wikidata": "Q130681",
         "wikipedia": "uk:МіГ-29",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "МіГ-29",
         "name:ru": "МиГ-29",
         "name:uk": "МіГ-29",
@@ -16005,33 +15938,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          36.2646658,
-          50.0251141
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q297026",
-        "historic": "memorial",
-        "memorial": "aircraft",
-        "model:wikipedia": "uk:Х-55",
-        "name": "Х-55",
-        "name:uk": "Х-55",
-        "@id": "node/7119722830"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           36.2645451,
           50.0251977
         ]
       },
       "properties": {
         "model:wikidata": "Q507476",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Як-18",
         "name": "Як-18А",
         "name:uk": "Як-18А",
@@ -16049,8 +15962,7 @@
       },
       "properties": {
         "model:wikidata": "Q963522",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Ту-141",
         "name": "Ту-141 «Стриж»",
         "name:uk": "Ту-141 «Стриж»",
@@ -16068,8 +15980,7 @@
       },
       "properties": {
         "model:wikidata": "Q187377",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-15",
         "name": "МіГ-15УТИ",
         "name:uk": "МіГ-15УТИ",
@@ -16087,8 +15998,7 @@
       },
       "properties": {
         "model:wikidata": "Q159067",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Ту-134",
         "name": "Ту-134",
         "name:uk": "Ту-134",
@@ -16106,8 +16016,7 @@
       },
       "properties": {
         "model:wikidata": "Q160469",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Ту-124",
         "name": "Ту-124",
         "name:uk": "Ту-124",
@@ -16125,8 +16034,7 @@
       },
       "properties": {
         "model:wikidata": "Q506090",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Ту-104",
         "name": "Ту-104",
         "name:uk": "Ту-104",
@@ -16290,8 +16198,7 @@
       "properties": {
         "wikidata": "Q153307",
         "wikipedia": "uk:МіГ-19",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "МіГ-19С",
         "name:ru": "МиГ-19",
         "name:uk": "МіГ-19С",
@@ -18220,11 +18127,9 @@
       "properties": {
         "model:wikidata": "Q155635",
         "aircraft:type": "helicopter",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Мі-8",
         "name": "Мі-8Т",
-        "name:ru": "Ми-8Т",
         "name:uk": "Мі-8Т",
         "@id": "node/7974555147"
       }
@@ -18240,8 +18145,7 @@
       },
       "properties": {
         "model:wikidata": "Q155899",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:Л-39 «Альбатрос»",
         "name": "Аеро Л-39 «Альбатрос»",
         "name:uk": "Аеро Л-39 «Альбатрос»",
@@ -18259,8 +18163,7 @@
       },
       "properties": {
         "model:wikidata": "Q150609",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-21",
         "name": "МіГ-21СМ",
         "name:uk": "МіГ-21СМ",
@@ -18278,8 +18181,7 @@
       },
       "properties": {
         "model:wikidata": "Q155679",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-23",
         "name": "МіГ-23УБ",
         "name:uk": "МіГ-23УБ",
@@ -18297,8 +18199,7 @@
       },
       "properties": {
         "model:wikidata": "Q155679",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-23",
         "name": "МіГ-23МЛД",
         "name:uk": "МіГ-23МЛД",
@@ -18316,8 +18217,7 @@
       },
       "properties": {
         "model:wikidata": "Q234069",
-        "historic": "memorial",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "model:wikipedia": "uk:МіГ-27",
         "name": "МіГ-27К",
         "name:uk": "МіГ-27К",
@@ -39001,9 +38901,7 @@
         "wikipedia": "uk:Іл-18",
         "building": "yes",
         "description": "Пасажирський літак для авіаліній далекої протяжності, виконаний за схемою чотиримоторного турбогвинтового низькоплана з однокилевим оперенням. Один з перших радянських турбогвинтових лайнерів. Випускався серійно з 1958 по 1978 рік.",
-        "historic": "memorial",
-        "historic_1": "aircraft",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Іл-18Б",
         "name:uk": "Іл-18Б",
         "@id": "way/447837325"
@@ -41851,9 +41749,7 @@
         "wikipedia": "uk:Су-24",
         "building": "yes",
         "description": "Радянський тактичний фронтовий бомбардувальник з крилом змінної стріловидності , призначений для нанесення ракетно-бомбових ударів в простих і складних метеоумовах, вдень і вночі, в тому числі на малих висотах",
-        "historic": "memorial",
-        "historic_1": "aircraft",
-        "memorial": "aircraft",
+        "historic": "aircraft",
         "name": "Су-24",
         "name:uk": "Су-24",
         "@id": "way/1009046685"
