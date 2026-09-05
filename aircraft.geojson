@@ -6996,6 +6996,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -87.8482618,
+          41.8107665
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q153826",
+        "aircraft:type": "military",
+        "description": "Mounted F-86 Sabre dedicated to Korean war veterans.",
+        "historic": "aircraft",
+        "model:wikipedia": "en:North American F-86 Sabre",
+        "name": "Ehlert Park F-86 Sabre Korean Veterans Monument",
+        "start_date": "1961-09-10",
+        "website": "https://www.brookfieldil.gov/community/sabre_jet_korean_war_memorial.php",
+        "@id": "node/4848469818"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           19.2429873,
           46.5388484
         ]
@@ -11048,6 +11069,7 @@
         "description": "Літак-винищувач Як-9 (макет)",
         "description:en": "Fighter aircraft Yak-9 (replica)",
         "historic": "aircraft",
+        "memorial:conflict": "WW2",
         "model:wikipedia": "uk:Як-9",
         "name": "Як-9",
         "name:en": "Yak-9",
@@ -11069,6 +11091,7 @@
       "properties": {
         "model:wikidata": "Q155679",
         "historic": "aircraft",
+        "memorial:conflict": "Cold_War",
         "model:wikipedia": "uk:МіГ-23",
         "name": "МіГ-23",
         "name:en": "MiG-23",
@@ -11090,6 +11113,7 @@
       "properties": {
         "model:wikidata": "Q150609",
         "historic": "aircraft",
+        "memorial:conflict": "Cold_War",
         "model:wikipedia": "uk:МіГ-21",
         "name": "МіГ-21",
         "name:en": "MiG-21",
@@ -11111,6 +11135,7 @@
       "properties": {
         "model:wikidata": "Q152976",
         "historic": "aircraft",
+        "memorial:conflict": "Cold_War",
         "model:wikipedia": "uk:МіГ-17",
         "name": "МіГ-17",
         "name:en": "MiG-17",
@@ -15021,6 +15046,7 @@
       "properties": {
         "model:wikidata": "Q155651",
         "historic": "aircraft",
+        "memorial:conflict": "Cold_War",
         "model:wikipedia": "uk:Мі-24",
         "name": "Мі-24В",
         "name:en": "Mil Mi-24V",
@@ -15044,6 +15070,7 @@
         "description": "Військово-транспортний літак Лі-2",
         "description:en": "Military transport airplane Li-2 (Licensed Soviet Douglas DC-2 version)",
         "historic": "aircraft",
+        "memorial:conflict": "WW2",
         "model:wikipedia": "uk:Лі-2",
         "name": "Лі-2",
         "name:en": "Li-2",
@@ -25352,7 +25379,8 @@
       },
       "properties": {
         "subject:wikidata": "Q1351565",
-        "historic": "memorial",
+        "aircraft:type": "glider",
+        "historic": "aircraft",
         "memorial": "aircraft",
         "name": "Chanute Glider",
         "subject:wikipedia": "en:Octave Chanute",
@@ -25370,7 +25398,8 @@
       },
       "properties": {
         "subject:wikidata": "Q192075",
-        "historic": "memorial",
+        "aircraft:type": "military",
+        "historic": "aircraft",
         "memorial": "aircraft",
         "name": "P-51 Mustang",
         "subject:wikipedia": "en:North American P-51 Mustang",
@@ -25517,12 +25546,12 @@
         ]
       },
       "properties": {
-        "wikidata": "Q46397",
-        "wikipedia": "en:McDonnell_Douglas_F/A-18_Hornet",
+        "model:wikidata": "Q46397",
         "aircraft:type": "military",
         "historic": "aircraft",
         "manufacturer": "McDonnell Douglas",
         "model": "McDonnell_Douglas_F/A-18_Hornet_1",
+        "model:wikipedia": "en:McDonnell_Douglas_F/A-18_Hornet",
         "name": "Hornet 1",
         "website": "https://chinalakemuseum.org/hornet1",
         "@id": "node/12052361581"
@@ -25559,15 +25588,14 @@
         ]
       },
       "properties": {
-        "wikidata": "Q400620",
-        "wikipedia": "en:Grumman_F11F-1F_Super_Tiger",
+        "model:wikidata": "Q5217660",
         "aircraft:type": "military",
         "description": "The only remaining Super Tiger in existence, and one of two prototypes made.",
         "historic": "aircraft",
         "manufacturer": "Grumman",
         "model": "F-11F_Super_Tiger",
+        "model:wikipedia": "en:Grumman_F11F-1F Super Tiger",
         "name": "F11-1F Super Tiger",
-        "note": "Wikidata has no specific entry for the Super Tiger variant. Variant has its own Wikipedia page.",
         "website": "https://chinalakemuseum.org/f11",
         "@id": "node/12052361583"
       }
@@ -33192,7 +33220,7 @@
         "description": "אנדרטה לזכרו של רב\"ט גיל בלאו ז\"ל.\nהאדרטה היא מטוס מדגם עיט (סקייהוק) שיצא משימוש ונתרם על ידי חיל האוויר לזכר הנופל.",
         "direction": "45",
         "historic": "aircraft",
-        "image": "https://izkorcdn.azureedge.net/monuments/320/25113%20(1).jpg",
+        "image": "https://izkoro.mod.gov.il/monuments/320/25113%20(1).jpg",
         "model": "Douglas A-4 Skyhawk",
         "model:en": "Douglas A-4 Skyhawk",
         "model:he": "עיט",
