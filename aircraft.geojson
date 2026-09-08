@@ -35984,27 +35984,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -98.6205658,
-          29.3897072
-        ]
-      },
-      "properties": {
-        "wikidata": "Q75261513",
-        "aircraft:type": "military",
-        "area": "yes",
-        "description": "s/n 61-7979",
-        "historic": "aircraft",
-        "manufacturer": "Lockheed Skunk Works",
-        "name": "Lockheed SR-71A Blackbird",
-        "vehicle:wikipedia": "en:Lockheed SR-71 Blackbird",
-        "@id": "way/185324869"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           49.1063383,
           55.858688
         ]
