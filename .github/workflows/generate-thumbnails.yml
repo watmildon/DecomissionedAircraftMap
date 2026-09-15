@@ -5,6 +5,11 @@ on:
     - cron: '0 0 * * *' # Runs every night at midnight (UTC)
   workflow_dispatch:
 
+# The job commits to main, so overlapping runs would race each other.
+concurrency:
+  group: generate-thumbnails
+  cancel-in-progress: false
+
 jobs:
   build-and-run:
     runs-on: ubuntu-latest
@@ -15,11 +20,11 @@ jobs:
     steps:
       # Step 1: Checkout the repository
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Step 2: Set up .NET
       - name: Set up .NET
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.x'
 
