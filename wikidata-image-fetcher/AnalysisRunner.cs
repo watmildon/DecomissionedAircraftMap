@@ -2,19 +2,11 @@
 public class AnalysisRunner
 {
     private readonly HttpClient client;
-    private readonly IQueryProvider? queryProvider;
+    private readonly IOsmQueryProvider queryProvider;
     private IEnumerable<string> itemsNeedingDownload = [];
     private IEnumerable<string> filesToDelete = [];
 
-    // Legacy constructor for backwards compatibility
-    public AnalysisRunner(string overpassQuery, string[] imageTagsPreference, string imageDirectory, HttpClient client)
-        : this(new OverpassQueryProvider(overpassQuery), imageTagsPreference, imageDirectory, client)
-    {
-        OverpassQuery = overpassQuery;
-    }
-
-    // New constructor using IQueryProvider
-    public AnalysisRunner(IQueryProvider queryProvider, string[] imageTagsPreference, string imageDirectory, HttpClient client)
+    public AnalysisRunner(IOsmQueryProvider queryProvider, string[] imageTagsPreference, string imageDirectory, HttpClient client)
     {
         ArgumentNullException.ThrowIfNull(queryProvider);
         ArgumentException.ThrowIfNullOrEmpty(imageDirectory);
@@ -22,11 +14,9 @@ public class AnalysisRunner
         ImageTagsPreference = imageTagsPreference;
         ImageDirectory = imageDirectory;
         this.client = client ?? throw new ArgumentNullException(nameof(client));
-        OverpassQuery = string.Empty; // Not used with new constructor
     }
 
     public IEnumerable<string> ItemsNeedingDownload => itemsNeedingDownload;
-    public string OverpassQuery { get; }
     public string[] ImageTagsPreference { get; }
     public string ImageDirectory { get; }
 
@@ -39,7 +29,7 @@ public class AnalysisRunner
     {
         if (osmObjects == null)
         {
-            osmObjects = queryProvider?.ExecuteQuery(client);
+            osmObjects = queryProvider.ExecuteQuery(client);
         }
 
         // find download targets based on preference order

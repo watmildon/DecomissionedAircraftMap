@@ -177,16 +177,16 @@ class Program
             }
         }
 
-        if (s_OsmItemsNeedingReview.Count > 0)
-        {
-            Console.WriteLine("Writing osmItemsNeedingReview file");
+        // Written unconditionally: if the last problem item gets fixed in OSM, an
+        // empty file is how that shows up. Skipping the write would leave the
+        // previous run's list in place forever.
+        Console.WriteLine($"Writing osmItemsNeedingReview file ({s_OsmItemsNeedingReview.Count} items)");
 
-            using (var sr = new StreamWriter("../osmItemsNeedingReview.txt"))
+        using (var sr = new StreamWriter("../osmItemsNeedingReview.txt"))
+        {
+            foreach (var id in s_OsmItemsNeedingReview.Order())
             {
-                foreach (var id in s_OsmItemsNeedingReview.Order())
-                {
-                    sr.WriteLine(id);
-                }
+                sr.WriteLine(id);
             }
         }
 
@@ -453,10 +453,7 @@ class Program
         // Resize the image while maintaining quality
         image.Mutate(x => x.Resize(newWidth, newHeight));
 
-        using (var memoryStream = new MemoryStream())
-        {
-            image.Save($"{s_ImagesFolder}{imageName}.jpg");
-        }
+        image.Save($"{s_ImagesFolder}{imageName}.jpg");
     }
 
     private static readonly string OverpassQuery = """

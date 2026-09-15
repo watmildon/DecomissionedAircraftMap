@@ -1,12 +1,12 @@
 using Newtonsoft.Json;
 
-public interface IQueryProvider
+public interface IOsmQueryProvider
 {
     string EndpointUrl { get; }
     OsmItems? ExecuteQuery(HttpClient client);
 }
 
-public class OverpassQueryProvider : IQueryProvider
+public class OverpassQueryProvider : IOsmQueryProvider
 {
     public string EndpointUrl { get; }
     public string Query { get; }
