@@ -54,3 +54,5 @@ TestResult.xml
 nunit-*.xml
 
 .DS_Store
+# Visual Studio solution file (generated locally)
+DecomissionedAircraftMap.sln
