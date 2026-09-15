@@ -1,64 +1,100 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.Formats;
 using SixLabors.ImageSharp.Processing;
 using System.Collections.Immutable;
+
+// What a thumbnail fetch attempt concluded. The distinction that matters is
+// between a definite "there is no image here", which is worth remembering, and a
+// transient failure, which is not.
+enum FetchOutcome
+{
+    Downloaded,
+    AlreadyPresent,
+    NoImage,
+    UnsupportedFormat,
+    NoThumbnail,
+    TransientError,
+}
 
 class Program
 {
     static HttpClient s_HttpClient = new HttpClient();
     static string s_ImagesFolder = ".." + Path.DirectorySeparatorChar + "images" + Path.DirectorySeparatorChar;
     static string s_GeoJsonPath = ".." + Path.DirectorySeparatorChar + "aircraft.geojson";
+    static string s_ImageCachePath = ".." + Path.DirectorySeparatorChar + "wikidataImageCache.json";
     static List<string> s_OsmItemsNeedingReview = new List<string>();
     const int RequestDelayMs = 3000; // Delay between requests to respect rate limits
     const int MaxRetries = 3;
-    const int MinExpectedElements = 1500; // Safety threshold - current count is ~2200
 
-    static async Task Main(string[] args)
+    // Backstop on deletions. The response validator rejects most bad data before
+    // we reach this point, so this only has to be loose enough for ordinary OSM
+    // churn and tight enough to catch a response that slipped through.
+    const int MinDeletionsAllowed = 10;
+    const double MaxDeletionFraction = 0.02;
+
+    // How much smaller the new GeoJSON may be than the committed one.
+    const double MaxGeoJsonShrinkFraction = 0.2;
+
+    static int s_BaselineFeatureCount;
+
+    static async Task Main()
     {
         s_HttpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot/1.0 (https://github.com/watmildon/DecomissionedAircraftMap)");
         s_HttpClient.DefaultRequestHeaders.Accept.ParseAdd("application/json");
 
-        // Parse command-line arguments for backend selection
-        var backend = QueryBackend.Overpass;
-        if (args.Length > 0)
-        {
-            backend = args[0].ToLowerInvariant() switch
-            {
-                "postpass" => QueryBackend.Postpass,
-                "qlever" => QueryBackend.QLever,
-                "overpass" => QueryBackend.Overpass,
-                _ => QueryBackend.Overpass
-            };
-        }
-
-        Console.WriteLine($"Using {backend} backend");
-
         string[] tags = { "wikidata", "model:wikidata", "subject:wikidata" };
-        var queryProvider = CreateQueryProvider(backend);
+
+        // Base the safety thresholds on the last committed run rather than on
+        // hardcoded counts, so they keep tracking the dataset as it grows instead
+        // of needing to be retuned by hand.
+        var (baselineFeatures, baselineIds) = ReadGeoJsonBaseline();
+        s_BaselineFeatureCount = baselineFeatures;
+        Console.WriteLine($"Baseline from committed GeoJSON: {baselineFeatures} features, {baselineIds} distinct wikidata ids");
+
+        var validator = new OsmResponseValidator(baselineFeatures, baselineIds);
+        var queryProvider = new OverpassQueryProvider(OverpassQuery, validator: validator);
         var runner = new AnalysisRunner(queryProvider, tags, s_ImagesFolder, s_HttpClient);
 
         runner.RunAnalysis();
 
-        // Safety check: ensure we got a reasonable number of elements
         int elementCount = runner.OsmData?.elements?.Length ?? 0;
-        if (elementCount < MinExpectedElements)
+        Console.WriteLine($"Query returned {elementCount} elements");
+
+        // Decide about deletions before downloading anything. FilesToDelete is
+        // settled by the analysis above and downloading only ever adds files that
+        // are needed, so there is no reason to spend fifteen minutes fetching
+        // images before discovering the run has to be thrown away.
+        var filesToDelete = runner.FilesToDelete.ToList();
+        int imagesOnDisk = Directory.Exists(s_ImagesFolder) ? Directory.GetFiles(s_ImagesFolder).Length : 0;
+        int maxDeletionsAllowed = Math.Max(MinDeletionsAllowed, (int)(imagesOnDisk * MaxDeletionFraction));
+
+        if (filesToDelete.Count > maxDeletionsAllowed)
         {
-            Console.Error.WriteLine($"ERROR: Only {elementCount} elements returned, expected at least {MinExpectedElements}.");
-            Console.Error.WriteLine("This may indicate an Overpass timeout, partial response, or server issue.");
-            Console.Error.WriteLine("Aborting to prevent data loss.");
+            Console.Error.WriteLine($"ERROR: {filesToDelete.Count} files would be deleted, which exceeds the safety limit of {maxDeletionsAllowed}.");
+            Console.Error.WriteLine("This may indicate a problem with the Overpass query or data source.");
+            Console.Error.WriteLine("Files that would be deleted:");
+            foreach (var file in filesToDelete)
+            {
+                Console.Error.WriteLine($"  {file}");
+            }
             Environment.Exit(1);
         }
-        Console.WriteLine($"Element count check passed: {elementCount} elements (minimum: {MinExpectedElements})");
 
-        Console.WriteLine("Files to download...");
+        var cache = NegativeCache.Load(s_ImageCachePath);
+        var itemsNeedingDownload = runner.ItemsNeedingDownload.ToImmutableSortedSet<string>();
+        var now = DateTime.UtcNow;
 
-        foreach (var file in runner.ItemsNeedingDownload.ToImmutableSortedSet<string>())
+        Console.WriteLine($"{itemsNeedingDownload.Count} items have no local thumbnail; {cache.Count} known-negative lookups cached");
+
+        int downloaded = 0;
+        int skipped = 0;
+
+        foreach (var file in itemsNeedingDownload)
         {
             // Skip semicolon-delimited entries (invalid OSM tagging)
             if (file.Contains(';'))
@@ -68,32 +104,57 @@ class Program
                 continue;
             }
 
-            await DownloadThumbnailFromWikidataId(file);
-            await Task.Delay(RequestDelayMs);
+            // The bulk of this list is items Wikidata has already told us have no
+            // image. Re-asking every night costs a rate-limit delay each and
+            // almost never changes the answer.
+            if (cache.ShouldSkip(file, now))
+            {
+                skipped++;
+                continue;
+            }
+
+            var outcome = await DownloadThumbnailFromWikidataId(file);
+
+            switch (outcome)
+            {
+                case FetchOutcome.Downloaded:
+                    downloaded++;
+                    cache.Forget(file);
+                    break;
+                case FetchOutcome.AlreadyPresent:
+                    cache.Forget(file);
+                    break;
+                case FetchOutcome.NoImage:
+                    cache.RecordNegative(file, "no-p18", now);
+                    break;
+                case FetchOutcome.UnsupportedFormat:
+                    cache.RecordNegative(file, "unsupported-format", now);
+                    break;
+                case FetchOutcome.NoThumbnail:
+                    cache.RecordNegative(file, "no-thumbnail", now);
+                    break;
+                case FetchOutcome.TransientError:
+                    // Deliberately not cached, so the next run retries it.
+                    break;
+            }
+
+            if (outcome != FetchOutcome.AlreadyPresent)
+            {
+                await Task.Delay(RequestDelayMs);
+            }
         }
 
+        int pruned = cache.PruneTo(itemsNeedingDownload);
+        cache.Save();
+
+        Console.WriteLine($"Downloaded {downloaded}, skipped {skipped} cached negatives, pruned {pruned} stale cache entries");
         Console.WriteLine();
 
-        const int MaxDeletionsAllowed = 10;
-        int filesToDeleteCount = runner.FilesToDelete.Count();
-
-        if (filesToDeleteCount > MaxDeletionsAllowed)
+        if (filesToDelete.Count > 0)
         {
-            Console.Error.WriteLine($"ERROR: {filesToDeleteCount} files would be deleted, which exceeds the safety limit of {MaxDeletionsAllowed}.");
-            Console.Error.WriteLine("This may indicate a problem with the Overpass query or data source.");
-            Console.Error.WriteLine("Files that would be deleted:");
-            foreach (var file in runner.FilesToDelete)
-            {
-                Console.Error.WriteLine($"  {file}");
-            }
-            Environment.Exit(1);
-        }
+            Console.WriteLine($"Deleting {filesToDelete.Count} unneeded files");
 
-        if (filesToDeleteCount > 0)
-        {
-            Console.WriteLine($"Deleting {filesToDeleteCount} unneeded files");
-
-            foreach (var file in runner.FilesToDelete)
+            foreach (var file in filesToDelete)
             {
                 Console.WriteLine($"Deleting {file}");
                 File.Delete(file);
@@ -193,19 +254,18 @@ class Program
             features.Add(feature);
         }
 
-        // Safety check: compare new feature count against existing file
-        int existingFeatureCount = GetExistingGeoJsonFeatureCount();
-        if (existingFeatureCount > 0)
+        // Final backstop: compare against the file we are about to overwrite.
+        if (s_BaselineFeatureCount > 0)
         {
-            int threshold = (int)(existingFeatureCount * 0.8); // Allow up to 20% reduction
+            int threshold = (int)(s_BaselineFeatureCount * (1 - MaxGeoJsonShrinkFraction));
             if (features.Count < threshold)
             {
-                Console.Error.WriteLine($"ERROR: New GeoJSON would have {features.Count} features, but existing file has {existingFeatureCount}.");
-                Console.Error.WriteLine($"This is more than a 20% reduction (threshold: {threshold}).");
+                Console.Error.WriteLine($"ERROR: New GeoJSON would have {features.Count} features, but existing file has {s_BaselineFeatureCount}.");
+                Console.Error.WriteLine($"This is more than a {MaxGeoJsonShrinkFraction:P0} reduction (threshold: {threshold}).");
                 Console.Error.WriteLine("This may indicate a problem with the data source. Aborting to prevent data loss.");
                 Environment.Exit(1);
             }
-            Console.WriteLine($"GeoJSON feature count check passed: {features.Count} new vs {existingFeatureCount} existing");
+            Console.WriteLine($"GeoJSON feature count check passed: {features.Count} new vs {s_BaselineFeatureCount} existing");
         }
 
         var geojson = new
@@ -224,37 +284,55 @@ class Program
         Console.WriteLine($"Wrote {features.Count} features to aircraft.geojson");
     }
 
-    private static int GetExistingGeoJsonFeatureCount()
+    // Reads the committed GeoJSON so this run can be measured against the last
+    // good one. Returns zeroes when there is nothing to compare against, which
+    // leaves the validator on its absolute floor.
+    private static (int FeatureCount, int WikidataIdCount) ReadGeoJsonBaseline()
     {
         if (!File.Exists(s_GeoJsonPath))
-            return 0;
+            return (0, 0);
 
         try
         {
-            string existingJson = File.ReadAllText(s_GeoJsonPath);
-            var existingGeoJson = JObject.Parse(existingJson);
+            var existingGeoJson = JObject.Parse(File.ReadAllText(s_GeoJsonPath));
             var featuresArray = existingGeoJson["features"] as JArray;
-            return featuresArray?.Count ?? 0;
+
+            if (featuresArray == null)
+                return (0, 0);
+
+            var ids = new HashSet<string>();
+
+            foreach (var feature in featuresArray)
+            {
+                var properties = feature["properties"];
+                if (properties == null)
+                    continue;
+
+                foreach (var key in new[] { "wikidata", "model:wikidata", "subject:wikidata" })
+                {
+                    var value = properties[key]?.ToString();
+                    if (!string.IsNullOrEmpty(value))
+                        ids.Add(value);
+                }
+            }
+
+            return (featuresArray.Count, ids.Count);
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Warning: Could not read existing GeoJSON file: {ex.Message}");
-            return 0;
+            return (0, 0);
         }
     }
 
-    private static async Task<bool> DownloadThumbnailFromWikidataId(string wikidataId)
+    private static async Task<FetchOutcome> DownloadThumbnailFromWikidataId(string wikidataId)
     {
-        if (wikidataId == null)
-        {
-            return false;
-        }
         string fileName = $"{wikidataId}.jpg";
 
         if (File.Exists(s_ImagesFolder + fileName))
         {
             Console.WriteLine($"File exists for: {wikidataId}");
-            return true;
+            return FetchOutcome.AlreadyPresent;
         }
 
         string apiUrl = $"https://www.wikidata.org/wiki/Special:EntityData/{wikidataId}.json";
@@ -287,13 +365,13 @@ class Program
                 if (string.IsNullOrEmpty(imageName))
                 {
                     Console.WriteLine($"No image (P18) found: {wikidataId}");
-                    return false;
+                    return FetchOutcome.NoImage;
                 }
 
                 if (imageName.EndsWith(".svg", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.WriteLine($"File type svg is not supported: {wikidataId}");
-                    return false;
+                    return FetchOutcome.UnsupportedFormat;
                 }
 
                 // Use Wikimedia API to get thumbnail URL (avoids 403 errors from direct file access)
@@ -323,7 +401,7 @@ class Program
                 if (string.IsNullOrEmpty(imageUrl))
                 {
                     Console.WriteLine($"Could not get thumbnail URL for {wikidataId}");
-                    return false;
+                    return FetchOutcome.NoThumbnail;
                 }
 
                 response = await s_HttpClient.GetAsync(imageUrl);
@@ -348,7 +426,7 @@ class Program
                     }
                 }
 
-                return true;
+                return FetchOutcome.Downloaded;
             }
             catch (HttpRequestException ex) when (attempt < MaxRetries)
             {
@@ -359,12 +437,12 @@ class Program
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
-                return false;
+                return FetchOutcome.TransientError;
             }
         }
 
         Console.WriteLine($"Failed after {MaxRetries} attempts: {wikidataId}");
-        return false;
+        return FetchOutcome.TransientError;
     }
 
     private static void ScaleAndSaveImage(string imageName, Image image, int newWidth)
@@ -379,17 +457,6 @@ class Program
         {
             image.Save($"{s_ImagesFolder}{imageName}.jpg");
         }
-    }
-
-    private static IQueryProvider CreateQueryProvider(QueryBackend backend)
-    {
-        return backend switch
-        {
-            QueryBackend.Overpass => new OverpassQueryProvider(OverpassQuery),
-            QueryBackend.Postpass => new PostpassQueryProvider(PostpassQuery),
-            QueryBackend.QLever => new QLeverQueryProvider(QLeverQuery),
-            _ => new OverpassQueryProvider(OverpassQuery)
-        };
     }
 
     private static readonly string OverpassQuery = """
@@ -415,51 +482,5 @@ class Program
           nwr["artwork_type"=aircraft]["subject:wikidata"];
         );
         out center;
-        """;
-
-    private static readonly string PostpassQuery = """
-        SELECT osm_id, tags
-        FROM postpass_pointpolygon
-        WHERE (
-            (tags->>'historic' = 'aircraft')
-            OR (tags->>'historic' = 'memorial' AND tags->>'memorial' = 'aircraft')
-            OR (tags->>'historic' = 'wreck' AND tags->>'wreck:type' = 'aircraft')
-            OR (tags->>'historic' = 'monument' AND tags->>'monument' = 'aircraft')
-            OR (tags->>'historic' = 'aircraft_wreck')
-            OR (tags->>'artwork_type' = 'aircraft')
-        )
-        AND (
-            tags ? 'wikidata'
-            OR tags ? 'model:wikidata'
-            OR tags ? 'subject:wikidata'
-        )
-        """;
-
-    private static readonly string QLeverQuery = """
-        PREFIX osmkey: <https://www.openstreetmap.org/wiki/Key:>
-        PREFIX wd: <http://www.wikidata.org/entity/>
-
-        SELECT ?wikidata ?model_wikidata ?subject_wikidata WHERE {
-          {
-            ?item osmkey:historic "aircraft" .
-          } UNION {
-            ?item osmkey:historic "memorial" .
-            ?item osmkey:memorial "aircraft" .
-          } UNION {
-            ?item osmkey:historic "wreck" .
-            ?item osmkey:wreck:type "aircraft" .
-          } UNION {
-            ?item osmkey:historic "monument" .
-            ?item osmkey:monument "aircraft" .
-          } UNION {
-            ?item osmkey:historic "aircraft_wreck" .
-          } UNION {
-            ?item osmkey:artwork_type "aircraft" .
-          }
-          OPTIONAL { ?item osmkey:wikidata ?wikidata . }
-          OPTIONAL { ?item osmkey:model:wikidata ?model_wikidata . }
-          OPTIONAL { ?item osmkey:subject:wikidata ?subject_wikidata . }
-          FILTER(BOUND(?wikidata) || BOUND(?model_wikidata) || BOUND(?subject_wikidata))
-        }
         """;
 }
