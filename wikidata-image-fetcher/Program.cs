@@ -41,6 +41,11 @@ class Program
     const int MinReplacementsAllowed = 10;
     const double MaxReplacementFraction = 0.02;
 
+    // Scheduled byte-level revalidation is expected work rather than a warning
+    // sign, so exceeding this trims the night's batch instead of failing the run.
+    const int MinRevalidationsPerRun = 10;
+    const double MaxRevalidationFraction = 0.05;
+
     // How much smaller the new GeoJSON may be than the committed one.
     const double MaxGeoJsonShrinkFraction = 0.2;
 
@@ -132,7 +137,8 @@ class Program
             id => File.Exists(s_ImagesFolder + id + ".jpg"),
             cache,
             now,
-            forceRefresh);
+            forceRefresh,
+            forceRefresh ? int.MaxValue : Math.Max(MinRevalidationsPerRun, (int)(imagesOnDisk * MaxRevalidationFraction)));
 
         int maxReplacementsAllowed = Math.Max(MinReplacementsAllowed, (int)(imagesOnDisk * MaxReplacementFraction));
 
@@ -140,19 +146,19 @@ class Program
         {
             Console.WriteLine($"Replacement safety limit of {maxReplacementsAllowed} bypassed for this manual refresh.");
         }
-        else if (plan.Replacements > maxReplacementsAllowed)
+        else if (plan.SourceChanged > maxReplacementsAllowed)
         {
-            Console.Error.WriteLine($"ERROR: {plan.Replacements} images would be replaced, which exceeds the safety limit of {maxReplacementsAllowed}.");
+            Console.Error.WriteLine($"ERROR: {plan.SourceChanged} images would be replaced, which exceeds the safety limit of {maxReplacementsAllowed}.");
             Console.Error.WriteLine("This may indicate a problem with the Wikidata response rather than real change.");
             Console.Error.WriteLine("Images that would be replaced:");
-            foreach (var item in plan.ToFetch.Where(t => t.Replacing))
+            foreach (var item in plan.ToFetch.Where(t => t.Reason == RefreshPlanner.FetchReason.SourceChanged))
             {
                 Console.Error.WriteLine($"  {item.Id} -> {item.Source}");
             }
             Environment.Exit(1);
         }
 
-        Console.WriteLine($"{plan.Unchanged} unchanged, {plan.Adopted} adopted, {plan.NewDownloads} new, {plan.Replacements} to replace, {plan.Unsupported} unsupported, {plan.Deferred} deferred after earlier failures, {plan.NoImage} without an image, {plan.Unresolved} unresolved");
+        Console.WriteLine($"{plan.Unchanged} unchanged, {plan.Adopted} adopted, {plan.NewDownloads} new, {plan.SourceChanged} changed upstream, {plan.Overwriting} overwriting, {plan.Revalidations} due for revalidation ({plan.RevalidationsDeferred} held back), {plan.Unsupported} unsupported, {plan.Deferred} deferred after earlier failures, {plan.NoImage} without an image, {plan.Unresolved} unresolved");
 
         if (plan.Orphaned.Count > 0)
         {
@@ -167,15 +173,17 @@ class Program
 
         int downloaded = 0, replaced = 0;
 
-        foreach (var (id, source, replacing) in plan.ToFetch)
+        foreach (var item in plan.ToFetch)
         {
+            string id = item.Id;
+            string source = item.Source;
             var outcome = await DownloadThumbnail(id, source);
 
             switch (outcome)
             {
                 case FetchOutcome.Downloaded:
                     cache.RecordDownloaded(id, source, now);
-                    if (replacing) replaced++; else downloaded++;
+                    if (item.Replacing) replaced++; else downloaded++;
                     break;
                 case FetchOutcome.NoThumbnail:
                     cache.RecordFailure(id, source, "no-thumbnail", now);

@@ -7,7 +7,22 @@
 // recording "no image" outcomes are decisions, not side effects of fetching.
 public class RefreshPlanner
 {
-    public record Item(string Id, string Source, bool Replacing);
+    public enum FetchReason
+    {
+        // No local image at all.
+        New,
+
+        // P18 points somewhere else than the file we downloaded.
+        SourceChanged,
+
+        // Same filename, but old enough that the bytes are worth checking again.
+        Revalidate,
+
+        // A manual full refresh, which re-fetches regardless.
+        Forced,
+    }
+
+    public record Item(string Id, string Source, bool Replacing, FetchReason Reason);
 
     public class Plan
     {
@@ -23,7 +38,20 @@ public class RefreshPlanner
         public int Unresolved { get; set; }
         public int NoImage { get; set; }
 
-        public int Replacements => ToFetch.Count(i => i.Replacing);
+        // What the safety cap measures. Revalidations and forced refreshes are
+        // left out deliberately: they are expected work, not a sign that Wikidata
+        // told us something strange, so they must not trip a cap that exists to
+        // catch exactly that.
+        public int SourceChanged => ToFetch.Count(i => i.Reason == FetchReason.SourceChanged);
+
+        // How many fetches overwrite a file we already hold, whatever the reason.
+        // This is for reporting, not for the cap.
+        public int Overwriting => ToFetch.Count(i => i.Replacing);
+
+        public int Revalidations => ToFetch.Count(i => i.Reason == FetchReason.Revalidate);
+
+        public int RevalidationsDeferred { get; set; }
+
         public int NewDownloads => ToFetch.Count(i => !i.Replacing);
     }
 
@@ -33,9 +61,11 @@ public class RefreshPlanner
         Func<string, bool> hasLocalImage,
         ImageCache cache,
         DateTime now,
-        bool forceRefresh)
+        bool forceRefresh,
+        int maxRevalidations = int.MaxValue)
     {
         var plan = new Plan();
+        var due = new List<(string Id, string Source, DateTime? LastChecked)>();
 
         foreach (var id in ids)
         {
@@ -81,7 +111,7 @@ public class RefreshPlanner
                 // A manual refresh re-fetches the bytes whatever we think we know.
                 // It is the only way to notice a Commons file that was replaced
                 // under the same name, which no filename comparison can catch.
-                plan.ToFetch.Add(new Item(id, source, haveLocal));
+                plan.ToFetch.Add(new Item(id, source, haveLocal, FetchReason.Forced));
                 continue;
             }
 
@@ -101,11 +131,19 @@ public class RefreshPlanner
 
                 if (string.Equals(known, source, StringComparison.Ordinal))
                 {
-                    plan.Unchanged++;
+                    if (cache.IsDueForRevalidation(id, now))
+                    {
+                        due.Add((id, source, cache.LastCheckedFor(id)));
+                    }
+                    else
+                    {
+                        plan.Unchanged++;
+                    }
+
                     continue;
                 }
 
-                plan.ToFetch.Add(new Item(id, source, true));
+                plan.ToFetch.Add(new Item(id, source, true, FetchReason.SourceChanged));
                 continue;
             }
 
@@ -115,8 +153,17 @@ public class RefreshPlanner
                 continue;
             }
 
-            plan.ToFetch.Add(new Item(id, source, false));
+            plan.ToFetch.Add(new Item(id, source, false, FetchReason.New));
         }
+
+        // Oldest first, and capped, so that a wiped or unreadable cache trickles
+        // through over many nights instead of re-downloading everything at once.
+        foreach (var item in due.OrderBy(d => d.LastChecked ?? DateTime.MinValue).Take(maxRevalidations))
+        {
+            plan.ToFetch.Add(new Item(item.Id, item.Source, true, FetchReason.Revalidate));
+        }
+
+        plan.RevalidationsDeferred = Math.Max(0, due.Count - plan.Revalidations);
 
         return plan;
     }

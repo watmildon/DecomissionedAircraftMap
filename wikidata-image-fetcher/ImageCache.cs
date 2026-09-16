@@ -12,6 +12,15 @@ public class ImageCache
     // not on this clock: the batched sweep re-checks those for free.
     private const int BaseRetryDays = 7;
     private const int MaxJitterDays = 7;
+
+    // A Commons file can be re-uploaded under the same name, which no filename
+    // comparison can ever notice, so each image has its bytes refetched every few
+    // months. The interval is spread across the whole window rather than jittered
+    // by a few days: every image adopted on the same night would otherwise come
+    // due on the same night, which is a cliff rather than a trickle.
+    private const int MinRevalidateDays = 45;
+    private const int RevalidateSpreadDays = 90;
+
     private const string DateFormat = "yyyy-MM-dd";
 
     private readonly string path;
@@ -81,13 +90,38 @@ public class ImageCache
             return false;
         }
 
-        if (!DateTime.TryParseExact(entry.LastChecked, DateFormat, CultureInfo.InvariantCulture, DateTimeStyles.None, out var lastChecked))
+        if (!TryParseChecked(entry, out var lastChecked))
         {
             return false;
         }
 
         return now < lastChecked.AddDays(RetryDaysFor(id));
     }
+
+    // True when a successfully downloaded image is old enough to be worth
+    // fetching again to see whether the file behind it changed.
+    public bool IsDueForRevalidation(string id, DateTime now)
+    {
+        if (!entries.TryGetValue(id, out var entry) || entry.Reason != null)
+        {
+            return false;
+        }
+
+        if (!TryParseChecked(entry, out var lastChecked))
+        {
+            // Unknown age. Treat it as due and let the per-run cap keep the
+            // resulting work to a trickle.
+            return true;
+        }
+
+        return now >= lastChecked.AddDays(RevalidateDaysFor(id));
+    }
+
+    public DateTime? LastCheckedFor(string id)
+        => entries.TryGetValue(id, out var entry) && TryParseChecked(entry, out var when) ? when : null;
+
+    private static bool TryParseChecked(Entry entry, out DateTime when)
+        => DateTime.TryParseExact(entry.LastChecked, DateFormat, CultureInfo.InvariantCulture, DateTimeStyles.None, out when);
 
     public void RecordDownloaded(string id, string source, DateTime now)
     {
@@ -132,6 +166,8 @@ public class ImageCache
     }
 
     private static int RetryDaysFor(string id) => BaseRetryDays + (StableHash(id) % (MaxJitterDays + 1));
+
+    private static int RevalidateDaysFor(string id) => MinRevalidateDays + (StableHash(id) % RevalidateSpreadDays);
 
     // string.GetHashCode is randomised per process, so hash the id here to keep
     // each item's retry date stable from one run to the next, while still spreading
