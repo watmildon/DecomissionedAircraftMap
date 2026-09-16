@@ -48,8 +48,19 @@ class Program
 
     private static readonly Regex WikidataIdPattern = new(@"^Q[1-9][0-9]*$", RegexOptions.Compiled);
 
-    static async Task Main()
+    static async Task Main(string[] args)
     {
+        // A manual refresh re-downloads every image regardless of cached state.
+        // It is slow by nature, which is why it lives behind a workflow_dispatch
+        // input rather than running nightly.
+        bool forceRefresh = args.Contains("--force-refresh");
+
+        if (forceRefresh)
+        {
+            Console.WriteLine("FULL REFRESH: re-downloading every image regardless of cached state.");
+            Console.WriteLine("This ignores the replacement safety limit and takes considerably longer than a nightly run.");
+        }
+
         s_HttpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OSMMapMakerBot/1.0 (https://github.com/watmildon/DecomissionedAircraftMap)");
         s_HttpClient.DefaultRequestHeaders.Accept.ParseAdd("application/json");
 
@@ -115,103 +126,40 @@ class Program
 
         var images = await new WikidataImageLookup(s_HttpClient).FetchAsync(lookupIds);
 
-        var toFetch = new List<(string Id, string Source, bool Replacing)>();
-        var orphaned = new List<string>();
-        int unresolved = 0, unchanged = 0, adopted = 0, deferred = 0, unsupported = 0;
+        var plan = RefreshPlanner.Build(
+            lookupIds,
+            images,
+            id => File.Exists(s_ImagesFolder + id + ".jpg"),
+            cache,
+            now,
+            forceRefresh);
 
-        foreach (var id in lookupIds)
-        {
-            var result = images.TryGetValue(id, out var found)
-                ? found
-                : new WikidataImageLookup.Result(WikidataImageLookup.Status.Unresolved, null);
-
-            bool haveLocal = File.Exists(s_ImagesFolder + id + ".jpg");
-
-            if (result.Status == WikidataImageLookup.Status.Unresolved)
-            {
-                // No trustworthy answer, so leave whatever we already have alone.
-                unresolved++;
-                continue;
-            }
-
-            if (result.Status == WikidataImageLookup.Status.NoImage)
-            {
-                if (haveLocal)
-                {
-                    orphaned.Add(id);
-                }
-
-                cache.RecordFailure(id, null, "no-p18", now);
-                continue;
-            }
-
-            string source = result.FileName!;
-
-            if (source.EndsWith(".svg", StringComparison.OrdinalIgnoreCase))
-            {
-                // Schematics rather than photographs; these need cleanup on the
-                // wikidata side rather than rendering here.
-                unsupported++;
-                cache.RecordFailure(id, source, "unsupported-format", now);
-                continue;
-            }
-
-            if (haveLocal)
-            {
-                string? known = cache.DownloadedSourceFor(id);
-
-                if (known == null)
-                {
-                    // Downloaded before this run started recording sources. Adopt
-                    // the current P18 rather than re-fetching every existing
-                    // thumbnail; the manual full refresh is the way to force that.
-                    cache.RecordDownloaded(id, source, now);
-                    adopted++;
-                    continue;
-                }
-
-                if (string.Equals(known, source, StringComparison.Ordinal))
-                {
-                    unchanged++;
-                    continue;
-                }
-
-                toFetch.Add((id, source, true));
-                continue;
-            }
-
-            if (cache.ShouldSkipFetch(id, source, now))
-            {
-                deferred++;
-                continue;
-            }
-
-            toFetch.Add((id, source, false));
-        }
-
-        int replacements = toFetch.Count(t => t.Replacing);
         int maxReplacementsAllowed = Math.Max(MinReplacementsAllowed, (int)(imagesOnDisk * MaxReplacementFraction));
 
-        if (replacements > maxReplacementsAllowed)
+        if (forceRefresh)
         {
-            Console.Error.WriteLine($"ERROR: {replacements} images would be replaced, which exceeds the safety limit of {maxReplacementsAllowed}.");
+            Console.WriteLine($"Replacement safety limit of {maxReplacementsAllowed} bypassed for this manual refresh.");
+        }
+        else if (plan.Replacements > maxReplacementsAllowed)
+        {
+            Console.Error.WriteLine($"ERROR: {plan.Replacements} images would be replaced, which exceeds the safety limit of {maxReplacementsAllowed}.");
             Console.Error.WriteLine("This may indicate a problem with the Wikidata response rather than real change.");
             Console.Error.WriteLine("Images that would be replaced:");
-            foreach (var item in toFetch.Where(t => t.Replacing))
+            foreach (var item in plan.ToFetch.Where(t => t.Replacing))
             {
                 Console.Error.WriteLine($"  {item.Id} -> {item.Source}");
             }
             Environment.Exit(1);
         }
 
-        Console.WriteLine($"{unchanged} unchanged, {adopted} adopted, {toFetch.Count - replacements} new, {replacements} to replace, {unsupported} unsupported, {deferred} deferred after earlier failures, {unresolved} unresolved");
+        Console.WriteLine($"{plan.Unchanged} unchanged, {plan.Adopted} adopted, {plan.NewDownloads} new, {plan.Replacements} to replace, {plan.Unsupported} unsupported, {plan.Deferred} deferred after earlier failures, {plan.NoImage} without an image, {plan.Unresolved} unresolved");
 
-        if (orphaned.Count > 0)
+        if (plan.Orphaned.Count > 0)
         {
             // Reported rather than deleted: the image is stale, but removing files
             // is not what this change set out to do.
-            Console.WriteLine($"{orphaned.Count} local image(s) whose wikidata item no longer has a P18 (left in place):");
-            foreach (var id in orphaned)
+            Console.WriteLine($"{plan.Orphaned.Count} local image(s) whose wikidata item no longer has a P18 (left in place):");
+            foreach (var id in plan.Orphaned)
             {
                 Console.WriteLine($"  {id}");
             }
@@ -219,7 +167,7 @@ class Program
 
         int downloaded = 0, replaced = 0;
 
-        foreach (var (id, source, replacing) in toFetch)
+        foreach (var (id, source, replacing) in plan.ToFetch)
         {
             var outcome = await DownloadThumbnail(id, source);
 

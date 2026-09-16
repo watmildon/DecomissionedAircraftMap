@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 0 * * *' # Runs every night at midnight (UTC)
   workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: 'Re-download every image, ignoring cached sources (slow, ~45 min)'
+        type: boolean
+        default: false
 
 # The job commits to main, so overlapping runs would race each other.
 concurrency:
@@ -13,6 +18,10 @@ concurrency:
 jobs:
   build-and-run:
     runs-on: ubuntu-latest
+
+    # A nightly run takes a couple of minutes and a full refresh well under an
+    # hour; anything beyond this is stuck rather than slow.
+    timeout-minutes: 90
 
     permissions:
       contents: write
@@ -39,7 +48,7 @@ jobs:
       - name: Run the program
         id: run-fetcher
         working-directory: ./wikidata-image-fetcher
-        run: dotnet run --no-build --configuration Release
+        run: dotnet run --no-build --configuration Release -- ${{ inputs.force_refresh && '--force-refresh' || '' }}
 
       # Only commit if the previous step succeeded (safety checks passed)
       - name: Commit and push changes
@@ -47,5 +56,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A && git commit -m "Update files" || echo "No changes to commit"
+          git add -A && git commit -m "${{ inputs.force_refresh && 'Full image refresh' || 'Update files' }}" || echo "No changes to commit"
           git push || echo "No changes to push"
