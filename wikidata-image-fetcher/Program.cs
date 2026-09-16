@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
 using System.Collections.Immutable;
+using System.Text.RegularExpressions;
 
 // What a thumbnail fetch attempt concluded. The distinction that matters is
 // between a definite "there is no image here", which is worth remembering, and a
@@ -14,9 +15,6 @@ using System.Collections.Immutable;
 enum FetchOutcome
 {
     Downloaded,
-    AlreadyPresent,
-    NoImage,
-    UnsupportedFormat,
     NoThumbnail,
     TransientError,
 }
@@ -37,10 +35,18 @@ class Program
     const int MinDeletionsAllowed = 10;
     const double MaxDeletionFraction = 0.02;
 
+    // Positive validation can now replace images as well as add them, so the same
+    // kind of cap applies: a bad answer from Wikidata must not be able to churn
+    // hundreds of thumbnails in one run.
+    const int MinReplacementsAllowed = 10;
+    const double MaxReplacementFraction = 0.02;
+
     // How much smaller the new GeoJSON may be than the committed one.
     const double MaxGeoJsonShrinkFraction = 0.2;
 
     static int s_BaselineFeatureCount;
+
+    private static readonly Regex WikidataIdPattern = new(@"^Q[1-9][0-9]*$", RegexOptions.Compiled);
 
     static async Task Main()
     {
@@ -85,69 +91,159 @@ class Program
             Environment.Exit(1);
         }
 
-        var cache = NegativeCache.Load(s_ImageCachePath);
-        var itemsNeedingDownload = runner.ItemsNeedingDownload.ToImmutableSortedSet<string>();
+        var cache = ImageCache.Load(s_ImageCachePath);
         var now = DateTime.UtcNow;
 
-        Console.WriteLine($"{itemsNeedingDownload.Count} items have no local thumbnail; {cache.Count} known-negative lookups cached");
+        // Ask about every id, not just the ones with no local file. That is what
+        // lets an image whose P18 changed upstream get picked up at all.
+        var lookupIds = new List<string>();
 
-        int downloaded = 0;
-        int skipped = 0;
-
-        foreach (var file in itemsNeedingDownload)
+        foreach (var id in runner.NeededIds.OrderBy(x => x, StringComparer.Ordinal))
         {
-            // Skip semicolon-delimited entries (invalid OSM tagging)
-            if (file.Contains(';'))
+            // Semicolon-delimited values are an OSM tagging error, not an id.
+            if (id.Contains(';'))
             {
-                Console.WriteLine($"Skipping semicolon-delimited entry: {file}");
-                s_OsmItemsNeedingReview.Add(file);
+                s_OsmItemsNeedingReview.Add(id);
                 continue;
             }
 
-            // The bulk of this list is items Wikidata has already told us have no
-            // image. Re-asking every night costs a rate-limit delay each and
-            // almost never changes the answer.
-            if (cache.ShouldSkip(file, now))
+            if (WikidataIdPattern.IsMatch(id))
             {
-                skipped++;
+                lookupIds.Add(id);
+            }
+        }
+
+        var images = await new WikidataImageLookup(s_HttpClient).FetchAsync(lookupIds);
+
+        var toFetch = new List<(string Id, string Source, bool Replacing)>();
+        var orphaned = new List<string>();
+        int unresolved = 0, unchanged = 0, adopted = 0, deferred = 0, unsupported = 0;
+
+        foreach (var id in lookupIds)
+        {
+            var result = images.TryGetValue(id, out var found)
+                ? found
+                : new WikidataImageLookup.Result(WikidataImageLookup.Status.Unresolved, null);
+
+            bool haveLocal = File.Exists(s_ImagesFolder + id + ".jpg");
+
+            if (result.Status == WikidataImageLookup.Status.Unresolved)
+            {
+                // No trustworthy answer, so leave whatever we already have alone.
+                unresolved++;
                 continue;
             }
 
-            var outcome = await DownloadThumbnailFromWikidataId(file);
+            if (result.Status == WikidataImageLookup.Status.NoImage)
+            {
+                if (haveLocal)
+                {
+                    orphaned.Add(id);
+                }
+
+                cache.RecordFailure(id, null, "no-p18", now);
+                continue;
+            }
+
+            string source = result.FileName!;
+
+            if (source.EndsWith(".svg", StringComparison.OrdinalIgnoreCase))
+            {
+                // Schematics rather than photographs; these need cleanup on the
+                // wikidata side rather than rendering here.
+                unsupported++;
+                cache.RecordFailure(id, source, "unsupported-format", now);
+                continue;
+            }
+
+            if (haveLocal)
+            {
+                string? known = cache.DownloadedSourceFor(id);
+
+                if (known == null)
+                {
+                    // Downloaded before this run started recording sources. Adopt
+                    // the current P18 rather than re-fetching every existing
+                    // thumbnail; the manual full refresh is the way to force that.
+                    cache.RecordDownloaded(id, source, now);
+                    adopted++;
+                    continue;
+                }
+
+                if (string.Equals(known, source, StringComparison.Ordinal))
+                {
+                    unchanged++;
+                    continue;
+                }
+
+                toFetch.Add((id, source, true));
+                continue;
+            }
+
+            if (cache.ShouldSkipFetch(id, source, now))
+            {
+                deferred++;
+                continue;
+            }
+
+            toFetch.Add((id, source, false));
+        }
+
+        int replacements = toFetch.Count(t => t.Replacing);
+        int maxReplacementsAllowed = Math.Max(MinReplacementsAllowed, (int)(imagesOnDisk * MaxReplacementFraction));
+
+        if (replacements > maxReplacementsAllowed)
+        {
+            Console.Error.WriteLine($"ERROR: {replacements} images would be replaced, which exceeds the safety limit of {maxReplacementsAllowed}.");
+            Console.Error.WriteLine("This may indicate a problem with the Wikidata response rather than real change.");
+            Console.Error.WriteLine("Images that would be replaced:");
+            foreach (var item in toFetch.Where(t => t.Replacing))
+            {
+                Console.Error.WriteLine($"  {item.Id} -> {item.Source}");
+            }
+            Environment.Exit(1);
+        }
+
+        Console.WriteLine($"{unchanged} unchanged, {adopted} adopted, {toFetch.Count - replacements} new, {replacements} to replace, {unsupported} unsupported, {deferred} deferred after earlier failures, {unresolved} unresolved");
+
+        if (orphaned.Count > 0)
+        {
+            // Reported rather than deleted: the image is stale, but removing files
+            // is not what this change set out to do.
+            Console.WriteLine($"{orphaned.Count} local image(s) whose wikidata item no longer has a P18 (left in place):");
+            foreach (var id in orphaned)
+            {
+                Console.WriteLine($"  {id}");
+            }
+        }
+
+        int downloaded = 0, replaced = 0;
+
+        foreach (var (id, source, replacing) in toFetch)
+        {
+            var outcome = await DownloadThumbnail(id, source);
 
             switch (outcome)
             {
                 case FetchOutcome.Downloaded:
-                    downloaded++;
-                    cache.Forget(file);
-                    break;
-                case FetchOutcome.AlreadyPresent:
-                    cache.Forget(file);
-                    break;
-                case FetchOutcome.NoImage:
-                    cache.RecordNegative(file, "no-p18", now);
-                    break;
-                case FetchOutcome.UnsupportedFormat:
-                    cache.RecordNegative(file, "unsupported-format", now);
+                    cache.RecordDownloaded(id, source, now);
+                    if (replacing) replaced++; else downloaded++;
                     break;
                 case FetchOutcome.NoThumbnail:
-                    cache.RecordNegative(file, "no-thumbnail", now);
+                    cache.RecordFailure(id, source, "no-thumbnail", now);
                     break;
                 case FetchOutcome.TransientError:
-                    // Deliberately not cached, so the next run retries it.
+                    // Deliberately not recorded, so the next run retries it.
                     break;
             }
 
-            if (outcome != FetchOutcome.AlreadyPresent)
-            {
-                await Task.Delay(RequestDelayMs);
-            }
+            await Task.Delay(RequestDelayMs);
         }
 
-        int pruned = cache.PruneTo(itemsNeedingDownload);
+        int pruned = cache.PruneTo(lookupIds);
         cache.Save();
 
-        Console.WriteLine($"Downloaded {downloaded}, skipped {skipped} cached negatives, pruned {pruned} stale cache entries");
+        Console.WriteLine($"Downloaded {downloaded} new, replaced {replaced}, pruned {pruned} stale cache entries");
         Console.WriteLine();
 
         if (filesToDelete.Count > 0)
@@ -325,64 +421,22 @@ class Program
         }
     }
 
-    private static async Task<FetchOutcome> DownloadThumbnailFromWikidataId(string wikidataId)
+    // The batched sweep already resolved P18, so this goes straight to Commons
+    // for the thumbnail instead of asking Wikidata about the item again.
+    private static async Task<FetchOutcome> DownloadThumbnail(string wikidataId, string imageName)
     {
-        string fileName = $"{wikidataId}.jpg";
+        string commonsFileName = "File:" + imageName.Replace(' ', '_');
+        string commonsApiUrl = $"https://commons.wikimedia.org/w/api.php?action=query&titles={Uri.EscapeDataString(commonsFileName)}&prop=imageinfo&iiprop=url&iiurlwidth=100&format=json";
 
-        if (File.Exists(s_ImagesFolder + fileName))
-        {
-            Console.WriteLine($"File exists for: {wikidataId}");
-            return FetchOutcome.AlreadyPresent;
-        }
-
-        string apiUrl = $"https://www.wikidata.org/wiki/Special:EntityData/{wikidataId}.json";
-
-        // Retry loop with exponential backoff for rate limiting
         for (int attempt = 1; attempt <= MaxRetries; attempt++)
         {
             try
             {
-                HttpResponseMessage response = await s_HttpClient.GetAsync(apiUrl);
+                HttpResponseMessage response = await s_HttpClient.GetAsync(commonsApiUrl);
 
                 if (response.StatusCode == System.Net.HttpStatusCode.TooManyRequests)
                 {
                     int backoffMs = attempt * 2000; // 2s, 4s, 6s
-                    Console.WriteLine($"Rate limited for {wikidataId}, waiting {backoffMs}ms (attempt {attempt}/{MaxRetries})");
-                    await Task.Delay(backoffMs);
-                    continue;
-                }
-
-                response.EnsureSuccessStatusCode();
-
-                string jsonData = await response.Content.ReadAsStringAsync();
-
-                // Parse JSON and find the image property (P18)
-                JObject wikidataJson = JObject.Parse(jsonData);
-                string? imageName = wikidataJson
-                    .SelectToken($"$.entities.{wikidataId}.claims.P18[0].mainsnak.datavalue.value")
-                    ?.ToString();
-
-                if (string.IsNullOrEmpty(imageName))
-                {
-                    Console.WriteLine($"No image (P18) found: {wikidataId}");
-                    return FetchOutcome.NoImage;
-                }
-
-                if (imageName.EndsWith(".svg", StringComparison.OrdinalIgnoreCase))
-                {
-                    Console.WriteLine($"File type svg is not supported: {wikidataId}");
-                    return FetchOutcome.UnsupportedFormat;
-                }
-
-                // Use Wikimedia API to get thumbnail URL (avoids 403 errors from direct file access)
-                string commonsFileName = "File:" + imageName.Replace(' ', '_');
-                string commonsApiUrl = $"https://commons.wikimedia.org/w/api.php?action=query&titles={Uri.EscapeDataString(commonsFileName)}&prop=imageinfo&iiprop=url&iiurlwidth=100&format=json";
-
-                response = await s_HttpClient.GetAsync(commonsApiUrl);
-
-                if (response.StatusCode == System.Net.HttpStatusCode.TooManyRequests)
-                {
-                    int backoffMs = attempt * 2000;
                     Console.WriteLine($"Rate limited fetching image info for {wikidataId}, waiting {backoffMs}ms (attempt {attempt}/{MaxRetries})");
                     await Task.Delay(backoffMs);
                     continue;
@@ -390,17 +444,15 @@ class Program
 
                 response.EnsureSuccessStatusCode();
 
-                string commonsJson = await response.Content.ReadAsStringAsync();
-                JObject commonsData = JObject.Parse(commonsJson);
+                JObject commonsData = JObject.Parse(await response.Content.ReadAsStringAsync());
 
-                // Navigate to the thumbnail URL in the response
                 string? imageUrl = commonsData
                     .SelectToken("$.query.pages.*.imageinfo[0].thumburl")
                     ?.ToString();
 
                 if (string.IsNullOrEmpty(imageUrl))
                 {
-                    Console.WriteLine($"Could not get thumbnail URL for {wikidataId}");
+                    Console.WriteLine($"Could not get thumbnail URL for {wikidataId} ({imageName})");
                     return FetchOutcome.NoThumbnail;
                 }
 
@@ -418,11 +470,10 @@ class Program
 
                 await using (Stream contentStream = await response.Content.ReadAsStreamAsync())
                 {
-                    // Load the image directly from the memory stream
                     using (Image image = Image.Load(contentStream))
                     {
                         ScaleAndSaveImage(wikidataId, image, 100);
-                        Console.WriteLine($"Image saved: {wikidataId}");
+                        Console.WriteLine($"Image saved: {wikidataId} ({imageName})");
                     }
                 }
 

@@ -4,6 +4,7 @@ public class AnalysisRunner
     private readonly HttpClient client;
     private readonly IOsmQueryProvider queryProvider;
     private IEnumerable<string> itemsNeedingDownload = [];
+    private IEnumerable<string> neededIds = [];
     private IEnumerable<string> filesToDelete = [];
 
     public AnalysisRunner(IOsmQueryProvider queryProvider, string[] imageTagsPreference, string imageDirectory, HttpClient client)
@@ -17,6 +18,10 @@ public class AnalysisRunner
     }
 
     public IEnumerable<string> ItemsNeedingDownload => itemsNeedingDownload;
+
+    // Every wikidata id referenced by the OSM data, whether or not we hold an
+    // image for it.
+    public IEnumerable<string> NeededIds => neededIds;
     public string[] ImageTagsPreference { get; }
     public string ImageDirectory { get; }
 
@@ -34,6 +39,7 @@ public class AnalysisRunner
 
         // find download targets based on preference order
         var neededFiles = FindNeededFiles(osmObjects);
+        neededIds = neededFiles;
 
         // ensure the image directory exists
         Directory.CreateDirectory(ImageDirectory);
