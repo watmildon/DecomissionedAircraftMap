@@ -25,6 +25,7 @@ jobs:
 
     permissions:
       contents: write
+      issues: write
 
     steps:
       # Step 1: Checkout the repository
@@ -48,7 +49,12 @@ jobs:
       - name: Run the program
         id: run-fetcher
         working-directory: ./wikidata-image-fetcher
-        run: dotnet run --no-build --configuration Release -- ${{ inputs.force_refresh && '--force-refresh' || '' }}
+        run: |
+          # pipefail matters here: without it tee's exit code wins and a failed
+          # run would look successful.
+          set -o pipefail
+          dotnet run --no-build --configuration Release -- ${{ inputs.force_refresh && '--force-refresh' || '' }} 2>&1 \
+            | tee "$RUNNER_TEMP/fetcher.log"
 
       # Only commit if the previous step succeeded (safety checks passed)
       - name: Commit and push changes
@@ -57,4 +63,74 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A && git commit -m "${{ inputs.force_refresh && 'Full image refresh' || 'Update files' }}" || echo "No changes to commit"
-          git push || echo "No changes to push"
+          git push
+
+      # The job runs unattended every night, so a failure that only shows up in
+      # the Actions tab is a failure nobody sees. File it where the rest of the
+      # work lives, reusing one issue rather than opening one per night.
+      - name: Report failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          BODY="$RUNNER_TEMP/body.md"
+          LOG="$RUNNER_TEMP/fetcher.log"
+          {
+            echo "The scheduled thumbnail run failed."
+            echo
+            echo "Run: $RUN_URL"
+            echo
+            if [ -s "$LOG" ]; then
+              # The safety checks announce themselves on stderr with an ERROR:
+              # prefix. Lift those to the top so the issue title-line tells you
+              # what happened without opening the run.
+              if grep -q '^ERROR:' "$LOG"; then
+                echo "Reported error:"
+                echo
+                echo '```'
+                grep '^ERROR:' "$LOG" | head -n 10
+                echo '```'
+                echo
+              fi
+              echo "Last lines of output:"
+              echo
+              echo '```'
+              tail -n 30 "$LOG"
+              echo '```'
+            else
+              echo "The run failed before the fetcher produced output, so this is more"
+              echo "likely a build or setup problem than a data problem."
+            fi
+          } > "$BODY"
+
+          gh label create ci-failure \
+            --color B60205 \
+            --description "Automated report from the scheduled thumbnail run" 2>/dev/null || true
+
+          EXISTING=$(gh issue list --label ci-failure --state open --limit 1 --json number --jq '.[0].number // empty')
+
+          if [ -n "$EXISTING" ]; then
+            echo "Commenting on existing issue #$EXISTING"
+            gh issue comment "$EXISTING" --body-file "$BODY"
+          else
+            echo "Opening a new issue"
+            gh issue create \
+              --title "Scheduled thumbnail run is failing" \
+              --label ci-failure \
+              --body-file "$BODY"
+          fi
+
+      # Close the report once a run gets through, so a stale issue does not sit
+      # open after the problem is gone.
+      - name: Clear failure report
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          EXISTING=$(gh issue list --label ci-failure --state open --limit 1 --json number --jq '.[0].number // empty')
+
+          if [ -n "$EXISTING" ]; then
+            gh issue close "$EXISTING" --comment "Recovered: $RUN_URL"
+          fi
