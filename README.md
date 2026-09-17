@@ -40,6 +40,14 @@ Some Wikidata items will incorrectly have a diagram or schematic of the aircraft
 
 New data in OpenStreetMap is available on the aircraft map about 1 minute after changes are submitted. New thumbnails are pulled once a day using GitHub actions so any changes to Wikidata entries will be reflected after those run.
 
+## Using your own Overpass instance
+
+By default the nightly job queries a list of public Overpass servers in turn. If you run your own instance, or use one that requires an API key in the URL, set a repository **secret** named `OVERPASS_PRIMARY_URL` (Settings > Secrets and variables > Actions > New repository secret) to the full interpreter URL. It is used verbatim, so a key embedded in the path works as-is.
+
+Your instance is tried **first**, with the public servers kept as fallback, so an instance being down doesn't stop the run. The secret is optional: a fork without one falls back to the public servers and says so in the log.
+
+The fetcher never prints the URL. Log lines refer to it only as `<private Overpass instance>`, and error messages are scrubbed of both the URL and its host before they are logged -- which matters here, because a failed run pastes its own output into a public issue.
+
 # See also
 
 The test server for the [OSM-Wikidata Map Framework](https://wiki.openstreetmap.org/wiki/OSM-Wikidata_Map_Framework) now has an [Aircraft layer](https://test.dsantini.it/#-117.17506,32.71370,17.8,blue,overpass_osm_all_wd+wd_direct,maptiler_osm_carto,aircraft,2025)!

@@ -82,7 +82,19 @@ class Program
         var queryProvider = new OverpassQueryProvider(OverpassQuery, validator: validator);
         var runner = new AnalysisRunner(queryProvider, tags, s_ImagesFolder, s_HttpClient);
 
-        runner.RunAnalysis();
+        try
+        {
+            runner.RunAnalysis();
+        }
+        catch (Exception ex)
+        {
+            // Exit the way the safety checks below do rather than letting this
+            // escape. The workflow's failure report lifts ERROR: lines to the top
+            // of the issue it files, and an unhandled exception produces none --
+            // just a stack trace nobody can read at a glance.
+            Console.Error.WriteLine($"ERROR: could not fetch usable OSM data: {ex.Message}");
+            Environment.Exit(1);
+        }
 
         int elementCount = runner.OsmData?.elements?.Length ?? 0;
         Console.WriteLine($"Query returned {elementCount} elements");

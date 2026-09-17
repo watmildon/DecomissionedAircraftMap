@@ -49,6 +49,11 @@ jobs:
       - name: Run the program
         id: run-fetcher
         working-directory: ./wikidata-image-fetcher
+        env:
+          # A private Overpass instance, tried before the public servers, which
+          # stay on as fallback. Unset in forks that don't have one, which is
+          # fine -- the fetcher falls back to the public list and says so.
+          OVERPASS_PRIMARY_URL: ${{ secrets.OVERPASS_PRIMARY_URL }}
         run: |
           # pipefail matters here: without it tee's exit code wins and a failed
           # run would look successful.
