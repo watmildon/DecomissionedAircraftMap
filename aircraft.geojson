@@ -35012,7 +35012,7 @@
         "model:wikidata": "Q248224",
         "historic": "aircraft",
         "model:wikipedia": "en:LTV A-7 Corsair II",
-        "name:uk": "Ling-Temco-Vought A-7 Corsair II",
+        "name": "Ling-Temco-Vought A-7 Corsair II",
         "tourism": "attraction",
         "vehicle:wikipedia": "en:LTV A-7 Corsair II",
         "@id": "way/173137261"
@@ -48563,6 +48563,70 @@
         "name": "Shooting Star",
         "start_date": "1948-03-22",
         "@id": "way/1548674166"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.4970183,
+          41.349872
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q17504959",
+        "aircraft:type": "fighter",
+        "historic": "memorial",
+        "man_made": "aircraft",
+        "manufacturer": "Northrop",
+        "manufacturer:wikidata": "Q912979",
+        "material": "metal",
+        "memorial": "aircraft",
+        "model": "F-5A-35-NO Freedom Fighter",
+        "model:wikipedia": "el:Northrop F-5",
+        "name": "Μνημείο Πεσόντων Πιλότων Πολεμικής Αεροπορίας",
+        "name:el": "Μνημείο Πεσόντων Πιλότων Πολεμικής Αεροπορίας",
+        "name:en": "Memorial to Fallen Hellenic Air Force Pilots",
+        "ref": "21217",
+        "serial_number": "N6404",
+        "start_date": "1993-07",
+        "subject": "Πεσόντες πιλότοι της Πολεμικής Αεροπορίας",
+        "subject:el": "Πεσόντες πιλότοι της Πολεμικής Αεροπορίας",
+        "subject:en": "Fallen Hellenic Air Force pilots",
+        "tourism": "attraction",
+        "@id": "way/1560136098"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1198768,
+          46.2423621
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q15629353",
+        "aircraft": "yes",
+        "aircraft:registration": "VP-BOE",
+        "aircraft:type": "airliner",
+        "building": "aircraft",
+        "historic": "aircraft",
+        "image": "https://commons.wikimedia.org/wiki/File:Aeroflot-Airbus321-VP-BOE-GroundedInGeneva_RomanDeckert30062022.jpg",
+        "manufacturer": "Airbus",
+        "manufacturer:wikidata": "Q2311",
+        "model": "Airbus A321-211",
+        "model:wikipedia": "fr:Airbus A321",
+        "name": "Aeroflot Airbus A321 VP-BOE",
+        "operator": "Aeroflot",
+        "operator:wikidata": "Q58707",
+        "ref:serial_number": "5755",
+        "ref:url": "https://www.lematin.ch/story/aeroport-de-geneve-30-000-francs-par-mois-un-avion-russe-pourrit-depuis-4-ans-103634222;https://www.blick.ch/fr/suisse/romande/poutine-un-airbus-russe-immobilise-a-laeroport-de-geneve/21dql0d",
+        "start_date": "2022-02-27",
+        "url": "https://www.letemps.ch/economie/a-geneve-30-000-francs-par-mois-pour-un-avion-russe-qui-ne-redecollera-sans-doute-pas",
+        "@id": "way/1560218129"
       }
     },
     {
