@@ -33217,10 +33217,10 @@
       "properties": {
         "model:wikidata": "Q334759",
         "aircraft:type": "military",
-        "description": "אנדרטה לזכרו של רב\"ט גיל בלאו ז\"ל.\nהאדרטה היא מטוס מדגם עיט (סקייהוק) שיצא משימוש ונתרם על ידי חיל האוויר לזכר הנופל.",
+        "description": "אנדרטה לזכרו של רב\"ט גיל בלאו ז\"ל. האדרטה היא מטוס מדגם עיט (סקייהוק) שיצא משימוש ונתרם על ידי חיל האוויר לזכר הנופל.",
         "direction": "45",
         "historic": "aircraft",
-        "image": "https://izkoro.mod.gov.il/monuments/320/25113%20(1).jpg",
+        "image": "https://izkoro.mod.gov.il/monuments/320/25113 (1).jpg",
         "model": "Douglas A-4 Skyhawk",
         "model:en": "Douglas A-4 Skyhawk",
         "model:he": "עיט",
@@ -48630,6 +48630,189 @@
         "start_date": "2022-02-27",
         "url": "https://www.letemps.ch/economie/a-geneve-30-000-francs-par-mois-pour-un-avion-russe-qui-ne-redecollera-sans-doute-pas",
         "@id": "way/1560218129"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3668988,
+          37.0435129
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q58725",
+        "aircraft:type": "military;jet;fixed_wing",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikipedia": "en:Lockheed Corporation",
+        "model": "T-33A_shooting_star",
+        "model:wikipedia": "en:Lockheed T-33",
+        "@id": "way/1561266105"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3666987,
+          37.043505
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q248224",
+        "aircraft:type": "military;jet;fixed_wing",
+        "historic": "aircraft",
+        "manufacturer": "Ling-Temco-Vought",
+        "manufacturer:wikidata": "Q3730937",
+        "manufacturer:wikipedia": "en:Ling-Temco-Vought",
+        "model": "A-7E_Corsair_II",
+        "model:wikipedia": "en:LTV A-7 Corsair II",
+        "@id": "way/1561266106"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3666534,
+          37.0433194
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q20026741",
+        "aircraft:type": "military;jet;fixed_wing",
+        "historic": "aircraft",
+        "manufacturer": "North American Aviation",
+        "manufacturer:wikidata": "Q519560",
+        "manufacturer:wikipedia": "en:North American Aviation",
+        "model": "F-86L_Sabre",
+        "@id": "way/1561266107"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3665173,
+          37.0434729
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q1591690",
+        "aircraft:type": "military;jet",
+        "historic": "aircraft",
+        "manufacturer": "Hawker",
+        "manufacturer:wikidata": "Q1992531",
+        "manufacturer:wikipedia": "en:Hawker Aircraft",
+        "model": "P.1127_Kestrel",
+        "model:wikipedia": "en:Hawker Siddeley P.1127",
+        "@id": "way/1561266108"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3661372,
+          37.0431247
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q18341012",
+        "aircraft:type": "military;jet;fixed_wing",
+        "historic": "aircraft",
+        "manufacturer": "McDonnell",
+        "manufacturer:wikidata": "Q750141",
+        "manufacturer:wikipedia": "en:McDonnell Aircraft Corporation",
+        "model": "F-101F_Voodoo",
+        "@id": "way/1561266109"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3658645,
+          37.0433097
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q62725283",
+        "aircraft:type": "military;jet;fixed_wing",
+        "historic": "aircraft",
+        "manufacturer": "North American Aviation",
+        "manufacturer:wikidata": "Q519560",
+        "manufacturer:wikipedia": "en:North American Aviation",
+        "model": "F-100D_Super_Sabre",
+        "@id": "way/1561266110"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3656633,
+          37.0427937
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q101542250",
+        "aircraft:type": "military;jet;fixed_wing",
+        "historic": "aircraft",
+        "manufacturer": "Northrop",
+        "manufacturer:wikidata": "Q912979",
+        "manufacturer:wikipedia": "en:Northrop Corporation",
+        "model": "F-89J_Scorpion",
+        "@id": "way/1561266111"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3654401,
+          37.0430135
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q75221739",
+        "aircraft:type": "military;jet;fixed_wing",
+        "historic": "aircraft",
+        "manufacturer": "Republic Aviation",
+        "manufacturer:wikidata": "Q950095",
+        "manufacturer:wikipedia": "en:Republic Aviation",
+        "model": "F-105D_Thunderchief",
+        "@id": "way/1561266112"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.3656625,
+          37.0434347
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q17370713",
+        "aircraft:type": "military;jet;fixed_wing",
+        "historic": "aircraft",
+        "manufacturer": "McDonnell Douglas",
+        "manufacturer:wikidata": "Q201815",
+        "manufacturer:wikipedia": "en:McDonnell Douglas",
+        "model": "RF-4C_Phantom_II",
+        "@id": "way/1561266113"
       }
     },
     {
