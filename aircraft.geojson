@@ -44846,6 +44846,7 @@
         "model:wikipedia": "zh:F-5戰鬥機",
         "name": "F-5戰鬥機",
         "ref": "5246",
+        "reservation": "no",
         "tourism": "attraction",
         "website": "https://shanlin.kcg.gov.tw/cp.aspx?n=5767A736B6668EF7&s=EFAFB4FFBD026218",
         "@id": "way/1352849612"
