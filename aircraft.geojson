@@ -33220,7 +33220,7 @@
         "description": "אנדרטה לזכרו של רב\"ט גיל בלאו ז\"ל. האדרטה היא מטוס מדגם עיט (סקייהוק) שיצא משימוש ונתרם על ידי חיל האוויר לזכר הנופל.",
         "direction": "45",
         "historic": "aircraft",
-        "image": "https://izkoro.mod.gov.il/monuments/320/25113 (1).jpg",
+        "image": "https://izkoro.mod.gov.il/monuments/320/25113%20(1).jpg",
         "model": "Douglas A-4 Skyhawk",
         "model:en": "Douglas A-4 Skyhawk",
         "model:he": "עיט",
@@ -34377,6 +34377,64 @@
         "model": "HAL HF-24 Marut",
         "model:wikipedia": "en:HAL HF-24 Marut",
         "@id": "node/14121809102"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1327343,
+          38.7178812
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q76367452",
+        "aircraft:type": "military;f-84-f_thunder_streak",
+        "historic": "aircraft",
+        "name": "F-84-F Thunderstreak",
+        "panoramax": "6b71382e-a203-4208-ae2f-9ae1cde28b61",
+        "@id": "node/14143003716"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0274215,
+          42.5778608
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q407852",
+        "wikipedia": "en:Air_Tractor_AT-802",
+        "aircraft:type": "fixed_wing",
+        "historic": "aircraft",
+        "manufacturer": "Air Tractor",
+        "manufacturer:wikidata": "Q2828232",
+        "manufacturer:wikipedia": "en:Air Tractor",
+        "model": "Air_Tractor_AT-802",
+        "model:wikipedia": "en:Air Tractor AT-802",
+        "name": "Air Tractor AT-802",
+        "start_date": "2026-09-24",
+        "@id": "node/14215208358"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.964991,
+          38.7848201
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q502126",
+        "historic": "aircraft",
+        "panoramax": "0f97f7ff-f834-4290-922a-4a20b4733047",
+        "@id": "node/14215926606"
       }
     },
     {
@@ -40631,7 +40689,7 @@
       "properties": {
         "model:wikidata": "Q15630606",
         "aircraft:type": "airliner",
-        "building": "yes",
+        "building": "airplane",
         "historic": "aircraft",
         "layer": "2",
         "manufacturer": "Boeing",
@@ -40659,7 +40717,7 @@
       "properties": {
         "model:wikidata": "Q15630606",
         "aircraft:type": "airliner",
-        "building": "yes",
+        "building": "airplane",
         "historic": "aircraft",
         "layer": "1",
         "manufacturer": "Boeing",
@@ -40688,7 +40746,7 @@
       "properties": {
         "model:wikidata": "Q15623287",
         "aircraft:type": "airliner",
-        "building": "yes",
+        "building": "airplane",
         "description": "Avión de Simulacro.",
         "end_date": "2012",
         "historic": "aircraft",
@@ -48372,7 +48430,7 @@
       "properties": {
         "model:wikidata": "Q15623287",
         "aircraft:type": "airliner",
-        "building": "yes",
+        "building": "airplane",
         "end_date": "2017",
         "historic": "aircraft",
         "layer": "1",
@@ -48402,9 +48460,10 @@
       "properties": {
         "model:wikidata": "Q891786",
         "aircraft:type": "airliner",
-        "building": "yes",
+        "building": "airplane",
         "historic": "aircraft",
         "layer": "1",
+        "local_ref": "N27173",
         "manufacturer": "Bombardier",
         "manufacturer:wikidata": "Q333498",
         "manufacturer:wikipedia": "en:Bombardier Inc.",
@@ -48412,7 +48471,7 @@
         "name": "Bombardier CRJ200",
         "operator": "Amaszonas",
         "operator:type": "private",
-        "ref": "N27173",
+        "ref": "CP-2762",
         "tourism": "attraction",
         "@id": "way/1528846756"
       }
@@ -48429,9 +48488,10 @@
       "properties": {
         "model:wikidata": "Q891786",
         "aircraft:type": "airliner",
-        "building": "yes",
+        "building": "airplane",
         "historic": "aircraft",
         "layer": "1",
+        "local_ref": "N17217",
         "manufacturer": "Bombardier",
         "manufacturer:wikidata": "Q333498",
         "manufacturer:wikipedia": "en:Bombardier Inc.",
@@ -48439,7 +48499,7 @@
         "name": "Bombardier CRJ200",
         "operator": "Amaszonas",
         "operator:type": "private",
-        "ref": "N17217",
+        "ref": "CP-2733",
         "tourism": "attraction",
         "@id": "way/1528846757"
       }
@@ -48456,7 +48516,7 @@
       "properties": {
         "model:wikidata": "Q714326",
         "aircraft:type": "airliner",
-        "building": "yes",
+        "building": "airplane",
         "description": "Este avión sirvió de transporte de pasajeros para YPFB y carne del Frigorífico Santa Rita.",
         "historic": "aircraft",
         "layer": "1",
@@ -48485,7 +48545,7 @@
       "properties": {
         "model:wikidata": "Q15623287",
         "aircraft:type": "airliner",
-        "building": "yes",
+        "building": "airplane",
         "historic": "aircraft",
         "layer": "1",
         "manufacturer": "Boeing",
@@ -48512,7 +48572,7 @@
       "properties": {
         "model:wikidata": "Q15630606",
         "aircraft:type": "airliner",
-        "building": "yes",
+        "building": "airplane",
         "historic": "aircraft",
         "layer": "1",
         "manufacturer": "Boeing",
@@ -48814,6 +48874,32 @@
         "manufacturer:wikipedia": "en:McDonnell Douglas",
         "model": "RF-4C_Phantom_II",
         "@id": "way/1561266113"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.1743781,
+          -17.4132051
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q891786",
+        "aircraft:type": "airliner",
+        "building": "airplane",
+        "historic": "aircraft",
+        "layer": "1",
+        "manufacturer": "Bombardier",
+        "manufacturer:wikidata": "Q333498",
+        "manufacturer:wikipedia": "en:Bombardier Inc.",
+        "model": "CRJ200",
+        "name": "Bombardier CRJ200",
+        "operator": "Amaszonas",
+        "operator:type": "private",
+        "tourism": "attraction",
+        "@id": "way/1562118590"
       }
     },
     {
