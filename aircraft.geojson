@@ -34407,16 +34407,14 @@
         ]
       },
       "properties": {
-        "model:wikidata": "Q407852",
-        "wikipedia": "en:Air_Tractor_AT-802",
-        "aircraft:type": "fixed_wing",
+        "model:wikidata": "Q1166846",
         "historic": "aircraft",
         "manufacturer": "Air Tractor",
         "manufacturer:wikidata": "Q2828232",
-        "manufacturer:wikipedia": "en:Air Tractor",
-        "model": "Air_Tractor_AT-802",
-        "model:wikipedia": "en:Air Tractor AT-802",
-        "name": "Air Tractor AT-802",
+        "manufacturer:wikipedia": "en:Q400153",
+        "model": "PZL-Mielec M-18A Dromader",
+        "model:wikipedia": "en:PZL-Mielec M-18 Dromader",
+        "name": "PZL-Mielec M-18 Dromader",
         "start_date": "2026-09-24",
         "@id": "node/14215208358"
       }
