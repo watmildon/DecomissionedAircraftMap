@@ -30636,6 +30636,7 @@
       "properties": {
         "model:wikidata": "Q150609",
         "historic": "aircraft",
+        "model": "MiG-21",
         "source": "Ortofotomozaika SR",
         "@id": "node/13071438265"
       }
@@ -30652,6 +30653,7 @@
       "properties": {
         "model:wikidata": "Q17372514",
         "historic": "aircraft",
+        "model": "Mi-24V",
         "source": "Ortofotomozaika SR",
         "@id": "node/13071438266"
       }
@@ -30668,6 +30670,7 @@
       "properties": {
         "model:wikidata": "Q608997",
         "historic": "aircraft",
+        "model": "Mi-2",
         "source": "Ortofotomozaika SR",
         "@id": "node/13071438267"
       }
@@ -34408,13 +34411,13 @@
       },
       "properties": {
         "model:wikidata": "Q1166846",
+        "aircraft:type": "fixed_wing",
         "historic": "aircraft",
         "manufacturer": "Air Tractor",
         "manufacturer:wikidata": "Q2828232",
         "manufacturer:wikipedia": "en:Q400153",
         "model": "PZL-Mielec M-18A Dromader",
         "model:wikipedia": "en:PZL-Mielec M-18 Dromader",
-        "name": "PZL-Mielec M-18 Dromader",
         "start_date": "2026-09-24",
         "@id": "node/14215208358"
       }
