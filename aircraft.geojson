@@ -23156,6 +23156,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          24.7755399,
+          42.1306639
+        ]
+      },
+      "properties": {
+        "wikidata": "Q155679",
+        "model:wikidata": "Q17484670",
+        "wikipedia": "en:Mikoyan-Gurevich MiG-23",
+        "aircraft:type": "military;jet",
+        "description": "Delivered to the Bulgarian Air Force in 1981 and retired around 1992. Served at the former Cheshnegirovo Air Base.",
+        "historic": "aircraft",
+        "model": "MiG-23BN",
+        "name": "MiG-23BN",
+        "start_date": "2023-06-29",
+        "@id": "node/11234333823"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -3.8273524,
           43.4236995
         ]
