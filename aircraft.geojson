@@ -7017,6 +7017,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          148.0078016,
+          -33.3893472
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q284767",
+        "aircraft:type": "military;fixed_wing",
+        "historic": "aircraft",
+        "manufacturer": "De Havilland",
+        "manufacturer:wikidata": "Q283666",
+        "manufacturer:wikipedia": "en:De Havilland",
+        "model": "DH_112",
+        "model:wikipedia": "en:De Havilland Venom",
+        "name": "De Havilland Venom",
+        "@id": "node/4849407137"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           19.2429873,
           46.5388484
         ]
