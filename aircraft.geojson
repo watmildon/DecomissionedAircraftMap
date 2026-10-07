@@ -3922,6 +3922,7 @@
       "properties": {
         "wikidata": "Q943315",
         "wikipedia": "ru:Пе-2",
+        "aircraft:type": "military",
         "historic": "aircraft",
         "memorial": "aircraft",
         "name": "Пе-2",
@@ -3940,6 +3941,7 @@
       "properties": {
         "wikidata": "Q155635",
         "wikipedia": "ru:Ми-8",
+        "aircraft:type": "helicopter",
         "historic": "aircraft",
         "memorial": "aircraft",
         "name": "Ми-8",
@@ -3957,6 +3959,7 @@
       },
       "properties": {
         "model:wikidata": "Q943360",
+        "aircraft:type": "military",
         "historic": "aircraft",
         "memorial": "aircraft",
         "model:wikipedia": "ru:У-2",
@@ -3975,6 +3978,7 @@
       },
       "properties": {
         "model:wikidata": "Q608997",
+        "aircraft:type": "helicopter",
         "historic": "aircraft",
         "memorial": "aircraft",
         "model:wikipedia": "ru:Ми-2",
@@ -6123,33 +6127,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          1.1520825,
-          41.1474567
-        ]
-      },
-      "properties": {
-        "model:wikidata": "Q234371",
-        "aircraft:type": "military",
-        "fixme": "see nearby note",
-        "historic": "aircraft",
-        "manufacturer": "Dassault Aviation",
-        "manufacturer:wikidata": "Q460487",
-        "manufacturer:wikimedia_commons": "Category:Dassault Aviation",
-        "manufacturer:wikipedia": "ca:Dassault Aviation",
-        "memorial": "aircraft",
-        "model": "Mirage III",
-        "model:wikimedia_commons": "Dassault Mirage III",
-        "model:wikipedia": "ca:Dassault Mirage III",
-        "name": "Dassault Mirage III",
-        "start_date": "~1992",
-        "@id": "node/4403396091"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           8.4662921,
           49.0194139
         ]
@@ -7523,6 +7500,7 @@
       "properties": {
         "wikidata": "Q152976",
         "wikipedia": "ru:МиГ-17",
+        "aircraft:type": "military",
         "historic": "aircraft",
         "memorial": "aircraft",
         "name": "МиГ-17",
@@ -44269,6 +44247,7 @@
       "properties": {
         "wikidata": "Q234069",
         "wikipedia": "ru:МиГ-27",
+        "aircraft:type": "military",
         "direction": "180",
         "historic": "aircraft",
         "inscription": "Истребитель-бомбардировщик",
@@ -48945,6 +48924,34 @@
         "operator:type": "private",
         "tourism": "attraction",
         "@id": "way/1562118590"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.1520843,
+          41.1474574
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q58725",
+        "aircraft:type": "military",
+        "area": "yes",
+        "fixme": "see nearby note",
+        "historic": "aircraft",
+        "manufacturer": "Lockheed Corporation",
+        "manufacturer:wikidata": "Q7233",
+        "manufacturer:wikimedia_commons": "Category:Lockheed",
+        "manufacturer:wikipedia": "ca:Lockheed Corporation",
+        "memorial": "aircraft",
+        "model": "Lockheed T-33 Shooting Star",
+        "model:wikimedia_commons": "T-33 Shooting Star",
+        "model:wikipedia": "en:Lockheed T-33",
+        "name": "Lockheed T-33 Shooting Star",
+        "start_date": "~1992",
+        "@id": "way/1565659671"
       }
     },
     {
