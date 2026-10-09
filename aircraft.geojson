@@ -287,6 +287,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          37.7147349,
+          55.9033677
+        ]
+      },
+      "properties": {
+        "wikidata": "Q943360",
+        "wikipedia": "en:Polikarpov Po-2",
+        "addr:street": "Лётная улица",
+        "historic": "aircraft",
+        "model:wikipedia": "ru:У-2",
+        "name": "По-2",
+        "wikipedia:ru": "У-2",
+        "@id": "node/674521453"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           21.7001402,
           49.4004061
         ]
@@ -30594,6 +30614,25 @@
         "historic": "aircraft",
         "note": "Tipsy S2",
         "@id": "node/12992641201"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6460428,
+          55.877339
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q207700",
+        "aircraft:type": "cargo",
+        "historic": "aircraft",
+        "model": "Ан-2T",
+        "model:wikipedia": "en:Antonov An-2",
+        "name": "Ан-2 Полярная авиация",
+        "@id": "node/13045608928"
       }
     },
     {
