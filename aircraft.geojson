@@ -6197,8 +6197,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          19.7481634,
-          46.9043996
+          19.7481366,
+          46.9044234
         ]
       },
       "properties": {
@@ -32404,6 +32404,246 @@
         "manufacturer:wikipedia": "en:Lockheed Corporation",
         "model": "TR-33A",
         "@id": "node/13409547877"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9086001,
+          32.7892959
+        ]
+      },
+      "properties": {
+        "wikidata": "Q18552602",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "military": "aircraft",
+        "name": "Douglas A-4C Skyhawk",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505262"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9084847,
+          32.7894008
+        ]
+      },
+      "properties": {
+        "wikidata": "Q34945",
+        "wikipedia": "en:Grumman F-14 Tomcat",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "name": "Grumman F-14 Tomcat",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505263"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9085528,
+          32.7897563
+        ]
+      },
+      "properties": {
+        "wikidata": "Q18068961",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "military": "aircraft",
+        "name": "S-2E Tracker",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505264"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9086726,
+          32.7899576
+        ]
+      },
+      "properties": {
+        "wikidata": "Q83400273",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "military": "aircraft",
+        "name": "A-6E Intruder",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505265"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9084821,
+          32.7899101
+        ]
+      },
+      "properties": {
+        "wikidata": "Q62786107",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "military": "aircraft",
+        "name": "A-7E Corsair II",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505266"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9084452,
+          32.7899903
+        ]
+      },
+      "properties": {
+        "wikidata": "Q106853709",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "military": "aircraft",
+        "name": "F-8K Crusader",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505267"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9084369,
+          32.7900746
+        ]
+      },
+      "properties": {
+        "wikidata": "Q249890",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "military": "aircraft",
+        "name": "S3-B Viking",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505268"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9086737,
+          32.7901608
+        ]
+      },
+      "properties": {
+        "wikidata": "Q21822472",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "military": "aircraft",
+        "name": "EA-3B Skywarrior",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505269"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9085912,
+          32.7907985
+        ]
+      },
+      "properties": {
+        "wikidata": "Q18071973",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "military": "aircraft",
+        "name": "E-1B Tracer",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505274"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9086676,
+          32.790358
+        ]
+      },
+      "properties": {
+        "wikidata": "Q159129",
+        "aircraft:type": "helicopter",
+        "historic": "aircraft",
+        "military": "aircraft",
+        "name": "SH-3G Sea King",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505275"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9085664,
+          32.7905773
+        ]
+      },
+      "properties": {
+        "wikidata": "Q17486173",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "military": "aircraft",
+        "name": "F/A-18A Hornet",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505276"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9083755,
+          32.7910294
+        ]
+      },
+      "properties": {
+        "wikidata": "Q17371177",
+        "aircraft:type": "military",
+        "historic": "aircraft",
+        "military": "aircraft",
+        "name": "F-4J Phantom II",
+        "operator": "Patriots Point Naval & Maritime Museum",
+        "tourism": "attraction",
+        "@id": "node/13425505277"
       }
     },
     {
