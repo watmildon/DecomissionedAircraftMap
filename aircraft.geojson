@@ -16817,6 +16817,8 @@
       "properties": {
         "model:wikidata": "Q1046250",
         "historic": "aircraft",
+        "image": "https://photos.app.goo.gl/w1SG4JPzk24BChD29",
+        "mapillary": "1816515049712593",
         "name": "TS-11 Iskra",
         "ref": "3H-1005",
         "vehicle:wikidata": "Q1046250",
@@ -34737,6 +34739,43 @@
         "historic": "aircraft",
         "panoramax": "0f97f7ff-f834-4290-922a-4a20b4733047",
         "@id": "node/14215926606"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.6669894,
+          47.2718326
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q155651",
+        "aircraft:type": "helicopter;military",
+        "historic": "aircraft",
+        "manufacturer": "Ми",
+        "model": "Ми-24",
+        "model:wikipedia": "en:Mil Mi-24",
+        "@id": "node/14274325180"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.6672506,
+          47.2718033
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q210413",
+        "aircraft:type": "military;bomber",
+        "historic": "aircraft",
+        "model": "Су-24",
+        "model:wikipedia": "en:Sukhoi Su-24",
+        "@id": "node/14274325181"
       }
     },
     {
