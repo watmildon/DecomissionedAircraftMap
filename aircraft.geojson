@@ -49257,8 +49257,11 @@
         "model:wikidata": "Q58725",
         "aircraft:type": "military",
         "area": "yes",
+        "exhibit": "aircraft",
         "fixme": "see nearby note",
-        "historic": "aircraft",
+        "historic": "memorial",
+        "location": "outdoor",
+        "man_made": "aircraft",
         "manufacturer": "Lockheed Corporation",
         "manufacturer:wikidata": "Q7233",
         "manufacturer:wikimedia_commons": "Category:Lockheed",
@@ -49268,6 +49271,7 @@
         "model:wikimedia_commons": "T-33 Shooting Star",
         "model:wikipedia": "en:Lockheed T-33",
         "name": "Lockheed T-33 Shooting Star",
+        "outdoor": "yes",
         "start_date": "~1992",
         "@id": "way/1565659671"
       }
