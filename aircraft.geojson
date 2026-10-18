@@ -13558,25 +13558,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.4378047,
-          49.8147629
-        ]
-      },
-      "properties": {
-        "wikidata": "Q181815",
-        "wikipedia": "uk:Ту-95",
-        "historic": "memorial",
-        "memorial": "aircraft",
-        "name": "Ту-95У",
-        "name:uk": "Ту-95У",
-        "@id": "node/7099622954"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           30.4569715,
           50.4060875
         ]
@@ -41510,6 +41491,25 @@
         "name": "S-3 Viking",
         "tourism": "attraction",
         "@id": "way/864738133"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.4379264,
+          49.8147264
+        ]
+      },
+      "properties": {
+        "wikidata": "Q181815",
+        "wikipedia": "uk:Ту-95",
+        "historic": "memorial",
+        "memorial": "aircraft",
+        "name": "Ту-95У",
+        "name:uk": "Ту-95У",
+        "@id": "way/865337695"
       }
     },
     {
