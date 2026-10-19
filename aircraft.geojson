@@ -35119,7 +35119,7 @@
       "properties": {
         "model:wikidata": "Q188513",
         "historic": "aircraft",
-        "layer": "1",
+        "layer": "4",
         "manufacturer": "Tupolev OKB",
         "model": "Tu-144",
         "model:wikipedia": "en:Tupolev Tu-144",
@@ -35517,6 +35517,7 @@
         "model:wikidata": "Q1137051",
         "subject:wikidata": "Q1137051",
         "aircraft:type": "airliner",
+        "building": "retail",
         "historic": "aircraft",
         "name": "Viscount 814",
         "subject:wikipedia": "en:Vickers Viscount",
@@ -36761,7 +36762,6 @@
         "model:wikipedia": "en:Vickers Viscount",
         "name": "Vickers Viscount",
         "source": "HiRes aerial imagery",
-        "toilets:wheelchair": "no",
         "tourism": "attraction",
         "wheelchair": "no",
         "@id": "way/212464425"
@@ -49351,31 +49351,6 @@
         "name": "North American EF-82E Twin Mustang",
         "type": "multipolygon",
         "@id": "relation/19445241"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          19.2621938,
-          47.4245148
-        ]
-      },
-      "properties": {
-        "wikidata": "Q55243663",
-        "wikipedia": "hu:Ka–26",
-        "aircraft:type": "helicopter",
-        "building": "yes",
-        "historic": "aircraft",
-        "image": "https://aeropark.hu/wp-content/uploads/2023/05/Kamov-26.jpg",
-        "name": "KAMOV KA-26",
-        "ref": "HA-MMG",
-        "start_date": "1970",
-        "tourism": "attraction",
-        "type": "multipolygon",
-        "website": "https://aeropark.hu/ha-mmg/",
-        "@id": "relation/20830202"
       }
     }
   ]
