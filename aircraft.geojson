@@ -49236,6 +49236,26 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -66.4668177,
+          45.8405144
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q694356",
+        "aircraft:type": "helicopter",
+        "area": "yes",
+        "historic": "aircraft",
+        "model": "Bell_CH-136_Kiowa",
+        "model:wikipedia": "en:Bell OH-58 Kiowa",
+        "tourism": "attraction",
+        "@id": "way/1573502724"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           6.9633611,
           49.6859166
         ]
