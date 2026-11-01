@@ -44358,6 +44358,7 @@
         "ref": "D-FOXY",
         "start_date": "1944",
         "tourism": "attraction",
+        "wheelchair": "yes",
         "@id": "way/1239493500"
       }
     },
