@@ -1922,6 +1922,27 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          0.7270925,
+          47.4486795
+        ]
+      },
+      "properties": {
+        "model:wikidata": "Q120323",
+        "aircraft:type": "Beechcraft 99 Airliner",
+        "historic": "aircraft",
+        "inscription": "Touraine Air Transport",
+        "manufacturer:wikidata": "Q634227",
+        "name": "Rond-point de l'Avion",
+        "ref": "F-BTMA",
+        "source": "survey;Bing 2012",
+        "@id": "node/2291976070"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           34.5027083,
           49.6028343
         ]
@@ -10183,6 +10204,24 @@
         "short_name": "M-2",
         "start_date": "after 1972-05-06",
         "@id": "node/5870576014"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7875456,
+          45.3396285
+        ]
+      },
+      "properties": {
+        "wikidata": "Q141964636",
+        "subject:wikidata": "Q784466",
+        "historic": "memorial",
+        "memorial": "aircraft",
+        "name": "Monumento per la strage di Ustica",
+        "@id": "node/5871629277"
       }
     },
     {
