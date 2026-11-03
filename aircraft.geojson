@@ -41568,6 +41568,7 @@
         "image": "https://www.airliners.net/search?keywords=HA-MHI",
         "name": "An-2, HA-MHI",
         "ref": "HA-MHI",
+        "tourism": "attraction",
         "@id": "way/866058400"
       }
     },
@@ -41589,7 +41590,6 @@
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-BCB; https://aeropark.hu/wp-content/uploads/2023/05/Mi-2-front.jpg",
         "name": "Mi-2, HA-BCB",
-        "official_name": "name=MIL MI-2",
         "ref": "HA-BCB",
         "start_date": "1979",
         "tourism": "attraction",
@@ -41614,6 +41614,7 @@
         "image": "https://www.airliners.net/search?keywords=HA-YLR",
         "name": "Jak-40, HA-YLR",
         "ref": "HA-YLR",
+        "tourism": "attraction",
         "@id": "way/866058402"
       }
     },
@@ -41634,6 +41635,7 @@
         "image": "https://www.airliners.net/search?keywords=HA-MOA",
         "name": "Il-18V, HA-MOA",
         "ref": "HA-MOA",
+        "tourism": "attraction",
         "@id": "way/866058403"
       }
     },
@@ -41654,6 +41656,7 @@
         "image": "https://www.airliners.net/search?keywords=HA-MAL",
         "name": "Il-14T, HA-MAL",
         "ref": "HA-MAL",
+        "tourism": "attraction",
         "@id": "way/866058404"
       }
     },
@@ -41674,6 +41677,7 @@
         "image": "https://www.airliners.net/search?keywords=HA-YHF",
         "name": "An-2, HA-YHF",
         "ref": "HA-YHF",
+        "tourism": "attraction",
         "@id": "way/866058405"
       }
     },
@@ -41694,6 +41698,7 @@
         "image": "https://www.airliners.net/search?keywords=HA-LRA",
         "name": "Jak-40, HA-LRA",
         "ref": "HA-LRA",
+        "tourism": "attraction",
         "@id": "way/866058408"
       }
     },
@@ -41713,7 +41718,7 @@
         "historic": "aircraft",
         "image": "https://www.airliners.net/search?keywords=HA-LIQ",
         "name": "Li-2, HA-LIQ",
-        "ref": "HA-YLR",
+        "ref": "HA-LIQ",
         "tourism": "attraction",
         "@id": "way/866058409"
       }
@@ -41736,6 +41741,7 @@
         "name": "Tu-134, HA-LBE",
         "ref": "HA-LBE",
         "start_date": "1973",
+        "tourism": "attraction",
         "url": "https://www.avia-info.hu/talalat.php?KeresettSzo=HA-LBE",
         "website": "https://aeropark.hu/ha-lbe/",
         "@id": "way/866058410"
@@ -41758,6 +41764,7 @@
         "image": "https://www.airliners.net/search?keywords=HA-MOG",
         "name": "Il-18V, HA-MOG",
         "ref": "HA-MOG",
+        "tourism": "attraction",
         "@id": "way/866058411"
       }
     },
@@ -41778,6 +41785,7 @@
         "image": "https://www.airliners.net/search?keywords=HA-LCG",
         "name": "Tu-154, HA-LCG",
         "ref": "HA-LCG",
+        "tourism": "attraction",
         "@id": "way/866058412"
       }
     },
@@ -49289,6 +49297,30 @@
         "model:wikipedia": "en:Bell OH-58 Kiowa",
         "tourism": "attraction",
         "@id": "way/1573502724"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2618482,
+          47.4233006
+        ]
+      },
+      "properties": {
+        "wikidata": "Q608997",
+        "model:wikidata": "Q608997",
+        "wikipedia": "hu:Mi–2",
+        "aircraft:type": "helicopter",
+        "description": "Mil Mi-2 (R-13) helikopter",
+        "historic": "aircraft",
+        "name": "Mi-2, R-13",
+        "ref": "R-13",
+        "start_date": "1979",
+        "tourism": "attraction",
+        "website": "https://aeropark.hu/ha-bcb/",
+        "@id": "way/1574709275"
       }
     },
     {
