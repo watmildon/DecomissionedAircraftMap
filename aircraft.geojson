@@ -44667,27 +44667,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.822185,
-          45.3145154
-        ]
-      },
-      "properties": {
-        "wikidata": "Q131851134",
-        "model:wikidata": "Q121208980",
-        "aircraft:type": "military",
-        "date": "1954",
-        "historic": "aircraft",
-        "manufacturer": "Republic Aviation Corporation",
-        "model": "RF-84F Thunderflash",
-        "tourism": "attraction",
-        "@id": "way/1304520107"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           11.8217166,
           45.3139092
         ]
